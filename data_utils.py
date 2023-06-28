@@ -10,11 +10,6 @@ def group_by(cve_datas, selector):
     return result
 
 
-def select(cve_datas, key):
-    assert callable(key)
-    return [cve_data for cve_data in cve_datas if key(cve_data)]
-
-
 def first_of(*items):
     for item in items:
         if len(item) > 0:

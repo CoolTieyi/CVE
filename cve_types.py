@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Callable, List
 
 from data_utils import group_by
+from collections import defaultdict
 
 
 @dataclass
@@ -24,10 +25,11 @@ class CVEData:
     CVEId: str
     artifacts: str
     version: str | None
+    format_version: str | None
     fixed_version: str | None
-    state: str
+    format_fixed_version : str | None
+    state: str | None
     tool_name: str
-
     # where the data is load from
     source: str | None = None
 

@@ -1,16 +1,13 @@
 import os
 import json
+import re
 from itertools import product
 from pathlib import Path
 from typing import List, Dict
 
 from data_utils import first_of, resolve_nested_dict, iter_nested_dict
 from cve_types import CVEData, CVEState, ToolName, Tool
-
-
-def walkdir(dir: Path):
-    for dirpath, dirnames, filenames in os.walk(dir):
-        print(dirpath, dirnames, filenames)
+from collections import defaultdict
 
 
 # Return a list containing the names of the files in the directory
@@ -18,40 +15,55 @@ def get_image_names(dir: Path):
     return os.listdir(dir)
 
 
+def version_format(s):
+    # filter :
+    # version_dict
+    vdict = defaultdict()
+    if s is None or len(s) == 0:
+        return None
+    if s[0] == 'v':
+        vdict['rubbish'] = 'v'
+        s = s[1:]
+
+    if ':' in s:
+        colon = s.find(':')
+        vdict['epoch'] = s[:colon]
+        s = s[(colon + 1):]
+    else:
+        vdict['epoch'] = 0
+    # filter -~+
+    symbol_position = len(s)
+    vdict['semantic'] = s
+    vdict['predeta'] = None
+    if '+' in s or '-' in s or '~' in s:
+        symbol_plus = s.find('+')
+        short_line = s.find('-')
+        surf_line = s.find('~')
+        position = []
+        for i in [symbol_plus, short_line, surf_line]:
+            if i >= 0:
+                position.append(i)
+        symbol_position = min(position)
+        vdict['semantic'] = s[:symbol_position]
+        vdict['predeta'] = s[symbol_position + 1:]
+    if vdict['predeta'] is not None and len(vdict['predeta']) != 0:
+        vdict['semantic'] = '< ' + vdict['semantic']
+
+    return vdict['semantic']
+
+
 def load_clair(json_data: Dict) -> List[CVEData]:
-    def __fix_version_format(fixed_version: str) -> str:
-        if fixed_version == "":
-            return ""
-        if ':' not in fixed_version:
-            fixed_version = '0:' + fixed_version
-        return fixed_version
-
-    def __version_format(version: str) -> str:
-        if version == "":
-            return ""
-        if ":" not in version:
-            version = '0:' + version
-        return version
-
-    def __compare_version(version: str, fixed_version: str) -> CVEState:
-        if version == "" | fixed_version == "":
-            state = CVEState.UNKNOWN
-        if float(version) >= float(fixed_version) | version in fixed_version:
-            state = CVEState.FIXED
-        if float(version) < float(fixed_version):
-            state = CVEState.UNFIXED
-        return state
-
     cve_datas = []
     for feature in iter_nested_dict(json_data, ['vulnerabilities']):
         cve_datas.append(CVEData(
             CVEId=feature['vulnerability'],
             artifacts=feature['featurename'],
-            version=__version_format(feature['featureversion']),
-            fixed_version=__fix_version_format(feature['fixedby']),
-            # state=__compare_version(version=__version_format(feature['featureversion']),
-            #                         fixed_version=__fix_version_format(feature['fixedby'])),
-            state=CVEState.UNKNOWN,
+            version=feature['featureversion'],
+            format_version=version_format(feature['featureversion']),
+            fixed_version=feature['fixedby'],
+            format_fixed_version=version_format(feature['fixedby']),
+            state=None,
+            # state=CVEState.UNKNOWN,
             tool_name=ToolName.Clair,
         ))
     return cve_datas
@@ -63,6 +75,10 @@ def load_grype(json_data: Dict) -> List[CVEData]:
         state = resolve_nested_dict(match, ['vulnerability', 'fix', 'state'])
         if state == 'wont-fix' or state == 'not-fixed':
             state = CVEState.UNFIXED
+        fixed_feature = resolve_nested_dict(match, ['vulnerability', 'fix', 'versions'])
+        fixed_version = None
+        if len(fixed_feature) == 1:
+            fixed_version = fixed_feature[0]
 
         feature = list(iter_nested_dict(match, ['matchDetails', 'searchedBy', 'package']))
         if len(feature) == 0:
@@ -78,7 +94,9 @@ def load_grype(json_data: Dict) -> List[CVEData]:
             CVEId=resolve_nested_dict(match, ['vulnerability', 'id']),
             artifacts=artifact,
             version=version,
-            fixed_version=None,
+            format_version=version_format(version),
+            fixed_version=fixed_version,
+            format_fixed_version=version_format(fixed_version),
             state=state,
             tool_name=ToolName.Grype,
         ))
@@ -86,19 +104,6 @@ def load_grype(json_data: Dict) -> List[CVEData]:
 
 
 def load_snyk(json_data: Dict) -> List[CVEData]:
-    def __version_format(version: str) -> str:
-        if version == "":
-            return ""
-        if ":" not in version:
-            version = "0:" + version
-
-    def __fixed_version_format(version: str) -> str:
-        if version == "":
-            return ""
-        if ":" not in version:
-            version = '0:' + version
-        return version
-
     cve_datas = []
     for feature in iter_nested_dict(json_data, ['vulnerabilities']):
         id_cve = resolve_nested_dict(feature, ['identifiers', 'CVE'])
@@ -109,9 +114,12 @@ def load_snyk(json_data: Dict) -> List[CVEData]:
         cve_datas.append(CVEData(
             CVEId=cve_id,
             artifacts=feature['name'],
-            version=__version_format(feature['version']),
+            version=feature['version'],
+            format_version=version_format(feature['version']),
             fixed_version=(None if 'nearestFixedInVersion' not in feature
                            else feature['nearestFixedInVersion']),
+            format_fixed_version=version_format((None if 'nearestFixedInVersion' not in feature
+                                                 else feature['nearestFixedInVersion'])),
             state=CVEState.UNKNOWN,
             tool_name=ToolName.Snyk,
         ))
@@ -125,7 +133,9 @@ def load_trivy(json_data: Dict) -> List[CVEData]:
             CVEId=feature['VulnerabilityID'],
             artifacts=feature['PkgName'],
             version=feature['InstalledVersion'],
+            format_version=version_format(feature['InstalledVersion']),
             fixed_version=None if 'FixedVersion' not in feature else feature['FixedVersion'],
+            format_fixed_version=version_format(None if 'FixedVersion' not in feature else feature['FixedVersion']),
             state=CVEState.UNKNOWN,
             tool_name=ToolName.Trivy,
         ))
