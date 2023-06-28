@@ -25,8 +25,12 @@ if __name__ == '__main__':
     # df.to_sql('cve_test_clair2', engine)
     # Grype
     group_by_tool_name = data_utils.group_by(cve_datas, lambda i: i.tool_name)
-    df = pd.DataFrame(group_by_tool_name[cve_types.ToolName.Grype])
-    df.to_sql('cve_test_grype8', engine)
+    df = pd.DataFrame(cve_datas)
+
+    # df = pd.DataFrame(group_by_tool_name[cve_types.ToolName.Grype])
+    df.to_sql('nvd_grype1', engine)
+
+
     # Snyk
     # group_by_tool_name = data_utils.group_by(cve_datas, lambda i: i.tool_name)
     # df = pd.DataFrame(group_by_tool_name[cve_types.ToolName.Snyk])

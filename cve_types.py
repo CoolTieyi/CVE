@@ -25,9 +25,10 @@ class CVEData:
     CVEId: str
     artifacts: str
     version: str | None
-    format_version: str | None
     fixed_version: str | None
-    format_fixed_version : str | None
+    format_version: str | None
+    format_fixed_version: str | None
+    nvd_version: str | None
     state: str | None
     tool_name: str
     # where the data is load from
@@ -53,5 +54,3 @@ class CVEDataCollection:
 class Tool:
     name: str
     loader: Callable
-
-

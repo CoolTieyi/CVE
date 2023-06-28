@@ -4,6 +4,7 @@ import re
 from itertools import product
 from pathlib import Path
 from typing import List, Dict
+import requests
 
 from data_utils import first_of, resolve_nested_dict, iter_nested_dict
 from cve_types import CVEData, CVEState, ToolName, Tool
@@ -13,6 +14,26 @@ from collections import defaultdict
 # Return a list containing the names of the files in the directory
 def get_image_names(dir: Path):
     return os.listdir(dir)
+
+
+def get_nvd_version(cveId:str) -> str:
+    url = 'https://services.nvd.nist.gov/rest/json/cves/2.0?cveId='+cveId
+    json_rsc = requests.get(url)
+    try:
+        json_data = json_rsc.json()
+    except requests.exceptions.JSONDecodeError as e:
+        print(f'url: {url}, response: {json_rsc}')
+        raise e
+
+    match = []
+    for cpe_match in iter_nested_dict(json_data, ['vulnerabilities', 'cve', "configurations", "nodes", "cpeMatch"]):
+        if 'versionStartIncluding' in cpe_match and 'versionEndExcluding' in cpe_match:
+            match.append((cpe_match.get('versionStartIncluding') + " ~ " + cpe_match.get('versionEndExcluding')))
+        elif 'versionStartIncluding' not in cpe_match and 'versionEndExcluding' in cpe_match:
+            match.append(("0" + " ~ " + cpe_match.get('versionEndExcluding')))
+    payload = '; '.join(match)
+
+    return payload
 
 
 def version_format(s):
@@ -62,6 +83,7 @@ def load_clair(json_data: Dict) -> List[CVEData]:
             format_version=version_format(feature['featureversion']),
             fixed_version=feature['fixedby'],
             format_fixed_version=version_format(feature['fixedby']),
+            nvd_version=get_nvd_version(feature['vulnerability']),
             state=None,
             # state=CVEState.UNKNOWN,
             tool_name=ToolName.Clair,
@@ -97,6 +119,7 @@ def load_grype(json_data: Dict) -> List[CVEData]:
             format_version=version_format(version),
             fixed_version=fixed_version,
             format_fixed_version=version_format(fixed_version),
+            nvd_version=get_nvd_version(resolve_nested_dict(match, ['vulnerability', 'id'])),
             state=state,
             tool_name=ToolName.Grype,
         ))
@@ -120,6 +143,7 @@ def load_snyk(json_data: Dict) -> List[CVEData]:
                            else feature['nearestFixedInVersion']),
             format_fixed_version=version_format((None if 'nearestFixedInVersion' not in feature
                                                  else feature['nearestFixedInVersion'])),
+            nvd_version=get_nvd_version(cve_id),
             state=CVEState.UNKNOWN,
             tool_name=ToolName.Snyk,
         ))
@@ -136,6 +160,7 @@ def load_trivy(json_data: Dict) -> List[CVEData]:
             format_version=version_format(feature['InstalledVersion']),
             fixed_version=None if 'FixedVersion' not in feature else feature['FixedVersion'],
             format_fixed_version=version_format(None if 'FixedVersion' not in feature else feature['FixedVersion']),
+            nvd_version=get_nvd_version(feature['VulnerabilityID']),
             state=CVEState.UNKNOWN,
             tool_name=ToolName.Trivy,
         ))
