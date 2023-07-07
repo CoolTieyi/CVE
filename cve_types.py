@@ -18,6 +18,7 @@ class CVEState:
     FIXED: str = "fixed"
     UNFIXED: str = "unfixed"
     UNKNOWN: str = "unknown"
+    GRYPE_FIXED: str = "grype_fixed"
 
 
 @dataclass
@@ -30,6 +31,7 @@ class CVEData:
     format_fixed_version: str | None
     nvd_version: str | None
     state: str | None
+    isVulner:str | None
     tool_name: str
     # where the data is load from
     source: str | None = None
