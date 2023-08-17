@@ -1,0 +1,4161 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd%40%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836%40%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4%40%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3094",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-3094",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-3094"
+    ],
+    "description": "Sending a flood of dynamic DNS updates may cause `named` to allocate large amounts of memory. This, in turn, may cause `named` to exit due to a lack of free memory. We are not aware of any cases where this has been exploited. Memory is allocated prior to the checking of access permissions (ACLs) and is retained during the processing of a dynamic update from a client whose access credentials are accepted. Memory allocated to clients that are not permitted to send updates is released immediately upon rejection. The scope of this vulnerability is limited therefore to trusted clients who are permitted to make dynamic zone changes. If a dynamic update is REFUSED, memory will be released again very quickly. Therefore it is only likely to be possible to degrade or stop `named` by sending a flood of unaccepted dynamic updates comparable in magnitude to a query flood intended to achieve the same detrimental outcome. BIND 9.11 and earlier branches are also affected, but through exhaustion of internal resources rather than memory constraints. This may reduce performance but should not be a significant problem for most servers. Therefore we don't intend to address this for BIND versions prior to BIND 9.16. This issue affects BIND 9 versions 9.16.0 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.8-S1 through 9.16.36-S1.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:9.16.37-150400.5.17.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3094",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3094",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://kb.isc.org/docs/cve-2022-3094"
+     ],
+     "description": "Sending a flood of dynamic DNS updates may cause `named` to allocate large amounts of memory. This, in turn, may cause `named` to exit due to a lack of free memory. We are not aware of any cases where this has been exploited. Memory is allocated prior to the checking of access permissions (ACLs) and is retained during the processing of a dynamic update from a client whose access credentials are accepted. Memory allocated to clients that are not permitted to send updates is released immediately upon rejection. The scope of this vulnerability is limited therefore to trusted clients who are permitted to make dynamic zone changes. If a dynamic update is REFUSED, memory will be released again very quickly. Therefore it is only likely to be possible to degrade or stop `named` by sending a flood of unaccepted dynamic updates comparable in magnitude to a query flood intended to achieve the same detrimental outcome. BIND 9.11 and earlier branches are also affected, but through exhaustion of internal resources rather than memory constraints. This may reduce performance but should not be a significant problem for most servers. Therefore we don't intend to address this for BIND versions prior to BIND 9.16. This issue affects BIND 9 versions 9.16.0 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.8-S1 through 9.16.36-S1.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "bind-utils",
+       "version": "0:9.16.35-150400.5.14.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:9.16.37-150400.5.17.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "bind-utils",
+    "version": "9.16.35-150400.5.14.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind-utils:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind-utils:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind_utils:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind_utils:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/bind-utils@9.16.35-150400.5.14.1?arch=x86_64&upstream=bind-9.16.35-150400.5.14.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "bind",
+      "version": "9.16.35-150400.5.14.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3094",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-3094",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-3094"
+    ],
+    "description": "Sending a flood of dynamic DNS updates may cause `named` to allocate large amounts of memory. This, in turn, may cause `named` to exit due to a lack of free memory. We are not aware of any cases where this has been exploited. Memory is allocated prior to the checking of access permissions (ACLs) and is retained during the processing of a dynamic update from a client whose access credentials are accepted. Memory allocated to clients that are not permitted to send updates is released immediately upon rejection. The scope of this vulnerability is limited therefore to trusted clients who are permitted to make dynamic zone changes. If a dynamic update is REFUSED, memory will be released again very quickly. Therefore it is only likely to be possible to degrade or stop `named` by sending a flood of unaccepted dynamic updates comparable in magnitude to a query flood intended to achieve the same detrimental outcome. BIND 9.11 and earlier branches are also affected, but through exhaustion of internal resources rather than memory constraints. This may reduce performance but should not be a significant problem for most servers. Therefore we don't intend to address this for BIND versions prior to BIND 9.16. This issue affects BIND 9 versions 9.16.0 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.8-S1 through 9.16.36-S1.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:9.16.37-150400.5.17.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3094",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3094",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://kb.isc.org/docs/cve-2022-3094"
+     ],
+     "description": "Sending a flood of dynamic DNS updates may cause `named` to allocate large amounts of memory. This, in turn, may cause `named` to exit due to a lack of free memory. We are not aware of any cases where this has been exploited. Memory is allocated prior to the checking of access permissions (ACLs) and is retained during the processing of a dynamic update from a client whose access credentials are accepted. Memory allocated to clients that are not permitted to send updates is released immediately upon rejection. The scope of this vulnerability is limited therefore to trusted clients who are permitted to make dynamic zone changes. If a dynamic update is REFUSED, memory will be released again very quickly. Therefore it is only likely to be possible to degrade or stop `named` by sending a flood of unaccepted dynamic updates comparable in magnitude to a query flood intended to achieve the same detrimental outcome. BIND 9.11 and earlier branches are also affected, but through exhaustion of internal resources rather than memory constraints. This may reduce performance but should not be a significant problem for most servers. Therefore we don't intend to address this for BIND versions prior to BIND 9.16. This issue affects BIND 9 versions 9.16.0 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.8-S1 through 9.16.36-S1.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "python3-bind",
+       "version": "0:9.16.35-150400.5.14.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:9.16.37-150400.5.17.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "python3-bind",
+    "version": "9.16.35-150400.5.14.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3-bind:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3-bind:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3_bind:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3_bind:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/python3-bind@9.16.35-150400.5.14.1?arch=noarch&upstream=bind-9.16.35-150400.5.14.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "bind",
+      "version": "9.16.35-150400.5.14.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3736",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-3736",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-3736"
+    ],
+    "description": "BIND 9 resolver can crash when stale cache and stale answers are enabled, option `stale-answer-client-timeout` is set to a positive integer, and the resolver receives an RRSIG query. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:9.16.37-150400.5.17.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3736",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3736",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://kb.isc.org/docs/cve-2022-3736"
+     ],
+     "description": "BIND 9 resolver can crash when stale cache and stale answers are enabled, option `stale-answer-client-timeout` is set to a positive integer, and the resolver receives an RRSIG query. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "bind-utils",
+       "version": "0:9.16.35-150400.5.14.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:9.16.37-150400.5.17.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "bind-utils",
+    "version": "9.16.35-150400.5.14.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind-utils:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind-utils:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind_utils:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind_utils:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/bind-utils@9.16.35-150400.5.14.1?arch=x86_64&upstream=bind-9.16.35-150400.5.14.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "bind",
+      "version": "9.16.35-150400.5.14.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3736",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-3736",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-3736"
+    ],
+    "description": "BIND 9 resolver can crash when stale cache and stale answers are enabled, option `stale-answer-client-timeout` is set to a positive integer, and the resolver receives an RRSIG query. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:9.16.37-150400.5.17.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3736",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3736",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://kb.isc.org/docs/cve-2022-3736"
+     ],
+     "description": "BIND 9 resolver can crash when stale cache and stale answers are enabled, option `stale-answer-client-timeout` is set to a positive integer, and the resolver receives an RRSIG query. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "python3-bind",
+       "version": "0:9.16.35-150400.5.14.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:9.16.37-150400.5.17.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "python3-bind",
+    "version": "9.16.35-150400.5.14.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3-bind:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3-bind:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3_bind:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3_bind:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/python3-bind@9.16.35-150400.5.14.1?arch=noarch&upstream=bind-9.16.35-150400.5.14.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "bind",
+      "version": "9.16.35-150400.5.14.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3924",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-3924",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-3924"
+    ],
+    "description": "This issue can affect BIND 9 resolvers with `stale-answer-enable yes;` that also make use of the option `stale-answer-client-timeout`, configured with a value greater than zero. If the resolver receives many queries that require recursion, there will be a corresponding increase in the number of clients that are waiting for recursion to complete. If there are sufficient clients already waiting when a new client query is received so that it is necessary to SERVFAIL the longest waiting client (see BIND 9 ARM `recursive-clients` limit and soft quota), then it is possible for a race to occur between providing a stale answer to this older client and sending an early timeout SERVFAIL, which may cause an assertion failure. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:9.16.37-150400.5.17.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3924",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3924",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://kb.isc.org/docs/cve-2022-3924"
+     ],
+     "description": "This issue can affect BIND 9 resolvers with `stale-answer-enable yes;` that also make use of the option `stale-answer-client-timeout`, configured with a value greater than zero. If the resolver receives many queries that require recursion, there will be a corresponding increase in the number of clients that are waiting for recursion to complete. If there are sufficient clients already waiting when a new client query is received so that it is necessary to SERVFAIL the longest waiting client (see BIND 9 ARM `recursive-clients` limit and soft quota), then it is possible for a race to occur between providing a stale answer to this older client and sending an early timeout SERVFAIL, which may cause an assertion failure. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "bind-utils",
+       "version": "0:9.16.35-150400.5.14.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:9.16.37-150400.5.17.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "bind-utils",
+    "version": "9.16.35-150400.5.14.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind-utils:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind-utils:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind_utils:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind_utils:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind:bind-utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:bind:bind_utils:9.16.35-150400.5.14.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/bind-utils@9.16.35-150400.5.14.1?arch=x86_64&upstream=bind-9.16.35-150400.5.14.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "bind",
+      "version": "9.16.35-150400.5.14.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3924",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-3924",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-3924"
+    ],
+    "description": "This issue can affect BIND 9 resolvers with `stale-answer-enable yes;` that also make use of the option `stale-answer-client-timeout`, configured with a value greater than zero. If the resolver receives many queries that require recursion, there will be a corresponding increase in the number of clients that are waiting for recursion to complete. If there are sufficient clients already waiting when a new client query is received so that it is necessary to SERVFAIL the longest waiting client (see BIND 9 ARM `recursive-clients` limit and soft quota), then it is possible for a race to occur between providing a stale answer to this older client and sending an early timeout SERVFAIL, which may cause an assertion failure. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:9.16.37-150400.5.17.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3924",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3924",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://kb.isc.org/docs/cve-2022-3924"
+     ],
+     "description": "This issue can affect BIND 9 resolvers with `stale-answer-enable yes;` that also make use of the option `stale-answer-client-timeout`, configured with a value greater than zero. If the resolver receives many queries that require recursion, there will be a corresponding increase in the number of clients that are waiting for recursion to complete. If there are sufficient clients already waiting when a new client query is received so that it is necessary to SERVFAIL the longest waiting client (see BIND 9 ARM `recursive-clients` limit and soft quota), then it is possible for a race to occur between providing a stale answer to this older client and sending an early timeout SERVFAIL, which may cause an assertion failure. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and 9.16.12-S1 through 9.16.36-S1.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "python3-bind",
+       "version": "0:9.16.35-150400.5.14.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:9.16.37-150400.5.17.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "python3-bind",
+    "version": "9.16.35-150400.5.14.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MPL-2.0"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3-bind:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3-bind:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3_bind:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3_bind:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3:python3-bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:python3:python3_bind:9.16.35-150400.5.14.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/python3-bind@9.16.35-150400.5.14.1?arch=noarch&upstream=bind-9.16.35-150400.5.14.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "bind",
+      "version": "9.16.35-150400.5.14.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4304",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4304",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4304"
+    ],
+    "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4304",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4304",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4304",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4304"
+    ],
+    "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4304",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1-hmac",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1-hmac@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4304",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4304",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4304"
+    ],
+    "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4304",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "0:1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "openssl-1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/openssl-1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4415",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4415",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4415"
+    ],
+    "description": "A vulnerability was found in systemd. This security flaw can cause a local information leak due to systemd-coredump not respecting the fs.suid_dumpable kernel setting.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:249.14-150400.8.19.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4415",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4415",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://www.openwall.com/lists/oss-security/2022/12/21/3",
+      "https://github.com/systemd/systemd/commit/b7641425659243c09473cd8fb3aef2c0d4a3eb9c"
+     ],
+     "description": "A vulnerability was found in systemd. This security flaw can cause a local information leak due to systemd-coredump not respecting the fs.suid_dumpable kernel setting.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "systemd",
+       "version": "249.12-150400.8.16.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:249.14-150400.8.19.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libsystemd0",
+    "version": "249.12-150400.8.16.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libsystemd0:249.12-150400.8.16.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libsystemd0:libsystemd0:249.12-150400.8.16.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libsystemd0@249.12-150400.8.16.1?arch=x86_64&upstream=systemd-249.12-150400.8.16.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "systemd",
+      "version": "249.12-150400.8.16.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4415",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4415",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4415"
+    ],
+    "description": "A vulnerability was found in systemd. This security flaw can cause a local information leak due to systemd-coredump not respecting the fs.suid_dumpable kernel setting.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:249.14-150400.8.19.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4415",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4415",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://www.openwall.com/lists/oss-security/2022/12/21/3",
+      "https://github.com/systemd/systemd/commit/b7641425659243c09473cd8fb3aef2c0d4a3eb9c"
+     ],
+     "description": "A vulnerability was found in systemd. This security flaw can cause a local information leak due to systemd-coredump not respecting the fs.suid_dumpable kernel setting.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "systemd",
+       "version": "249.12-150400.8.16.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:249.14-150400.8.19.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libudev1",
+    "version": "249.12-150400.8.16.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libudev1:249.12-150400.8.16.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libudev1:libudev1:249.12-150400.8.16.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libudev1@249.12-150400.8.16.1?arch=x86_64&upstream=systemd-249.12-150400.8.16.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "systemd",
+      "version": "249.12-150400.8.16.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4450",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4450",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4450"
+    ],
+    "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4450",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4450",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4450",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4450"
+    ],
+    "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4450",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1-hmac",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1-hmac@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4450",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-4450",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-4450"
+    ],
+    "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4450",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "0:1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "openssl-1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/openssl-1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-46663",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-46663",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-46663"
+    ],
+    "description": "In GNU Less before 609, crafted data can result in \"less -R\" not filtering ANSI escape sequences sent to the terminal.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:590-150400.3.3.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-46663",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-46663",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/gwsw/less/commit/a78e1351113cef564d790a730d657a321624d79c",
+      "http://www.greenwoodsoftware.com/less/news.609.html",
+      "https://www.openwall.com/lists/oss-security/2023/02/07/7",
+      "http://www.openwall.com/lists/oss-security/2023/02/07/7"
+     ],
+     "description": "In GNU Less before 609, crafted data can result in \"less -R\" not filtering ANSI escape sequences sent to the terminal.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "less",
+       "version": "0:590-150400.1.51"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:590-150400.3.3.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "less",
+    "version": "590-150400.1.51",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-2-Clause OR GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:less:590-150400.1.51:*:*:*:*:*:*:*",
+     "cpe:2.3:a:less:less:590-150400.1.51:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/less@590-150400.1.51?arch=x86_64&upstream=less-590-150400.1.51.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-48303",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2022-48303",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2022-48303"
+    ],
+    "description": "GNU Tar through 1.34 has a one-byte out-of-bounds read that results in use of uninitialized memory for a conditional jump. Exploitation to change the flow of control has not been demonstrated. The issue occurs in from_header in list.c via a V7 archive in which mtime has approximately 11 whitespace characters.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 2.8,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.34-150000.3.31.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-48303",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-48303",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://savannah.gnu.org/bugs/?62387",
+      "https://savannah.gnu.org/patch/?10307"
+     ],
+     "description": "GNU Tar through 1.34 has a one-byte out-of-bounds read that results in use of uninitialized memory for a conditional jump. Exploitation to change the flow of control has not been demonstrated. The issue occurs in from_header in list.c via a V7 archive in which mtime has approximately 11 whitespace characters.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "tar",
+       "version": "0:1.34-150000.3.26.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.34-150000.3.31.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "tar",
+    "version": "1.34-150000.3.26.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3.0-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:tar:1.34-150000.3.26.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:tar:tar:1.34-150000.3.26.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/tar@1.34-150000.3.26.1?arch=x86_64&upstream=tar-1.34-150000.3.26.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0215",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-0215",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-0215"
+    ],
+    "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0215",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0215",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-0215",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-0215"
+    ],
+    "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0215",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1-hmac",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1-hmac@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0215",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-0215",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-0215"
+    ],
+    "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.9,
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0215",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "0:1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "openssl-1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/openssl-1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0286",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-0286",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-0286"
+    ],
+    "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0286",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0286",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-0286",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-0286"
+    ],
+    "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0286",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libopenssl1_1-hmac",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-Clause"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1-hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1_hmac:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1-1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1_1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1-1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1-hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libopenssl1:libopenssl1_1_hmac:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libopenssl1_1-hmac@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "openssl-1_1",
+      "version": "1.1.1l-150400.7.19.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0286",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-0286",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-0286"
+    ],
+    "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:1.1.1l-150400.7.22.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0286",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "openssl-1_1",
+       "version": "0:1.1.1l-150400.7.19.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:1.1.1l-150400.7.22.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "openssl-1_1",
+    "version": "1.1.1l-150400.7.19.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl-1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl_1:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1-1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl-1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:openssl:openssl_1_1:1.1.1l-150400.7.19.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/openssl-1_1@1.1.1l-150400.7.19.1?arch=x86_64&upstream=openssl-1_1-1.1.1l-150400.7.19.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-22490",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-22490",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-22490"
+    ],
+    "description": "Git is a revision control system. Using a specially-crafted repository, Git prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8 can be tricked into using its local clone optimization even when using a non-local transport. Though Git will abort local clones whose source `$GIT_DIR/objects` directory contains symbolic links, the `objects` directory itself may still be a symbolic link. These two may be combined to include arbitrary files based on known paths on the victim's filesystem within the malicious repository's working copy, allowing for data exfiltration in a similar manner as CVE-2022-39253. A fix has been prepared and will appear in v2.39.2 v2.38.4 v2.37.6 v2.36.5 v2.35.7 v2.34.7 v2.33.7 v2.32.6, v2.31.7 and v2.30.8. If upgrading is impractical, two short-term workarounds are available. Avoid cloning repositories from untrusted sources with `--recurse-submodules`. Instead, consider cloning repositories without recursively cloning their submodules, and instead run `git submodule update` at each layer. Before doing so, inspect each new `.gitmodules` file to ensure that it does not contain suspicious module URLs.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 4.8,
+       "exploitabilityScore": 1.2,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:2.35.3-150300.10.24.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-22490",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-22490",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/git/git/commit/c867e4fa180bec4750e9b54eb10f459030dbebfd",
+      "https://github.com/git/git/security/advisories/GHSA-gw92-x3fm-3g3q",
+      "https://github.com/git/git/security/advisories/GHSA-3wp6-j8xr-qw85"
+     ],
+     "description": "Git is a revision control system. Using a specially-crafted repository, Git prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8 can be tricked into using its local clone optimization even when using a non-local transport. Though Git will abort local clones whose source `$GIT_DIR/objects` directory contains symbolic links, the `objects` directory itself may still be a symbolic link. These two may be combined to include arbitrary files based on known paths on the victim's filesystem within the malicious repository's working copy, allowing for data exfiltration in a similar manner as CVE-2022-39253. A fix has been prepared and will appear in v2.39.2 v2.38.4 v2.37.6 v2.36.5 v2.35.7 v2.34.7 v2.33.7 v2.32.6, v2.31.7 and v2.30.8. If upgrading is impractical, two short-term workarounds are available. Avoid cloning repositories from untrusted sources with `--recurse-submodules`. Instead, consider cloning repositories without recursively cloning their submodules, and instead run `git submodule update` at each layer. Before doing so, inspect each new `.gitmodules` file to ensure that it does not contain suspicious module URLs.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "git",
+       "version": "2.35.3-150300.10.21.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:2.35.3-150300.10.24.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "git-core",
+    "version": "2.35.3-150300.10.21.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git-core:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git-core:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git_core:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git_core:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/git-core@2.35.3-150300.10.21.1?arch=x86_64&upstream=git-2.35.3-150300.10.21.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "git",
+      "version": "2.35.3-150300.10.21.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23914",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23914",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23914"
+    ],
+    "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality fail when multiple URLs are requested serially. Using its HSTS support, curl can be instructed to use HTTPS instead of usingan insecure clear-text HTTP step even when HTTP is provided in the URL. ThisHSTS mechanism would however surprisingly be ignored by subsequent transferswhen done on the same command line because the state would not be properlycarried on.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:7.79.1-150400.5.15.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23914",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23914",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1813864"
+     ],
+     "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality fail when multiple URLs are requested serially. Using its HSTS support, curl can be instructed to use HTTPS instead of usingan insecure clear-text HTTP step even when HTTP is provided in the URL. ThisHSTS mechanism would however surprisingly be ignored by subsequent transferswhen done on the same command line because the state would not be properlycarried on.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "curl",
+       "version": "0:7.79.1-150400.5.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:7.79.1-150400.5.15.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "curl",
+    "version": "7.79.1-150400.5.12.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:curl:7.79.1-150400.5.12.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:curl:curl:7.79.1-150400.5.12.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/curl@7.79.1-150400.5.12.1?arch=x86_64&upstream=curl-7.79.1-150400.5.12.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23914",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23914",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23914"
+    ],
+    "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality fail when multiple URLs are requested serially. Using its HSTS support, curl can be instructed to use HTTPS instead of usingan insecure clear-text HTTP step even when HTTP is provided in the URL. ThisHSTS mechanism would however surprisingly be ignored by subsequent transferswhen done on the same command line because the state would not be properlycarried on.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:7.79.1-150400.5.15.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23914",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23914",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1813864"
+     ],
+     "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality fail when multiple URLs are requested serially. Using its HSTS support, curl can be instructed to use HTTPS instead of usingan insecure clear-text HTTP step even when HTTP is provided in the URL. ThisHSTS mechanism would however surprisingly be ignored by subsequent transferswhen done on the same command line because the state would not be properlycarried on.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "curl",
+       "version": "7.79.1-150400.5.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:7.79.1-150400.5.15.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcurl4",
+    "version": "7.79.1-150400.5.12.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libcurl4:7.79.1-150400.5.12.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl4:libcurl4:7.79.1-150400.5.12.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libcurl4@7.79.1-150400.5.12.1?arch=x86_64&upstream=curl-7.79.1-150400.5.12.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "curl",
+      "version": "7.79.1-150400.5.12.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23915",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23915",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23915"
+    ],
+    "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality to behave incorrectly when multiple URLs are requested in parallel. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. This HSTS mechanism would however surprisingly fail when multiple transfers are done in parallel as the HSTS cache file gets overwritten by the most recentlycompleted transfer. A later HTTP-only transfer to the earlier host name would then *not* get upgraded properly to HSTS.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:7.79.1-150400.5.15.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23915",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23915",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1826048"
+     ],
+     "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality to behave incorrectly when multiple URLs are requested in parallel. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. This HSTS mechanism would however surprisingly fail when multiple transfers are done in parallel as the HSTS cache file gets overwritten by the most recentlycompleted transfer. A later HTTP-only transfer to the earlier host name would then *not* get upgraded properly to HSTS.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "curl",
+       "version": "0:7.79.1-150400.5.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:7.79.1-150400.5.15.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "curl",
+    "version": "7.79.1-150400.5.12.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:curl:7.79.1-150400.5.12.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:curl:curl:7.79.1-150400.5.12.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/curl@7.79.1-150400.5.12.1?arch=x86_64&upstream=curl-7.79.1-150400.5.12.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23915",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23915",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "High",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23915"
+    ],
+    "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality to behave incorrectly when multiple URLs are requested in parallel. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. This HSTS mechanism would however surprisingly fail when multiple transfers are done in parallel as the HSTS cache file gets overwritten by the most recentlycompleted transfer. A later HTTP-only transfer to the earlier host name would then *not* get upgraded properly to HSTS.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.4,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:7.79.1-150400.5.15.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23915",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23915",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1826048"
+     ],
+     "description": "A cleartext transmission of sensitive information vulnerability exists in curl <v7.88.0 that could cause HSTS functionality to behave incorrectly when multiple URLs are requested in parallel. Using its HSTS support, curl can be instructed to use HTTPS instead of using an insecure clear-text HTTP step even when HTTP is provided in the URL. This HSTS mechanism would however surprisingly fail when multiple transfers are done in parallel as the HSTS cache file gets overwritten by the most recentlycompleted transfer. A later HTTP-only transfer to the earlier host name would then *not* get upgraded properly to HSTS.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "curl",
+       "version": "7.79.1-150400.5.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:7.79.1-150400.5.15.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcurl4",
+    "version": "7.79.1-150400.5.12.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libcurl4:7.79.1-150400.5.12.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl4:libcurl4:7.79.1-150400.5.12.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libcurl4@7.79.1-150400.5.12.1?arch=x86_64&upstream=curl-7.79.1-150400.5.12.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "curl",
+      "version": "7.79.1-150400.5.12.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23916",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23916",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23916"
+    ],
+    "description": "An allocation of resources without limits or throttling vulnerability exists in curl <v7.88.0 based on the \"chained\" HTTP compression algorithms, meaning that a server response can be compressed multiple times and potentially with differentalgorithms. The number of acceptable \"links\" in this \"decompression chain\" wascapped, but the cap was implemented on a per-header basis allowing a maliciousserver to insert a virtually unlimited number of compression steps simply byusing many headers. The use of such a decompression chain could result in a \"malloc bomb\", making curl end up spending enormous amounts of allocated heap memory, or trying to and returning out of memory errors.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:7.79.1-150400.5.15.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23916",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23916",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1826048"
+     ],
+     "description": "An allocation of resources without limits or throttling vulnerability exists in curl <v7.88.0 based on the \"chained\" HTTP compression algorithms, meaning that a server response can be compressed multiple times and potentially with differentalgorithms. The number of acceptable \"links\" in this \"decompression chain\" wascapped, but the cap was implemented on a per-header basis allowing a maliciousserver to insert a virtually unlimited number of compression steps simply byusing many headers. The use of such a decompression chain could result in a \"malloc bomb\", making curl end up spending enormous amounts of allocated heap memory, or trying to and returning out of memory errors.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "curl",
+       "version": "0:7.79.1-150400.5.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:7.79.1-150400.5.15.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "curl",
+    "version": "7.79.1-150400.5.12.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:curl:7.79.1-150400.5.12.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:curl:curl:7.79.1-150400.5.12.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/curl@7.79.1-150400.5.12.1?arch=x86_64&upstream=curl-7.79.1-150400.5.12.1.src.rpm&distro=sles-15.4",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23916",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23916",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23916"
+    ],
+    "description": "An allocation of resources without limits or throttling vulnerability exists in curl <v7.88.0 based on the \"chained\" HTTP compression algorithms, meaning that a server response can be compressed multiple times and potentially with differentalgorithms. The number of acceptable \"links\" in this \"decompression chain\" wascapped, but the cap was implemented on a per-header basis allowing a maliciousserver to insert a virtually unlimited number of compression steps simply byusing many headers. The use of such a decompression chain could result in a \"malloc bomb\", making curl end up spending enormous amounts of allocated heap memory, or trying to and returning out of memory errors.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:7.79.1-150400.5.15.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23916",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23916",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://hackerone.com/reports/1826048"
+     ],
+     "description": "An allocation of resources without limits or throttling vulnerability exists in curl <v7.88.0 based on the \"chained\" HTTP compression algorithms, meaning that a server response can be compressed multiple times and potentially with differentalgorithms. The number of acceptable \"links\" in this \"decompression chain\" wascapped, but the cap was implemented on a per-header basis allowing a maliciousserver to insert a virtually unlimited number of compression steps simply byusing many headers. The use of such a decompression chain could result in a \"malloc bomb\", making curl end up spending enormous amounts of allocated heap memory, or trying to and returning out of memory errors.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "curl",
+       "version": "7.79.1-150400.5.12.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:7.79.1-150400.5.15.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcurl4",
+    "version": "7.79.1-150400.5.12.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "curl"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:libcurl4:7.79.1-150400.5.12.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libcurl4:libcurl4:7.79.1-150400.5.12.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/libcurl4@7.79.1-150400.5.12.1?arch=x86_64&upstream=curl-7.79.1-150400.5.12.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "curl",
+      "version": "7.79.1-150400.5.12.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-23946",
+    "dataSource": "https://www.suse.com/security/cve/CVE-2023-23946",
+    "namespace": "sles:distro:sles:15.4",
+    "severity": "Medium",
+    "urls": [
+     "https://www.suse.com/security/cve/CVE-2023-23946"
+    ],
+    "description": "Git, a revision control system, is vulnerable to path traversal prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8. By feeding a crafted input to `git apply`, a path outside the working tree can be overwritten as the user who is running `git apply`. A fix has been prepared and will appear in v2.39.2, v2.38.4, v2.37.6, v2.36.5, v2.35.7, v2.34.7, v2.33.7, v2.32.6, v2.31.7, and v2.30.8. As a workaround, use `git apply --stat` to inspect a patch before applying; avoid applying one that creates a symbolic link and then creates a file beyond the symbolic link.",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 1.3,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "0:2.35.3-150300.10.24.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-23946",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-23946",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/git/git/commit/c867e4fa180bec4750e9b54eb10f459030dbebfd",
+      "https://github.com/git/git/security/advisories/GHSA-r87m-v37r-cwfh"
+     ],
+     "description": "Git, a revision control system, is vulnerable to path traversal prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8. By feeding a crafted input to `git apply`, a path outside the working tree can be overwritten as the user who is running `git apply`. A fix has been prepared and will appear in v2.39.2, v2.38.4, v2.37.6, v2.36.5, v2.35.7, v2.34.7, v2.33.7, v2.32.6, v2.31.7, and v2.30.8. As a workaround, use `git apply --stat` to inspect a patch before applying; avoid applying one that creates a symbolic link and then creates a file beyond the symbolic link.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "sles",
+       "version": "15.4"
+      },
+      "namespace": "sles:distro:sles:15.4",
+      "package": {
+       "name": "git",
+       "version": "2.35.3-150300.10.21.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 0:2.35.3-150300.10.24.1 (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "git-core",
+    "version": "2.35.3-150300.10.21.1",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/usr/lib/sysimage/rpm/Packages.db",
+      "layerID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2.0-only"
+    ],
+    "cpes": [
+     "cpe:2.3:a:susellc<https://www.suse.com/>:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:susellc<https://www.suse.com/>:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git-core:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git-core:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git_core:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git_core:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git:git-core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:git:git_core:2.35.3-150300.10.21.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/sles/git-core@2.35.3-150300.10.21.1?arch=x86_64&upstream=git-2.35.3-150300.10.21.1.src.rpm&distro=sles-15.4",
+    "upstreams": [
+     {
+      "name": "git",
+      "version": "2.35.3-150300.10.21.1"
+     }
+    ],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-259w-8hf6-59c2",
+    "dataSource": "https://github.com/advisories/GHSA-259w-8hf6-59c2",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-259w-8hf6-59c2"
+    ],
+    "description": "OCI image importer memory exhaustion in github.com/containerd/containerd",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25153",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25153",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+      "https://github.com/containerd/containerd/commit/0c314901076a74a7b797a545d2f462285fdbb8c4",
+      "https://github.com/containerd/containerd/security/advisories/GHSA-259w-8hf6-59c2"
+     ],
+     "description": "containerd is an open source container runtime. Before versions 1.6.18 and 1.5.18, when importing an OCI image, there was no limit on the number of bytes read for certain files. A maliciously crafted image with a large file where a limit was not applied could cause a denial of service. This bug has been fixed in containerd 1.6.18 and 1.5.18. Users should update to these versions to resolve the issue. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.18 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:xJNPhbrmz8xAMDNoVjHy9YHtWwEQNS+CDkcIRh7t8Y0=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2qjp-425j-52j9",
+    "dataSource": "https://github.com/advisories/GHSA-2qjp-425j-52j9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2qjp-425j-52j9"
+    ],
+    "description": "containerd CRI stream server vulnerable to host memory exhaustion via terminal",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.12"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23471",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9",
+      "https://github.com/containerd/containerd/commit/a05d175400b1145e5e6a735a6710579d181e7fb0"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.12 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:xJNPhbrmz8xAMDNoVjHy9YHtWwEQNS+CDkcIRh7t8Y0=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hmfx-3pcx-653p",
+    "dataSource": "https://github.com/advisories/GHSA-hmfx-3pcx-653p",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hmfx-3pcx-653p"
+    ],
+    "description": "Supplementary groups are not set up properly in github.com/containerd/containerd",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25173",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25173",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/advisories/GHSA-phjr-8j92-w5v7",
+      "https://github.com/containerd/containerd/commit/133f6bb6cd827ce35a5fb279c1ead12b9d21460a",
+      "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+      "https://github.com/advisories/GHSA-4wjj-jwc9-2x96",
+      "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/",
+      "https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4",
+      "https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p",
+      "https://github.com/advisories/GHSA-fjm8-m7m6-2fjp"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in containerd prior to versions 1.6.18 and 1.5.18 where supplementary groups are not set up properly inside a container. If an attacker has direct access to a container and manipulates their supplementary group access, they may be able to use supplementary group access to bypass primary group restrictions in some cases, potentially gaining access to sensitive information or gaining the ability to execute code in that container. Downstream applications that use the containerd client library may be affected as well. This bug has been fixed in containerd v1.6.18 and v.1.5.18. Users should update to these versions and recreate containers to resolve this issue. Users who rely on a downstream application that uses containerd's client library should check that application for a separate advisory and instructions. As a workaround, ensure that the `\"USER $USERNAME\"` Dockerfile instruction is not used. Instead, set the container entrypoint to a value similar to `ENTRYPOINT [\"su\", \"-\", \"user\"]` to allow `su` to properly set up supplementary groups.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.18 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:xJNPhbrmz8xAMDNoVjHy9YHtWwEQNS+CDkcIRh7t8Y0=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j2jp-wvqg-wc2g",
+    "dataSource": "https://github.com/advisories/GHSA-j2jp-wvqg-wc2g",
+    "namespace": "github:language:go",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-j2jp-wvqg-wc2g"
+    ],
+    "description": "crewjam/saml vulnerable to signature bypass via multiple Assertion elements due to improper authentication",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.4.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41912",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41912",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://github.com/crewjam/saml/commit/aee3fb1edeeaf1088fcb458727e0fd863d277f8b",
+      "https://github.com/crewjam/saml/security/advisories/GHSA-j2jp-wvqg-wc2g",
+      "http://packetstormsecurity.com/files/170356/crewjam-saml-Signature-Bypass.html"
+     ],
+     "description": "The crewjam/saml go library prior to version 0.4.9 is vulnerable to an authentication bypass when processing SAML responses containing multiple Assertion elements. This issue has been corrected in version 0.4.9. There are no workarounds other than upgrading to a fixed version.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.4.9 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/crewjam/saml",
+    "version": "v0.4.5",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:crewjam:saml:v0.4.5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/crewjam/saml@v0.4.5",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:H9u+6CZAESUKHxMyxUbVn0IawYvKZn4nt3d4ccV4O/M=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qq97-vm5h-rrhg",
+    "dataSource": "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-qq97-vm5h-rrhg"
+    ],
+    "description": "OCI Manifest Type Confusion Issue",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.8.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<2.8.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/distribution",
+    "version": "v2.7.1+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:distribution:v2.7.1+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/distribution@v2.7.1+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:a5mlkVzth6W5A4fOsS3D2EO5BUmsJpcB+cRlLU7cSug=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20221004154528-8021a29435af",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/agent",
+      "layerID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20221004154528-8021a29435af:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20221004154528-8021a29435af",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.4",
+     "architecture": "amd64",
+     "h1Digest": "h1:wv66FM3rLZGPdxpYL+ApnDe2HzHcTFta3z5nsc13wI4=",
+     "mainModule": "github.com/rancher/rancher"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "rancher/rancher-agent:v2.6-head",
+   "imageID": "sha256:df2c1aa47448aec34afcf2370c6a94f24f3b2805ea085469db7e78403af41102",
+   "manifestDigest": "sha256:68425871a520da9f16d4048f684d1e35b935f8cd2c82bb5667cb53f635102424",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rancher/rancher-agent:v2.6-head"
+   ],
+   "imageSize": 759386318,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27",
+     "size": 118059877
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f",
+     "size": 144419623
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:0f34eab69ed087f7a036c395f544aa71726ac700b1a59ea9177441636a327aa3",
+     "size": 6045696
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb",
+     "size": 377812862
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:510866bf4fde0baeceb9f74619ea29bc7b47fb0766d0fc72fdd138ccd7d7e8fe",
+     "size": 24064
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201",
+     "size": 113024196
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:6bf193524e722d7ce90261a62561d76587f5899c018d41c289a61f51b1dde359",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxMDk5NywiZGlnZXN0Ijoic2hhMjU2OmRmMmMxYWE0NzQ0OGFlYzM0YWZjZjIzNzBjNmE5NGYyNGYzYjI4MDVlYTA4NTQ2OWRiN2U3ODQwM2FmNDExMDIifSwibGF5ZXJzIjpbeyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTIxNjM5NDI0LCJkaWdlc3QiOiJzaGEyNTY6M2Q1ZGZjMDMwNWNhMWY2Yzk4MWE5OTA1ZjIzYWE0YmM3NzY2OTBjODU3MWM1ODczMmVlZTI4NDZjZjAyYmEyNyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE0NzU5MDE0NCwiZGlnZXN0Ijoic2hhMjU2OmExODU2MjA1ZGQyODA5MjFlODZjYzUwNzQwMTZjMmIyOTRkMGY2ODVmNWU3M2M2MmQxNzc3YTNhZWM2YmRhOWYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo2MDQ4MjU2LCJkaWdlc3QiOiJzaGEyNTY6MGYzNGVhYjY5ZWQwODdmN2EwMzZjMzk1ZjU0NGFhNzE3MjZhYzcwMGIxYTU5ZWE5MTc3NDQxNjM2YTMyN2FhMyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjQxMTE1Mjg5NiwiZGlnZXN0Ijoic2hhMjU2OjdjMmZiYzNmYWU0YmYxN2Q0ODA4MTUwOWVmMDQzNzgxZWQyN2U5MWZjN2FmY2M3NWExNzJlMmExZjJmNzYxZmIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyNjYyNCwiZGlnZXN0Ijoic2hhMjU2OjUxMDg2NmJmNGZkZTBiYWVjZWI5Zjc0NjE5ZWEyOWJjN2I0N2ZiMDc2NmQwZmM3MmZkZDEzOGNjZDdkN2U4ZmUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMTMwMjg2MDgsImRpZ2VzdCI6InNoYTI1Njo4ZmVkMWRjZGJlMTU4N2I0OTUyYWJhNzQwZDZjYjgzODFkMDliMjgyYzdiNzMwNDljZjhjNDg2M2M0MGJhMjAxIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzA3MiwiZGlnZXN0Ijoic2hhMjU2OjZiZjE5MzUyNGU3MjJkN2NlOTAyNjFhNjI1NjFkNzY1ODdmNTg5OWMwMThkNDFjMjg5YTYxZjUxYjFkZGUzNTkifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJLVUJFQ1RMX1ZFUlNJT049djEuMjMuNiIsIkxPR0xFVkVMX1ZFUlNJT049djAuMS41IiwiQUdFTlRfSU1BR0U9cmFuY2hlci9yYW5jaGVyLWFnZW50OnYyLjYtM2JkYzAyMmQxOWYxMmQwZmMzZGVkODIyNDZjZTQ2MThmZTM1M2UwMy1oZWFkIiwiU1NMX0NFUlRfRElSPS9ldGMva3ViZXJuZXRlcy9zc2wvY2VydHMiXSwiQ21kIjpudWxsLCJJbWFnZSI6InNoYTI1NjphZTQyNDRjYWMwNGExNGFhOWVmMGI4YjZjMTQ5ZGNmNzYxYzJkMWRkODIxMThmZjQ2NDM2ZjVkOTMzZmNmMjlhIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii92YXIvbGliL3JhbmNoZXIiLCJFbnRyeXBvaW50IjpbInJ1bi5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsiY29tLnN1c2UuYmNpLmJhc2UuY3JlYXRlZCI6IjIwMjMtMDEtMjZUMjI6MTU6MDguMzgxMDMwMzA3WiIsImNvbS5zdXNlLmJjaS5iYXNlLmRlc2NyaXB0aW9uIjoiSW1hZ2UgZm9yIGNvbnRhaW5lcnMgYmFzZWQgb24gU1VTRSBMaW51eCBFbnRlcnByaXNlIFNlcnZlciAxNSBTUDQuIiwiY29tLnN1c2UuYmNpLmJhc2UuZGlzdHVybCI6Im9iczovL2J1aWxkLnN1c2UuZGUvU1VTRTpTTEUtMTUtU1A0OlVwZGF0ZTpDUi9pbWFnZXMvMTQ3N2IwNzBhZTAxOWY5NWIwZjJjM2MwZGNlMTNkYWYtc2xlczE1LWltYWdlIiwiY29tLnN1c2UuYmNpLmJhc2UuZXVsYSI6InNsZS1iY2kiLCJjb20uc3VzZS5iY2kuYmFzZS5pbWFnZS10eXBlIjoic2xlLWJjaSIsImNvbS5zdXNlLmJjaS5iYXNlLmxpZmVjeWNsZS11cmwiOiJodHRwczovL3d3dy5zdXNlLmNvbS9saWZlY3ljbGUiLCJjb20uc3VzZS5iY2kuYmFzZS5yZWZlcmVuY2UiOiJyZWdpc3RyeS5zdXNlLmNvbS9zdXNlL3NsZTE1OjE1LjQuMjcuMTQuMzEiLCJjb20uc3VzZS5iY2kuYmFzZS5yZWxlYXNlLXN0YWdlIjoicmVsZWFzZWQiLCJjb20uc3VzZS5iY2kuYmFzZS5zb3VyY2UiOiJodHRwczovL3NvdXJjZXMuc3VzZS5jb20vU1VTRTpTTEUtMTUtU1A0OlVwZGF0ZTpDUi9zbGVzMTUtaW1hZ2UvMTQ3N2IwNzBhZTAxOWY5NWIwZjJjM2MwZGNlMTNkYWYvIiwiY29tLnN1c2UuYmNpLmJhc2Uuc3VwcG9ydGxldmVsIjoibDMiLCJjb20uc3VzZS5iY2kuYmFzZS50aXRsZSI6IlNMRSBCQ0kgMTUgU1A0IEJhc2UgQ29udGFpbmVyIEltYWdlIiwiY29tLnN1c2UuYmNpLmJhc2UudXJsIjoiaHR0cHM6Ly93d3cuc3VzZS5jb20vcHJvZHVjdHMvc2VydmVyLyIsImNvbS5zdXNlLmJjaS5iYXNlLnZlbmRvciI6IlNVU0UgTExDIiwiY29tLnN1c2UuYmNpLmJhc2UudmVyc2lvbiI6IjE1LjQuMjcuMTQuMzEiLCJjb20uc3VzZS5ldWxhIjoic2xlLWJjaSIsImNvbS5zdXNlLmltYWdlLXR5cGUiOiJzbGUtYmNpIiwiY29tLnN1c2UubGlmZWN5Y2xlLXVybCI6Imh0dHBzOi8vd3d3LnN1c2UuY29tL2xpZmVjeWNsZSIsImNvbS5zdXNlLnJlbGVhc2Utc3RhZ2UiOiJyZWxlYXNlZCIsImNvbS5zdXNlLnNsZS5iYXNlLmNyZWF0ZWQiOiIyMDIzLTAxLTI2VDIyOjE1OjA4LjM4MTAzMDMwN1oiLCJjb20uc3VzZS5zbGUuYmFzZS5kZXNjcmlwdGlvbiI6IkltYWdlIGZvciBjb250YWluZXJzIGJhc2VkIG9uIFNVU0UgTGludXggRW50ZXJwcmlzZSBTZXJ2ZXIgMTUgU1A0LiIsImNvbS5zdXNlLnNsZS5iYXNlLmRpc3R1cmwiOiJvYnM6Ly9idWlsZC5zdXNlLmRlL1NVU0U6U0xFLTE1LVNQNDpVcGRhdGU6Q1IvaW1hZ2VzLzE0NzdiMDcwYWUwMTlmOTViMGYyYzNjMGRjZTEzZGFmLXNsZXMxNS1pbWFnZSIsImNvbS5zdXNlLnNsZS5iYXNlLmV1bGEiOiJzbGUtYmNpIiwiY29tLnN1c2Uuc2xlLmJhc2UuaW1hZ2UtdHlwZSI6InNsZS1iY2kiLCJjb20uc3VzZS5zbGUuYmFzZS5saWZlY3ljbGUtdXJsIjoiaHR0cHM6Ly93d3cuc3VzZS5jb20vbGlmZWN5Y2xlIiwiY29tLnN1c2Uuc2xlLmJhc2UucmVmZXJlbmNlIjoicmVnaXN0cnkuc3VzZS5jb20vc3VzZS9zbGUxNToxNS40LjI3LjE0LjMxIiwiY29tLnN1c2Uuc2xlLmJhc2UucmVsZWFzZS1zdGFnZSI6InJlbGVhc2VkIiwiY29tLnN1c2Uuc2xlLmJhc2Uuc291cmNlIjoiaHR0cHM6Ly9zb3VyY2VzLnN1c2UuY29tL1NVU0U6U0xFLTE1LVNQNDpVcGRhdGU6Q1Ivc2xlczE1LWltYWdlLzE0NzdiMDcwYWUwMTlmOTViMGYyYzNjMGRjZTEzZGFmLyIsImNvbS5zdXNlLnNsZS5iYXNlLnN1cHBvcnRsZXZlbCI6ImwzIiwiY29tLnN1c2Uuc2xlLmJhc2UudGl0bGUiOiJTTEUgQkNJIDE1IFNQNCBCYXNlIENvbnRhaW5lciBJbWFnZSIsImNvbS5zdXNlLnNsZS5iYXNlLnVybCI6Imh0dHBzOi8vd3d3LnN1c2UuY29tL3Byb2R1Y3RzL3NlcnZlci8iLCJjb20uc3VzZS5zbGUuYmFzZS52ZW5kb3IiOiJTVVNFIExMQyIsImNvbS5zdXNlLnNsZS5iYXNlLnZlcnNpb24iOiIxNS40LjI3LjE0LjMxIiwiY29tLnN1c2Uuc3VwcG9ydGxldmVsIjoibDMiLCJpby5jYXR0bGUuYWdlbnQiOiJ0cnVlIiwib3JnLm9wZW5idWlsZHNlcnZpY2UuZGlzdHVybCI6Im9iczovL2J1aWxkLnN1c2UuZGUvU1VTRTpTTEUtMTUtU1A0OlVwZGF0ZTpDUi9pbWFnZXMvMTQ3N2IwNzBhZTAxOWY5NWIwZjJjM2MwZGNlMTNkYWYtc2xlczE1LWltYWdlIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmNyZWF0ZWQiOiIyMDIzLTAyLTAzVDIyOjM4OjM5WiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbiI6IkltYWdlIGZvciBjb250YWluZXJzIGJhc2VkIG9uIFNVU0UgTGludXggRW50ZXJwcmlzZSBTZXJ2ZXIgMTUgU1A0LiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZXZpc2lvbiI6IjNiZGMwMjJkMTlmMTJkMGZjM2RlZDgyMjQ2Y2U0NjE4ZmUzNTNlMDMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlIjoiaHR0cHM6Ly9naXRodWIuY29tL3JhbmNoZXIvcmFuY2hlci5naXQiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJTTEUgQkNJIDE1IFNQNCBCYXNlIENvbnRhaW5lciBJbWFnZSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL2dpdGh1Yi5jb20vcmFuY2hlci9yYW5jaGVyIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvciI6IlNVU0UgTExDIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiIxNS40LjI3LjE0LjMxIiwib3JnLm9wZW5zdXNlLnJlZmVyZW5jZSI6InJlZ2lzdHJ5LnN1c2UuY29tL3N1c2Uvc2xlMTU6MTUuNC4yNy4xNC4zMSJ9fSwiY29udGFpbmVyIjoiYmExOGRkYzg4MzJlYWUyZTM4NjRjMDRhY2EyOTczOTI0ZjBjZWQ1ZTAyMmI4ZjFhMDExZmEwNzI2ZGRhMThhMSIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiJiYTE4ZGRjODgzMmUiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiS1VCRUNUTF9WRVJTSU9OPXYxLjIzLjYiLCJMT0dMRVZFTF9WRVJTSU9OPXYwLjEuNSIsIkFHRU5UX0lNQUdFPXJhbmNoZXIvcmFuY2hlci1hZ2VudDp2Mi42LTNiZGMwMjJkMTlmMTJkMGZjM2RlZDgyMjQ2Y2U0NjE4ZmUzNTNlMDMtaGVhZCIsIlNTTF9DRVJUX0RJUj0vZXRjL2t1YmVybmV0ZXMvc3NsL2NlcnRzIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnVybD1odHRwczovL2dpdGh1Yi5jb20vcmFuY2hlci9yYW5jaGVyIl0sIkltYWdlIjoic2hhMjU2OmFlNDI0NGNhYzA0YTE0YWE5ZWYwYjhiNmMxNDlkY2Y3NjFjMmQxZGQ4MjExOGZmNDY0MzZmNWQ5MzNmY2YyOWEiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiL3Zhci9saWIvcmFuY2hlciIsIkVudHJ5cG9pbnQiOlsicnVuLnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJjb20uc3VzZS5iY2kuYmFzZS5jcmVhdGVkIjoiMjAyMy0wMS0yNlQyMjoxNTowOC4zODEwMzAzMDdaIiwiY29tLnN1c2UuYmNpLmJhc2UuZGVzY3JpcHRpb24iOiJJbWFnZSBmb3IgY29udGFpbmVycyBiYXNlZCBvbiBTVVNFIExpbnV4IEVudGVycHJpc2UgU2VydmVyIDE1IFNQNC4iLCJjb20uc3VzZS5iY2kuYmFzZS5kaXN0dXJsIjoib2JzOi8vYnVpbGQuc3VzZS5kZS9TVVNFOlNMRS0xNS1TUDQ6VXBkYXRlOkNSL2ltYWdlcy8xNDc3YjA3MGFlMDE5Zjk1YjBmMmMzYzBkY2UxM2RhZi1zbGVzMTUtaW1hZ2UiLCJjb20uc3VzZS5iY2kuYmFzZS5ldWxhIjoic2xlLWJjaSIsImNvbS5zdXNlLmJjaS5iYXNlLmltYWdlLXR5cGUiOiJzbGUtYmNpIiwiY29tLnN1c2UuYmNpLmJhc2UubGlmZWN5Y2xlLXVybCI6Imh0dHBzOi8vd3d3LnN1c2UuY29tL2xpZmVjeWNsZSIsImNvbS5zdXNlLmJjaS5iYXNlLnJlZmVyZW5jZSI6InJlZ2lzdHJ5LnN1c2UuY29tL3N1c2Uvc2xlMTU6MTUuNC4yNy4xNC4zMSIsImNvbS5zdXNlLmJjaS5iYXNlLnJlbGVhc2Utc3RhZ2UiOiJyZWxlYXNlZCIsImNvbS5zdXNlLmJjaS5iYXNlLnNvdXJjZSI6Imh0dHBzOi8vc291cmNlcy5zdXNlLmNvbS9TVVNFOlNMRS0xNS1TUDQ6VXBkYXRlOkNSL3NsZXMxNS1pbWFnZS8xNDc3YjA3MGFlMDE5Zjk1YjBmMmMzYzBkY2UxM2RhZi8iLCJjb20uc3VzZS5iY2kuYmFzZS5zdXBwb3J0bGV2ZWwiOiJsMyIsImNvbS5zdXNlLmJjaS5iYXNlLnRpdGxlIjoiU0xFIEJDSSAxNSBTUDQgQmFzZSBDb250YWluZXIgSW1hZ2UiLCJjb20uc3VzZS5iY2kuYmFzZS51cmwiOiJodHRwczovL3d3dy5zdXNlLmNvbS9wcm9kdWN0cy9zZXJ2ZXIvIiwiY29tLnN1c2UuYmNpLmJhc2UudmVuZG9yIjoiU1VTRSBMTEMiLCJjb20uc3VzZS5iY2kuYmFzZS52ZXJzaW9uIjoiMTUuNC4yNy4xNC4zMSIsImNvbS5zdXNlLmV1bGEiOiJzbGUtYmNpIiwiY29tLnN1c2UuaW1hZ2UtdHlwZSI6InNsZS1iY2kiLCJjb20uc3VzZS5saWZlY3ljbGUtdXJsIjoiaHR0cHM6Ly93d3cuc3VzZS5jb20vbGlmZWN5Y2xlIiwiY29tLnN1c2UucmVsZWFzZS1zdGFnZSI6InJlbGVhc2VkIiwiY29tLnN1c2Uuc2xlLmJhc2UuY3JlYXRlZCI6IjIwMjMtMDEtMjZUMjI6MTU6MDguMzgxMDMwMzA3WiIsImNvbS5zdXNlLnNsZS5iYXNlLmRlc2NyaXB0aW9uIjoiSW1hZ2UgZm9yIGNvbnRhaW5lcnMgYmFzZWQgb24gU1VTRSBMaW51eCBFbnRlcnByaXNlIFNlcnZlciAxNSBTUDQuIiwiY29tLnN1c2Uuc2xlLmJhc2UuZGlzdHVybCI6Im9iczovL2J1aWxkLnN1c2UuZGUvU1VTRTpTTEUtMTUtU1A0OlVwZGF0ZTpDUi9pbWFnZXMvMTQ3N2IwNzBhZTAxOWY5NWIwZjJjM2MwZGNlMTNkYWYtc2xlczE1LWltYWdlIiwiY29tLnN1c2Uuc2xlLmJhc2UuZXVsYSI6InNsZS1iY2kiLCJjb20uc3VzZS5zbGUuYmFzZS5pbWFnZS10eXBlIjoic2xlLWJjaSIsImNvbS5zdXNlLnNsZS5iYXNlLmxpZmVjeWNsZS11cmwiOiJodHRwczovL3d3dy5zdXNlLmNvbS9saWZlY3ljbGUiLCJjb20uc3VzZS5zbGUuYmFzZS5yZWZlcmVuY2UiOiJyZWdpc3RyeS5zdXNlLmNvbS9zdXNlL3NsZTE1OjE1LjQuMjcuMTQuMzEiLCJjb20uc3VzZS5zbGUuYmFzZS5yZWxlYXNlLXN0YWdlIjoicmVsZWFzZWQiLCJjb20uc3VzZS5zbGUuYmFzZS5zb3VyY2UiOiJodHRwczovL3NvdXJjZXMuc3VzZS5jb20vU1VTRTpTTEUtMTUtU1A0OlVwZGF0ZTpDUi9zbGVzMTUtaW1hZ2UvMTQ3N2IwNzBhZTAxOWY5NWIwZjJjM2MwZGNlMTNkYWYvIiwiY29tLnN1c2Uuc2xlLmJhc2Uuc3VwcG9ydGxldmVsIjoibDMiLCJjb20uc3VzZS5zbGUuYmFzZS50aXRsZSI6IlNMRSBCQ0kgMTUgU1A0IEJhc2UgQ29udGFpbmVyIEltYWdlIiwiY29tLnN1c2Uuc2xlLmJhc2UudXJsIjoiaHR0cHM6Ly93d3cuc3VzZS5jb20vcHJvZHVjdHMvc2VydmVyLyIsImNvbS5zdXNlLnNsZS5iYXNlLnZlbmRvciI6IlNVU0UgTExDIiwiY29tLnN1c2Uuc2xlLmJhc2UudmVyc2lvbiI6IjE1LjQuMjcuMTQuMzEiLCJjb20uc3VzZS5zdXBwb3J0bGV2ZWwiOiJsMyIsImlvLmNhdHRsZS5hZ2VudCI6InRydWUiLCJvcmcub3BlbmJ1aWxkc2VydmljZS5kaXN0dXJsIjoib2JzOi8vYnVpbGQuc3VzZS5kZS9TVVNFOlNMRS0xNS1TUDQ6VXBkYXRlOkNSL2ltYWdlcy8xNDc3YjA3MGFlMDE5Zjk1YjBmMmMzYzBkY2UxM2RhZi1zbGVzMTUtaW1hZ2UiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzg6MzlaIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoiSW1hZ2UgZm9yIGNvbnRhaW5lcnMgYmFzZWQgb24gU1VTRSBMaW51eCBFbnRlcnByaXNlIFNlcnZlciAxNSBTUDQuIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJldmlzaW9uIjoiM2JkYzAyMmQxOWYxMmQwZmMzZGVkODIyNDZjZTQ2MThmZTM1M2UwMyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2UiOiJodHRwczovL2dpdGh1Yi5jb20vcmFuY2hlci9yYW5jaGVyLmdpdCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZSI6IlNMRSBCQ0kgMTUgU1A0IEJhc2UgQ29udGFpbmVyIEltYWdlIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9yYW5jaGVyL3JhbmNoZXIiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yIjoiU1VTRSBMTEMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjE1LjQuMjcuMTQuMzEiLCJvcmcub3BlbnN1c2UucmVmZXJlbmNlIjoicmVnaXN0cnkuc3VzZS5jb20vc3VzZS9zbGUxNToxNS40LjI3LjE0LjMxIn19LCJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOTo0Ni4xMjUzMTc0NDdaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xNCIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTAxLTI2VDIyOjE1OjIyWiIsImF1dGhvciI6IlNVU0UgTElOVVggR21iSCBcdTAwM2NodHRwczovL3d3dy5zdXNlLmNvbS9cdTAwM2UiLCJjcmVhdGVkX2J5IjoiS0lXSSA5LjI0LjQzIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOToxMC43MjYyODg3NDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBBUkcgQVJDSD1hbWQ2NCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAzVDIyOjM5OjEwLjgwMzg5NzYzOVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBLVUJFQ1RMX1ZFUlNJT049djEuMjMuNiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAzVDIyOjM5OjIzLjcyNDg2NjI5M1oiLCJjcmVhdGVkX2J5IjoifDEgQVJDSD1hbWQ2NCAvYmluL3NoIC1jIHp5cHBlciAtbiBpbnN0YWxsIC0tbm8tcmVjb21tZW5kcyBjdXJsIGNhLWNlcnRpZmljYXRlcyBqcSBnaXQtY29yZSBob3N0bmFtZSBpcHJvdXRlMiB2aW0tc21hbGwgbGVzcyBcdGJhc2gtY29tcGxldGlvbiBiaW5kLXV0aWxzIGFjbCBvcGVuc3NoLWNsaWVudHMgdGFyIGd6aXAgeHogZ2F3ayBzeXNzdGF0IFx1MDAyNlx1MDAyNiAgICAgenlwcGVyIC1uIGNsZWFuIC1hIFx1MDAyNlx1MDAyNiBybSAtcmYgL3RtcC8qIC92YXIvdG1wLyogL3Vzci9zaGFyZS9kb2MvcGFja2FnZXMvKiBcdTAwMjZcdTAwMjYgICAgIGN1cmwgLXNMZiBodHRwczovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20va3ViZXJuZXRlcy1yZWxlYXNlL3JlbGVhc2UvJHtLVUJFQ1RMX1ZFUlNJT059L2Jpbi9saW51eC8ke0FSQ0h9L2t1YmVjdGwgXHUwMDNlIC91c3IvYmluL2t1YmVjdGwgXHUwMDI2XHUwMDI2ICAgICBjaG1vZCAreCAvdXNyL2Jpbi9rdWJlY3RsIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOToyNC4xMDk4OTcyODVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgTE9HTEVWRUxfVkVSU0lPTj12MC4xLjUiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOToyNC44NDgxODc2MjZaIiwiY3JlYXRlZF9ieSI6InwxIEFSQ0g9YW1kNjQgL2Jpbi9zaCAtYyBjdXJsIC1zTGYgaHR0cHM6Ly9naXRodWIuY29tL3JhbmNoZXIvbG9nbGV2ZWwvcmVsZWFzZXMvZG93bmxvYWQvJHtMT0dMRVZFTF9WRVJTSU9OfS9sb2dsZXZlbC0ke0FSQ0h9LSR7TE9HTEVWRUxfVkVSU0lPTn0udGFyLmd6IHwgdGFyIHh2emYgLSAtQyAvdXNyL2JpbiJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6MjQuOTM3MjQ2ODEzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQVJHIFZFUlNJT049ZGV2IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6MjUuMDEzNTA5MjExWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgaW8uY2F0dGxlLmFnZW50PXRydWUiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOToyNS4wOTIxMjY4ODNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgQUdFTlRfSU1BR0U9cmFuY2hlci9yYW5jaGVyLWFnZW50OnYyLjYtM2JkYzAyMmQxOWYxMmQwZmMzZGVkODIyNDZjZTQ2MThmZTM1M2UwMy1oZWFkIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6MjUuMTY3NzEyNzQzWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFNTTF9DRVJUX0RJUj0vZXRjL2t1YmVybmV0ZXMvc3NsL2NlcnRzIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6NDAuNjcwNjEyNTk2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIGRpcjphOTIxMjM0MWEzZjU5YzUxNTIxYjI0NzE3Y2RlZThlZDYxYTFiZGQ4YTQwMzFhN2QzMzExNzYwZDVhZDBiZjJmIGluIC92YXIvbGliL3JhbmNoZXItZGF0YSAifSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAzVDIyOjM5OjQ0LjU2OTkwMDk1OVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOjA2YjBiMzQyYWRkZmY5YTcxN2JlMTU0ZDIyNWUyNGEwMmNmZDlmMjQ2NzgzZGI4N2E3MmNjZmIwNmY1MTZkZjEgaW4gL3Vzci9iaW4vICJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6NDUuMzY3NzM3OTM5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIG11bHRpOmYzYzNlZGZlOTYzMzI5NWQ2YWQ4MDA3MGQ0NWFhMmE4ODRmZGJhNDc3N2UzZDUyZTc3OWQzOGU1NDhlNDczOGUgaW4gL3Vzci9iaW4vICJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6NDUuNzM2NjgwNDc0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBXT1JLRElSIC92YXIvbGliL3JhbmNoZXIifSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAzVDIyOjM5OjQ1LjgxNzE5MDcwMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wicnVuLnNoXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDNUMjI6Mzk6NDUuODkxNTkwNjk0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmNyZWF0ZWQ9MjAyMy0wMi0wM1QyMjozODozOVoiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOTo0NS45NzI5MzgwNjdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmV2aXNpb249M2JkYzAyMmQxOWYxMmQwZmMzZGVkODIyNDZjZTQ2MThmZTM1M2UwMyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAzVDIyOjM5OjQ2LjA0Nzg1NjM1NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2U9aHR0cHM6Ly9naXRodWIuY29tL3JhbmNoZXIvcmFuY2hlci5naXQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wM1QyMjozOTo0Ni4xMjUzMTc0NDdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsPWh0dHBzOi8vZ2l0aHViLmNvbS9yYW5jaGVyL3JhbmNoZXIiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6M2Q1ZGZjMDMwNWNhMWY2Yzk4MWE5OTA1ZjIzYWE0YmM3NzY2OTBjODU3MWM1ODczMmVlZTI4NDZjZjAyYmEyNyIsInNoYTI1NjphMTg1NjIwNWRkMjgwOTIxZTg2Y2M1MDc0MDE2YzJiMjk0ZDBmNjg1ZjVlNzNjNjJkMTc3N2EzYWVjNmJkYTlmIiwic2hhMjU2OjBmMzRlYWI2OWVkMDg3ZjdhMDM2YzM5NWY1NDRhYTcxNzI2YWM3MDBiMWE1OWVhOTE3NzQ0MTYzNmEzMjdhYTMiLCJzaGEyNTY6N2MyZmJjM2ZhZTRiZjE3ZDQ4MDgxNTA5ZWYwNDM3ODFlZDI3ZTkxZmM3YWZjYzc1YTE3MmUyYTFmMmY3NjFmYiIsInNoYTI1Njo1MTA4NjZiZjRmZGUwYmFlY2ViOWY3NDYxOWVhMjliYzdiNDdmYjA3NjZkMGZjNzJmZGQxMzhjY2Q3ZDdlOGZlIiwic2hhMjU2OjhmZWQxZGNkYmUxNTg3YjQ5NTJhYmE3NDBkNmNiODM4MWQwOWIyODJjN2I3MzA0OWNmOGM0ODYzYzQwYmEyMDEiLCJzaGEyNTY6NmJmMTkzNTI0ZTcyMmQ3Y2U5MDI2MWE2MjU2MWQ3NjU4N2Y1ODk5YzAxOGQ0MWMyODlhNjFmNTFiMWRkZTM1OSJdfX0=",
+   "repoDigests": [
+    "rancher/rancher-agent@sha256:2bdbd4f8996f13826418c11e3063b0721798f717e7af037ce00153a526007576"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "sles",
+  "version": "15.4",
+  "idLike": [
+   "suse"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "Grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2023-02-25T08:13:48Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:fd83377bf2233596b4c7140477d98aee18a2dec94108e0b923dc7e54a4b00051",
+   "error": null
+  }
+ }
+}

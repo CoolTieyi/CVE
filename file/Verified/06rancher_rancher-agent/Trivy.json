@@ -1,0 +1,1387 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "rancher/rancher-agent:v2.6-head",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "suse linux enterprise server",
+      "Name": "15.4"
+    },
+    "ImageID": "sha256:df2c1aa47448aec34afcf2370c6a94f24f3b2805ea085469db7e78403af41102",
+    "DiffIDs": [
+      "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27",
+      "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f",
+      "sha256:0f34eab69ed087f7a036c395f544aa71726ac700b1a59ea9177441636a327aa3",
+      "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb",
+      "sha256:510866bf4fde0baeceb9f74619ea29bc7b47fb0766d0fc72fdd138ccd7d7e8fe",
+      "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201",
+      "sha256:6bf193524e722d7ce90261a62561d76587f5899c018d41c289a61f51b1dde359"
+    ],
+    "RepoTags": [
+      "rancher/rancher-agent:v2.6-head"
+    ],
+    "RepoDigests": [
+      "rancher/rancher-agent@sha256:2bdbd4f8996f13826418c11e3063b0721798f717e7af037ce00153a526007576"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "ba18ddc8832eae2e3864c04aca2973924f0ced5e022b8f1a011fa0726dda18a1",
+      "created": "2023-02-03T22:39:46.125317447Z",
+      "docker_version": "20.10.14",
+      "history": [
+        {
+          "created": "2023-01-26T22:15:22Z",
+          "created_by": "KIWI 9.24.43"
+        },
+        {
+          "created": "2023-02-03T22:39:10Z",
+          "created_by": "/bin/sh -c #(nop)  ARG ARCH=amd64",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:10Z",
+          "created_by": "/bin/sh -c #(nop)  ENV KUBECTL_VERSION=v1.23.6",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:23Z",
+          "created_by": "|1 ARCH=amd64 /bin/sh -c zypper -n install --no-recommends curl ca-certificates jq git-core hostname iproute2 vim-small less \tbash-completion bind-utils acl openssh-clients tar gzip xz gawk sysstat \u0026\u0026     zypper -n clean -a \u0026\u0026 rm -rf /tmp/* /var/tmp/* /usr/share/doc/packages/* \u0026\u0026     curl -sLf https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl \u003e /usr/bin/kubectl \u0026\u0026     chmod +x /usr/bin/kubectl"
+        },
+        {
+          "created": "2023-02-03T22:39:24Z",
+          "created_by": "/bin/sh -c #(nop)  ENV LOGLEVEL_VERSION=v0.1.5",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:24Z",
+          "created_by": "|1 ARCH=amd64 /bin/sh -c curl -sLf https://github.com/rancher/loglevel/releases/download/${LOGLEVEL_VERSION}/loglevel-${ARCH}-${LOGLEVEL_VERSION}.tar.gz | tar xvzf - -C /usr/bin"
+        },
+        {
+          "created": "2023-02-03T22:39:24Z",
+          "created_by": "/bin/sh -c #(nop)  ARG VERSION=dev",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:25Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL io.cattle.agent=true",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:25Z",
+          "created_by": "/bin/sh -c #(nop)  ENV AGENT_IMAGE=rancher/rancher-agent:v2.6-3bdc022d19f12d0fc3ded82246ce4618fe353e03-head",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:25Z",
+          "created_by": "/bin/sh -c #(nop)  ENV SSL_CERT_DIR=/etc/kubernetes/ssl/certs",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:40Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:a9212341a3f59c51521b24717cdee8ed61a1bdd8a4031a7d3311760d5ad0bf2f in /var/lib/rancher-data "
+        },
+        {
+          "created": "2023-02-03T22:39:44Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:06b0b342addff9a717be154d225e24a02cfd9f246783db87a72ccfb06f516df1 in /usr/bin/ "
+        },
+        {
+          "created": "2023-02-03T22:39:45Z",
+          "created_by": "/bin/sh -c #(nop) COPY multi:f3c3edfe9633295d6ad80070d45aa2a884fdba4777e3d52e779d38e548e4738e in /usr/bin/ "
+        },
+        {
+          "created": "2023-02-03T22:39:45Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /var/lib/rancher",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:45Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"run.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:45Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.created=2023-02-03T22:38:39Z",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:45Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.revision=3bdc022d19f12d0fc3ded82246ce4618fe353e03",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:46Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.source=https://github.com/rancher/rancher.git",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-02-03T22:39:46Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.url=https://github.com/rancher/rancher",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27",
+          "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f",
+          "sha256:0f34eab69ed087f7a036c395f544aa71726ac700b1a59ea9177441636a327aa3",
+          "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb",
+          "sha256:510866bf4fde0baeceb9f74619ea29bc7b47fb0766d0fc72fdd138ccd7d7e8fe",
+          "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201",
+          "sha256:6bf193524e722d7ce90261a62561d76587f5899c018d41c289a61f51b1dde359"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "run.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "KUBECTL_VERSION=v1.23.6",
+          "LOGLEVEL_VERSION=v0.1.5",
+          "AGENT_IMAGE=rancher/rancher-agent:v2.6-3bdc022d19f12d0fc3ded82246ce4618fe353e03-head",
+          "SSL_CERT_DIR=/etc/kubernetes/ssl/certs"
+        ],
+        "Image": "sha256:ae4244cac04a14aa9ef0b8b6c149dcf761c2d1dd82118ff46436f5d933fcf29a",
+        "Labels": {
+          "com.suse.bci.base.created": "2023-01-26T22:15:08.381030307Z",
+          "com.suse.bci.base.description": "Image for containers based on SUSE Linux Enterprise Server 15 SP4.",
+          "com.suse.bci.base.disturl": "obs://build.suse.de/SUSE:SLE-15-SP4:Update:CR/images/1477b070ae019f95b0f2c3c0dce13daf-sles15-image",
+          "com.suse.bci.base.eula": "sle-bci",
+          "com.suse.bci.base.image-type": "sle-bci",
+          "com.suse.bci.base.lifecycle-url": "https://www.suse.com/lifecycle",
+          "com.suse.bci.base.reference": "registry.suse.com/suse/sle15:15.4.27.14.31",
+          "com.suse.bci.base.release-stage": "released",
+          "com.suse.bci.base.source": "https://sources.suse.com/SUSE:SLE-15-SP4:Update:CR/sles15-image/1477b070ae019f95b0f2c3c0dce13daf/",
+          "com.suse.bci.base.supportlevel": "l3",
+          "com.suse.bci.base.title": "SLE BCI 15 SP4 Base Container Image",
+          "com.suse.bci.base.url": "https://www.suse.com/products/server/",
+          "com.suse.bci.base.vendor": "SUSE LLC",
+          "com.suse.bci.base.version": "15.4.27.14.31",
+          "com.suse.eula": "sle-bci",
+          "com.suse.image-type": "sle-bci",
+          "com.suse.lifecycle-url": "https://www.suse.com/lifecycle",
+          "com.suse.release-stage": "released",
+          "com.suse.sle.base.created": "2023-01-26T22:15:08.381030307Z",
+          "com.suse.sle.base.description": "Image for containers based on SUSE Linux Enterprise Server 15 SP4.",
+          "com.suse.sle.base.disturl": "obs://build.suse.de/SUSE:SLE-15-SP4:Update:CR/images/1477b070ae019f95b0f2c3c0dce13daf-sles15-image",
+          "com.suse.sle.base.eula": "sle-bci",
+          "com.suse.sle.base.image-type": "sle-bci",
+          "com.suse.sle.base.lifecycle-url": "https://www.suse.com/lifecycle",
+          "com.suse.sle.base.reference": "registry.suse.com/suse/sle15:15.4.27.14.31",
+          "com.suse.sle.base.release-stage": "released",
+          "com.suse.sle.base.source": "https://sources.suse.com/SUSE:SLE-15-SP4:Update:CR/sles15-image/1477b070ae019f95b0f2c3c0dce13daf/",
+          "com.suse.sle.base.supportlevel": "l3",
+          "com.suse.sle.base.title": "SLE BCI 15 SP4 Base Container Image",
+          "com.suse.sle.base.url": "https://www.suse.com/products/server/",
+          "com.suse.sle.base.vendor": "SUSE LLC",
+          "com.suse.sle.base.version": "15.4.27.14.31",
+          "com.suse.supportlevel": "l3",
+          "io.cattle.agent": "true",
+          "org.openbuildservice.disturl": "obs://build.suse.de/SUSE:SLE-15-SP4:Update:CR/images/1477b070ae019f95b0f2c3c0dce13daf-sles15-image",
+          "org.opencontainers.image.created": "2023-02-03T22:38:39Z",
+          "org.opencontainers.image.description": "Image for containers based on SUSE Linux Enterprise Server 15 SP4.",
+          "org.opencontainers.image.revision": "3bdc022d19f12d0fc3ded82246ce4618fe353e03",
+          "org.opencontainers.image.source": "https://github.com/rancher/rancher.git",
+          "org.opencontainers.image.title": "SLE BCI 15 SP4 Base Container Image",
+          "org.opencontainers.image.url": "https://github.com/rancher/rancher",
+          "org.opencontainers.image.vendor": "SUSE LLC",
+          "org.opencontainers.image.version": "15.4.27.14.31",
+          "org.opensuse.reference": "registry.suse.com/suse/sle15:15.4.27.14.31"
+        },
+        "WorkingDir": "/var/lib/rancher"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "rancher/rancher-agent:v2.6-head (suse linux enterprise server 15.4)",
+      "Class": "os-pkgs",
+      "Type": "suse linux enterprise server",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0341-1",
+          "PkgID": "bind-utils@9.16.35-150400.5.14.1.x86_64",
+          "PkgName": "bind-utils",
+          "InstalledVersion": "9.16.35-150400.5.14.1",
+          "FixedVersion": "9.16.37-150400.5.17.1",
+          "Layer": {
+            "DiffID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for bind",
+          "Description": "This update for bind fixes the following issues:\n\n- Updated to version 9.16.37 (jsc#SLE-24600):\n  - CVE-2022-3094: Fixed an issue where a message flood could exhaust\n    all available memory (bsc#1207471).\n  - CVE-2022-3736: Fixed a potential crash upon receiving an RRSIG in\n    configurations with stale cache and stale answers enabled and\n    stale-answer-client-timeout set to a positive value (bsc#1207473).\n  - CVE-2022-3924: Fixed a potential crash upon reaching the\n    recursive-clients soft quota in configurations with stale answers\n    enabled and stale-answer-client-timeout set to a positive value\n    (bsc#1207475).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207471",
+            "https://bugzilla.suse.com/1207473",
+            "https://bugzilla.suse.com/1207475",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013720.html",
+            "https://www.suse.com/security/cve/CVE-2022-3094/",
+            "https://www.suse.com/security/cve/CVE-2022-3736/",
+            "https://www.suse.com/security/cve/CVE-2022-3924/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230341-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0429-1",
+          "PkgID": "curl@7.79.1-150400.5.12.1.x86_64",
+          "PkgName": "curl",
+          "InstalledVersion": "7.79.1-150400.5.12.1",
+          "FixedVersion": "7.79.1-150400.5.15.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for curl",
+          "Description": "This update for curl fixes the following issues:\n\n- CVE-2023-23914: Fixed HSTS ignored on multiple requests (bsc#1207990).\n- CVE-2023-23915: Fixed HSTS amnesia with --parallel (bsc#1207991).\n- CVE-2023-23916: Fixed HTTP multi-header compression denial of service (bsc#1207992).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207990",
+            "https://bugzilla.suse.com/1207991",
+            "https://bugzilla.suse.com/1207992",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013777.html",
+            "https://www.suse.com/security/cve/CVE-2023-23914/",
+            "https://www.suse.com/security/cve/CVE-2023-23915/",
+            "https://www.suse.com/security/cve/CVE-2023-23916/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230429-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0430-1",
+          "PkgID": "git-core@2.35.3-150300.10.21.1.x86_64",
+          "PkgName": "git-core",
+          "InstalledVersion": "2.35.3-150300.10.21.1",
+          "FixedVersion": "2.35.3-150300.10.24.1",
+          "Layer": {
+            "DiffID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for git",
+          "Description": "This update for git fixes the following issues:\n\n  - CVE-2023-22490: Fixed incorrectly usable local clone optimization even when using a non-local transport (bsc#1208027).\n  - CVE-2023-23946: Fixed issue where a path outside the working tree can be overwritten as the user who is running 'git apply' (bsc#1208028).\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://bugzilla.suse.com/1208027",
+            "https://bugzilla.suse.com/1208028",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013770.html",
+            "https://www.suse.com/security/cve/CVE-2023-22490/",
+            "https://www.suse.com/security/cve/CVE-2023-23946/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230430-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0348-1",
+          "PkgID": "less@590-150400.1.51.x86_64",
+          "PkgName": "less",
+          "InstalledVersion": "590-150400.1.51",
+          "FixedVersion": "590-150400.3.3.1",
+          "Layer": {
+            "DiffID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for less",
+          "Description": "This update for less fixes the following issues:\n\n  - CVE-2022-46663: Fixed denial-of-service by printing specially crafted escape sequences to the terminal (bsc#1207815).\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://bugzilla.suse.com/1207815",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013722.html",
+            "https://www.suse.com/security/cve/CVE-2022-46663/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230348-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0429-1",
+          "PkgID": "libcurl4@7.79.1-150400.5.12.1.x86_64",
+          "PkgName": "libcurl4",
+          "InstalledVersion": "7.79.1-150400.5.12.1",
+          "FixedVersion": "7.79.1-150400.5.15.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for curl",
+          "Description": "This update for curl fixes the following issues:\n\n- CVE-2023-23914: Fixed HSTS ignored on multiple requests (bsc#1207990).\n- CVE-2023-23915: Fixed HSTS amnesia with --parallel (bsc#1207991).\n- CVE-2023-23916: Fixed HTTP multi-header compression denial of service (bsc#1207992).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207990",
+            "https://bugzilla.suse.com/1207991",
+            "https://bugzilla.suse.com/1207992",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013777.html",
+            "https://www.suse.com/security/cve/CVE-2023-23914/",
+            "https://www.suse.com/security/cve/CVE-2023-23915/",
+            "https://www.suse.com/security/cve/CVE-2023-23916/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230429-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0311-1",
+          "PkgID": "libopenssl1_1@1.1.1l-150400.7.19.1.x86_64",
+          "PkgName": "libopenssl1_1",
+          "InstalledVersion": "1.1.1l-150400.7.19.1",
+          "FixedVersion": "1.1.1l-150400.7.22.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for openssl-1_1",
+          "Description": "This update for openssl-1_1 fixes the following issues:\n\n- CVE-2023-0286: Fixed X.400 address type confusion in X.509 GENERAL_NAME_cmp for x400Address (bsc#1207533).\n- CVE-2023-0215: Fixed use-after-free following BIO_new_NDEF() (bsc#1207536).\n- CVE-2022-4450: Fixed double free after calling PEM_read_bio_ex() (bsc#1207538).\n- CVE-2022-4304: Fixed timing Oracle in RSA Decryption (bsc#1207534).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207533",
+            "https://bugzilla.suse.com/1207534",
+            "https://bugzilla.suse.com/1207536",
+            "https://bugzilla.suse.com/1207538",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013658.html",
+            "https://www.suse.com/security/cve/CVE-2022-4304/",
+            "https://www.suse.com/security/cve/CVE-2022-4450/",
+            "https://www.suse.com/security/cve/CVE-2023-0215/",
+            "https://www.suse.com/security/cve/CVE-2023-0286/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230311-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0311-1",
+          "PkgID": "libopenssl1_1-hmac@1.1.1l-150400.7.19.1.x86_64",
+          "PkgName": "libopenssl1_1-hmac",
+          "InstalledVersion": "1.1.1l-150400.7.19.1",
+          "FixedVersion": "1.1.1l-150400.7.22.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for openssl-1_1",
+          "Description": "This update for openssl-1_1 fixes the following issues:\n\n- CVE-2023-0286: Fixed X.400 address type confusion in X.509 GENERAL_NAME_cmp for x400Address (bsc#1207533).\n- CVE-2023-0215: Fixed use-after-free following BIO_new_NDEF() (bsc#1207536).\n- CVE-2022-4450: Fixed double free after calling PEM_read_bio_ex() (bsc#1207538).\n- CVE-2022-4304: Fixed timing Oracle in RSA Decryption (bsc#1207534).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207533",
+            "https://bugzilla.suse.com/1207534",
+            "https://bugzilla.suse.com/1207536",
+            "https://bugzilla.suse.com/1207538",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013658.html",
+            "https://www.suse.com/security/cve/CVE-2022-4304/",
+            "https://www.suse.com/security/cve/CVE-2022-4450/",
+            "https://www.suse.com/security/cve/CVE-2023-0215/",
+            "https://www.suse.com/security/cve/CVE-2023-0286/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230311-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0201-1",
+          "PkgID": "libsystemd0@249.12-150400.8.16.1.x86_64",
+          "PkgName": "libsystemd0",
+          "InstalledVersion": "249.12-150400.8.16.1",
+          "FixedVersion": "249.14-150400.8.19.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for systemd",
+          "Description": "This update for systemd fixes the following issues:\n\n- CVE-2022-4415: Fixed an issue where users could access coredumps\n  with changed uid, gid or capabilities (bsc#1205000).\n\nNon-security fixes:\n\n- Enabled the pstore service (jsc#PED-2663).\n- Fixed an issue accessing TPM when secure boot is enabled (bsc#1204944).\n- Fixed an issue where a pamd file could get accidentally overwritten\n  after an update (bsc#1207264).\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://bugzilla.suse.com/1204944",
+            "https://bugzilla.suse.com/1205000",
+            "https://bugzilla.suse.com/1207264",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-January/013561.html",
+            "https://www.suse.com/security/cve/CVE-2022-4415/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230201-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0201-1",
+          "PkgID": "libudev1@249.12-150400.8.16.1.x86_64",
+          "PkgName": "libudev1",
+          "InstalledVersion": "249.12-150400.8.16.1",
+          "FixedVersion": "249.14-150400.8.19.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for systemd",
+          "Description": "This update for systemd fixes the following issues:\n\n- CVE-2022-4415: Fixed an issue where users could access coredumps\n  with changed uid, gid or capabilities (bsc#1205000).\n\nNon-security fixes:\n\n- Enabled the pstore service (jsc#PED-2663).\n- Fixed an issue accessing TPM when secure boot is enabled (bsc#1204944).\n- Fixed an issue where a pamd file could get accidentally overwritten\n  after an update (bsc#1207264).\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://bugzilla.suse.com/1204944",
+            "https://bugzilla.suse.com/1205000",
+            "https://bugzilla.suse.com/1207264",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-January/013561.html",
+            "https://www.suse.com/security/cve/CVE-2022-4415/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230201-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0311-1",
+          "PkgID": "openssl-1_1@1.1.1l-150400.7.19.1.x86_64",
+          "PkgName": "openssl-1_1",
+          "InstalledVersion": "1.1.1l-150400.7.19.1",
+          "FixedVersion": "1.1.1l-150400.7.22.1",
+          "Layer": {
+            "DiffID": "sha256:3d5dfc0305ca1f6c981a9905f23aa4bc776690c8571c58732eee2846cf02ba27"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for openssl-1_1",
+          "Description": "This update for openssl-1_1 fixes the following issues:\n\n- CVE-2023-0286: Fixed X.400 address type confusion in X.509 GENERAL_NAME_cmp for x400Address (bsc#1207533).\n- CVE-2023-0215: Fixed use-after-free following BIO_new_NDEF() (bsc#1207536).\n- CVE-2022-4450: Fixed double free after calling PEM_read_bio_ex() (bsc#1207538).\n- CVE-2022-4304: Fixed timing Oracle in RSA Decryption (bsc#1207534).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207533",
+            "https://bugzilla.suse.com/1207534",
+            "https://bugzilla.suse.com/1207536",
+            "https://bugzilla.suse.com/1207538",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013658.html",
+            "https://www.suse.com/security/cve/CVE-2022-4304/",
+            "https://www.suse.com/security/cve/CVE-2022-4450/",
+            "https://www.suse.com/security/cve/CVE-2023-0215/",
+            "https://www.suse.com/security/cve/CVE-2023-0286/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230311-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0341-1",
+          "PkgID": "python3-bind@9.16.35-150400.5.14.1.noarch",
+          "PkgName": "python3-bind",
+          "InstalledVersion": "9.16.35-150400.5.14.1",
+          "FixedVersion": "9.16.37-150400.5.17.1",
+          "Layer": {
+            "DiffID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for bind",
+          "Description": "This update for bind fixes the following issues:\n\n- Updated to version 9.16.37 (jsc#SLE-24600):\n  - CVE-2022-3094: Fixed an issue where a message flood could exhaust\n    all available memory (bsc#1207471).\n  - CVE-2022-3736: Fixed a potential crash upon receiving an RRSIG in\n    configurations with stale cache and stale answers enabled and\n    stale-answer-client-timeout set to a positive value (bsc#1207473).\n  - CVE-2022-3924: Fixed a potential crash upon reaching the\n    recursive-clients soft quota in configurations with stale answers\n    enabled and stale-answer-client-timeout set to a positive value\n    (bsc#1207475).\n",
+          "Severity": "HIGH",
+          "References": [
+            "https://bugzilla.suse.com/1207471",
+            "https://bugzilla.suse.com/1207473",
+            "https://bugzilla.suse.com/1207475",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013720.html",
+            "https://www.suse.com/security/cve/CVE-2022-3094/",
+            "https://www.suse.com/security/cve/CVE-2022-3736/",
+            "https://www.suse.com/security/cve/CVE-2022-3924/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230341-1/"
+          ]
+        },
+        {
+          "VulnerabilityID": "SUSE-SU-2023:0463-1",
+          "PkgID": "tar@1.34-150000.3.26.1.x86_64",
+          "PkgName": "tar",
+          "InstalledVersion": "1.34-150000.3.26.1",
+          "FixedVersion": "1.34-150000.3.31.1",
+          "Layer": {
+            "DiffID": "sha256:a1856205dd280921e86cc5074016c2b294d0f685f5e73c62d1777a3aec6bda9f"
+          },
+          "SeveritySource": "suse-cvrf",
+          "DataSource": {
+            "ID": "suse-cvrf",
+            "Name": "SUSE CVRF",
+            "URL": "https://ftp.suse.com/pub/projects/security/cvrf/"
+          },
+          "Title": "Security update for tar",
+          "Description": "This update for tar fixes the following issues:\n\n- CVE-2022-48303: Fixed a one-byte out-of-bounds read that resulted in use of uninitialized memory for a conditional jump (bsc#1207753). \n\nBug fixes:\n\n- Fix hang when unpacking test tarball (bsc#1202436).\n",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://bugzilla.suse.com/1202436",
+            "https://bugzilla.suse.com/1207753",
+            "https://lists.suse.com/pipermail/sle-security-updates/2023-February/013845.html",
+            "https://www.suse.com/security/cve/CVE-2022-48303/",
+            "https://www.suse.com/support/security/rating/",
+            "https://www.suse.com/support/update/announcement/2023/suse-su-20230463-1/"
+          ]
+        }
+      ]
+    },
+    {
+      "Target": "usr/bin/agent",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-8911",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.83",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8911",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws/aws-sdk-go: CBC padding oracle issue in AWS S3 Crypto SDK for golang",
+          "Description": "A padding oracle vulnerability exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. The SDK allows users to encrypt files with AES-CBC without computing a Message Authentication Code (MAC), which then allows an attacker who has write access to the target's S3 bucket and can observe whether or not an endpoint with access to the key can decrypt a file, they can reconstruct the plaintext with (on average) 128*length (plaintext) queries to the endpoint, by exploiting CBC's ability to manipulate the bytes of the next block and PKCS5 padding errors. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8911",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869800",
+            "https://github.com/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8911",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-18T13:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8912",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.83",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8912",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws-sdk-go: In-band key negotiation issue in AWS S3 Crypto SDK for golang",
+          "Description": "A vulnerability in the in-band key negotiation exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. An attacker with write access to the targeted bucket can change the encryption algorithm of an object in the bucket, which can then allow them to change AES-GCM to AES-CTR. Using this in combination with a decryption oracle can reveal the authentication key used by AES-GCM as decrypting the GMAC tag leaves the authentication key recoverable as an algebraic equation. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 2.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8912",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869801",
+            "https://github.com/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8912",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-17T19:31:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23471",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.6.6",
+          "FixedVersion": "1.5.16, 1.6.12",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23471",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "containerd is an open source container runtime. A bug was found in con ...",
+          "Description": "containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23471",
+            "https://github.com/advisories/GHSA-2qjp-425j-52j9",
+            "https://github.com/containerd/containerd/commit/241563be06a3de8b6a849414c4e805b68d3bb295",
+            "https://github.com/containerd/containerd/commit/a05d175400b1145e5e6a735a6710579d181e7fb0",
+            "https://github.com/containerd/containerd/releases/tag/v1.5.16",
+            "https://github.com/containerd/containerd/releases/tag/v1.6.12",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23471",
+            "https://ubuntu.com/security/notices/USN-5776-1"
+          ],
+          "PublishedDate": "2022-12-07T23:15:00Z",
+          "LastModifiedDate": "2022-12-12T14:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-25153",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.6.6",
+          "FixedVersion": "1.6.18",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-25153",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "containerd is an open source container runtime. Before versions 1.6.18 ...",
+          "Description": "containerd is an open source container runtime. Before versions 1.6.18 and 1.5.18, when importing an OCI image, there was no limit on the number of bytes read for certain files. A maliciously crafted image with a large file where a limit was not applied could cause a denial of service. This bug has been fixed in containerd 1.6.18 and 1.5.18. Users should update to these versions to resolve the issue. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images.",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://github.com/advisories/GHSA-259w-8hf6-59c2",
+            "https://github.com/containerd/containerd/commit/0c314901076a74a7b797a545d2f462285fdbb8c4",
+            "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+            "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-259w-8hf6-59c2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-25153",
+            "https://pkg.go.dev/vuln/GO-2023-1573"
+          ],
+          "PublishedDate": "2023-02-16T15:15:00Z",
+          "LastModifiedDate": "2023-02-16T15:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-25173",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.6.6",
+          "FixedVersion": "1.6.18",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-25173",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "containerd is an open source container runtime. A bug was found in con ...",
+          "Description": "containerd is an open source container runtime. A bug was found in containerd prior to versions 1.6.18 and 1.5.18 where supplementary groups are not set up properly inside a container. If an attacker has direct access to a container and manipulates their supplementary group access, they may be able to use supplementary group access to bypass primary group restrictions in some cases, potentially gaining access to sensitive information or gaining the ability to execute code in that container. Downstream applications that use the containerd client library may be affected as well. This bug has been fixed in containerd v1.6.18 and v.1.5.18. Users should update to these versions and recreate containers to resolve this issue. Users who rely on a downstream application that uses containerd's client library should check that application for a separate advisory and instructions. As a workaround, ensure that the `\"USER $USERNAME\"` Dockerfile instruction is not used. Instead, set the container entrypoint to a value similar to `ENTRYPOINT [\"su\", \"-\", \"user\"]` to allow `su` to properly set up supplementary groups.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-4wjj-jwc9-2x96",
+            "https://github.com/advisories/GHSA-fjm8-m7m6-2fjp",
+            "https://github.com/advisories/GHSA-hmfx-3pcx-653p",
+            "https://github.com/advisories/GHSA-phjr-8j92-w5v7",
+            "https://github.com/containerd/containerd/commit/133f6bb6cd827ce35a5fb279c1ead12b9d21460a",
+            "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+            "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p",
+            "https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-25173",
+            "https://pkg.go.dev/vuln/GO-2023-1574",
+            "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/"
+          ],
+          "PublishedDate": "2023-02-16T15:15:00Z",
+          "LastModifiedDate": "2023-02-16T15:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41912",
+          "PkgName": "github.com/crewjam/saml",
+          "InstalledVersion": "v0.4.5",
+          "FixedVersion": "0.4.9",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41912",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "crewjam/saml: Authentication bypass when processing SAML responses containing multiple Assertion elements",
+          "Description": "The crewjam/saml go library prior to version 0.4.9 is vulnerable to an authentication bypass when processing SAML responses containing multiple Assertion elements. This issue has been corrected in version 0.4.9. There are no workarounds other than upgrading to a fixed version.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-287"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/170356/crewjam-saml-Signature-Bypass.html",
+            "https://access.redhat.com/security/cve/CVE-2022-41912",
+            "https://github.com/advisories/GHSA-j2jp-wvqg-wc2g",
+            "https://github.com/crewjam/saml/commit/aee3fb1edeeaf1088fcb458727e0fd863d277f8b",
+            "https://github.com/crewjam/saml/releases/tag/v0.4.9",
+            "https://github.com/crewjam/saml/security/advisories/GHSA-j2jp-wvqg-wc2g",
+            "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41912",
+            "https://pkg.go.dev/vuln/GO-2022-1129"
+          ],
+          "PublishedDate": "2022-11-28T15:15:00Z",
+          "LastModifiedDate": "2023-02-01T15:48:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-qq97-vm5h-rrhg",
+          "PkgName": "github.com/docker/distribution",
+          "InstalledVersion": "v2.7.1+incompatible",
+          "FixedVersion": "2.8.0",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "OCI Manifest Type Confusion Issue",
+          "Description": "Systems that rely on digest equivalence for image attestations may be vulnerable to type confusion.\n\nA maliciously crafted OCI Container Image can cause registry clients to parse the same image in two different ways without modifying the image's digest, invalidating the common pattern of relying on container image digests for equivalence.\n\nThis problem has been addressed in newer versions by improving validation in manifest unmarshaling.",
+          "Severity": "LOW",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:N",
+              "V3Score": 3
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+            "https://github.com/distribution/distribution/commit/b59a6f827947f9e0e67df0cfb571046de4733586",
+            "https://github.com/distribution/distribution/security/advisories/GHSA-qq97-vm5h-rrhg",
+            "https://github.com/opencontainers/image-spec/pull/411",
+            "https://pkg.go.dev/vuln/GO-2022-0379"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2022-31249",
+          "PkgName": "github.com/rancher/wrangler",
+          "InstalledVersion": "v1.0.1-0.20221228020824-de4d86eabb7b",
+          "FixedVersion": "0.7.4-security1, 0.8.5-security1, 0.8.11, 1.0.1",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-31249",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "Command injection in Git package in Wrangler",
+          "Description": "A Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in wrangler of SUSE Rancher allows remote attackers to inject commands in the underlying host via crafted commands passed to Wrangler. This issue affects: SUSE Rancher wrangler version 0.7.3 and prior versions; wrangler version 0.8.4 and prior versions; wrangler version 1.0.0 and prior versions.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-78"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://bugzilla.suse.com/show_bug.cgi?id=1200299",
+            "https://github.com/advisories/GHSA-qrg7-hfx7-95c5",
+            "https://github.com/rancher/wrangler/security/advisories/GHSA-qrg7-hfx7-95c5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-31249",
+            "https://pkg.go.dev/vuln/GO-2023-1519"
+          ],
+          "PublishedDate": "2023-02-07T13:15:00Z",
+          "LastModifiedDate": "2023-02-15T01:49:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-43756",
+          "PkgName": "github.com/rancher/wrangler",
+          "InstalledVersion": "v1.0.1-0.20221228020824-de4d86eabb7b",
+          "FixedVersion": "0.8.11, 1.0.1, 0.8.5-security1, 0.7.4-security1",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-43756",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "Denial of service (DoS) when processing Git credentials",
+          "Description": "A Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection') vulnerability in SUSE Rancher allows remote attackers to cause denial of service by supplying specially crafted git credentials. This issue affects: SUSE Rancher wrangler version 0.7.3 and prior versions; wrangler version 0.8.4 and prior versions; wrangler version 1.0.0 and prior versions.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-74"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H",
+              "V3Score": 5.9
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://bugzilla.suse.com/show_bug.cgi?id=1205296",
+            "https://github.com/advisories/GHSA-8fcj-gf77-47mg",
+            "https://github.com/rancher/rancher/security/policy",
+            "https://github.com/rancher/wrangler/commit/341018c8fef3e12867c7cb2649bd2cecac75f287",
+            "https://github.com/rancher/wrangler/security/advisories/GHSA-8fcj-gf77-47mg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-43756",
+            "https://pkg.go.dev/vuln/GO-2023-1515"
+          ],
+          "PublishedDate": "2023-02-07T13:15:00Z",
+          "LastModifiedDate": "2023-02-15T02:16:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41721",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.0.0-20221004154528-8021a29435af",
+          "FixedVersion": "0.1.1-0.20221104162952-702349b0e862",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41721",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "A request smuggling attack is possible when using MaxBytesHandler. Whe ...",
+          "Description": "A request smuggling attack is possible when using MaxBytesHandler. When using MaxBytesHandler, the body of an HTTP request is not fully consumed. When the server attempts to read HTTP2 frames from the connection, it will instead be reading the body of the HTTP request, which could be attacker-manipulated to represent arbitrary HTTP2 requests.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-fxg5-wq6x-vr4w",
+            "https://go.dev/cl/447396",
+            "https://go.dev/issue/56352",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41721",
+            "https://pkg.go.dev/vuln/GO-2023-1495"
+          ],
+          "PublishedDate": "2023-01-13T23:15:00Z",
+          "LastModifiedDate": "2023-01-24T17:25:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41717",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.0.0-20221004154528-8021a29435af",
+          "FixedVersion": "0.4.0",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41717",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: net/http: An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests",
+          "Description": "An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-41717",
+            "https://github.com/advisories/GHSA-xrjj-mj9h-534m",
+            "https://go.dev/cl/455635",
+            "https://go.dev/cl/455717",
+            "https://go.dev/issue/56350",
+            "https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU/m/yZDrXjIiBQAJ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41717",
+            "https://pkg.go.dev/vuln/GO-2022-1144"
+          ],
+          "PublishedDate": "2022-12-08T20:15:00Z",
+          "LastModifiedDate": "2022-12-12T17:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41723",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.0.0-20221004154528-8021a29435af",
+          "FixedVersion": "0.7.0",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41723",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "[http2/hpack: avoid quadratic complexity in hpack decoding]",
+          "Description": "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption in the HPACK decoder, sufficient to cause a denial of service from a small number of small requests.",
+          "Severity": "LOW",
+          "References": [
+            "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+            "https://go.dev/cl/468135",
+            "https://go.dev/cl/468295",
+            "https://go.dev/issue/57855",
+            "https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41723",
+            "https://pkg.go.dev/vuln/GO-2023-1571",
+            "https://vuln.go.dev/ID/GO-2023-1571.json"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8554",
+          "PkgName": "k8s.io/kubernetes",
+          "InstalledVersion": "v1.24.2",
+          "Layer": {
+            "DiffID": "sha256:8fed1dcdbe1587b4952aba740d6cb8381d09b282c7b73049cf8c4863c40ba201"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8554",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "kubernetes: MITM using LoadBalancer or ExternalIPs",
+          "Description": "Kubernetes API server in all versions allow an attacker who is able to create a ClusterIP service and set the spec.externalIPs field, to intercept traffic to that IP address. Additionally, an attacker who is able to patch the status (which is considered a privileged operation and should not typically be granted to users) of a LoadBalancer service can set the status.loadBalancer.ingress.ip to similar effect.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V2Score": 6,
+              "V3Score": 5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 6.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8554",
+            "https://blog.champtar.fr/K8S_MITM_LoadBalancer_ExternalIPs/",
+            "https://github.com/advisories/GHSA-j9wf-vvm6-4r9w",
+            "https://github.com/kubernetes/kubernetes/issues/97076",
+            "https://github.com/kubernetes/kubernetes/issues/97110",
+            "https://groups.google.com/g/kubernetes-security-announce/c/iZWsF9nbKE8",
+            "https://linux.oracle.com/cve/CVE-2020-8554.html",
+            "https://linux.oracle.com/errata/ELSA-2021-9029.html",
+            "https://lists.apache.org/thread.html/r0c76b3d0be348f788cd947054141de0229af00c540564711e828fd40@%3Ccommits.druid.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1975078e44d96f2a199aa90aa874b57a202eaf7f25f2fde6d1c44942@%3Ccommits.druid.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcafa485d63550657f068775801aeb706b7a07140a8ebbdef822b3bb3@%3Ccommits.druid.apache.org%3E",
+            "https://lists.apache.org/thread.html/rdb223e1b82e3d7d8e4eaddce8dd1ab87252e3935cc41c859f49767b6@%3Ccommits.druid.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8554",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html"
+          ],
+          "PublishedDate": "2021-01-21T17:15:00Z",
+          "LastModifiedDate": "2022-10-29T02:41:00Z"
+        }
+      ]
+    },
+    {
+      "Target": "/var/lib/rancher-data/local-catalogs/library/charts/cost-analyzer/v1.57.2/values.yaml",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "slack-web-hook",
+          "Category": "Slack",
+          "Severity": "MEDIUM",
+          "Title": "Slack Webhook",
+          "StartLine": 20,
+          "EndLine": 20,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 18,
+                "Content": "    slack:  # Write to a webhook.",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "    slack:  # Write to a webhook.",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 19,
+                "Content": "      enabled: false  # Allow kubecost to write to your slackbot.",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "      enabled: false  # Allow kubecost to write to your slackbot.",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 20,
+                "Content": "      webhook: *****************************************************************************  # Example Webhook",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "      webhook: *****************************************************************************  # Example Webhook",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 21,
+                "Content": "    alertmanager:  # Supply an alertmanager FQDN to receive notifications from the app.",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "    alertmanager:  # Supply an alertmanager FQDN to receive notifications from the app.",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "your slackbot.\n      webhook: *****************************************************************************  # Example Webhook\n",
+          "Layer": {
+            "DiffID": "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb"
+          }
+        }
+      ]
+    },
+    {
+      "Target": "/var/lib/rancher-data/local-catalogs/library/charts/harbor/v1.2.0/cert/tls.key",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "private-key",
+          "Category": "AsymmetricPrivateKey",
+          "Severity": "HIGH",
+          "Title": "Asymmetric Private Key",
+          "StartLine": 1,
+          "EndLine": 1,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 1,
+                "Content": "-----BEGIN RSA PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END RSA PRIVATE KEY-----",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "-----BEGIN RSA PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END RSA PRIVATE KEY-----",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 2,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "----BEGIN RSA PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END RSA PRIVATE",
+          "Layer": {
+            "DiffID": "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb"
+          }
+        }
+      ]
+    },
+    {
+      "Target": "/var/lib/rancher-data/local-catalogs/library/charts/harbor/v1.3.2/cert/tls.key",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "private-key",
+          "Category": "AsymmetricPrivateKey",
+          "Severity": "HIGH",
+          "Title": "Asymmetric Private Key",
+          "StartLine": 1,
+          "EndLine": 1,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 1,
+                "Content": "-----BEGIN RSA PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END RSA PRIVATE KEY-----",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "-----BEGIN RSA PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END RSA PRIVATE KEY-----",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 2,
+                "Content": "",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "----BEGIN RSA PRIVATE KEY-----**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END RSA PRIVATE",
+          "Layer": {
+            "DiffID": "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb"
+          }
+        }
+      ]
+    },
+    {
+      "Target": "/var/lib/rancher-data/local-catalogs/helm3-library/charts/alcide-advisor-cronjob/v2.1.0/values.yaml",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "slack-access-token",
+          "Category": "Slack",
+          "Severity": "HIGH",
+          "Title": "Slack token",
+          "StartLine": 38,
+          "EndLine": 38,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 36,
+                "Content": "  channel: |-",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "  channel: |-",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 37,
+                "Content": "      @someuser",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "      @someuser",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 38,
+                "Content": "  # Slack OAuth Token - https://api.slack.com/apps/ - should have the form: ****************-123456789012-somerandomstuff",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "  # Slack OAuth Token - https://api.slack.com/apps/ - should have the form: ****************-123456789012-somerandomstuff",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 39,
+                "Content": "  token: \"\"",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "  token: \"\"",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "apps/ - should have the form: ****************-123456789012-somera",
+          "Layer": {
+            "DiffID": "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb"
+          }
+        }
+      ]
+    },
+    {
+      "Target": "/var/lib/rancher-data/local-catalogs/library/charts/artifactory-ha/v2.5.3/values.yaml",
+      "Class": "secret",
+      "Secrets": [
+        {
+          "RuleID": "gcp-service-account",
+          "Category": "Google",
+          "Severity": "CRITICAL",
+          "Title": "Google (GCP) Service-account",
+          "StartLine": 947,
+          "EndLine": 947,
+          "Code": {
+            "Lines": [
+              {
+                "Number": 945,
+                "Content": "        # config: |",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "        # config: |",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 946,
+                "Content": "        #   {",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "        #   {",
+                "FirstCause": false,
+                "LastCause": false
+              },
+              {
+                "Number": 947,
+                "Content": "        #      *************************,",
+                "IsCause": true,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "        #      *************************,",
+                "FirstCause": true,
+                "LastCause": true
+              },
+              {
+                "Number": 948,
+                "Content": "        #      \"project_id\": \"\u003cproject_id\u003e\",",
+                "IsCause": false,
+                "Annotation": "",
+                "Truncated": false,
+                "Highlighted": "        #      \"project_id\": \"\u003cproject_id\u003e\",",
+                "FirstCause": false,
+                "LastCause": false
+              }
+            ]
+          },
+          "Match": "        #      *************************,",
+          "Layer": {
+            "DiffID": "sha256:7c2fbc3fae4bf17d48081509ef043781ed27e91fc7afcc75a172e2a1f2f761fb"
+          }
+        }
+      ]
+    }
+  ]
+}

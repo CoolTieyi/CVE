@@ -1,0 +1,704 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "mysql",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "oracle",
+      "Name": "8.7"
+    },
+    "ImageID": "sha256:a3a2968869cf080dbbd2adaac9e4075cc358b50a1451ff5e2b9ae90551a4735f",
+    "DiffIDs": [
+      "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55",
+      "sha256:4f6d265bb82f07d1c03acad01b58610f9772fb336a62ac9b5873dcfc2bec367d",
+      "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15",
+      "sha256:7976784b8d0c480e45ae044ecaff9e18daf6735463aef6167719dfb8a57d40b6",
+      "sha256:8d0987c0490b867f528e6f5048c75ef894d39be67de4cd55fe2c0fe6e087a727",
+      "sha256:3da94018787ede4afc294563adc36660bdef9d8946a80facecaccf86d9c984c2",
+      "sha256:bc085ca01cd2a8f6df59638f1ad0acec0496974fe44bb985df13451dda189154",
+      "sha256:6b9ff45f8ba3db16631435bfea49e3e29688b347d09c0c3c66143a353f35a778",
+      "sha256:f7b20bf0a308668148d51343a6816dbd4bd718815a3c9742e88d2e83e4fdf681",
+      "sha256:4c3d499b74303893ea9720de23d52f33854fdf72871ddc2ded1296439aeeb669",
+      "sha256:b5701ecf75defdff4fb3542e56bcc6934a6a822e13b6d96e361f619566a0662b"
+    ],
+    "RepoTags": [
+      "mysql:latest"
+    ],
+    "RepoDigests": [
+      "mysql@sha256:66efaaa129f12b1c5871508bc8481a9b28c5b388d74ac5d2a6fc314359bbef91"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "e173b5b1c1ad29fac4592a0c814b751765b266827fd7b2dee936401d89c99a7c",
+      "created": "2022-11-29T19:40:10.567603798Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-11-29T19:20:57Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:6767deed84cff167f77f7d9f835925cd8a5d3093d0b99f0180245cfd6312ae06 in / "
+        },
+        {
+          "created": "2022-11-29T19:20:58Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:38:33Z",
+          "created_by": "/bin/sh -c set -eux; \tgroupadd --system --gid 999 mysql; \tuseradd --system --uid 999 --gid 999 --home-dir /var/lib/mysql --no-create-home mysql"
+        },
+        {
+          "created": "2022-11-29T19:38:33Z",
+          "created_by": "/bin/sh -c #(nop)  ENV GOSU_VERSION=1.14",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:38:37Z",
+          "created_by": "/bin/sh -c set -eux; \tarch=\"$(uname -m)\"; \tcase \"$arch\" in \t\taarch64) gosuArch='arm64' ;; \t\tx86_64) gosuArch='amd64' ;; \t\t*) echo \u003e\u00262 \"error: unsupported architecture: '$arch'\"; exit 1 ;; \tesac; \tcurl -fL -o /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch.asc\"; \tcurl -fL -o /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$gosuArch\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \trm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true"
+        },
+        {
+          "created": "2022-11-29T19:39:00Z",
+          "created_by": "/bin/sh -c set -eux; \tmicrodnf install -y \t\tbzip2 \t\tgzip \t\topenssl \t\txz \t\tzstd \t\tfindutils \t; \tmicrodnf clean all"
+        },
+        {
+          "created": "2022-11-29T19:39:01Z",
+          "created_by": "/bin/sh -c set -eux; \tkey='859BE8D7C586F538430B19C2467B942D3A79BD29'; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \tgpg --batch --export --armor \"$key\" \u003e /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql; \trm -rf \"$GNUPGHOME\""
+        },
+        {
+          "created": "2022-11-29T19:39:02Z",
+          "created_by": "/bin/sh -c #(nop)  ENV MYSQL_MAJOR=8.0",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:39:02Z",
+          "created_by": "/bin/sh -c #(nop)  ENV MYSQL_VERSION=8.0.31-1.el8",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:39:02Z",
+          "created_by": "/bin/sh -c set -eu; \t. /etc/os-release; \t{ \t\techo '[mysql8.0-server-minimal]'; \t\techo 'name=MySQL 8.0 Server Minimal'; \t\techo 'enabled=1'; \t\techo \"baseurl=https://repo.mysql.com/yum/mysql-8.0-community/docker/el/${VERSION_ID%%[.-]*}/\\$basearch/\"; \t\techo 'gpgcheck=1'; \t\techo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; \t\techo 'module_hotfixes=true'; \t} | tee /etc/yum.repos.d/mysql-community-minimal.repo"
+        },
+        {
+          "created": "2022-11-29T19:39:32Z",
+          "created_by": "/bin/sh -c set -eux; \tmicrodnf install -y \"mysql-community-server-minimal-$MYSQL_VERSION\"; \tmicrodnf clean all; \tgrep -F 'socket=/var/lib/mysql/mysql.sock' /etc/my.cnf; \tsed -i 's!^socket=.*!socket=/var/run/mysqld/mysqld.sock!' /etc/my.cnf; \tgrep -F 'socket=/var/run/mysqld/mysqld.sock' /etc/my.cnf; \t{ echo '[client]'; echo 'socket=/var/run/mysqld/mysqld.sock'; } \u003e\u003e /etc/my.cnf; \t\t! grep -F '!includedir' /etc/my.cnf; \t{ echo; echo '!includedir /etc/mysql/conf.d/'; } \u003e\u003e /etc/my.cnf; \tmkdir -p /etc/mysql/conf.d; \tmkdir -p /var/lib/mysql /var/run/mysqld; \tchown mysql:mysql /var/lib/mysql /var/run/mysqld; \tchmod 1777 /var/lib/mysql /var/run/mysqld; \t\tmkdir /docker-entrypoint-initdb.d; \t\tmysqld --version; \tmysql --version"
+        },
+        {
+          "created": "2022-11-29T19:39:33Z",
+          "created_by": "/bin/sh -c set -eu; \t. /etc/os-release; \t{ \t\techo '[mysql-tools-community]'; \t\techo 'name=MySQL Tools Community'; \t\techo \"baseurl=https://repo.mysql.com/yum/mysql-tools-community/el/${VERSION_ID%%[.-]*}/\\$basearch/\"; \t\techo 'enabled=1'; \t\techo 'gpgcheck=1'; \t\techo 'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'; \t\techo 'module_hotfixes=true'; \t} | tee /etc/yum.repos.d/mysql-community-tools.repo"
+        },
+        {
+          "created": "2022-11-29T19:39:33Z",
+          "created_by": "/bin/sh -c #(nop)  ENV MYSQL_SHELL_VERSION=8.0.31-1.el8",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:40:08Z",
+          "created_by": "/bin/sh -c set -eux; \tmicrodnf install -y \"mysql-shell-$MYSQL_SHELL_VERSION\"; \tmicrodnf clean all; \t\tmysqlsh --version"
+        },
+        {
+          "created": "2022-11-29T19:40:09Z",
+          "created_by": "/bin/sh -c #(nop)  VOLUME [/var/lib/mysql]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:40:09Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:e9c22353a1133b89c5bca24ecacd348acd094e50e5e5c45375a997c6b1f07192 in /usr/local/bin/ "
+        },
+        {
+          "created": "2022-11-29T19:40:10Z",
+          "created_by": "/bin/sh -c ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat"
+        },
+        {
+          "created": "2022-11-29T19:40:10Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:40:10Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 3306 33060",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:40:10Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"mysqld\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55",
+          "sha256:4f6d265bb82f07d1c03acad01b58610f9772fb336a62ac9b5873dcfc2bec367d",
+          "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15",
+          "sha256:7976784b8d0c480e45ae044ecaff9e18daf6735463aef6167719dfb8a57d40b6",
+          "sha256:8d0987c0490b867f528e6f5048c75ef894d39be67de4cd55fe2c0fe6e087a727",
+          "sha256:3da94018787ede4afc294563adc36660bdef9d8946a80facecaccf86d9c984c2",
+          "sha256:bc085ca01cd2a8f6df59638f1ad0acec0496974fe44bb985df13451dda189154",
+          "sha256:6b9ff45f8ba3db16631435bfea49e3e29688b347d09c0c3c66143a353f35a778",
+          "sha256:f7b20bf0a308668148d51343a6816dbd4bd718815a3c9742e88d2e83e4fdf681",
+          "sha256:4c3d499b74303893ea9720de23d52f33854fdf72871ddc2ded1296439aeeb669",
+          "sha256:b5701ecf75defdff4fb3542e56bcc6934a6a822e13b6d96e361f619566a0662b"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "mysqld"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOSU_VERSION=1.14",
+          "MYSQL_MAJOR=8.0",
+          "MYSQL_VERSION=8.0.31-1.el8",
+          "MYSQL_SHELL_VERSION=8.0.31-1.el8"
+        ],
+        "Image": "sha256:d72bccf87f631caffe3192c6a93ecc9d20c88aa50cdf6a4279a3720160ce17e0",
+        "Volumes": {
+          "/var/lib/mysql": {}
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "mysql (oracle 8.7)",
+      "Class": "os-pkgs",
+      "Type": "oracle",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-20231",
+          "PkgID": "gnutls@3.6.16-5.el8_6.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-5.el8_6",
+          "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20231",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "gnutls: Use after free in client key_share extension",
+          "Description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+            "https://access.redhat.com/security/cve/CVE-2021-20231",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1922276",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20231",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1151",
+            "https://linux.oracle.com/cve/CVE-2021-20231.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-20231",
+            "https://security.netapp.com/advisory/ntap-20210416-0005/",
+            "https://ubuntu.com/security/notices/USN-5029-1",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+          ],
+          "PublishedDate": "2021-03-12T19:15:00Z",
+          "LastModifiedDate": "2021-06-01T14:07:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-20232",
+          "PkgID": "gnutls@3.6.16-5.el8_6.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-5.el8_6",
+          "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20232",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "gnutls: Use after free in client_send_params in lib/ext/pre_shared_key.c",
+          "Description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+            "https://access.redhat.com/security/cve/CVE-2021-20232",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1922275",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20232",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1151",
+            "https://linux.oracle.com/cve/CVE-2021-20232.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-20232",
+            "https://security.netapp.com/advisory/ntap-20210416-0005/",
+            "https://ubuntu.com/security/notices/USN-5029-1",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+          ],
+          "PublishedDate": "2021-03-12T19:15:00Z",
+          "LastModifiedDate": "2021-05-17T14:30:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3580",
+          "PkgID": "gnutls@3.6.16-5.el8_6.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-5.el8_6",
+          "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3580",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "nettle: Remote crash in RSA decryption via manipulated ciphertext",
+          "Description": "A flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+            "https://access.redhat.com/security/cve/CVE-2021-3580",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1967983",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3580",
+            "https://linux.oracle.com/cve/CVE-2021-3580.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3580",
+            "https://security.netapp.com/advisory/ntap-20211104-0006/",
+            "https://ubuntu.com/security/notices/USN-4990-1"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-11-26T21:06:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-40528",
+          "PkgID": "libgcrypt@1.8.5-7.el8_6.x86_64",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.5-7.el8_6",
+          "FixedVersion": "10:1.8.5-7.el8_6_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-40528",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "libgcrypt: ElGamal implementation allows plaintext recovery",
+          "Description": "The ElGamal implementation in Libgcrypt before 1.9.4 allows plaintext recovery because, during interaction between two cryptographic libraries, a certain dangerous combination of the prime defined by the receiver's public key, the generator defined by the receiver's public key, and the sender's ephemeral exponents can lead to a cross-configuration attack against OpenPGP.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.6,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:5311",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-40528.json",
+            "https://access.redhat.com/security/cve/CVE-2021-40528",
+            "https://bugzilla.redhat.com/2002816",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40528",
+            "https://dev.gnupg.org/rCb118681ebc4c9ea4b9da79b0f9541405a64f4c13",
+            "https://eprint.iacr.org/2021/923",
+            "https://errata.almalinux.org/8/ALSA-2022-5311.html",
+            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=3462280f2e23e16adf3ed5176e0f2413d8861320",
+            "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
+            "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
+            "https://linux.oracle.com/cve/CVE-2021-40528.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-40528",
+            "https://security.gentoo.org/glsa/202210-13",
+            "https://ubuntu.com/security/notices/USN-5080-1",
+            "https://ubuntu.com/security/notices/USN-5080-2"
+          ],
+          "PublishedDate": "2021-09-06T19:15:00Z",
+          "LastModifiedDate": "2022-10-31T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-33560",
+          "PkgID": "libgcrypt@1.8.5-7.el8_6.x86_64",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.5-7.el8_6",
+          "FixedVersion": "10:1.8.5-6.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-33560",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "libgcrypt: mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm",
+          "Description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33560.json",
+            "https://access.redhat.com/security/cve/CVE-2021-33560",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33560",
+            "https://dev.gnupg.org/T5305",
+            "https://dev.gnupg.org/T5328",
+            "https://dev.gnupg.org/T5466",
+            "https://dev.gnupg.org/rCe8b7f10be275bcedb5fc05ed4837a89bfd605c61",
+            "https://eprint.iacr.org/2021/923",
+            "https://errata.almalinux.org/8/ALSA-2021-4409.html",
+            "https://linux.oracle.com/cve/CVE-2021-33560.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9263.html",
+            "https://lists.debian.org/debian-lts-announce/2021/06/msg00021.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BKKTOIGFW2SGN3DO2UHHVZ7MJSYN4AAB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7OAPCUGPF3VLA7QAJUQSL255D4ITVTL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-33560",
+            "https://security.gentoo.org/glsa/202210-13",
+            "https://ubuntu.com/security/notices/USN-5080-1",
+            "https://ubuntu.com/security/notices/USN-5080-2",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-06-08T11:15:00Z",
+          "LastModifiedDate": "2022-10-31T04:15:00Z"
+        }
+      ]
+    },
+    {
+      "Target": "usr/local/bin/gosu",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-29162",
+          "PkgName": "github.com/opencontainers/runc",
+          "InstalledVersion": "v1.0.1",
+          "FixedVersion": "v1.1.2",
+          "Layer": {
+            "DiffID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29162",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "runc: incorrect handling of inheritable capabilities",
+          "Description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-276"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 4.6,
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:8090",
+            "https://access.redhat.com/security/cve/CVE-2022-29162",
+            "https://bugzilla.redhat.com/2086398",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29162",
+            "https://errata.almalinux.org/9/ALSA-2022-8090.html",
+            "https://github.com/opencontainers/runc/commit/98fe566c527479195ce3c8167136d2a555fe6b65",
+            "https://github.com/opencontainers/runc/commit/d04de3a9b72d7a2455c1885fc75eb36d02cd17b5",
+            "https://github.com/opencontainers/runc/releases/tag/v1.1.2",
+            "https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66",
+            "https://linux.oracle.com/cve/CVE-2022-29162.html",
+            "https://linux.oracle.com/errata/ELSA-2022-8090.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AVPZBV7ISA7QKRPTC7ZXWKMIQI2HZEBB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D77CKD3AXPMU4PMQIQI5Q74SI4JATNND/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPQU4YC4AAY54JDXGDQHJEYKSXXG5T2Y/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29162",
+            "https://www.openwall.com/lists/oss-security/2022/05/12/1"
+          ],
+          "PublishedDate": "2022-05-17T21:15:00Z",
+          "LastModifiedDate": "2022-10-19T13:55:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43784",
+          "PkgName": "github.com/opencontainers/runc",
+          "InstalledVersion": "v1.0.1",
+          "FixedVersion": "1.1.0",
+          "Layer": {
+            "DiffID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43784",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "runc: integer overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration",
+          "Description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc, netlink is used internally as a serialization system for specifying the relevant container configuration to the `C` portion of the code (responsible for the based namespace setup of containers). In all versions of runc prior to 1.0.3, the encoder did not handle the possibility of an integer overflow in the 16-bit length field for the byte array attribute type, meaning that a large enough malicious byte array attribute could result in the length overflowing and the attribute contents being parsed as netlink messages for container configuration. This vulnerability requires the attacker to have some control over the configuration of the container and would allow the attacker to bypass the namespace restrictions of the container by simply adding their own netlink payload which disables all namespaces. The main users impacted are those who allow untrusted images with untrusted configurations to run on their machines (such as with shared cloud infrastructure). runc version 1.0.3 contains a fix for this bug. As a workaround, one may try disallowing untrusted namespace paths from your container. It should be noted that untrusted namespace paths would allow the attacker to disable namespace protections entirely even in the absence of this bug.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V2Score": 6,
+              "V3Score": 5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-43784",
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2241",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43784",
+            "https://github.com/opencontainers/runc/commit/9c444070ec7bb83995dbc0185da68284da71c554",
+            "https://github.com/opencontainers/runc/commit/d72d057ba794164c3cce9451a00b72a78b25e1ae",
+            "https://github.com/opencontainers/runc/commit/dde509df4e28cec33b3c99c6cda3d4fd5beafc77",
+            "https://github.com/opencontainers/runc/commit/f50369af4b571e358f20b139eea52d612eb55eed",
+            "https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f",
+            "https://lists.debian.org/debian-lts-announce/2021/12/msg00005.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-43784",
+            "https://pkg.go.dev/vuln/GO-2022-0274",
+            "https://www.openwall.com/lists/oss-security/2021/12/06/1"
+          ],
+          "PublishedDate": "2021-12-06T18:15:00Z",
+          "LastModifiedDate": "2021-12-08T18:05:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-24769",
+          "PkgName": "github.com/opencontainers/runc",
+          "InstalledVersion": "v1.0.1",
+          "FixedVersion": "v1.1.2",
+          "Layer": {
+            "DiffID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-24769",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "moby: Default inheritable capabilities for linux container should be empty",
+          "Description": "Moby is an open-source project created by Docker to enable and accelerate software containerization. A bug was found in Moby (Docker Engine) prior to version 20.10.14 where containers were incorrectly started with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during `execve(2)`. Normally, when executable programs have specified permitted file capabilities, otherwise unprivileged users and processes can execute those programs and gain the specified file capabilities up to the bounding set. Due to this bug, containers which included executable programs with inheritable file capabilities allowed otherwise unprivileged users and processes to additionally gain these inheritable file capabilities up to the container's bounding set. Containers which use Linux users and groups to perform privilege separation inside the container are most directly impacted. This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in Moby (Docker Engine) 20.10.14. Running containers should be stopped, deleted, and recreated for the inheritable capabilities to be reset. This fix changes Moby (Docker Engine) behavior such that containers are started with a more typical Linux environment. As a workaround, the entry point of a container can be modified to use a utility like `capsh(1)` to drop inheritable capabilities prior to the primary process starting.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-732"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V2Score": 4.6,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/05/12/1",
+            "https://access.redhat.com/security/cve/CVE-2022-24769",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24769",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-c9cp-9c75-9v8c",
+            "https://github.com/moby/moby/commit/2bbc786e4c59761d722d2d1518cd0a32829bc07f",
+            "https://github.com/moby/moby/releases/tag/v20.10.14",
+            "https://github.com/moby/moby/security/advisories/GHSA-2mm7-x5h6-5pvq",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6PMQKCAPK2AR3DCYITJYMMNBEGQBGLCC/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A5AFKOQ5CE3CEIULWW4FLQKHFFU6FSYG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A5FQJ3MLFSEKQYCFPFZIKYGBXPZUJFVY/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FPOJUJZXGMIVKRS4QR75F6OIXNQ6LDBL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HIMAHZ6AUIKN7AX26KHZYBXVECIOVWBH/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HQCVS7WBFSTKJFNX5PGDRARMTOFWV2O7/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-24769",
+            "https://www.debian.org/security/2022/dsa-5162"
+          ],
+          "PublishedDate": "2022-03-24T20:15:00Z",
+          "LastModifiedDate": "2022-06-13T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-v95c-p5hm-xq8f",
+          "PkgName": "github.com/opencontainers/runc",
+          "InstalledVersion": "v1.0.1",
+          "FixedVersion": "1.1.0",
+          "Layer": {
+            "DiffID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-v95c-p5hm-xq8f",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "An attacker with partial control over the bind mount sources of a new container can bypass namespace restrictions.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://bugs.chromium.org/p/project-zero/issues/detail?id=2241",
+            "https://github.com/opencontainers/runc/commit/dde509df4e28cec33b3c99c6cda3d4fd5beafc77",
+            "https://github.com/opencontainers/runc/commit/f50369af4b571e358f20b139eea52d612eb55eed",
+            "https://pkg.go.dev/vuln/GO-2022-0274"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29526",
+          "PkgName": "golang.org/x/sys",
+          "InstalledVersion": "v0.0.0-20210817142637-7d9622a276b7",
+          "FixedVersion": "0.0.0-20220412211240-33da011f77ad",
+          "Layer": {
+            "DiffID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29526",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: syscall: faccessat checks wrong group",
+          "Description": "Go before 1.17.10 and 1.18.x before 1.18.2 has Incorrect Privilege Assignment. When called with a non-zero flags parameter, the Faccessat function could incorrectly report that a file is accessible.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-269"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-29526",
+            "https://github.com/golang/go/issues/52313",
+            "https://go.dev/cl/399539",
+            "https://go.dev/cl/400074",
+            "https://go.dev/issue/52313",
+            "https://groups.google.com/g/golang-announce",
+            "https://groups.google.com/g/golang-announce/c/Y5qrqw_lWdU",
+            "https://linux.oracle.com/cve/CVE-2022-29526.html",
+            "https://linux.oracle.com/errata/ELSA-2022-5337.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Q6GE5EQGE4L2KRVGW4T75QVIYAXCLO5X/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RQXU752ALW53OJAF5MG3WMR5CCZVLWW6/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR/",
+            "https://pkg.go.dev/vuln/GO-2022-0493",
+            "https://security.gentoo.org/glsa/202208-02",
+            "https://security.netapp.com/advisory/ntap-20220729-0001/"
+          ],
+          "PublishedDate": "2022-06-23T17:15:00Z",
+          "LastModifiedDate": "2022-08-19T12:50:00Z"
+        }
+      ]
+    }
+  ]
+}

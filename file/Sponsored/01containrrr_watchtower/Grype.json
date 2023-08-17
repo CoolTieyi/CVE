@@ -1,0 +1,398 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd%40%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836%40%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4%40%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/watchtower",
+      "layerID": "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:d0NfwRgPtno5B1Wa6L2DAG+KivqkdutMf1UhdNx175w="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/watchtower",
+      "layerID": "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:d0NfwRgPtno5B1Wa6L2DAG+KivqkdutMf1UhdNx175w="
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.5.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/watchtower",
+      "layerID": "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.5.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.5.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.10",
+     "architecture": "amd64",
+     "h1Digest": "h1:GyT4nK/YDHSqa1c4753ouYCDajOYKTja9Xb/OHtgvSw="
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "containrrr/watchtower",
+   "imageID": "sha256:f847e1adb570c2cc11d1e613cad97baf3cdfe83ddd3c1a29ada848cfbd4f7f3f",
+   "manifestDigest": "sha256:922db908cd976715772905c565cb2211adfa0fc02de0682ff4dd4836611af71a",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "containrrr/watchtower:latest"
+   ],
+   "imageSize": 14592906,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:3a26d205940c7fc9083fa9d5d9a7729c3d5c6eea72c814c7543d9a4b59ffcaaa",
+     "size": 214222
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8b277bccf8116aa0fa2b8c71d17096187c5a46eae9353bf1f06ee720dc1eed15",
+     "size": 1070780
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611",
+     "size": 13307904
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDc1LCJkaWdlc3QiOiJzaGEyNTY6Zjg0N2UxYWRiNTcwYzJjYzExZDFlNjEzY2FkOTdiYWYzY2RmZTgzZGRkM2MxYTI5YWRhODQ4Y2ZiZDRmN2YzZiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoyMTc2MDAsImRpZ2VzdCI6InNoYTI1NjozYTI2ZDIwNTk0MGM3ZmM5MDgzZmE5ZDVkOWE3NzI5YzNkNWM2ZWVhNzJjODE0Yzc1NDNkOWE0YjU5ZmZjYWFhIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTg5NzQ3MiwiZGlnZXN0Ijoic2hhMjU2OjhiMjc3YmNjZjgxMTZhYTBmYTJiOGM3MWQxNzA5NjE4N2M1YTQ2ZWFlOTM1M2JmMWYwNmVlNzIwZGMxZWVkMTUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMzMwOTQ0MCwiZGlnZXN0Ijoic2hhMjU2OmMzNTQ0YmJhMTY5MzE2ZDIxMmRhYzFmNmNhNjRkN2ZiZGE3MWZjMGMzNWJhNWJjNTg2NTdmMWQ3YTBiNzE2MTEifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFeHBvc2VkUG9ydHMiOnsiODA4MC90Y3AiOnt9fSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkVudHJ5cG9pbnQiOlsiL3dhdGNodG93ZXIiXSwiV29ya2luZ0RpciI6Ii8iLCJMYWJlbHMiOnsiY29tLmNlbnR1cnlsaW5rbGFicy53YXRjaHRvd2VyIjoidHJ1ZSJ9LCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjMtMDEtMzBUMDA6MjA6MzMuNzY2OTQ5NzM2WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIzLTAxLTMwVDAwOjIwOjMyLjcwMzM0MjE5WiIsImNyZWF0ZWRfYnkiOiJMQUJFTCBjb20uY2VudHVyeWxpbmtsYWJzLndhdGNodG93ZXI9dHJ1ZSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDEtMzBUMDA6MjA6MzIuNzAzMzQyMTlaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL2V0Yy9zc2wvY2VydHMvY2EtY2VydGlmaWNhdGVzLmNydCAvZXRjL3NzbC9jZXJ0cy9jYS1jZXJ0aWZpY2F0ZXMuY3J0ICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDEtMzBUMDA6MjA6MzIuODQ3ODc2Mzc5WiIsImNyZWF0ZWRfYnkiOiJDT1BZIC91c3Ivc2hhcmUvem9uZWluZm8gL3Vzci9zaGFyZS96b25laW5mbyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTAxLTMwVDAwOjIwOjMyLjg0Nzg3NjM3OVoiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFs4MDgwL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAxLTMwVDAwOjIwOjMzLjc2Njk0OTczNloiLCJjcmVhdGVkX2J5IjoiQ09QWSB3YXRjaHRvd2VyIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wMS0zMFQwMDoyMDozMy43NjY5NDk3MzZaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL3dhdGNodG93ZXJcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjozYTI2ZDIwNTk0MGM3ZmM5MDgzZmE5ZDVkOWE3NzI5YzNkNWM2ZWVhNzJjODE0Yzc1NDNkOWE0YjU5ZmZjYWFhIiwic2hhMjU2OjhiMjc3YmNjZjgxMTZhYTBmYTJiOGM3MWQxNzA5NjE4N2M1YTQ2ZWFlOTM1M2JmMWYwNmVlNzIwZGMxZWVkMTUiLCJzaGEyNTY6YzM1NDRiYmExNjkzMTZkMjEyZGFjMWY2Y2E2NGQ3ZmJkYTcxZmMwYzM1YmE1YmM1ODY1N2YxZDdhMGI3MTYxMSJdfX0=",
+   "repoDigests": [
+    "containrrr/watchtower@sha256:0ca7a88fd0748aa6f32e50b67eb11148cdb989fc595264c2778c85297a2c1abe"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "Grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2023-02-25T08:13:48Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:fd83377bf2233596b4c7140477d98aee18a2dec94108e0b923dc7e54a4b00051",
+   "error": null
+  }
+ }
+}

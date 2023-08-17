@@ -1,0 +1,571 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f@%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc@%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836@%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd@%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae@%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf@%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932@%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/libexec/docker/cli-plugins/docker-buildx",
+      "layerID": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/docker/buildx"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f@%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc@%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836@%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd@%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae@%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf@%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932@%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/libexec/docker/cli-plugins/docker-compose",
+      "layerID": "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/libexec/docker/cli-plugins/docker-buildx",
+      "layerID": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/docker/buildx"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/libexec/docker/cli-plugins/docker-compose",
+      "layerID": "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "docker",
+   "imageID": "sha256:81a4721a045e389ed8754844971b3277b59757fe75c69120e6cea0dbc8de6301",
+   "manifestDigest": "sha256:b52d18ea44de4a0de6173294cb18ffc6e1f06b070efcfbb1a990a62be689bf82",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "docker:latest"
+   ],
+   "imageSize": 152317840,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:ded7a220bb058e28ee3254fbba04ca90b679070424424761a53a043b93b612bf",
+     "size": 7044846
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b68ba483d73b1d3282b9d9dbb93f32b294d96fcc54058651ba57592588bed674",
+     "size": 5489453
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:204d5314c0d19d43dc84bc81ed1ecf8e7b4046de65e1faf81260b60e69fc5148",
+     "size": 48047088
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290",
+     "size": 46809088
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61",
+     "size": 44924928
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:f0a4416a13d04733ff85b4e2d2bcf462a60d5f28ec72e557850b3a04ac129e59",
+     "size": 587
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:6769898275408579f73743da74e6e2209d3151ccd6125b62538c1693961f67ff",
+     "size": 1850
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7f494a062210406a14e592371067a289356720c6f608eab20ab9951bb6894d83",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo4NzMwLCJkaWdlc3QiOiJzaGEyNTY6ODFhNDcyMWEwNDVlMzg5ZWQ4NzU0ODQ0OTcxYjMyNzdiNTk3NTdmZTc1YzY5MTIwZTZjZWEwZGJjOGRlNjMwMSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3MzM3OTg0LCJkaWdlc3QiOiJzaGEyNTY6ZGVkN2EyMjBiYjA1OGUyOGVlMzI1NGZiYmEwNGNhOTBiNjc5MDcwNDI0NDI0NzYxYTUzYTA0M2I5M2I2MTJiZiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjU4MTgzNjgsImRpZ2VzdCI6InNoYTI1NjpiNjhiYTQ4M2Q3M2IxZDMyODJiOWQ5ZGJiOTNmMzJiMjk0ZDk2ZmNjNTQwNTg2NTFiYTU3NTkyNTg4YmVkNjc0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDgwNTAxNzYsImRpZ2VzdCI6InNoYTI1NjoyMDRkNTMxNGMwZDE5ZDQzZGM4NGJjODFlZDFlY2Y4ZTdiNDA0NmRlNjVlMWZhZjgxMjYwYjYwZTY5ZmM1MTQ4In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDY4MTMxODQsImRpZ2VzdCI6InNoYTI1Njo0YTUyMjBkMjFiYWNjYzdmMDIwMjllYzQ5ZjAyZjQ1ZjFiYmNjMGE4ZGYwMTRlZWJmMzRiMDAxNTM0MWNmMjkwIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDQ5MzAwNDgsImRpZ2VzdCI6InNoYTI1Njo0M2UwNzYyMzhmNzRkOTQwODIxYjZmMzU2MTA5MmM2NmEzMzRkZTlkY2ViZDA0ODIwOTZlZGI4YWFiMTQ4ZDYxIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDA5NiwiZGlnZXN0Ijoic2hhMjU2OmYwYTQ0MTZhMTNkMDQ3MzNmZjg1YjRlMmQyYmNmNDYyYTYwZDVmMjhlYzcyZTU1Nzg1MGIzYTA0YWMxMjllNTkifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1MTIwLCJkaWdlc3QiOiJzaGEyNTY6Njc2OTg5ODI3NTQwODU3OWY3Mzc0M2RhNzRlNmUyMjA5ZDMxNTFjY2Q2MTI1YjYyNTM4YzE2OTM5NjFmNjdmZiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI1NjAsImRpZ2VzdCI6InNoYTI1Njo3ZjQ5NGEwNjIyMTA0MDZhMTRlNTkyMzcxMDY3YTI4OTM1NjcyMGM2ZjYwOGVhYjIwYWI5OTUxYmI2ODk0ZDgzIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJET0NLRVJfVkVSU0lPTj0yMC4xMC4yMSIsIkRPQ0tFUl9CVUlMRFhfVkVSU0lPTj0wLjkuMSIsIkRPQ0tFUl9DT01QT1NFX1ZFUlNJT049Mi4xNC4wIiwiRE9DS0VSX1RMU19DRVJURElSPS9jZXJ0cyJdLCJDbWQiOlsic2giXSwiSW1hZ2UiOiJzaGEyNTY6MjRjMjBlOWI3MDhkM2NmZGUxNGQ1OTVmZjNlNWUyNTIyNGNiODJlMGEyNGE5MDI2MDVkOGE4ZWQyN2VjZmYyNCIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbImRvY2tlci1lbnRyeXBvaW50LnNoIl0sIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6bnVsbH0sImNvbnRhaW5lciI6ImZiYmNjNTk2YmVkODg2N2Q2NzcwZGY0ZGM5YzhiZTU2NGE0YWU4NTI2YzVjYjczMjM1NjQ3NDM1OWI1MTA0MDMiLCJjb250YWluZXJfY29uZmlnIjp7Ikhvc3RuYW1lIjoiZmJiY2M1OTZiZWQ4IiwiRG9tYWlubmFtZSI6IiIsIlVzZXIiOiIiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkRPQ0tFUl9WRVJTSU9OPTIwLjEwLjIxIiwiRE9DS0VSX0JVSUxEWF9WRVJTSU9OPTAuOS4xIiwiRE9DS0VSX0NPTVBPU0VfVkVSU0lPTj0yLjE0LjAiLCJET0NLRVJfVExTX0NFUlRESVI9L2NlcnRzIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiQ01EIFtcInNoXCJdIl0sIkltYWdlIjoic2hhMjU2OjI0YzIwZTliNzA4ZDNjZmRlMTRkNTk1ZmYzZTVlMjUyMjRjYjgyZTBhMjRhOTAyNjA1ZDhhOGVkMjdlY2ZmMjQiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyJkb2NrZXItZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnt9fSwiY3JlYXRlZCI6IjIwMjItMTItMDVUMjE6MjA6MTQuNzU2NzUzNzhaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xMiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTExLTIyVDIyOjE5OjI4Ljg3MDgwMTg1NVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6NTg3Y2FlNzE5Njk4NzFkM2M2NDU2ZDg0NGE4Nzk1ZGY5YjY0YjEyYzcxMGMyNzUyOTVhMTE4MmI0NmY2MzBlNyBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjJUMjI6MTk6MjkuMDA4NTYyMzI2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQwMToyNzowMS43NDQzODUxNjdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgYXBrIGFkZCAtLW5vLWNhY2hlIFx0XHRjYS1jZXJ0aWZpY2F0ZXMgXHRcdGxpYmM2LWNvbXBhdCBcdFx0b3BlbnNzaC1jbGllbnQifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDAxOjI3OjAyLjMwNjM2MTU0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIFsgLWUgL2V0Yy9uc3N3aXRjaC5jb25mIF0gXHUwMDI2XHUwMDI2IGdyZXAgJ15ob3N0czogZmlsZXMgZG5zJyAvZXRjL25zc3dpdGNoLmNvbmYiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQwMToyNzozOS44MjM2MDcxMDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgRE9DS0VSX1ZFUlNJT049MjAuMTAuMjEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQwMToyNzo0My41ODAzMzMzODJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0XHRhcGtBcmNoPVwiJChhcGsgLS1wcmludC1hcmNoKVwiOyBcdGNhc2UgXCIkYXBrQXJjaFwiIGluIFx0XHQneDg2XzY0JykgXHRcdFx0dXJsPSdodHRwczovL2Rvd25sb2FkLmRvY2tlci5jb20vbGludXgvc3RhdGljL3N0YWJsZS94ODZfNjQvZG9ja2VyLTIwLjEwLjIxLnRneic7IFx0XHRcdDs7IFx0XHQnYXJtaGYnKSBcdFx0XHR1cmw9J2h0dHBzOi8vZG93bmxvYWQuZG9ja2VyLmNvbS9saW51eC9zdGF0aWMvc3RhYmxlL2FybWVsL2RvY2tlci0yMC4xMC4yMS50Z3onOyBcdFx0XHQ7OyBcdFx0J2FybXY3JykgXHRcdFx0dXJsPSdodHRwczovL2Rvd25sb2FkLmRvY2tlci5jb20vbGludXgvc3RhdGljL3N0YWJsZS9hcm1oZi9kb2NrZXItMjAuMTAuMjEudGd6JzsgXHRcdFx0OzsgXHRcdCdhYXJjaDY0JykgXHRcdFx0dXJsPSdodHRwczovL2Rvd25sb2FkLmRvY2tlci5jb20vbGludXgvc3RhdGljL3N0YWJsZS9hYXJjaDY0L2RvY2tlci0yMC4xMC4yMS50Z3onOyBcdFx0XHQ7OyBcdFx0KikgZWNobyBcdTAwM2VcdTAwMjYyIFwiZXJyb3I6IHVuc3VwcG9ydGVkICdkb2NrZXIudGd6JyBhcmNoaXRlY3R1cmUgKCRhcGtBcmNoKVwiOyBleGl0IDEgOzsgXHRlc2FjOyBcdFx0d2dldCAtTyAnZG9ja2VyLnRneicgXCIkdXJsXCI7IFx0XHR0YXIgLS1leHRyYWN0IFx0XHQtLWZpbGUgZG9ja2VyLnRneiBcdFx0LS1zdHJpcC1jb21wb25lbnRzIDEgXHRcdC0tZGlyZWN0b3J5IC91c3IvbG9jYWwvYmluLyBcdFx0LS1uby1zYW1lLW93bmVyIFx0XHQnZG9ja2VyL2RvY2tlcicgXHQ7IFx0cm0gZG9ja2VyLnRnejsgXHRcdGRvY2tlciAtLXZlcnNpb24ifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDAxOjI3OjQzLjc0MDM2NzIzM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBET0NLRVJfQlVJTERYX1ZFUlNJT049MC45LjEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQwMToyNzo0Ni4wMDcxOTQ3NjhaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0XHRhcGtBcmNoPVwiJChhcGsgLS1wcmludC1hcmNoKVwiOyBcdGNhc2UgXCIkYXBrQXJjaFwiIGluIFx0XHQneDg2XzY0JykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2J1aWxkeC9yZWxlYXNlcy9kb3dubG9hZC92MC45LjEvYnVpbGR4LXYwLjkuMS5saW51eC1hbWQ2NCc7IFx0XHRcdHNoYTI1Nj0nYTdmYjk1MTc3NzkyY2E4ZmZjNzI0M2ZhZDdiZjJmMzM3MzhiOGI5OTlhMTg0YjYyMDFmMDAyYTYzYzQzZDEzNic7IFx0XHRcdDs7IFx0XHQnYXJtaGYnKSBcdFx0XHR1cmw9J2h0dHBzOi8vZ2l0aHViLmNvbS9kb2NrZXIvYnVpbGR4L3JlbGVhc2VzL2Rvd25sb2FkL3YwLjkuMS9idWlsZHgtdjAuOS4xLmxpbnV4LWFybS12Nic7IFx0XHRcdHNoYTI1Nj0nMTU5OTI1YjRlNjc5ZWI2NmU3ZjAzMTJjN2Q1N2E5N2U2OGE0MThjMWZhNjAyYTAwZGQ4YjI5YjY0MDY3NjhmMCc7IFx0XHRcdDs7IFx0XHQnYXJtdjcnKSBcdFx0XHR1cmw9J2h0dHBzOi8vZ2l0aHViLmNvbS9kb2NrZXIvYnVpbGR4L3JlbGVhc2VzL2Rvd25sb2FkL3YwLjkuMS9idWlsZHgtdjAuOS4xLmxpbnV4LWFybS12Nyc7IFx0XHRcdHNoYTI1Nj0nYmE4ZTUzNTljZTliYTI0ZmVjNmRhMDdmNzM1OTFjMWIyMGFjMDc5N2EyMjQ4YjBlZjgwODhmNTdhZTMzNDBmYyc7IFx0XHRcdDs7IFx0XHQnYWFyY2g2NCcpIFx0XHRcdHVybD0naHR0cHM6Ly9naXRodWIuY29tL2RvY2tlci9idWlsZHgvcmVsZWFzZXMvZG93bmxvYWQvdjAuOS4xL2J1aWxkeC12MC45LjEubGludXgtYXJtNjQnOyBcdFx0XHRzaGEyNTY9J2JiZjZhNzZiZjlhZWY5YzU3NTlmZjIyNWI5N2NlMjNhMjRmYzExZTRmYTNjZGNhZTM2ZTVkY2YxZGUyY2ZmYzUnOyBcdFx0XHQ7OyBcdFx0J3BwYzY0bGUnKSBcdFx0XHR1cmw9J2h0dHBzOi8vZ2l0aHViLmNvbS9kb2NrZXIvYnVpbGR4L3JlbGVhc2VzL2Rvd25sb2FkL3YwLjkuMS9idWlsZHgtdjAuOS4xLmxpbnV4LXBwYzY0bGUnOyBcdFx0XHRzaGEyNTY9JzFiMjQ0MTg4NmU1NTZjNzIwYzFiZjEyZjE4ZjI0MDExM2NjNDVmOWViNDA0YzBmMTYyMTY2Y2ExYzk2YzFiNjAnOyBcdFx0XHQ7OyBcdFx0J3Jpc2N2NjQnKSBcdFx0XHR1cmw9J2h0dHBzOi8vZ2l0aHViLmNvbS9kb2NrZXIvYnVpbGR4L3JlbGVhc2VzL2Rvd25sb2FkL3YwLjkuMS9idWlsZHgtdjAuOS4xLmxpbnV4LXJpc2N2NjQnOyBcdFx0XHRzaGEyNTY9J2MzMjM3MmRhZDY1M2ZjNzBlYjc1NmIyY2ZmZDAyNmU3NDQyNWU4MDdjMDFhY2NhZWVkNDU1OWRhODgxZmY1N2MnOyBcdFx0XHQ7OyBcdFx0J3MzOTB4JykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2J1aWxkeC9yZWxlYXNlcy9kb3dubG9hZC92MC45LjEvYnVpbGR4LXYwLjkuMS5saW51eC1zMzkweCc7IFx0XHRcdHNoYTI1Nj0nOTBiMGVjZjMxNWQ3NDE4ODg5MjBkZGRlYWM5ZmUyZTE0MTEyM2M0ZmU3OTQ2NWI3YjEwZmUyMzUyMWM5YzM2Nic7IFx0XHRcdDs7IFx0XHQqKSBlY2hvIFx1MDAzZVx1MDAyNjIgXCJ3YXJuaW5nOiB1bnN1cHBvcnRlZCAnZG9ja2VyLWJ1aWxkeCcgYXJjaGl0ZWN0dXJlICgkYXBrQXJjaCk7IHNraXBwaW5nXCI7IGV4aXQgMCA7OyBcdGVzYWM7IFx0XHR3Z2V0IC1PICdkb2NrZXItYnVpbGR4JyBcIiR1cmxcIjsgXHRlY2hvIFwiJHNoYTI1NiAqXCInZG9ja2VyLWJ1aWxkeCcgfCBzaGEyNTZzdW0gLWMgLTsgXHRcdHBsdWdpbj0nL3Vzci9saWJleGVjL2RvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4JzsgXHRta2RpciAtcCBcIiQoZGlybmFtZSBcIiRwbHVnaW5cIilcIjsgXHRtdiAtdlQgJ2RvY2tlci1idWlsZHgnIFwiJHBsdWdpblwiOyBcdGNobW9kICt4IFwiJHBsdWdpblwiOyBcdFx0ZG9ja2VyIGJ1aWxkeCB2ZXJzaW9uIn0seyJjcmVhdGVkIjoiMjAyMi0xMi0wNVQyMToyMDoxMS4wMzEzODA4MTJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgRE9DS0VSX0NPTVBPU0VfVkVSU0lPTj0yLjE0LjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMi0wNVQyMToyMDoxMy41NjkwOTQxNzRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0XHRhcGtBcmNoPVwiJChhcGsgLS1wcmludC1hcmNoKVwiOyBcdGNhc2UgXCIkYXBrQXJjaFwiIGluIFx0XHQneDg2XzY0JykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2NvbXBvc2UvcmVsZWFzZXMvZG93bmxvYWQvdjIuMTQuMC9kb2NrZXItY29tcG9zZS1saW51eC14ODZfNjQnOyBcdFx0XHRzaGEyNTY9J2ZkZjYzNGFiMmIwMWFjYTMzMzcyYmVmMmJmODY2Njk5ZWYyZTFmMmRhYjE5OTcyZTM3OTY3YjFmYzJhMTE0MDInOyBcdFx0XHQ7OyBcdFx0J2FybWhmJykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2NvbXBvc2UvcmVsZWFzZXMvZG93bmxvYWQvdjIuMTQuMC9kb2NrZXItY29tcG9zZS1saW51eC1hcm12Nic7IFx0XHRcdHNoYTI1Nj0nNjNlMDgyNmRkZWJjMWFlNzc2ZjM4YWI4NzJiNDFmNjhiNDhmY2EyNDZjZGY2N2M3MDllMDdlZWY1NDNjZGY4OCc7IFx0XHRcdDs7IFx0XHQnYXJtdjcnKSBcdFx0XHR1cmw9J2h0dHBzOi8vZ2l0aHViLmNvbS9kb2NrZXIvY29tcG9zZS9yZWxlYXNlcy9kb3dubG9hZC92Mi4xNC4wL2RvY2tlci1jb21wb3NlLWxpbnV4LWFybXY3JzsgXHRcdFx0c2hhMjU2PSdjMTY2NGM0ZGNlZmMyYTU2YTRmMTZmNGRiZDc2ZTUzMWYyMzdiZmJmNzEzYjkwZDNhY2VhNTBkZjQyYTFhYWRhJzsgXHRcdFx0OzsgXHRcdCdhYXJjaDY0JykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2NvbXBvc2UvcmVsZWFzZXMvZG93bmxvYWQvdjIuMTQuMC9kb2NrZXItY29tcG9zZS1saW51eC1hYXJjaDY0JzsgXHRcdFx0c2hhMjU2PScwMjY1ZjQ1YjMwZjRmMGUxZDUzYzE5NjhjNTkwMTgxZjY0YzU0NjEyOWQ5Njc0NjBkZTM4MmM2ZGUzOGFmMTkxJzsgXHRcdFx0OzsgXHRcdCdwcGM2NGxlJykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2NvbXBvc2UvcmVsZWFzZXMvZG93bmxvYWQvdjIuMTQuMC9kb2NrZXItY29tcG9zZS1saW51eC1wcGM2NGxlJzsgXHRcdFx0c2hhMjU2PSdkYmVlNTg0MjZhZjU2Nzc4N2U1YzFkMTRlOTI1Y2NhMGQwYTk1OGVkYzU1MjAzYzRiMjljMTBkZGE4ZTI3MzU1JzsgXHRcdFx0OzsgXHRcdCdyaXNjdjY0JykgXHRcdFx0dXJsPSdodHRwczovL2dpdGh1Yi5jb20vZG9ja2VyL2NvbXBvc2UvcmVsZWFzZXMvZG93bmxvYWQvdjIuMTQuMC9kb2NrZXItY29tcG9zZS1saW51eC1yaXNjdjY0JzsgXHRcdFx0c2hhMjU2PSdkNDQ3YTc1ZmY0ZDkwMGIxOWQ0MGUwYzY5ODExYjMzNTUxOGY4YTVmYmM2Mzc3ZTBhZmYyNWEzYjk5OWE4YzQ5JzsgXHRcdFx0OzsgXHRcdCdzMzkweCcpIFx0XHRcdHVybD0naHR0cHM6Ly9naXRodWIuY29tL2RvY2tlci9jb21wb3NlL3JlbGVhc2VzL2Rvd25sb2FkL3YyLjE0LjAvZG9ja2VyLWNvbXBvc2UtbGludXgtczM5MHgnOyBcdFx0XHRzaGEyNTY9JzJjNWJiYjY1MTNkNzM3NzkxOWJkNDE4OWYyNWQ4YmY1ZDg3MDZhNTM0NWYxMDYwOWQ4YzQ5ZDVjZjRkOGFiODgnOyBcdFx0XHQ7OyBcdFx0KikgZWNobyBcdTAwM2VcdTAwMjYyIFwid2FybmluZzogdW5zdXBwb3J0ZWQgJ2RvY2tlci1jb21wb3NlJyBhcmNoaXRlY3R1cmUgKCRhcGtBcmNoKTsgc2tpcHBpbmdcIjsgZXhpdCAwIDs7IFx0ZXNhYzsgXHRcdHdnZXQgLU8gJ2RvY2tlci1jb21wb3NlJyBcIiR1cmxcIjsgXHRlY2hvIFwiJHNoYTI1NiAqXCInZG9ja2VyLWNvbXBvc2UnIHwgc2hhMjU2c3VtIC1jIC07IFx0XHRwbHVnaW49Jy91c3IvbGliZXhlYy9kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWNvbXBvc2UnOyBcdG1rZGlyIC1wIFwiJChkaXJuYW1lIFwiJHBsdWdpblwiKVwiOyBcdG12IC12VCAnZG9ja2VyLWNvbXBvc2UnIFwiJHBsdWdpblwiOyBcdGNobW9kICt4IFwiJHBsdWdpblwiOyBcdFx0bG4gLXN2IFwiJHBsdWdpblwiIC91c3IvbG9jYWwvYmluLzsgXHRkb2NrZXItY29tcG9zZSAtLXZlcnNpb247IFx0ZG9ja2VyIGNvbXBvc2UgdmVyc2lvbiJ9LHsiY3JlYXRlZCI6IjIwMjItMTItMDVUMjE6MjA6MTMuNzU5NjAzMTM3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIGZpbGU6YWJiMTM3ZDI0MTMwZTdmYTJiZGQzODY5NGFmNjA3MzYxZWNiNjg4NTIxZTYwOTY1NjgxZTQ5NDYwOTY0YTIwNCBpbiAvdXNyL2xvY2FsL2Jpbi9tb2Rwcm9iZSAifSx7ImNyZWF0ZWQiOiIyMDIyLTEyLTA1VDIxOjIwOjEzLjg3NDU4NTM4NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOjViMTg3NjgwMjlkYWI4MTc0YzlkNTk1N2JiMzk1NjBiZGU1ZWY2Y2JhNTBmYmJjYTIyMjczMWEwMDU5YjQ0OWIgaW4gL3Vzci9sb2NhbC9iaW4vICJ9LHsiY3JlYXRlZCI6IjIwMjItMTItMDVUMjE6MjA6MTMuOTc0MDI0MTYyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIERPQ0tFUl9UTFNfQ0VSVERJUj0vY2VydHMiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMi0wNVQyMToyMDoxNC41NTE0NTY5MThaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgbWtkaXIgL2NlcnRzIC9jZXJ0cy9jbGllbnQgXHUwMDI2XHUwMDI2IGNobW9kIDE3NzcgL2NlcnRzIC9jZXJ0cy9jbGllbnQifSx7ImNyZWF0ZWQiOiIyMDIyLTEyLTA1VDIxOjIwOjE0LjY1NDcwNzkwNFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMi0wNVQyMToyMDoxNC43NTY3NTM3OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCJzaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1NjpkZWQ3YTIyMGJiMDU4ZTI4ZWUzMjU0ZmJiYTA0Y2E5MGI2NzkwNzA0MjQ0MjQ3NjFhNTNhMDQzYjkzYjYxMmJmIiwic2hhMjU2OmI2OGJhNDgzZDczYjFkMzI4MmI5ZDlkYmI5M2YzMmIyOTRkOTZmY2M1NDA1ODY1MWJhNTc1OTI1ODhiZWQ2NzQiLCJzaGEyNTY6MjA0ZDUzMTRjMGQxOWQ0M2RjODRiYzgxZWQxZWNmOGU3YjQwNDZkZTY1ZTFmYWY4MTI2MGI2MGU2OWZjNTE0OCIsInNoYTI1Njo0YTUyMjBkMjFiYWNjYzdmMDIwMjllYzQ5ZjAyZjQ1ZjFiYmNjMGE4ZGYwMTRlZWJmMzRiMDAxNTM0MWNmMjkwIiwic2hhMjU2OjQzZTA3NjIzOGY3NGQ5NDA4MjFiNmYzNTYxMDkyYzY2YTMzNGRlOWRjZWJkMDQ4MjA5NmVkYjhhYWIxNDhkNjEiLCJzaGEyNTY6ZjBhNDQxNmExM2QwNDczM2ZmODViNGUyZDJiY2Y0NjJhNjBkNWYyOGVjNzJlNTU3ODUwYjNhMDRhYzEyOWU1OSIsInNoYTI1Njo2NzY5ODk4Mjc1NDA4NTc5ZjczNzQzZGE3NGU2ZTIyMDlkMzE1MWNjZDYxMjViNjI1MzhjMTY5Mzk2MWY2N2ZmIiwic2hhMjU2OjdmNDk0YTA2MjIxMDQwNmExNGU1OTIzNzEwNjdhMjg5MzU2NzIwYzZmNjA4ZWFiMjBhYjk5NTFiYjY4OTRkODMiXX19",
+   "repoDigests": [
+    "docker@sha256:812ff1098c97878ae26ca8e0423e00aa157596a8b28d4bd52c120c4d087e8ae1"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.17.0",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "grype-docker.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2022-12-07T08:17:22Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:8774b3b0460c2ab121c966fd48f53bdd61ef096fa9c88a32c98784cb3091ab2a",
+   "error": null
+  }
+ }
+}

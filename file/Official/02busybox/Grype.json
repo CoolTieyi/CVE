@@ -1,0 +1,127 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "busybox",
+   "imageID": "sha256:9d5226e6ce3fb6aee2822206a5ef85f38c303d2b37bfc894b419fca2c0501269",
+   "manifestDigest": "sha256:5f809f2970d626e727745ca4b0aedf3e17b3e8b880b28fd0f9fa23821e826cbc",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "busybox:latest"
+   ],
+   "imageSize": 1239772,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:40cf597a9181e86497f4121c604f9f0ab208950a98ca21db883f26b0a548a2eb",
+     "size": 1239772
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNDU3LCJkaWdlc3QiOiJzaGEyNTY6OWQ1MjI2ZTZjZTNmYjZhZWUyODIyMjA2YTVlZjg1ZjM4YzMwM2QyYjM3YmZjODk0YjQxOWZjYTJjMDUwMTI2OSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNDU5MjAwLCJkaWdlc3QiOiJzaGEyNTY6NDBjZjU5N2E5MTgxZTg2NDk3ZjQxMjFjNjA0ZjlmMGFiMjA4OTUwYTk4Y2EyMWRiODgzZjI2YjBhNTQ4YTJlYiJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbInNoIl0sIkltYWdlIjoic2hhMjU2OjY4OGRiN2E1M2IyZThkMDM1OGMwZTFmMzA5ODU2MjkwYmIyNWNlN2FjYWJiZjk5MzhmNTgwNTgyZTkyMTgzM2YiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6bnVsbCwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjpudWxsfSwiY29udGFpbmVyIjoiNjVhYWVkMWQxZjg5Y2QzY2Q1YWFjOTEzN2M0Nzg2ODMxZTk5YTg0NWFkODIzNDk2YzYwMDhhMjJhNzI1Yzc4MCIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiI2NWFhZWQxZDFmODkiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiQ01EIFtcInNoXCJdIl0sIkltYWdlIjoic2hhMjU2OjY4OGRiN2E1M2IyZThkMDM1OGMwZTFmMzA5ODU2MjkwYmIyNWNlN2FjYWJiZjk5MzhmNTgwNTgyZTkyMTgzM2YiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6bnVsbCwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDIyLTExLTE4VDAxOjE5OjI5LjQ0MjI1Nzc3M1oiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjEyIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjItMTEtMThUMDE6MTk6MjkuMzIxNDY1NTM4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTozNmQ5ZjQ5N2Y2NzlkNTY3MzdhYzEzNzlkOTNmN2I2YTJlNGM4MTRlMzhlODY4YTVhOGU3MTljNGIyMjZlZjZlIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0xOFQwMToxOToyOS40NDIyNTc3NzNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wic2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NDBjZjU5N2E5MTgxZTg2NDk3ZjQxMjFjNjA0ZjlmMGFiMjA4OTUwYTk4Y2EyMWRiODgzZjI2YjBhNTQ4YTJlYiJdfX0=",
+   "repoDigests": [
+    "busybox@sha256:59f225fdf34f28a07d22343ee415ee417f6b8365cf4a0d3a2933cbd8fd7cf8c1"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "busybox",
+  "version": "1.34.1",
+  "idLike": [
+   "busybox"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "grype-busybox.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2022-12-07T08:17:22Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:8774b3b0460c2ab121c966fd48f53bdd61ef096fa9c88a32c98784cb3091ab2a",
+   "error": null
+  }
+ }
+}

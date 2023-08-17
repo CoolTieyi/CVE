@@ -1,0 +1,73 @@
+{
+    "image": "openjdk",
+    "unapproved": [
+        "ELSA-2021-9344",
+        "ELSA-2022-9221",
+        "ELSA-2022-9564",
+        "ELSA-2022-9263",
+        "ELSA-2021-9344",
+        "ELSA-2021-9344"
+    ],
+    "vulnerabilities": [
+        {
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-211.0.1.el8",
+            "vulnerability": "ELSA-2021-9344",
+            "namespace": "oracle:8",
+            "description": "    ",
+            "link": "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+            "severity": "High",
+            "fixedby": "2:2.28-151.0.1.ksplice2.el8"
+        },
+        {
+            "featurename": "libgcrypt",
+            "featureversion": "1.8.5-7.el8_6",
+            "vulnerability": "ELSA-2022-9564",
+            "namespace": "oracle:8",
+            "description": " [ 1.8.5-7_fips] - Add API to provide hash calculation in RSA/DSA/ECDSA signature   operations [Orabug: 33081130] - Change Epoch from 1 to 10 [1.8.5-7] - Fix CVE-2021-33560 (#2018525) ",
+            "link": "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+            "severity": "High",
+            "fixedby": "10:1.8.5-7.el8_6_fips"
+        },
+        {
+            "featurename": "glibc-common",
+            "featureversion": "2.28-211.0.1.el8",
+            "vulnerability": "ELSA-2021-9344",
+            "namespace": "oracle:8",
+            "description": "    ",
+            "link": "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+            "severity": "High",
+            "fixedby": "2:2.28-151.0.1.ksplice2.el8"
+        },
+        {
+            "featurename": "glibc",
+            "featureversion": "2.28-211.0.1.el8",
+            "vulnerability": "ELSA-2021-9344",
+            "namespace": "oracle:8",
+            "description": "    ",
+            "link": "https://linux.oracle.com/errata/ELSA-2021-9344.html",
+            "severity": "High",
+            "fixedby": "2:2.28-151.0.1.ksplice2.el8"
+        },
+        {
+            "featurename": "gnutls",
+            "featureversion": "3.6.16-5.el8_6",
+            "vulnerability": "ELSA-2022-9221",
+            "namespace": "oracle:8",
+            "description": " [3.6.16-4.0.1_fips] - Allow RSA keygen with modulus sizes bigger than 3072 bits and validate the seed length   as defined in FIPS 186-4 section B.3.2 [Orabug: 33200526] - Allow bigger known RSA modulus sizes when calling   rsa_generate_fips186_4_keypair directly [Orabug: 33200526] - Change Epoch from 1 to 10 [3.6.16-4] - p11tool: Document ID reuse behavior when importing certs (#1776250) [3.6.16-3] - Treat SHA-1 signed CA in the trusted set differently (#1965445) [3.6.16-2] - Filter certificate_types in TLS 1.2 CR based on signature algorithms (#1942216) [3.6.16-1] - Update to upstream 3.6.16 release (#1956783) - Fix potential use-after-free in key_share handling (#1927597) - Fix potential use-after-free in pre_shared_key handling (#1927593) - Stop gnutls-serv relying on AI_ADDRCONFIG to decide listening address (#1908334) - Fix cert expiration issue in tests (#1908110) [3.6.14-10] - Port fixes for potential miscalculation in ecdsa_verify (#1942931) [3.6.14-9] - Revert the previous change ",
+            "link": "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "severity": "Medium",
+            "fixedby": "10:3.6.16-4.0.1.el8_fips"
+        },
+        {
+            "featurename": "libgcrypt",
+            "featureversion": "1.8.5-7.el8_6",
+            "vulnerability": "ELSA-2022-9263",
+            "namespace": "oracle:8",
+            "description": " [1.8.5-6_fips] - Add API to provide hash calculation in RSA/DSA/ECDSA signature   operations [Orabug: 33081130] - Change Epoch from 1 to 10 [1.8.5-6] - Fix for CVE-2021-33560 (#1971421) - Enable HW optimizations in FIPS (#1976137) - Performance enchancements for ChaCha20 and Poly1305 (#1855231) [1.8.5-5] - Performance enchancements for AES-GCM, CRC32 and SHA2 (#1855231) ",
+            "link": "https://linux.oracle.com/errata/ELSA-2022-9263.html",
+            "severity": "Medium",
+            "fixedby": "10:1.8.5-6.el8_fips"
+        }
+    ]
+}

@@ -1,0 +1,763 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "google/cadvisor",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.7.0",
+      "EOSL": true
+    },
+    "ImageID": "sha256:eb12107075737019dce2d795dd82f5a72197eb3c64b2140392eaad3ba3b8a34e",
+    "DiffIDs": [
+      "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215",
+      "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089",
+      "sha256:66b3c2e84199a8f55c119adabeb3ddacb78cc390c5ac6a46078baf86141575fb"
+    ],
+    "RepoTags": [
+      "google/cadvisor:latest"
+    ],
+    "RepoDigests": [
+      "google/cadvisor@sha256:815386ebbe9a3490f38785ab11bda34ec8dacf4634af77b8912832d4f85dca04"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "author": "dengnan@google.com vmarmol@google.com vishnuk@google.com jimmidyson@gmail.com stclair@google.com",
+      "container": "e291358bdffdb4857bf1aabf45a6929222a3458292bd86a3010eacfa0fd3f869",
+      "created": "2018-11-12T21:58:11.043673622Z",
+      "docker_version": "17.12.0-ce",
+      "history": [
+        {
+          "created": "2018-01-09T21:10:58Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / "
+        },
+        {
+          "created": "2018-01-09T21:10:58Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2018-06-05T18:08:53Z",
+          "created_by": "/bin/sh -c #(nop)  MAINTAINER dengnan@google.com vmarmol@google.com vishnuk@google.com jimmidyson@gmail.com stclair@google.com",
+          "empty_layer": true
+        },
+        {
+          "created": "2018-09-07T23:07:15Z",
+          "created_by": "/bin/sh -c #(nop)  ENV GLIBC_VERSION=2.28-r0",
+          "empty_layer": true
+        },
+        {
+          "created": "2018-09-07T23:07:26Z",
+          "created_by": "/bin/sh -c apk --no-cache add ca-certificates wget device-mapper findutils \u0026\u0026     apk --no-cache add zfs --repository http://dl-3.alpinelinux.org/alpine/edge/main/ \u0026\u0026     apk --no-cache add thin-provisioning-tools --repository http://dl-3.alpinelinux.org/alpine/edge/main/ \u0026\u0026     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \u0026\u0026     wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-${GLIBC_VERSION}.apk \u0026\u0026     wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-bin-${GLIBC_VERSION}.apk \u0026\u0026     apk add glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.apk \u0026\u0026     /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib \u0026\u0026     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' \u003e\u003e /etc/nsswitch.conf \u0026\u0026     rm -rf /var/cache/apk/*"
+        },
+        {
+          "created": "2018-11-12T21:58:09Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:0a9af2fcaec83ee9d5e3a0d26a51544f473b11efc88e46499af2cafee31559f4 in /usr/bin/cadvisor "
+        },
+        {
+          "created": "2018-11-12T21:58:10Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 8080",
+          "empty_layer": true
+        },
+        {
+          "created": "2018-11-12T21:58:11Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/cadvisor\" \"-logtostderr\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215",
+          "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089",
+          "sha256:66b3c2e84199a8f55c119adabeb3ddacb78cc390c5ac6a46078baf86141575fb"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/usr/bin/cadvisor",
+          "-logtostderr"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GLIBC_VERSION=2.28-r0"
+        ],
+        "Image": "sha256:97b1fa38a88ff7538d6c2bbc7734cffaebd0ab39f4f0616fd09b585a54792fdd",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "google/cadvisor (alpine 3.7.0)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2018-20843",
+          "PkgID": "expat@2.2.5-r0",
+          "PkgName": "expat",
+          "InstalledVersion": "2.2.5-r0",
+          "FixedVersion": "2.2.7-r0",
+          "Layer": {
+            "DiffID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20843",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "expat: large number of colons in input makes parser consume high amount of resources, leading to DoS",
+          "Description": "In libexpat in Expat before 2.2.7, XML input including XML names that contain a large number of colons could make the XML parser consume a high amount of RAM and CPU resources while processing (enough to be usable for denial-of-service attacks).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00039.html",
+            "https://access.redhat.com/security/cve/CVE-2018-20843",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5226",
+            "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=931031",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20843",
+            "https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes",
+            "https://github.com/libexpat/libexpat/issues/186",
+            "https://github.com/libexpat/libexpat/pull/262",
+            "https://github.com/libexpat/libexpat/pull/262/commits/11f8838bf99ea0a6f0b76f9760c43704d00c4ff6",
+            "https://linux.oracle.com/cve/CVE-2018-20843.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4484.html",
+            "https://lists.debian.org/debian-lts-announce/2019/06/msg00028.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CEJJSQSG3KSUQY4FPVHZ7ZTT7FORMFVD/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IDAUGEB3TUP6NEKJDBUBZX7N5OAUOOOK/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-20843",
+            "https://seclists.org/bugtraq/2019/Jun/39",
+            "https://security.gentoo.org/glsa/201911-08",
+            "https://security.netapp.com/advisory/ntap-20190703-0001/",
+            "https://support.f5.com/csp/article/K51011533",
+            "https://ubuntu.com/security/notices/USN-4040-1",
+            "https://ubuntu.com/security/notices/USN-4040-2",
+            "https://ubuntu.com/security/notices/USN-4852-1",
+            "https://ubuntu.com/security/notices/USN-5455-1",
+            "https://usn.ubuntu.com/4040-1/",
+            "https://usn.ubuntu.com/4040-2/",
+            "https://www.debian.org/security/2019/dsa-4472",
+            "https://www.oracle.com/security-alerts/cpuApr2021.html",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html",
+            "https://www.oracle.com/security-alerts/cpuoct2020.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.tenable.com/security/tns-2021-11"
+          ],
+          "PublishedDate": "2019-06-24T17:15:00Z",
+          "LastModifiedDate": "2022-04-18T17:17:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-15903",
+          "PkgID": "expat@2.2.5-r0",
+          "PkgName": "expat",
+          "InstalledVersion": "2.2.5-r0",
+          "FixedVersion": "2.2.7-r1",
+          "Layer": {
+            "DiffID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-15903",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "expat: heap-based buffer over-read via crafted XML input",
+          "Description": "In libexpat before 2.2.8, crafted XML input could fool the parser into changing from DTD parsing to document parsing too early; a consecutive call to XML_GetCurrentLineNumber (or XML_GetCurrentColumnNumber) then resulted in a heap-based buffer over-read.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-125",
+            "CWE-776"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2019-09/msg00080.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-09/msg00081.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00000.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00002.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00003.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00013.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00016.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00017.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00018.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00019.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00008.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00040.html",
+            "http://packetstormsecurity.com/files/154503/Slackware-Security-Advisory-expat-Updates.html",
+            "http://packetstormsecurity.com/files/154927/Slackware-Security-Advisory-python-Updates.html",
+            "http://packetstormsecurity.com/files/154947/Slackware-Security-Advisory-mozilla-firefox-Updates.html",
+            "http://seclists.org/fulldisclosure/2019/Dec/23",
+            "http://seclists.org/fulldisclosure/2019/Dec/26",
+            "http://seclists.org/fulldisclosure/2019/Dec/27",
+            "http://seclists.org/fulldisclosure/2019/Dec/30",
+            "https://access.redhat.com/errata/RHSA-2019:3210",
+            "https://access.redhat.com/errata/RHSA-2019:3237",
+            "https://access.redhat.com/errata/RHSA-2019:3756",
+            "https://access.redhat.com/security/cve/CVE-2019-15903",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15903",
+            "https://github.com/libexpat/libexpat/commit/c20b758c332d9a13afbbb276d30db1d183a85d43",
+            "https://github.com/libexpat/libexpat/issues/317",
+            "https://github.com/libexpat/libexpat/issues/342",
+            "https://github.com/libexpat/libexpat/pull/318",
+            "https://linux.oracle.com/cve/CVE-2019-15903.html",
+            "https://linux.oracle.com/errata/ELSA-2020-4484.html",
+            "https://lists.debian.org/debian-lts-announce/2019/11/msg00006.html",
+            "https://lists.debian.org/debian-lts-announce/2019/11/msg00017.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A4TZKPJFTURRLXIGLB34WVKQ5HGY6JJA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BDUTI5TVQWIGGQXPEVI4T2ENHFSBMIBP/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S26LGXXQ7YF2BP3RGOWELBFKM6BHF6UG/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-15903",
+            "https://seclists.org/bugtraq/2019/Dec/17",
+            "https://seclists.org/bugtraq/2019/Dec/21",
+            "https://seclists.org/bugtraq/2019/Dec/23",
+            "https://seclists.org/bugtraq/2019/Nov/1",
+            "https://seclists.org/bugtraq/2019/Nov/24",
+            "https://seclists.org/bugtraq/2019/Oct/29",
+            "https://seclists.org/bugtraq/2019/Sep/30",
+            "https://seclists.org/bugtraq/2019/Sep/37",
+            "https://security.gentoo.org/glsa/201911-08",
+            "https://security.netapp.com/advisory/ntap-20190926-0004/",
+            "https://support.apple.com/kb/HT210785",
+            "https://support.apple.com/kb/HT210788",
+            "https://support.apple.com/kb/HT210789",
+            "https://support.apple.com/kb/HT210790",
+            "https://support.apple.com/kb/HT210793",
+            "https://support.apple.com/kb/HT210794",
+            "https://support.apple.com/kb/HT210795",
+            "https://ubuntu.com/security/notices/USN-4132-1",
+            "https://ubuntu.com/security/notices/USN-4132-2",
+            "https://ubuntu.com/security/notices/USN-4165-1",
+            "https://ubuntu.com/security/notices/USN-4202-1",
+            "https://ubuntu.com/security/notices/USN-4335-1",
+            "https://ubuntu.com/security/notices/USN-4852-1",
+            "https://ubuntu.com/security/notices/USN-5455-1",
+            "https://usn.ubuntu.com/4132-1/",
+            "https://usn.ubuntu.com/4132-2/",
+            "https://usn.ubuntu.com/4165-1/",
+            "https://usn.ubuntu.com/4202-1/",
+            "https://usn.ubuntu.com/4335-1/",
+            "https://www.debian.org/security/2019/dsa-4530",
+            "https://www.debian.org/security/2019/dsa-4549",
+            "https://www.debian.org/security/2019/dsa-4571",
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2019-34/#CVE-2019-15903",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html",
+            "https://www.oracle.com/security-alerts/cpuoct2020.html",
+            "https://www.tenable.com/security/tns-2021-11"
+          ],
+          "PublishedDate": "2019-09-04T06:15:00Z",
+          "LastModifiedDate": "2022-07-28T11:23:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20217",
+          "PkgID": "krb5-libs@1.15.3-r0",
+          "PkgName": "krb5-libs",
+          "InstalledVersion": "1.15.3-r0",
+          "FixedVersion": "1.15.4-r0",
+          "Layer": {
+            "DiffID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20217",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "krb5: Reachable assertion in the KDC using S4U2Self requests",
+          "Description": "A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-617"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 3.5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://krbdev.mit.edu/rt/Ticket/Display.html?id=8763",
+            "https://access.redhat.com/security/cve/CVE-2018-20217",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20217",
+            "https://github.com/krb5/krb5/commit/5e6d1796106df8ba6bc1973ee0917c170d929086",
+            "https://lists.debian.org/debian-lts-announce/2019/01/msg00020.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2KNHELH4YHNT6H2ESJWX2UIDXLBNGB2O/",
+            "https://security.netapp.com/advisory/ntap-20190416-0006/",
+            "https://ubuntu.com/security/notices/USN-5828-1"
+          ],
+          "PublishedDate": "2018-12-26T21:29:00Z",
+          "LastModifiedDate": "2021-10-18T12:03:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-0732",
+          "PkgID": "libressl2.6-libcrypto@2.6.3-r0",
+          "PkgName": "libressl2.6-libcrypto",
+          "InstalledVersion": "2.6.3-r0",
+          "FixedVersion": "2.6.5-r0",
+          "Layer": {
+            "DiffID": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-0732",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Malicious server can send large prime to client during DH(E) TLS handshake causing the client to hang",
+          "Description": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-320"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+            "http://www.securityfocus.com/bid/104442",
+            "http://www.securitytracker.com/id/1041090",
+            "https://access.redhat.com/errata/RHSA-2018:2552",
+            "https://access.redhat.com/errata/RHSA-2018:2553",
+            "https://access.redhat.com/errata/RHSA-2018:3221",
+            "https://access.redhat.com/errata/RHSA-2018:3505",
+            "https://access.redhat.com/errata/RHSA-2019:1296",
+            "https://access.redhat.com/errata/RHSA-2019:1297",
+            "https://access.redhat.com/errata/RHSA-2019:1543",
+            "https://access.redhat.com/security/cve/CVE-2018-0732",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-419820.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3984ef0b72831da8b3ece4745cac4f8575b19098",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ea7abeeabf92b7aca160bdd0208636d4da69f4f4",
+            "https://linux.oracle.com/cve/CVE-2018-0732.html",
+            "https://linux.oracle.com/errata/ELSA-2018-4249.html",
+            "https://lists.debian.org/debian-lts-announce/2018/07/msg00043.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EWC42UXL5GHTU5G77VKBF6JYUUNGSHOM/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y3IVFGSERAZLNJCK35TEM2R4726XIH3Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZBEV5QGDRFUZDMNECFXUSN5FMYOZDE4V/",
+            "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/",
+            "https://security.gentoo.org/glsa/201811-03",
+            "https://security.netapp.com/advisory/ntap-20181105-0001/",
+            "https://security.netapp.com/advisory/ntap-20190118-0002/",
+            "https://securityadvisories.paloaltonetworks.com/Home/Detail/133",
+            "https://ubuntu.com/security/notices/USN-3692-1",
+            "https://ubuntu.com/security/notices/USN-3692-2",
+            "https://usn.ubuntu.com/3692-1/",
+            "https://usn.ubuntu.com/3692-2/",
+            "https://www.debian.org/security/2018/dsa-4348",
+            "https://www.debian.org/security/2018/dsa-4355",
+            "https://www.openssl.org/news/secadv/20180612.txt",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html",
+            "https://www.oracle.com/security-alerts/cpujan2021.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html",
+            "https://www.tenable.com/security/tns-2018-12",
+            "https://www.tenable.com/security/tns-2018-13",
+            "https://www.tenable.com/security/tns-2018-14",
+            "https://www.tenable.com/security/tns-2018-17"
+          ],
+          "PublishedDate": "2018-06-12T13:29:00Z",
+          "LastModifiedDate": "2022-08-16T13:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-0495",
+          "PkgID": "libressl2.6-libcrypto@2.6.3-r0",
+          "PkgName": "libressl2.6-libcrypto",
+          "InstalledVersion": "2.6.3-r0",
+          "FixedVersion": "2.6.5-r0",
+          "Layer": {
+            "DiffID": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-0495",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "ROHNP: Key Extraction Side Channel in Multiple Crypto Libraries",
+          "Description": "Libgcrypt before 1.7.10 and 1.8.x before 1.8.3 allows a memory-cache side-channel attack on ECDSA signatures that can be mitigated through the use of blinding during the signing process in the _gcry_ecc_ecdsa_sign function in cipher/ecc-ecdsa.c, aka the Return Of the Hidden Number Problem or ROHNP. To discover an ECDSA key, the attacker needs access to either the local machine or a different virtual machine on the same physical host.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 1.9,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.1
+            }
+          },
+          "References": [
+            "http://www.securitytracker.com/id/1041144",
+            "http://www.securitytracker.com/id/1041147",
+            "https://access.redhat.com/errata/RHSA-2018:3221",
+            "https://access.redhat.com/errata/RHSA-2018:3505",
+            "https://access.redhat.com/errata/RHSA-2019:1296",
+            "https://access.redhat.com/errata/RHSA-2019:1297",
+            "https://access.redhat.com/errata/RHSA-2019:1543",
+            "https://access.redhat.com/errata/RHSA-2019:2237",
+            "https://access.redhat.com/security/cve/CVE-2018-0495",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495",
+            "https://dev.gnupg.org/T4011",
+            "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.38_release_notes",
+            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=9010d1576e278a4274ad3f4aa15776c28f6ba965",
+            "https://linux.oracle.com/cve/CVE-2018-0495.html",
+            "https://linux.oracle.com/errata/ELSA-2019-2237.html",
+            "https://lists.debian.org/debian-lts-announce/2018/06/msg00013.html",
+            "https://lists.gnupg.org/pipermail/gnupg-announce/2018q2/000426.html",
+            "https://ubuntu.com/security/notices/USN-3689-1",
+            "https://ubuntu.com/security/notices/USN-3689-2",
+            "https://ubuntu.com/security/notices/USN-3692-1",
+            "https://ubuntu.com/security/notices/USN-3692-2",
+            "https://ubuntu.com/security/notices/USN-3850-1",
+            "https://ubuntu.com/security/notices/USN-3850-2",
+            "https://usn.ubuntu.com/3689-1/",
+            "https://usn.ubuntu.com/3689-2/",
+            "https://usn.ubuntu.com/3692-1/",
+            "https://usn.ubuntu.com/3692-2/",
+            "https://usn.ubuntu.com/3850-1/",
+            "https://usn.ubuntu.com/3850-2/",
+            "https://www.debian.org/security/2018/dsa-4231",
+            "https://www.nccgroup.trust/us/our-research/technical-advisory-return-of-the-hidden-number-problem/",
+            "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html"
+          ],
+          "PublishedDate": "2018-06-13T23:29:00Z",
+          "LastModifiedDate": "2020-08-24T17:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-0732",
+          "PkgID": "libressl2.6-libssl@2.6.3-r0",
+          "PkgName": "libressl2.6-libssl",
+          "InstalledVersion": "2.6.3-r0",
+          "FixedVersion": "2.6.5-r0",
+          "Layer": {
+            "DiffID": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-0732",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Malicious server can send large prime to client during DH(E) TLS handshake causing the client to hang",
+          "Description": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-320"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+            "http://www.securityfocus.com/bid/104442",
+            "http://www.securitytracker.com/id/1041090",
+            "https://access.redhat.com/errata/RHSA-2018:2552",
+            "https://access.redhat.com/errata/RHSA-2018:2553",
+            "https://access.redhat.com/errata/RHSA-2018:3221",
+            "https://access.redhat.com/errata/RHSA-2018:3505",
+            "https://access.redhat.com/errata/RHSA-2019:1296",
+            "https://access.redhat.com/errata/RHSA-2019:1297",
+            "https://access.redhat.com/errata/RHSA-2019:1543",
+            "https://access.redhat.com/security/cve/CVE-2018-0732",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-419820.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3984ef0b72831da8b3ece4745cac4f8575b19098",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ea7abeeabf92b7aca160bdd0208636d4da69f4f4",
+            "https://linux.oracle.com/cve/CVE-2018-0732.html",
+            "https://linux.oracle.com/errata/ELSA-2018-4249.html",
+            "https://lists.debian.org/debian-lts-announce/2018/07/msg00043.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EWC42UXL5GHTU5G77VKBF6JYUUNGSHOM/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y3IVFGSERAZLNJCK35TEM2R4726XIH3Z/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZBEV5QGDRFUZDMNECFXUSN5FMYOZDE4V/",
+            "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/",
+            "https://security.gentoo.org/glsa/201811-03",
+            "https://security.netapp.com/advisory/ntap-20181105-0001/",
+            "https://security.netapp.com/advisory/ntap-20190118-0002/",
+            "https://securityadvisories.paloaltonetworks.com/Home/Detail/133",
+            "https://ubuntu.com/security/notices/USN-3692-1",
+            "https://ubuntu.com/security/notices/USN-3692-2",
+            "https://usn.ubuntu.com/3692-1/",
+            "https://usn.ubuntu.com/3692-2/",
+            "https://www.debian.org/security/2018/dsa-4348",
+            "https://www.debian.org/security/2018/dsa-4355",
+            "https://www.openssl.org/news/secadv/20180612.txt",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html",
+            "https://www.oracle.com/security-alerts/cpujan2021.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html",
+            "https://www.tenable.com/security/tns-2018-12",
+            "https://www.tenable.com/security/tns-2018-13",
+            "https://www.tenable.com/security/tns-2018-14",
+            "https://www.tenable.com/security/tns-2018-17"
+          ],
+          "PublishedDate": "2018-06-12T13:29:00Z",
+          "LastModifiedDate": "2022-08-16T13:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-0495",
+          "PkgID": "libressl2.6-libssl@2.6.3-r0",
+          "PkgName": "libressl2.6-libssl",
+          "InstalledVersion": "2.6.3-r0",
+          "FixedVersion": "2.6.5-r0",
+          "Layer": {
+            "DiffID": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-0495",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "ROHNP: Key Extraction Side Channel in Multiple Crypto Libraries",
+          "Description": "Libgcrypt before 1.7.10 and 1.8.x before 1.8.3 allows a memory-cache side-channel attack on ECDSA signatures that can be mitigated through the use of blinding during the signing process in the _gcry_ecc_ecdsa_sign function in cipher/ecc-ecdsa.c, aka the Return Of the Hidden Number Problem or ROHNP. To discover an ECDSA key, the attacker needs access to either the local machine or a different virtual machine on the same physical host.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 1.9,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.1
+            }
+          },
+          "References": [
+            "http://www.securitytracker.com/id/1041144",
+            "http://www.securitytracker.com/id/1041147",
+            "https://access.redhat.com/errata/RHSA-2018:3221",
+            "https://access.redhat.com/errata/RHSA-2018:3505",
+            "https://access.redhat.com/errata/RHSA-2019:1296",
+            "https://access.redhat.com/errata/RHSA-2019:1297",
+            "https://access.redhat.com/errata/RHSA-2019:1543",
+            "https://access.redhat.com/errata/RHSA-2019:2237",
+            "https://access.redhat.com/security/cve/CVE-2018-0495",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495",
+            "https://dev.gnupg.org/T4011",
+            "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.38_release_notes",
+            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=9010d1576e278a4274ad3f4aa15776c28f6ba965",
+            "https://linux.oracle.com/cve/CVE-2018-0495.html",
+            "https://linux.oracle.com/errata/ELSA-2019-2237.html",
+            "https://lists.debian.org/debian-lts-announce/2018/06/msg00013.html",
+            "https://lists.gnupg.org/pipermail/gnupg-announce/2018q2/000426.html",
+            "https://ubuntu.com/security/notices/USN-3689-1",
+            "https://ubuntu.com/security/notices/USN-3689-2",
+            "https://ubuntu.com/security/notices/USN-3692-1",
+            "https://ubuntu.com/security/notices/USN-3692-2",
+            "https://ubuntu.com/security/notices/USN-3850-1",
+            "https://ubuntu.com/security/notices/USN-3850-2",
+            "https://usn.ubuntu.com/3689-1/",
+            "https://usn.ubuntu.com/3689-2/",
+            "https://usn.ubuntu.com/3692-1/",
+            "https://usn.ubuntu.com/3692-2/",
+            "https://usn.ubuntu.com/3850-1/",
+            "https://usn.ubuntu.com/3850-2/",
+            "https://www.debian.org/security/2018/dsa-4231",
+            "https://www.nccgroup.trust/us/our-research/technical-advisory-return-of-the-hidden-number-problem/",
+            "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html"
+          ],
+          "PublishedDate": "2018-06-13T23:29:00Z",
+          "LastModifiedDate": "2020-08-24T17:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-14697",
+          "PkgID": "musl@1.1.18-r2",
+          "PkgName": "musl",
+          "InstalledVersion": "1.1.18-r2",
+          "FixedVersion": "1.1.18-r4",
+          "Layer": {
+            "DiffID": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-14697",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "musl libc through 1.1.23 has an x87 floating-point stack adjustment im ...",
+          "Description": "musl libc through 1.1.23 has an x87 floating-point stack adjustment imbalance, related to the math/i386/ directory. In some cases, use of this library could introduce out-of-bounds writes that are not present in an application's source code.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2019/08/06/4",
+            "https://security.gentoo.org/glsa/202003-13",
+            "https://www.openwall.com/lists/musl/2019/08/06/1"
+          ],
+          "PublishedDate": "2019-08-06T16:15:00Z",
+          "LastModifiedDate": "2020-03-14T19:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-14697",
+          "PkgID": "musl-utils@1.1.18-r2",
+          "PkgName": "musl-utils",
+          "InstalledVersion": "1.1.18-r2",
+          "FixedVersion": "1.1.18-r4",
+          "Layer": {
+            "DiffID": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-14697",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "musl libc through 1.1.23 has an x87 floating-point stack adjustment im ...",
+          "Description": "musl libc through 1.1.23 has an x87 floating-point stack adjustment imbalance, related to the math/i386/ directory. In some cases, use of this library could introduce out-of-bounds writes that are not present in an application's source code.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2019/08/06/4",
+            "https://security.gentoo.org/glsa/202003-13",
+            "https://www.openwall.com/lists/musl/2019/08/06/1"
+          ],
+          "PublishedDate": "2019-08-06T16:15:00Z",
+          "LastModifiedDate": "2020-03-14T19:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-20483",
+          "PkgID": "wget@1.19.5-r0",
+          "PkgName": "wget",
+          "InstalledVersion": "1.19.5-r0",
+          "FixedVersion": "1.20.1-r0",
+          "Layer": {
+            "DiffID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20483",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "wget: Information exposure in set_file_metadata function in xattr.c",
+          "Description": "set_file_metadata in xattr.c in GNU Wget before 1.20.1 stores a file's origin URL in the user.xdg.origin.url metadata attribute of the extended attributes of the downloaded file, which allows local users to obtain sensitive information (e.g., credentials contained in the URL) by reading this attribute, as demonstrated by getfattr. This also applies to Referer information in the user.xdg.referrer.url metadata attribute. According to 2016-07-22 in the Wget ChangeLog, user.xdg.origin.url was partially based on the behavior of fwrite_xattr in tool_xattr.c in curl.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 2.1,
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://git.savannah.gnu.org/cgit/wget.git/tree/NEWS",
+            "http://www.securityfocus.com/bid/106358",
+            "https://access.redhat.com/errata/RHSA-2019:3701",
+            "https://access.redhat.com/security/cve/CVE-2018-20483",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20483",
+            "https://linux.oracle.com/cve/CVE-2018-20483.html",
+            "https://linux.oracle.com/errata/ELSA-2019-3701.html",
+            "https://security.gentoo.org/glsa/201903-08",
+            "https://security.netapp.com/advisory/ntap-20190321-0002/",
+            "https://twitter.com/marcan42/status/1077676739877232640",
+            "https://ubuntu.com/security/notices/USN-3943-1",
+            "https://usn.ubuntu.com/3943-1/"
+          ],
+          "PublishedDate": "2018-12-26T18:29:00Z",
+          "LastModifiedDate": "2020-08-24T17:37:00Z"
+        }
+      ]
+    }
+  ]
+}

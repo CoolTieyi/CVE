@@ -1,0 +1,627 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "traefik",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.15.6"
+    },
+    "ImageID": "sha256:d3cd2c35d32c1bfe78d93c2fda68314b39de4f405ff4f82c86eebd3420d108b3",
+    "DiffIDs": [
+      "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5",
+      "sha256:694ee27c6a0b97918e1eed0204b26103fa760f66f4b24a887e00e9f59fd72bb7",
+      "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365",
+      "sha256:b71a966b3625f7b0f59a8819abdbf01e5b3c9b62981d17fd802b1d76f31d3e5a"
+    ],
+    "RepoTags": [
+      "traefik:latest"
+    ],
+    "RepoDigests": [
+      "traefik@sha256:ac1480ce3203541705b01d6dce40ef4bf563cdb29d5b00db88cc396fa9fa9cd5"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "7b7217d29d15d3518e1829234cc2f967df4de82bb43152d61a4ae499cc30e5aa",
+      "created": "2022-11-17T20:23:09.769430752Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-08-09T17:20:00Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:f77e3f51f020890d22997e6c2ca98968b75b8bc8c463341a2010ff0655d4c88f in / "
+        },
+        {
+          "created": "2022-08-09T17:20:01Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-07T04:21:14Z",
+          "created_by": "/bin/sh -c apk --no-cache add ca-certificates tzdata"
+        },
+        {
+          "created": "2022-11-17T20:23:09Z",
+          "created_by": "/bin/sh -c set -ex; \tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\tarmhf) arch='armv6' ;; \t\taarch64) arch='arm64' ;; \t\tx86_64) arch='amd64' ;; \t\ts390x) arch='s390x' ;; \t\t*) echo \u003e\u00262 \"error: unsupported architecture: $apkArch\"; exit 1 ;; \tesac; \twget --quiet -O /tmp/traefik.tar.gz \"https://github.com/traefik/traefik/releases/download/v2.9.5/traefik_v2.9.5_linux_$arch.tar.gz\"; \ttar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; \trm -f /tmp/traefik.tar.gz; \tchmod +x /usr/local/bin/traefik"
+        },
+        {
+          "created": "2022-11-17T20:23:09Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:59a219a1fb7a9dc894a7a9a4718fa97fd24adb0a4a6455240ec2ab0183da796e in / "
+        },
+        {
+          "created": "2022-11-17T20:23:09Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-17T20:23:09Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-17T20:23:09Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"traefik\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-17T20:23:09Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.9.5 org.opencontainers.image.documentation=https://docs.traefik.io",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5",
+          "sha256:694ee27c6a0b97918e1eed0204b26103fa760f66f4b24a887e00e9f59fd72bb7",
+          "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365",
+          "sha256:b71a966b3625f7b0f59a8819abdbf01e5b3c9b62981d17fd802b1d76f31d3e5a"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "traefik"
+        ],
+        "Entrypoint": [
+          "/entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:aabb1f3c0937fb2ba5b4745e7b7c79415f99be16705919e9d788515bfe31ef95",
+        "Labels": {
+          "org.opencontainers.image.description": "A modern reverse-proxy",
+          "org.opencontainers.image.documentation": "https://docs.traefik.io",
+          "org.opencontainers.image.source": "https://github.com/traefik/traefik",
+          "org.opencontainers.image.title": "Traefik",
+          "org.opencontainers.image.url": "https://traefik.io",
+          "org.opencontainers.image.vendor": "Traefik Labs",
+          "org.opencontainers.image.version": "v2.9.5"
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "traefik (alpine 3.15.6)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "usr/local/bin/traefik",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-8911",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.47",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8911",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws/aws-sdk-go: CBC padding oracle issue in AWS S3 Crypto SDK for golang",
+          "Description": "A padding oracle vulnerability exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. The SDK allows users to encrypt files with AES-CBC without computing a Message Authentication Code (MAC), which then allows an attacker who has write access to the target's S3 bucket and can observe whether or not an endpoint with access to the key can decrypt a file, they can reconstruct the plaintext with (on average) 128*length (plaintext) queries to the endpoint, by exploiting CBC's ability to manipulate the bytes of the next block and PKCS5 padding errors. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8911",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869800",
+            "https://github.com/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8911",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-18T13:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8912",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.47",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8912",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws-sdk-go: In-band key negotiation issue in AWS S3 Crypto SDK for golang",
+          "Description": "A vulnerability in the in-band key negotiation exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. An attacker with write access to the targeted bucket can change the encryption algorithm of an object in the bucket, which can then allow them to change AES-GCM to AES-CTR. Using this in combination with a decryption oracle can reveal the authentication key used by AES-GCM as decrypting the GMAC tag leaves the authentication key recoverable as an algebraic equation. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 2.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8912",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869801",
+            "https://github.com/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8912",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-17T19:31:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-7f33-f4f5-xwgw",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.47",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-7f33-f4f5-xwgw",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "The Go AWS S3 Crypto SDK contains vulnerabilities that can permit an attacker with write access to a bucket to decrypt files in that bucket.\n\nFiles encrypted by the V1 EncryptionClient using either the AES-CBC content cipher or the KMS key wrap algorithm are vulnerable. Users should migrate to the V1 EncryptionClientV2 API, which will not create vulnerable files. Old files will remain vulnerable until reencrypted with the new client.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ]
+        },
+        {
+          "VulnerabilityID": "GHSA-f5pg-7wfw-84q9",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.47",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-f5pg-7wfw-84q9",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "The Go AWS S3 Crypto SDK contains vulnerabilities that can permit an attacker with write access to a bucket to decrypt files in that bucket.\n\nFiles encrypted by the V1 EncryptionClient using either the AES-CBC content cipher or the KMS key wrap algorithm are vulnerable. Users should migrate to the V1 EncryptionClientV2 API, which will not create vulnerable files. Old files will remain vulnerable until reencrypted with the new client.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23648",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.5.9",
+          "FixedVersion": "1.4.13, 1.5.10, 1.6.1",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23648",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "containerd: insecure handling of image volumes",
+          "Description": "containerd is a container runtime available as a daemon for Linux and Windows. A bug was found in containerd prior to versions 1.6.1, 1.5.10, and 1.14.12 where containers launched through containerd’s CRI implementation on Linux with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd’s CRI implementation. This bug has been fixed in containerd 1.6.1, 1.5.10, and 1.4.12. Users should update to these versions to resolve the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/166421/containerd-Image-Volume-Insecure-Handling.html",
+            "https://access.redhat.com/security/cve/CVE-2022-23648",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23648",
+            "https://github.com/advisories/GHSA-crp2-qrr5-8pq7",
+            "https://github.com/containerd/containerd/commit/10f428dac7cec44c864e1b830a4623af27a9fc70",
+            "https://github.com/containerd/containerd/releases/tag/v1.4.13",
+            "https://github.com/containerd/containerd/releases/tag/v1.5.10",
+            "https://github.com/containerd/containerd/releases/tag/v1.6.1",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7.",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AUDQUQBZJGBWJPMRVB6QCCCRF7O3O4PA/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HFTS2EF3S7HNYSNZSEJZIJHPRU7OPUV3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OCCARJ6FU4MWBTXHZNMS7NELPDBIX2VO/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23648",
+            "https://ubuntu.com/security/notices/USN-5311-1",
+            "https://ubuntu.com/security/notices/USN-5311-2",
+            "https://www.debian.org/security/2022/dsa-5091"
+          ],
+          "PublishedDate": "2022-03-03T14:15:00Z",
+          "LastModifiedDate": "2022-04-25T19:21:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-31030",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.5.9",
+          "FixedVersion": "1.5.13, 1.6.6",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-31030",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "containerd is an open source container runtime. A bug was found in the ...",
+          "Description": "containerd is an open source container runtime. A bug was found in the containerd's CRI implementation where programs inside a container can cause the containerd daemon to consume memory without bound during invocation of the `ExecSync` API. This can cause containerd to consume all available memory on the computer, denying service to other legitimate workloads. Kubernetes and crictl can both be configured to use containerd's CRI implementation; `ExecSync` may be used when running probes or when executing processes via an \"exec\" facility. This bug has been fixed in containerd 1.6.6 and 1.5.13. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 2.1,
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/06/07/1",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31030",
+            "https://github.com/containerd/containerd/commit/c1bcabb4541930f643aa36a2b38655e131346382",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-5ffw-gxpp-mxpf",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/REOZCUAPCA7NFDWYBDYX6EYXWLHABKBO/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WSIGDBHAB3I75JBJNGWEPBTJPS2FOVHD/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-31030",
+            "https://www.debian.org/security/2022/dsa-5162"
+          ],
+          "PublishedDate": "2022-06-09T14:15:00Z",
+          "LastModifiedDate": "2022-11-29T16:40:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-5ffw-gxpp-mxpf",
+          "PkgName": "github.com/containerd/containerd",
+          "InstalledVersion": "v1.5.9",
+          "FixedVersion": "v1.5.13, v1.6.6",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-5ffw-gxpp-mxpf",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+          "Description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') in github.com/containerd/containerd.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://github.com/advisories/GHSA-5ffw-gxpp-mxpf",
+            "https://github.com/containerd/containerd/commit/c1bcabb4541930f643aa36a2b38655e131346382",
+            "https://github.com/containerd/containerd/security/advisories/GHSA-5ffw-gxpp-mxpf"
+          ]
+        },
+        {
+          "VulnerabilityID": "GHSA-qq97-vm5h-rrhg",
+          "PkgName": "github.com/docker/distribution",
+          "InstalledVersion": "v2.7.1+incompatible",
+          "FixedVersion": "2.8.0",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "OCI Manifest Type Confusion Issue",
+          "Description": "Systems that rely on digest equivalence for image attestations may be vulnerable to type confusion.\n\nA maliciously crafted OCI Container Image can cause registry clients to parse the same image in two different ways without modifying the image's digest, invalidating the common pattern of relying on container image digests for equivalence.\n\nThis problem has been addressed in newer versions by improving validation in manifest unmarshaling.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+            "https://github.com/distribution/distribution/commit/b59a6f827947f9e0e67df0cfb571046de4733586",
+            "https://github.com/distribution/distribution/security/advisories/GHSA-qq97-vm5h-rrhg",
+            "https://github.com/opencontainers/image-spec/pull/411",
+            "https://pkg.go.dev/vuln/GO-2022-0379"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2021-41803",
+          "PkgName": "github.com/hashicorp/consul",
+          "InstalledVersion": "v1.10.4",
+          "FixedVersion": "1.11.9",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41803",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "HashiCorp Consul 1.8.1 up to 1.11.8, 1.12.4, and 1.13.1 do not properl ...",
+          "Description": "HashiCorp Consul 1.8.1 up to 1.11.8, 1.12.4, and 1.13.1 do not properly validate the node or segment names prior to interpolation and usage in JWT claim assertions with the auto config RPC. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-862"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com/t/hcsec-2022-19-consul-auto-config-jwt-authorization-missing-input-validation/44627",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-41803",
+            "https://www.hashicorp.com/blog/category/consul"
+          ],
+          "PublishedDate": "2022-09-23T01:15:00Z",
+          "LastModifiedDate": "2022-09-24T02:02:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29153",
+          "PkgName": "github.com/hashicorp/consul",
+          "InstalledVersion": "v1.10.4",
+          "FixedVersion": "1.9.17, 1.10.10, 1.11.5",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29153",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "consul: Hashicorp Consul HTTP health check endpoints returning an HTTP redirect may be abused as SSRF vector",
+          "Description": "HashiCorp Consul and Consul Enterprise up to 1.9.16, 1.10.9, and 1.11.4 may allow server side request forgery when the Consul client agent follows redirects returned by HTTP health check endpoints. Fixed in 1.9.17, 1.10.10, and 1.11.5.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-29153",
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/",
+            "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/38393",
+            "https://github.com/advisories/GHSA-q6h7-4qgw-2j9p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29153",
+            "https://security.gentoo.org/glsa/202208-09",
+            "https://security.netapp.com/advisory/ntap-20220602-0005/"
+          ],
+          "PublishedDate": "2022-04-19T16:17:00Z",
+          "LastModifiedDate": "2022-10-19T15:09:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-24687",
+          "PkgName": "github.com/hashicorp/consul",
+          "InstalledVersion": "v1.10.4",
+          "FixedVersion": "1.9.15, 1.10.8, 1.11.3",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-24687",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "HashiCorp Consul and Consul Enterprise 1.9.0 through 1.9.14, 1.10.7, a ...",
+          "Description": "HashiCorp Consul and Consul Enterprise 1.9.0 through 1.9.14, 1.10.7, and 1.11.2 clusters with at least one Ingress Gateway allow a user with service:write to register a specifically-defined service that can cause Consul servers to panic. Fixed in 1.9.15, 1.10.8, and 1.11.3.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 3.5,
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-05-consul-ingress-gateway-panic-can-shutdown-servers/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-24687",
+            "https://security.gentoo.org/glsa/202208-09",
+            "https://security.netapp.com/advisory/ntap-20220331-0006/"
+          ],
+          "PublishedDate": "2022-02-24T16:15:00Z",
+          "LastModifiedDate": "2022-08-11T00:25:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-40716",
+          "PkgName": "github.com/hashicorp/consul",
+          "InstalledVersion": "v1.10.4",
+          "FixedVersion": "1.11.9, 1.12.5, 1.13.2",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-40716",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "HashiCorp Consul and Consul Enterprise up to 1.11.8, 1.12.4, and 1.13. ...",
+          "Description": "HashiCorp Consul and Consul Enterprise up to 1.11.8, 1.12.4, and 1.13.1 do not check for multiple SAN URI values in a CSR on the internal RPC endpoint, enabling leverage of privileged access to bypass service mesh intentions. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-252"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://discuss.hashicorp.com",
+            "https://discuss.hashicorp.com/t/hcsec-2022-20-consul-service-mesh-intention-bypass-with-malicious-certificate-signing-request/44628",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-40716"
+          ],
+          "PublishedDate": "2022-09-23T12:15:00Z",
+          "LastModifiedDate": "2022-09-26T16:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32149",
+          "PkgName": "golang.org/x/text",
+          "InstalledVersion": "v0.3.7",
+          "FixedVersion": "0.3.8",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32149",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags",
+          "Description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32149",
+            "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+            "https://github.com/golang/go/issues/56152",
+            "https://github.com/golang/text/commit/434eadcdbc3b0256971992e8c70027278364c72c",
+            "https://go.dev/cl/442235",
+            "https://go.dev/issue/56152",
+            "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+            "https://groups.google.com/g/golang-dev/c/qfPIly0X7aU",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+            "https://pkg.go.dev/vuln/GO-2022-1059"
+          ],
+          "PublishedDate": "2022-10-14T15:15:00Z",
+          "LastModifiedDate": "2022-10-18T17:41:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-69ch-w2m2-3vjp",
+          "PkgName": "golang.org/x/text",
+          "InstalledVersion": "v0.3.7",
+          "FixedVersion": "0.3.8",
+          "Layer": {
+            "DiffID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://go.dev/cl/442235",
+            "https://go.dev/issue/56152",
+            "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+            "https://pkg.go.dev/vuln/GO-2022-1059"
+          ]
+        }
+      ]
+    }
+  ]
+}

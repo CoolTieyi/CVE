@@ -1,0 +1,471 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-1999-1278",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-1999-1278",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "http://marc.info/?l=bugtraq&m=91470326629357&w=2",
+     "http://marc.info/?l=bugtraq&m=91471400632145&w=2",
+     "https://exchange.xforce.ibmcloud.com/vulnerabilities/1549",
+     "https://exchange.xforce.ibmcloud.com/vulnerabilities/1550"
+    ],
+    "description": "nlog CGI scripts do not properly filter shell metacharacters from the IP address argument, which could allow remote attackers to execute certain commands via (1) nlog-smb.pl or (2) rpc-nlog.pl.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 10,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "dotnet-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:NLog:NLog:5.1.2:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:nlog:nlog:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "NLog",
+    "version": "5.1.2",
+    "type": "dotnet",
+    "locations": [
+     {
+      "path": "/app/Jackett/JackettUpdater.deps.json",
+      "layerID": "sha256:d12fffaca51d68c83f1e8e3453441ac0a4543dab0e5bed120faf5f7763f9a3fe"
+     }
+    ],
+    "language": "dotnet",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:NLog:NLog:5.1.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:dotnet/NLog@5.1.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-1999-1278",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-1999-1278",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "http://marc.info/?l=bugtraq&m=91470326629357&w=2",
+     "http://marc.info/?l=bugtraq&m=91471400632145&w=2",
+     "https://exchange.xforce.ibmcloud.com/vulnerabilities/1549",
+     "https://exchange.xforce.ibmcloud.com/vulnerabilities/1550"
+    ],
+    "description": "nlog CGI scripts do not properly filter shell metacharacters from the IP address argument, which could allow remote attackers to execute certain commands via (1) nlog-smb.pl or (2) rpc-nlog.pl.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 10,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "dotnet-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:NLog:NLog:5.1.2:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "none (unknown)",
+      "cpes": [
+       "cpe:2.3:a:nlog:nlog:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "NLog",
+    "version": "5.1.2",
+    "type": "dotnet",
+    "locations": [
+     {
+      "path": "/app/Jackett/jackett.deps.json",
+      "layerID": "sha256:d12fffaca51d68c83f1e8e3453441ac0a4543dab0e5bed120faf5f7763f9a3fe"
+     }
+    ],
+    "language": "dotnet",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:NLog:NLog:5.1.2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:dotnet/NLog@5.1.2",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-ghhp-997w-qr28",
+    "dataSource": "https://github.com/advisories/GHSA-ghhp-997w-qr28",
+    "namespace": "github:language:dotnet",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-ghhp-997w-qr28"
+    ],
+    "description": ".NET Core Remote Code Execution Vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "4.5.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-26701",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-26701",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26701",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XPUKFHIGP5YNJRRFWKDJ2XRS4WTFJNNK/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TW3ZSJTTMZAFKGW7NJWTVVFZUYYU2SJZ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WA5WQJVHUL5C4XMJTLY3C67R4WP35EF4/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YLFATXASXW4OV2ZBSRP4G55HJH73QPBP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UBOSSX7U6BSHV5RI74FCOW4ITJ5RRJR5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S2AZOUKMCHT2WBHR7MYDTYXWOBHZW5P5/"
+     ],
+     "description": ".NET Core Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-24112.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dotnet-matcher",
+     "searchedBy": {
+      "language": "dotnet",
+      "namespace": "github:language:dotnet"
+     },
+     "found": {
+      "versionConstraint": ">=4.0.0,<4.5.1 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "System.Text.Encodings.Web",
+    "version": "4.5.0",
+    "type": "dotnet",
+    "locations": [
+     {
+      "path": "/app/Jackett/JackettUpdater.deps.json",
+      "layerID": "sha256:d12fffaca51d68c83f1e8e3453441ac0a4543dab0e5bed120faf5f7763f9a3fe"
+     }
+    ],
+    "language": "dotnet",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:System.Text.Encodings.Web:System.Text.Encodings.Web:4.5.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:dotnet/System.Text.Encodings.Web@4.5.0",
+    "upstreams": []
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-ghhp-997w-qr28",
+    "dataSource": "https://github.com/advisories/GHSA-ghhp-997w-qr28",
+    "namespace": "github:language:dotnet",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-ghhp-997w-qr28"
+    ],
+    "description": ".NET Core Remote Code Execution Vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "4.5.1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-26701",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-26701",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-26701",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XPUKFHIGP5YNJRRFWKDJ2XRS4WTFJNNK/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TW3ZSJTTMZAFKGW7NJWTVVFZUYYU2SJZ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WA5WQJVHUL5C4XMJTLY3C67R4WP35EF4/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YLFATXASXW4OV2ZBSRP4G55HJH73QPBP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UBOSSX7U6BSHV5RI74FCOW4ITJ5RRJR5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S2AZOUKMCHT2WBHR7MYDTYXWOBHZW5P5/"
+     ],
+     "description": ".NET Core Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-24112.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dotnet-matcher",
+     "searchedBy": {
+      "language": "dotnet",
+      "namespace": "github:language:dotnet"
+     },
+     "found": {
+      "versionConstraint": ">=4.0.0,<4.5.1 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "System.Text.Encodings.Web",
+    "version": "4.5.0",
+    "type": "dotnet",
+    "locations": [
+     {
+      "path": "/app/Jackett/jackett.deps.json",
+      "layerID": "sha256:d12fffaca51d68c83f1e8e3453441ac0a4543dab0e5bed120faf5f7763f9a3fe"
+     }
+    ],
+    "language": "dotnet",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:System.Text.Encodings.Web:System.Text.Encodings.Web:4.5.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:dotnet/System.Text.Encodings.Web@4.5.0",
+    "upstreams": []
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "linuxserver/jackett",
+   "imageID": "sha256:7b77bb8946848ec663e68c895a309e32c068699c2055dbd97cdec2e10ec2e08b",
+   "manifestDigest": "sha256:29f865047a469000209a201db0a3693eb7341821fafe272330f084d1780681cd",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "linuxserver/jackett:latest"
+   ],
+   "imageSize": 168894504,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:c55b7b82f73edf09acf5089f1f308bf4ca4531c0bc01e6941b5a6a4053d157fc",
+     "size": 13508293
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8f95366ed9654e2404d31efac1a0a0ee1f270930cd07f7c47c086949dc7fba89",
+     "size": 13868
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:15008532006e48bb835d5b4ad2a0423b52c20cde77ebca16cc9fb25711ef9fb0",
+     "size": 10985871
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:49881aa7c75e96e079eef357a67b7c31d08a0c01912c65069734e86e4d9d1df1",
+     "size": 6581
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:d12fffaca51d68c83f1e8e3453441ac0a4543dab0e5bed120faf5f7763f9a3fe",
+     "size": 144379253
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4514dccbcc5fc18b46b35cf091caa58a0d818a1566dc9ca1baa1e1cd9378dbf8",
+     "size": 638
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo5NjA0LCJkaWdlc3QiOiJzaGEyNTY6N2I3N2JiODk0Njg0OGVjNjYzZTY4Yzg5NWEzMDllMzJjMDY4Njk5YzIwNTVkYmQ5N2NkZWMyZTEwZWMyZTA4YiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNDI4MzI2NCwiZGlnZXN0Ijoic2hhMjU2OmM1NWI3YjgyZjczZWRmMDlhY2Y1MDg5ZjFmMzA4YmY0Y2E0NTMxYzBiYzAxZTY5NDFiNWE2YTQwNTNkMTU3ZmMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNTg3MiwiZGlnZXN0Ijoic2hhMjU2OjhmOTUzNjZlZDk2NTRlMjQwNGQzMWVmYWMxYTBhMGVlMWYyNzA5MzBjZDA3ZjdjNDdjMDg2OTQ5ZGM3ZmJhODkifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMjMyNTM3NiwiZGlnZXN0Ijoic2hhMjU2OjE1MDA4NTMyMDA2ZTQ4YmI4MzVkNWI0YWQyYTA0MjNiNTJjMjBjZGU3N2ViY2ExNmNjOWZiMjU3MTFlZjlmYjAifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3MTE2OCwiZGlnZXN0Ijoic2hhMjU2OjQ5ODgxYWE3Yzc1ZTk2ZTA3OWVlZjM1N2E2N2I3YzMxZDA4YTBjMDE5MTJjNjUwNjk3MzRlODZlNGQ5ZDFkZjEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNDUxMTMwODgsImRpZ2VzdCI6InNoYTI1NjpkMTJmZmZhY2E1MWQ2OGM4M2YxZThlMzQ1MzQ0MWFjMGE0NTQzZGFiMGU1YmVkMTIwZmFmNWY3NzYzZjlhM2ZlIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTUzNjAsImRpZ2VzdCI6InNoYTI1Njo0NTE0ZGNjYmNjNWZjMThiNDZiMzVjZjA5MWNhYTU4YTBkODE4YTE1NjZkYzljYTFiYWExZTFjZDkzNzhkYmY4In1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFeHBvc2VkUG9ydHMiOnsiOTExNy90Y3AiOnt9fSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiUFMxPSQod2hvYW1pKUAkKGhvc3RuYW1lKTokKHB3ZClcXCQgIiwiSE9NRT0vcm9vdCIsIlRFUk09eHRlcm0iLCJTNl9DTURfV0FJVF9GT1JfU0VSVklDRVNfTUFYVElNRT0wIiwiUzZfVkVSQk9TSVRZPTEiLCJTNl9TVEFHRTJfSE9PSz0vZG9ja2VyLW1vZHMiLCJYREdfREFUQV9IT01FPS9jb25maWciLCJYREdfQ09ORklHX0hPTUU9L2NvbmZpZyJdLCJFbnRyeXBvaW50IjpbIi9pbml0Il0sIlZvbHVtZXMiOnsiL2NvbmZpZyI6e319LCJXb3JraW5nRGlyIjoiLyIsIkxhYmVscyI6eyJidWlsZF92ZXJzaW9uIjoiTGludXhzZXJ2ZXIuaW8gdmVyc2lvbjotIHYwLjIwLjMzNDAtbHM5NSBCdWlsZC1kYXRlOi0gMjAyMy0wMi0yNVQwMDoyODoyOC0wNjowMCIsIm1haW50YWluZXIiOiJ0aGVsYW1lciIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5hdXRob3JzIjoibGludXhzZXJ2ZXIuaW8iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZCI6IjIwMjMtMDItMjVUMDA6Mjg6MjgtMDY6MDAiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZGVzY3JpcHRpb24iOiJbSmFja2V0dF0oaHR0cHM6Ly9naXRodWIuY29tL0phY2tldHQvSmFja2V0dCkgd29ya3MgYXMgYSBwcm94eSBzZXJ2ZXI6IGl0IHRyYW5zbGF0ZXMgcXVlcmllcyBmcm9tIGFwcHMgKFNvbmFyciwgU2lja1JhZ2UsIENvdWNoUG90YXRvLCBNeWxhciwgZXRjKSBpbnRvIHRyYWNrZXItc2l0ZS1zcGVjaWZpYyBodHRwIHF1ZXJpZXMsIHBhcnNlcyB0aGUgaHRtbCByZXNwb25zZSwgdGhlbiBzZW5kcyByZXN1bHRzIGJhY2sgdG8gdGhlIHJlcXVlc3Rpbmcgc29mdHdhcmUuIFRoaXMgYWxsb3dzIGZvciBnZXR0aW5nIHJlY2VudCB1cGxvYWRzIChsaWtlIFJTUykgYW5kIHBlcmZvcm1pbmcgc2VhcmNoZXMuIEphY2tldHQgaXMgYSBzaW5nbGUgcmVwb3NpdG9yeSBvZiBtYWludGFpbmVkIGluZGV4ZXIgc2NyYXBpbmcgXHUwMDI2IHRyYW5zbGF0aW9uIGxvZ2ljIC0gcmVtb3ZpbmcgdGhlIGJ1cmRlbiBmcm9tIG90aGVyIGFwcHMuIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRvY3VtZW50YXRpb24iOiJodHRwczovL2RvY3MubGludXhzZXJ2ZXIuaW8vaW1hZ2VzL2RvY2tlci1qYWNrZXR0Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzIjoiR1BMLTMuMC1vbmx5Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnJlZi5uYW1lIjoiYTc4ZGZmODNiYjVmNGY3ODFmODI5MDRkZDJhNWQ2MGQ5NTY3ZGY3YiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZXZpc2lvbiI6ImE3OGRmZjgzYmI1ZjRmNzgxZjgyOTA0ZGQyYTVkNjBkOTU2N2RmN2IiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlIjoiaHR0cHM6Ly9naXRodWIuY29tL2xpbnV4c2VydmVyL2RvY2tlci1qYWNrZXR0Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnRpdGxlIjoiSmFja2V0dCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL2dpdGh1Yi5jb20vbGludXhzZXJ2ZXIvZG9ja2VyLWphY2tldHQvcGFja2FnZXMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yIjoibGludXhzZXJ2ZXIuaW8iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6InYwLjIwLjMzNDAtbHM5NSJ9LCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjMtMDItMjVUMDA6Mjk6NTQuMzA2ODk0MTMyLTA2OjAwIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDItMjFUMDA6MzQ6MDUuNDc1MTkwMTMtMDY6MDAiLCJjcmVhdGVkX2J5IjoiQ09QWSAvcm9vdC1vdXQvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0yMVQwMDozNDowNS41NDU2Nzg2NDgtMDY6MDAiLCJjcmVhdGVkX2J5IjoiQVJHIEJVSUxEX0RBVEUiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTIxVDAwOjM0OjA1LjU0NTY3ODY0OC0wNjowMCIsImNyZWF0ZWRfYnkiOiJBUkcgVkVSU0lPTiIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMjFUMDA6MzQ6MDUuNTQ1Njc4NjQ4LTA2OjAwIiwiY3JlYXRlZF9ieSI6IkFSRyBNT0RTX1ZFUlNJT049djMiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTIxVDAwOjM0OjA1LjU0NTY3ODY0OC0wNjowMCIsImNyZWF0ZWRfYnkiOiJMQUJFTCBidWlsZF92ZXJzaW9uPUxpbnV4c2VydmVyLmlvIHZlcnNpb246LSA1ZGQxYWI2Yi1sczExIEJ1aWxkLWRhdGU6LSAyMDIzLTAyLTIxVDAwOjMyOjQxLTA2OjAwIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0yMVQwMDozNDowNS41NDU2Nzg2NDgtMDY6MDAiLCJjcmVhdGVkX2J5IjoiTEFCRUwgbWFpbnRhaW5lcj1UaGVMYW1lciIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMjFUMDA6MzQ6MDUuNTQ1Njc4NjQ4LTA2OjAwIiwiY3JlYXRlZF9ieSI6IkFERCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGludXhzZXJ2ZXIvZG9ja2VyLW1vZHMvbW9kLXNjcmlwdHMvZG9ja2VyLW1vZHMudjMgL2RvY2tlci1tb2RzICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMjFUMDA6MzQ6MDUuNTQ1Njc4NjQ4LTA2OjAwIiwiY3JlYXRlZF9ieSI6IkVOViBQUzE9JCh3aG9hbWkpQCQoaG9zdG5hbWUpOiQocHdkKVxcJCAgSE9NRT0vcm9vdCBURVJNPXh0ZXJtIFM2X0NNRF9XQUlUX0ZPUl9TRVJWSUNFU19NQVhUSU1FPTAgUzZfVkVSQk9TSVRZPTEgUzZfU1RBR0UyX0hPT0s9L2RvY2tlci1tb2RzIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0yMVQwMDozNDowNy4xODM4Mjk4MjQtMDY6MDAiLCJjcmVhdGVkX2J5IjoiUlVOIHwzIEJVSUxEX0RBVEU9MjAyMy0wMi0yMVQwMDozMjo0MS0wNjowMCBWRVJTSU9OPTVkZDFhYjZiLWxzMTEgTU9EU19WRVJTSU9OPXYzIC9iaW4vc2ggLWMgZWNobyBcIioqKiogaW5zdGFsbCBydW50aW1lIHBhY2thZ2VzICoqKipcIiBcdTAwMjZcdTAwMjYgICBhcGsgYWRkIC0tbm8tY2FjaGUgICAgIGFscGluZS1yZWxlYXNlICAgICBiYXNoICAgICBjYS1jZXJ0aWZpY2F0ZXMgICAgIGNvcmV1dGlscyAgICAgY3VybCAgICAganEgICAgIHByb2NwcyAgICAgc2hhZG93ICAgICB0emRhdGEgXHUwMDI2XHUwMDI2ICAgZWNobyBcIioqKiogY3JlYXRlIGFiYyB1c2VyIGFuZCBtYWtlIG91ciBmb2xkZXJzICoqKipcIiBcdTAwMjZcdTAwMjYgICBncm91cG1vZCAtZyAxMDAwIHVzZXJzIFx1MDAyNlx1MDAyNiAgIHVzZXJhZGQgLXUgOTExIC1VIC1kIC9jb25maWcgLXMgL2Jpbi9mYWxzZSBhYmMgXHUwMDI2XHUwMDI2ICAgdXNlcm1vZCAtRyB1c2VycyBhYmMgXHUwMDI2XHUwMDI2ICAgbWtkaXIgLXAgICAgIC9hcHAgICAgIC9jb25maWcgICAgIC9kZWZhdWx0cyBcdTAwMjZcdTAwMjYgICBlY2hvIFwiKioqKiBjbGVhbnVwICoqKipcIiBcdTAwMjZcdTAwMjYgICBybSAtcmYgICAgIC90bXAvKiAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTIxVDAwOjM0OjA3LjIzNzMzNDMxNi0wNjowMCIsImNyZWF0ZWRfYnkiOiJDT1BZIHJvb3QvIC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0yMVQwMDozNDowNy4yMzczMzQzMTYtMDY6MDAiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvaW5pdFwiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMjVUMDA6Mjk6NTQuMjcxNjYxOTMtMDY6MDAiLCJjcmVhdGVkX2J5IjoiQVJHIEJVSUxEX0RBVEUiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTI1VDAwOjI5OjU0LjI3MTY2MTkzLTA2OjAwIiwiY3JlYXRlZF9ieSI6IkFSRyBWRVJTSU9OIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0yNVQwMDoyOTo1NC4yNzE2NjE5My0wNjowMCIsImNyZWF0ZWRfYnkiOiJBUkcgSkFDS0VUVF9SRUxFQVNFIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0yNVQwMDoyOTo1NC4yNzE2NjE5My0wNjowMCIsImNyZWF0ZWRfYnkiOiJMQUJFTCBidWlsZF92ZXJzaW9uPUxpbnV4c2VydmVyLmlvIHZlcnNpb246LSB2MC4yMC4zMzQwLWxzOTUgQnVpbGQtZGF0ZTotIDIwMjMtMDItMjVUMDA6Mjg6MjgtMDY6MDAiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTI1VDAwOjI5OjU0LjI3MTY2MTkzLTA2OjAwIiwiY3JlYXRlZF9ieSI6IkxBQkVMIG1haW50YWluZXI9dGhlbGFtZXIiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTI1VDAwOjI5OjU0LjI3MTY2MTkzLTA2OjAwIiwiY3JlYXRlZF9ieSI6IkVOViBYREdfREFUQV9IT01FPS9jb25maWcgWERHX0NPTkZJR19IT01FPS9jb25maWciLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTI1VDAwOjI5OjU0LjI3MTY2MTkzLTA2OjAwIiwiY3JlYXRlZF9ieSI6IlJVTiB8MyBCVUlMRF9EQVRFPTIwMjMtMDItMjVUMDA6Mjg6MjgtMDY6MDAgVkVSU0lPTj12MC4yMC4zMzQwLWxzOTUgSkFDS0VUVF9SRUxFQVNFPXYwLjIwLjMzNDAgL2Jpbi9zaCAtYyBlY2hvIFwiKioqKiBpbnN0YWxsIHBhY2thZ2VzICoqKipcIiBcdTAwMjZcdTAwMjYgICBhcGsgLS1uby1jYWNoZSBhZGQgICAgIGljdS1kYXRhLWZ1bGwgICAgIGljdS1saWJzIFx1MDAyNlx1MDAyNiAgIGVjaG8gXCIqKioqIGluc3RhbGwgamFja2V0dCAqKioqXCIgXHUwMDI2XHUwMDI2ICAgbWtkaXIgLXAgICAgIC9hcHAvSmFja2V0dCBcdTAwMjZcdTAwMjYgICBpZiBbIC16ICR7SkFDS0VUVF9SRUxFQVNFK3h9IF07IHRoZW4gICAgIEpBQ0tFVFRfUkVMRUFTRT0kKGN1cmwgLXNYIEdFVCBcImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvSmFja2V0dC9KYWNrZXR0L3JlbGVhc2VzL2xhdGVzdFwiICAgICB8IGpxIC1yIC50YWdfbmFtZSk7ICAgZmkgXHUwMDI2XHUwMDI2ICAgY3VybCAtbyAgICAgL3RtcC9qYWNrZXQudGFyLmd6IC1MICAgICBcImh0dHBzOi8vZ2l0aHViLmNvbS9KYWNrZXR0L0phY2tldHQvcmVsZWFzZXMvZG93bmxvYWQvJHtKQUNLRVRUX1JFTEVBU0V9L0phY2tldHQuQmluYXJpZXMuTGludXhNdXNsQU1EeDY0LnRhci5nelwiIFx1MDAyNlx1MDAyNiAgIHRhciB4ZiAgICAgL3RtcC9qYWNrZXQudGFyLmd6IC1DICAgICAvYXBwL0phY2tldHQgLS1zdHJpcC1jb21wb25lbnRzPTEgXHUwMDI2XHUwMDI2ICAgZWNobyBcIioqKiogZml4IGZvciBob3N0IGlkIG1hcHBpbmcgZXJyb3IgKioqKlwiIFx1MDAyNlx1MDAyNiAgIGNob3duIC1SIHJvb3Q6cm9vdCAvYXBwL0phY2tldHQgXHUwMDI2XHUwMDI2ICAgZWNobyBcIioqKiogc2F2ZSBkb2NrZXIgaW1hZ2UgdmVyc2lvbiAqKioqXCIgXHUwMDI2XHUwMDI2ICAgZWNobyBcIiR7VkVSU0lPTn1cIiBcdTAwM2UgL2V0Yy9kb2NrZXItaW1hZ2UgXHUwMDI2XHUwMDI2ICAgZWNobyBcIioqKiogY2xlYW51cCAqKioqXCIgXHUwMDI2XHUwMDI2ICAgcm0gLXJmICAgICAvdG1wLyogIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0yNVQwMDoyOTo1NC4zMDY4OTQxMzItMDY6MDAiLCJjcmVhdGVkX2J5IjoiQ09QWSByb290LyAvICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMjVUMDA6Mjk6NTQuMzA2ODk0MTMyLTA2OjAwIiwiY3JlYXRlZF9ieSI6IlZPTFVNRSBbL2NvbmZpZ10iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTI1VDAwOjI5OjU0LjMwNjg5NDEzMi0wNjowMCIsImNyZWF0ZWRfYnkiOiJFWFBPU0UgbWFwWzkxMTcvdGNwOnt9XSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwibW9ieS5idWlsZGtpdC5idWlsZGluZm8udjEiOiJleUptY205dWRHVnVaQ0k2SW1SdlkydGxjbVpwYkdVdWRqQWlMQ0poZEhSeWN5STZleUppZFdsc1pDMWhjbWM2UWxWSlRFUmZSRUZVUlNJNklqSXdNak10TURJdE1qVlVNREE2TWpnNk1qZ3RNRFk2TURBaUxDSmlkV2xzWkMxaGNtYzZTa0ZEUzBWVVZGOVNSVXhGUVZORklqb2lkakF1TWpBdU16TTBNQ0lzSW1KMWFXeGtMV0Z5WnpwV1JWSlRTVTlPSWpvaWRqQXVNakF1TXpNME1DMXNjemsxSWl3aVptbHNaVzVoYldVaU9pSkViMk5yWlhKbWFXeGxJaXdpYkdGaVpXdzZiM0puTG05d1pXNWpiMjUwWVdsdVpYSnpMbWx0WVdkbExtRjFkR2h2Y25NaU9pSnNhVzUxZUhObGNuWmxjaTVwYnlJc0lteGhZbVZzT205eVp5NXZjR1Z1WTI5dWRHRnBibVZ5Y3k1cGJXRm5aUzVqY21WaGRHVmtJam9pTWpBeU15MHdNaTB5TlZRd01Eb3lPRG95T0Mwd05qb3dNQ0lzSW14aFltVnNPbTl5Wnk1dmNHVnVZMjl1ZEdGcGJtVnljeTVwYldGblpTNWtaWE5qY21sd2RHbHZiaUk2SWx0S1lXTnJaWFIwWFNob2RIUndjem92TDJkcGRHaDFZaTVqYjIwdlNtRmphMlYwZEM5S1lXTnJaWFIwS1NCM2IzSnJjeUJoY3lCaElIQnliM2g1SUhObGNuWmxjam9nYVhRZ2RISmhibk5zWVhSbGN5QnhkV1Z5YVdWeklHWnliMjBnWVhCd2N5QW9VMjl1WVhKeUxDQlRhV05yVW1GblpTd2dRMjkxWTJoUWIzUmhkRzhzSUUxNWJHRnlMQ0JsZEdNcElHbHVkRzhnZEhKaFkydGxjaTF6YVhSbExYTndaV05wWm1saklHaDBkSEFnY1hWbGNtbGxjeXdnY0dGeWMyVnpJSFJvWlNCb2RHMXNJSEpsYzNCdmJuTmxMQ0IwYUdWdUlITmxibVJ6SUhKbGMzVnNkSE1nWW1GamF5QjBieUIwYUdVZ2NtVnhkV1Z6ZEdsdVp5QnpiMlowZDJGeVpTNGdWR2hwY3lCaGJHeHZkM01nWm05eUlHZGxkSFJwYm1jZ2NtVmpaVzUwSUhWd2JHOWhaSE1nS0d4cGEyVWdVbE5US1NCaGJtUWdjR1Z5Wm05eWJXbHVaeUJ6WldGeVkyaGxjeTRnU21GamEyVjBkQ0JwY3lCaElITnBibWRzWlNCeVpYQnZjMmwwYjNKNUlHOW1JRzFoYVc1MFlXbHVaV1FnYVc1a1pYaGxjaUJ6WTNKaGNHbHVaeUJjZFRBd01qWWdkSEpoYm5Oc1lYUnBiMjRnYkc5bmFXTWdMU0J5WlcxdmRtbHVaeUIwYUdVZ1luVnlaR1Z1SUdaeWIyMGdiM1JvWlhJZ1lYQndjeTRpTENKc1lXSmxiRHB2Y21jdWIzQmxibU52Ym5SaGFXNWxjbk11YVcxaFoyVXVaRzlqZFcxbGJuUmhkR2x2YmlJNkltaDBkSEJ6T2k4dlpHOWpjeTVzYVc1MWVITmxjblpsY2k1cGJ5OXBiV0ZuWlhNdlpHOWphMlZ5TFdwaFkydGxkSFFpTENKc1lXSmxiRHB2Y21jdWIzQmxibU52Ym5SaGFXNWxjbk11YVcxaFoyVXViR2xqWlc1elpYTWlPaUpIVUV3dE15NHdMVzl1YkhraUxDSnNZV0psYkRwdmNtY3ViM0JsYm1OdmJuUmhhVzVsY25NdWFXMWhaMlV1Y21WbUxtNWhiV1VpT2lKaE56aGtabVk0TTJKaU5XWTBaamM0TVdZNE1qa3dOR1JrTW1FMVpEWXdaRGsxTmpka1pqZGlJaXdpYkdGaVpXdzZiM0puTG05d1pXNWpiMjUwWVdsdVpYSnpMbWx0WVdkbExuSmxkbWx6YVc5dUlqb2lZVGM0WkdabU9ETmlZalZtTkdZM09ERm1PREk1TURSa1pESmhOV1EyTUdRNU5UWTNaR1kzWWlJc0lteGhZbVZzT205eVp5NXZjR1Z1WTI5dWRHRnBibVZ5Y3k1cGJXRm5aUzV6YjNWeVkyVWlPaUpvZEhSd2N6b3ZMMmRwZEdoMVlpNWpiMjB2YkdsdWRYaHpaWEoyWlhJdlpHOWphMlZ5TFdwaFkydGxkSFFpTENKc1lXSmxiRHB2Y21jdWIzQmxibU52Ym5SaGFXNWxjbk11YVcxaFoyVXVkR2wwYkdVaU9pSktZV05yWlhSMElpd2liR0ZpWld3NmIzSm5MbTl3Wlc1amIyNTBZV2x1WlhKekxtbHRZV2RsTG5WeWJDSTZJbWgwZEhCek9pOHZaMmwwYUhWaUxtTnZiUzlzYVc1MWVITmxjblpsY2k5a2IyTnJaWEl0YW1GamEyVjBkQzl3WVdOcllXZGxjeUlzSW14aFltVnNPbTl5Wnk1dmNHVnVZMjl1ZEdGcGJtVnljeTVwYldGblpTNTJaVzVrYjNJaU9pSnNhVzUxZUhObGNuWmxjaTVwYnlJc0lteGhZbVZzT205eVp5NXZjR1Z1WTI5dWRHRnBibVZ5Y3k1cGJXRm5aUzUyWlhKemFXOXVJam9pZGpBdU1qQXVNek0wTUMxc2N6azFJaXdpYzI5MWNtTmxJam9pWkc5amEyVnlMMlJ2WTJ0bGNtWnBiR1U2TVNKOUxDSnpiM1Z5WTJWeklqcGJleUowZVhCbElqb2laRzlqYTJWeUxXbHRZV2RsSWl3aWNtVm1Jam9pWjJoamNpNXBieTlzYVc1MWVITmxjblpsY2k5aVlYTmxhVzFoWjJVdFlXeHdhVzVsT2pNdU1UZEFjMmhoTWpVMk9qSXpNR0kzT1dNeVpqVmhNelptTm1NeVltWmpZV1UwWWpGa09UWmpZV0kwWm1FMk1UWTVZV1prWVdabU5UTTFOakl6TVdaak1tVXhNMkUxWTJVMk1ESWlMQ0p3YVc0aU9pSnphR0V5TlRZNk1qTXdZamM1WXpKbU5XRXpObVkyWXpKaVptTmhaVFJpTVdRNU5tTmhZalJtWVRZeE5qbGhabVJoWm1ZMU16VTJNak14Wm1NeVpURXpZVFZqWlRZd01pSjlYWDA9Iiwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OmM1NWI3YjgyZjczZWRmMDlhY2Y1MDg5ZjFmMzA4YmY0Y2E0NTMxYzBiYzAxZTY5NDFiNWE2YTQwNTNkMTU3ZmMiLCJzaGEyNTY6OGY5NTM2NmVkOTY1NGUyNDA0ZDMxZWZhYzFhMGEwZWUxZjI3MDkzMGNkMDdmN2M0N2MwODY5NDlkYzdmYmE4OSIsInNoYTI1NjoxNTAwODUzMjAwNmU0OGJiODM1ZDViNGFkMmEwNDIzYjUyYzIwY2RlNzdlYmNhMTZjYzlmYjI1NzExZWY5ZmIwIiwic2hhMjU2OjQ5ODgxYWE3Yzc1ZTk2ZTA3OWVlZjM1N2E2N2I3YzMxZDA4YTBjMDE5MTJjNjUwNjk3MzRlODZlNGQ5ZDFkZjEiLCJzaGEyNTY6ZDEyZmZmYWNhNTFkNjhjODNmMWU4ZTM0NTM0NDFhYzBhNDU0M2RhYjBlNWJlZDEyMGZhZjVmNzc2M2Y5YTNmZSIsInNoYTI1Njo0NTE0ZGNjYmNjNWZjMThiNDZiMzVjZjA5MWNhYTU4YTBkODE4YTE1NjZkYzljYTFiYWExZTFjZDkzNzhkYmY4Il19fQ==",
+   "repoDigests": [
+    "linuxserver/jackett@sha256:e428f1394bc622257c99da687f67a4bc9f3a9f37bbbd607b19955b0e599ac918"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.17.2",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "Grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2023-02-25T08:13:48Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:fd83377bf2233596b4c7140477d98aee18a2dec94108e0b923dc7e54a4b00051",
+   "error": null
+  }
+ }
+}

@@ -1,0 +1,393 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "openjdk",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "oracle",
+      "Name": "8.7"
+    },
+    "ImageID": "sha256:fd6c6c6125378064a4416f0361985dbbddfd406c064009f20ee12a1c90ef9c55",
+    "DiffIDs": [
+      "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55",
+      "sha256:5167a18e9e094f7ad94e2c21800636dbcc1b0d1493c1cdbc22bfa02146b94a00",
+      "sha256:24a171960fc1539c253c6a4208dfc22882104f788e8fe62c44d3cedbf1b4d5cb"
+    ],
+    "RepoTags": [
+      "openjdk:latest"
+    ],
+    "RepoDigests": [
+      "openjdk@sha256:d2c0bd4450268777610fab98fcf3ee713e5f2cc07180969893d7d99483fafa66"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "cf3b777793943ce8414dc7ebf4b4eb8544d68f2eeb3ff2f9569c7e8677fef5b2",
+      "created": "2022-11-29T19:45:26.500043054Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-11-29T19:20:57Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:6767deed84cff167f77f7d9f835925cd8a5d3093d0b99f0180245cfd6312ae06 in / "
+        },
+        {
+          "created": "2022-11-29T19:20:58Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:43:57Z",
+          "created_by": "/bin/sh -c set -eux; \tmicrodnf install \t\tgzip \t\ttar \t\t\t\tbinutils \t\tfreetype fontconfig \t; \tmicrodnf clean all"
+        },
+        {
+          "created": "2022-11-29T19:45:14Z",
+          "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/java/openjdk-18",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:45:14Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:45:14Z",
+          "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:45:15Z",
+          "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION=18.0.2.1",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T19:45:25Z",
+          "created_by": "/bin/sh -c set -eux; \t\tarch=\"$(objdump=\"$(command -v objdump)\" \u0026\u0026 objdump --file-headers \"$objdump\" | awk -F '[:,]+[[:space:]]+' '$1 == \"architecture\" { print $2 }')\"; \tcase \"$arch\" in \t\t'i386:x86-64') \t\t\tdownloadUrl='https://download.java.net/java/GA/jdk18.0.2.1/db379da656dc47308e138f21b33976fa/1/GPL/openjdk-18.0.2.1_linux-x64_bin.tar.gz'; \t\t\tdownloadSha256='3bfdb59fc38884672677cebca9a216902d87fe867563182ae8bc3373a65a2ebd'; \t\t\t;; \t\t'aarch64') \t\t\tdownloadUrl='https://download.java.net/java/GA/jdk18.0.2.1/db379da656dc47308e138f21b33976fa/1/GPL/openjdk-18.0.2.1_linux-aarch64_bin.tar.gz'; \t\t\tdownloadSha256='79900237a5912045f8c9f1065b5204a474803cbbb4d075ab9620650fb75dfc1b'; \t\t\t;; \t\t*) echo \u003e\u00262 \"error: unsupported architecture: '$arch'\"; exit 1 ;; \tesac; \t\tcurl -fL -o openjdk.tgz \"$downloadUrl\"; \techo \"$downloadSha256 *openjdk.tgz\" | sha256sum --strict --check -; \t\tmkdir -p \"$JAVA_HOME\"; \ttar --extract \t\t--file openjdk.tgz \t\t--directory \"$JAVA_HOME\" \t\t--strip-components 1 \t\t--no-same-owner \t; \trm openjdk.tgz*; \t\trm -rf \"$JAVA_HOME/lib/security/cacerts\"; \tln -sT /etc/pki/ca-trust/extracted/java/cacerts \"$JAVA_HOME/lib/security/cacerts\"; \t\tln -sfT \"$JAVA_HOME\" /usr/java/default; \tln -sfT \"$JAVA_HOME\" /usr/java/latest; \tfor bin in \"$JAVA_HOME/bin/\"*; do \t\tbase=\"$(basename \"$bin\")\"; \t\t[ ! -e \"/usr/bin/$base\" ]; \t\talternatives --install \"/usr/bin/$base\" \"$base\" \"$bin\" 20000; \tdone; \t\tjava -Xshare:dump; \t\tfileEncoding=\"$(echo 'System.out.println(System.getProperty(\"file.encoding\"))' | jshell -s -)\"; [ \"$fileEncoding\" = 'UTF-8' ]; rm -rf ~/.java; \tjavac --version; \tjava --version"
+        },
+        {
+          "created": "2022-11-29T19:45:26Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"jshell\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55",
+          "sha256:5167a18e9e094f7ad94e2c21800636dbcc1b0d1493c1cdbc22bfa02146b94a00",
+          "sha256:24a171960fc1539c253c6a4208dfc22882104f788e8fe62c44d3cedbf1b4d5cb"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "jshell"
+        ],
+        "Env": [
+          "PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "JAVA_HOME=/usr/java/openjdk-18",
+          "LANG=C.UTF-8",
+          "JAVA_VERSION=18.0.2.1"
+        ],
+        "Image": "sha256:62ef40b7bb6cacedf14c8df6c1926b1ab2fc8d93aad96a92347e79fd57d8dd43"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "openjdk (oracle 8.7)",
+      "Class": "os-pkgs",
+      "Type": "oracle",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-20231",
+          "PkgID": "gnutls@3.6.16-5.el8_6.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-5.el8_6",
+          "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20231",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "gnutls: Use after free in client key_share extension",
+          "Description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+            "https://access.redhat.com/security/cve/CVE-2021-20231",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1922276",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20231",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1151",
+            "https://linux.oracle.com/cve/CVE-2021-20231.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-20231",
+            "https://security.netapp.com/advisory/ntap-20210416-0005/",
+            "https://ubuntu.com/security/notices/USN-5029-1",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+          ],
+          "PublishedDate": "2021-03-12T19:15:00Z",
+          "LastModifiedDate": "2021-06-01T14:07:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-20232",
+          "PkgID": "gnutls@3.6.16-5.el8_6.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-5.el8_6",
+          "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20232",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "gnutls: Use after free in client_send_params in lib/ext/pre_shared_key.c",
+          "Description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+            "https://access.redhat.com/security/cve/CVE-2021-20232",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1922275",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20232",
+            "https://gitlab.com/gnutls/gnutls/-/issues/1151",
+            "https://linux.oracle.com/cve/CVE-2021-20232.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-20232",
+            "https://security.netapp.com/advisory/ntap-20210416-0005/",
+            "https://ubuntu.com/security/notices/USN-5029-1",
+            "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10"
+          ],
+          "PublishedDate": "2021-03-12T19:15:00Z",
+          "LastModifiedDate": "2021-05-17T14:30:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3580",
+          "PkgID": "gnutls@3.6.16-5.el8_6.x86_64",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.6.16-5.el8_6",
+          "FixedVersion": "10:3.6.16-4.0.1.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3580",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "nettle: Remote crash in RSA decryption via manipulated ciphertext",
+          "Description": "A flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+            "https://access.redhat.com/security/cve/CVE-2021-3580",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1967983",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3580",
+            "https://linux.oracle.com/cve/CVE-2021-3580.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+            "https://lists.debian.org/debian-lts-announce/2021/09/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3580",
+            "https://security.netapp.com/advisory/ntap-20211104-0006/",
+            "https://ubuntu.com/security/notices/USN-4990-1"
+          ],
+          "PublishedDate": "2021-08-05T21:15:00Z",
+          "LastModifiedDate": "2021-11-26T21:06:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-40528",
+          "PkgID": "libgcrypt@1.8.5-7.el8_6.x86_64",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.5-7.el8_6",
+          "FixedVersion": "10:1.8.5-7.el8_6_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-40528",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "libgcrypt: ElGamal implementation allows plaintext recovery",
+          "Description": "The ElGamal implementation in Libgcrypt before 1.9.4 allows plaintext recovery because, during interaction between two cryptographic libraries, a certain dangerous combination of the prime defined by the receiver's public key, the generator defined by the receiver's public key, and the sender's ephemeral exponents can lead to a cross-configuration attack against OpenPGP.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.6,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:5311",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-40528.json",
+            "https://access.redhat.com/security/cve/CVE-2021-40528",
+            "https://bugzilla.redhat.com/2002816",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40528",
+            "https://dev.gnupg.org/rCb118681ebc4c9ea4b9da79b0f9541405a64f4c13",
+            "https://eprint.iacr.org/2021/923",
+            "https://errata.almalinux.org/8/ALSA-2022-5311.html",
+            "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=3462280f2e23e16adf3ed5176e0f2413d8861320",
+            "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
+            "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
+            "https://linux.oracle.com/cve/CVE-2021-40528.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-40528",
+            "https://security.gentoo.org/glsa/202210-13",
+            "https://ubuntu.com/security/notices/USN-5080-1",
+            "https://ubuntu.com/security/notices/USN-5080-2"
+          ],
+          "PublishedDate": "2021-09-06T19:15:00Z",
+          "LastModifiedDate": "2022-10-31T04:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-33560",
+          "PkgID": "libgcrypt@1.8.5-7.el8_6.x86_64",
+          "PkgName": "libgcrypt",
+          "InstalledVersion": "1.8.5-7.el8_6",
+          "FixedVersion": "10:1.8.5-6.el8_fips",
+          "Layer": {
+            "DiffID": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55"
+          },
+          "SeveritySource": "oracle-oval",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-33560",
+          "DataSource": {
+            "ID": "oracle-oval",
+            "Name": "Oracle Linux OVAL definitions",
+            "URL": "https://linux.oracle.com/security/oval/"
+          },
+          "Title": "libgcrypt: mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm",
+          "Description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33560.json",
+            "https://access.redhat.com/security/cve/CVE-2021-33560",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33560",
+            "https://dev.gnupg.org/T5305",
+            "https://dev.gnupg.org/T5328",
+            "https://dev.gnupg.org/T5466",
+            "https://dev.gnupg.org/rCe8b7f10be275bcedb5fc05ed4837a89bfd605c61",
+            "https://eprint.iacr.org/2021/923",
+            "https://errata.almalinux.org/8/ALSA-2021-4409.html",
+            "https://linux.oracle.com/cve/CVE-2021-33560.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9263.html",
+            "https://lists.debian.org/debian-lts-announce/2021/06/msg00021.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BKKTOIGFW2SGN3DO2UHHVZ7MJSYN4AAB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7OAPCUGPF3VLA7QAJUQSL255D4ITVTL/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-33560",
+            "https://security.gentoo.org/glsa/202210-13",
+            "https://ubuntu.com/security/notices/USN-5080-1",
+            "https://ubuntu.com/security/notices/USN-5080-2",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-06-08T11:15:00Z",
+          "LastModifiedDate": "2022-10-31T04:15:00Z"
+        }
+      ]
+    }
+  ]
+}

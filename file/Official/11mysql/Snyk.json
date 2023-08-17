@@ -1,0 +1,3500 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-ORACLE8-LIBGCRYPT-2939537",
+      "cpes": [],
+      "title": "Use of a Broken or Risky Cryptographic Algorithm",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<10:1.8.5-7.el8_6_fips"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-40528.html",
+          "title": "CVE-2021-40528"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5311.html",
+          "title": "ELSA-2022-5311"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+          "title": "ELSA-2022-9564"
+        },
+        {
+          "url": "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
+          "title": "MISC"
+        },
+        {
+          "url": "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
+          "title": "MISC"
+        },
+        {
+          "url": "https://eprint.iacr.org/2021/923",
+          "title": "MISC"
+        },
+        {
+          "url": "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git%3Ba=commit%3Bh=3462280f2e23e16adf3ed5176e0f2413d8861320",
+          "title": "MISC"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-13",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-09-01T19:11:25.915699Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-10-31T13:10:50.273571Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `libgcrypt` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe ElGamal implementation in Libgcrypt before 1.9.4 allows plaintext recovery because, during interaction between two cryptographic libraries, a certain dangerous combination of the prime defined by the receiver&#39;s public key, the generator defined by the receiver&#39;s public key, and the sender&#39;s ephemeral exponents can lead to a cross-configuration attack against OpenPGP.\n## Remediation\nUpgrade `Oracle:8` `libgcrypt` to version 10:1.8.5-7.el8_6_fips or higher.  \nThis issue was patched in `ELSA-2022-9564`.\n## References\n- [CVE-2021-40528](https://linux.oracle.com/cve/CVE-2021-40528.html)\n- [ELSA-2022-5311](https://linux.oracle.com/errata/ELSA-2022-5311.html)\n- [ELSA-2022-9564](https://linux.oracle.com/errata/ELSA-2022-9564.html)\n- [MISC](https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1)\n- [MISC](https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2)\n- [MISC](https://eprint.iacr.org/2021/923)\n- [MISC](https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=3462280f2e23e16adf3ed5176e0f2413d8861320)\n- [GENTOO](https://security.gentoo.org/glsa/202210-13)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-40528"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "libgcrypt",
+      "creationTime": "2022-07-02T02:00:57.379925Z",
+      "disclosureTime": "2021-09-06T19:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-07-02T02:00:47.955156Z",
+      "modificationTime": "2022-12-07T13:11:38.575812Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "libgcrypt@1.8.5-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "libgcrypt@10:1.8.5-7.el8_6_fips"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "libgcrypt",
+      "version": "1.8.5-7.el8_6",
+      "nearestFixedInVersion": "10:1.8.5-7.el8_6_fips"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2579494",
+      "cpes": [],
+      "title": "NULL Pointer Dereference",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1g-15.ksplice1.el8_3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-3449.html",
+          "title": "CVE-2021-3449"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-1024.html",
+          "title": "ELSA-2021-1024"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9151.html",
+          "title": "ELSA-2021-9151"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fb9fa6b51defd48157eeb207f52181f735d96148",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210325.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd",
+          "title": "CISCO"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4875",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210326-0006/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc",
+          "title": "MISC"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/1",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/2",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/3",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/4",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-06",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-05",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10356",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210513-0002/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-10",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-772220.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/08/msg00029.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-05-03T22:27:03.698718Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-09-01T22:09:54.715634Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-08-30T01:11:01.536520Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nAn OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a NULL pointer dereference will result, leading to a crash and a denial of service attack. A server is only vulnerable if it has TLSv1.2 and renegotiation enabled (which is the default configuration). OpenSSL TLS clients are not impacted by this issue. All OpenSSL 1.1.1 versions are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1-1.1.1j).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1g-15.ksplice1.el8_3 or higher.  \nThis issue was patched in `ELSA-2021-9151`.\n## References\n- [CVE-2021-3449](https://linux.oracle.com/cve/CVE-2021-3449.html)\n- [ELSA-2021-1024](https://linux.oracle.com/errata/ELSA-2021-1024.html)\n- [ELSA-2021-9151](https://linux.oracle.com/errata/ELSA-2021-9151.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fb9fa6b51defd48157eeb207f52181f735d96148)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210325.txt)\n- [CISCO](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4875)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210326-0006/)\n- [MISC](https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/1)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/2)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/3)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/4)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-06)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-05)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10356)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210513-0002/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-10)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-772220.pdf)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2021/08/msg00029.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-3449"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T08:39:53.760505Z",
+      "disclosureTime": "2021-03-25T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:39:53.738969Z",
+      "modificationTime": "2022-09-01T22:09:54.715634Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1g-15.ksplice1.el8_3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1g-15.ksplice1.el8_3"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2579569",
+      "cpes": [],
+      "title": "Improper Certificate Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1g-15.ksplice1.el8_3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-3450.html",
+          "title": "CVE-2021-3450"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-1024.html",
+          "title": "ELSA-2021-1024"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9151.html",
+          "title": "ELSA-2021-9151"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2a40b7bc7b94dd7de897a74571e7024f0cf0d63b",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210325.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd",
+          "title": "CISCO"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210326-0006/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc",
+          "title": "MISC"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/1",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/2",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/3",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/4",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-05",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-08",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10356",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://mta.openssl.org/pipermail/openssl-announce/2021-March/000198.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-05-03T21:58:01.222205Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-09-01T22:10:57.756043Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-07-26T01:11:34.576726Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe X509_V_FLAG_X509_STRICT flag enables additional security checks of the certificates present in a certificate chain. It is not set by default. Starting from OpenSSL version 1.1.1h a check to disallow certificates in the chain that have explicitly encoded elliptic curve parameters was added as an additional strict check. An error in the implementation of this check meant that the result of a previous check to confirm that certificates in the chain are valid CA certificates was overwritten. This effectively bypasses the check that non-CA certificates must not be able to issue other certificates. If a &#34;purpose&#34; has been configured then there is a subsequent opportunity for checks that the certificate is a valid CA. All of the named &#34;purpose&#34; values implemented in libcrypto perform this check. Therefore, where a purpose is set the certificate chain will still be rejected even when the strict flag has been used. A purpose is set by default in libssl client and server certificate verification routines, but it can be overridden or removed by an application. In order to be affected, an application must explicitly set the X509_V_FLAG_X509_STRICT verification flag and either not set a purpose for the certificate verification or, in the case of TLS client or server applications, override the default purpose. OpenSSL versions 1.1.1h and newer are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1h-1.1.1j).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1g-15.ksplice1.el8_3 or higher.  \nThis issue was patched in `ELSA-2021-9151`.\n## References\n- [CVE-2021-3450](https://linux.oracle.com/cve/CVE-2021-3450.html)\n- [ELSA-2021-1024](https://linux.oracle.com/errata/ELSA-2021-1024.html)\n- [ELSA-2021-9151](https://linux.oracle.com/errata/ELSA-2021-9151.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2a40b7bc7b94dd7de897a74571e7024f0cf0d63b)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210325.txt)\n- [CISCO](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210326-0006/)\n- [MISC](https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/1)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/2)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/3)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/4)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-05)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-08)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10356)\n- [MISC](https://mta.openssl.org/pipermail/openssl-announce/2021-March/000198.html)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-3450"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T08:39:59.515758Z",
+      "disclosureTime": "2021-03-25T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:38:58.878666Z",
+      "modificationTime": "2022-09-01T22:10:57.756043Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1g-15.ksplice1.el8_3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1g-15.ksplice1.el8_3"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2595787",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-4.ksplice1.el8"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-23840.html",
+          "title": "CVE-2021-23840"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-3798.html",
+          "title": "ELSA-2021-3798"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9478.html",
+          "title": "ELSA-2021-9478"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+          "title": "ELSA-2021-9528"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9561.html",
+          "title": "ELSA-2021-9561"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9b1129239f3ebb1d1c98ce9ed41d5c9476c47cb2",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=6a51b9e1d0cf0bf8515f7201b68fb0a3482b3dc1",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210216.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4855",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210219-0009/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-03",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-10",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10366",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2022-05-03T22:33:33.433434Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-08-30T01:10:59.844335Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-10-26T23:52:28.879159Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nCalls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-4.ksplice1.el8 or higher.  \nThis issue was patched in `ELSA-2021-9561`.\n## References\n- [CVE-2021-23840](https://linux.oracle.com/cve/CVE-2021-23840.html)\n- [ELSA-2021-3798](https://linux.oracle.com/errata/ELSA-2021-3798.html)\n- [ELSA-2021-9478](https://linux.oracle.com/errata/ELSA-2021-9478.html)\n- [ELSA-2021-9528](https://linux.oracle.com/errata/ELSA-2021-9528.html)\n- [ELSA-2021-9561](https://linux.oracle.com/errata/ELSA-2021-9561.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9b1129239f3ebb1d1c98ce9ed41d5c9476c47cb2)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a51b9e1d0cf0bf8515f7201b68fb0a3482b3dc1)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210216.txt)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4855)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210219-0009/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-03)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-10)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [MLIST](https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E)\n- [MLIST](https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10366)\n- [MISC](https://www.oracle.com/security-alerts/cpujan2022.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-23840"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T08:57:08.699178Z",
+      "disclosureTime": "2021-02-16T17:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:48:58.201154Z",
+      "modificationTime": "2022-10-26T23:52:28.879159Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-4.ksplice1.el8"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-4.ksplice1.el8"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2595842",
+      "cpes": [],
+      "title": "NULL Pointer Dereference",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-4.ksplice1.el8"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-23841.html",
+          "title": "CVE-2021-23841"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-3798.html",
+          "title": "ELSA-2021-3798"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9478.html",
+          "title": "ELSA-2021-9478"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+          "title": "ELSA-2021-9528"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9561.html",
+          "title": "ELSA-2021-9561"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210216.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8252ee4d90f3f2004d3d0aeeed003ad49c9a7807",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=122a19ab48091c657f7cb1fb3af9fc07bd557bbf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4855",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210219-0009/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-03",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210513-0002/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT212529",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT212528",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT212534",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2021/May/68",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2021/May/67",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2021/May/70",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf",
+          "title": "CONFIRM"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-05-03T22:30:40.116402Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-09-01T19:41:07.840018Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-10-08T01:10:56.402659Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if the issuer field is maliciously constructed). This may subsequently result in a NULL pointer deref and a crash leading to a potential denial of service attack. The function X509_issuer_and_serial_hash() is never directly called by OpenSSL itself so applications are only vulnerable if they use this function directly and they use it on certificates that may have been obtained from untrusted sources. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-4.ksplice1.el8 or higher.  \nThis issue was patched in `ELSA-2021-9561`.\n## References\n- [CVE-2021-23841](https://linux.oracle.com/cve/CVE-2021-23841.html)\n- [ELSA-2021-3798](https://linux.oracle.com/errata/ELSA-2021-3798.html)\n- [ELSA-2021-9478](https://linux.oracle.com/errata/ELSA-2021-9478.html)\n- [ELSA-2021-9528](https://linux.oracle.com/errata/ELSA-2021-9528.html)\n- [ELSA-2021-9561](https://linux.oracle.com/errata/ELSA-2021-9561.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210216.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8252ee4d90f3f2004d3d0aeeed003ad49c9a7807)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=122a19ab48091c657f7cb1fb3af9fc07bd557bbf)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4855)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210219-0009/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-03)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210513-0002/)\n- [CONFIRM](https://support.apple.com/kb/HT212529)\n- [CONFIRM](https://support.apple.com/kb/HT212528)\n- [CONFIRM](https://support.apple.com/kb/HT212534)\n- [FULLDISC](http://seclists.org/fulldisclosure/2021/May/68)\n- [FULLDISC](http://seclists.org/fulldisclosure/2021/May/67)\n- [FULLDISC](http://seclists.org/fulldisclosure/2021/May/70)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-23841"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T08:57:12.165073Z",
+      "disclosureTime": "2021-02-16T17:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:47:58.435395Z",
+      "modificationTime": "2022-10-08T01:10:56.521161Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-4.ksplice1.el8"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-4.ksplice1.el8"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2597634",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-5.ksplice1.el8_5"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-3712.html",
+          "title": "CVE-2021-3712"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-5226.html",
+          "title": "ELSA-2021-5226"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9632.html",
+          "title": "ELSA-2021-9632"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9017.html",
+          "title": "ELSA-2022-9017"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9023.html",
+          "title": "ELSA-2022-9023"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210824.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=94d23fcff9b2a7a8368dfe52214d5c2569882c11",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=ccb0a11145ee72b042d10593a64eaf9e8a55ec12",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4963",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210827-0010/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-16",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/09/msg00021.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10366",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-02",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-244969.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202209-02",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-10-25T23:39:35.344116Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2022-05-03T21:47:28.652747Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-10-17T01:10:39.512050Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nASN.1 strings are represented internally within OpenSSL as an ASN1_STRING structure which contains a buffer holding the string data and a field holding the buffer length. This contrasts with normal C strings which are repesented as a buffer for the string data which is terminated with a NUL (0) byte. Although not a strict requirement, ASN.1 strings that are parsed using OpenSSL&#39;s own &#34;d2i&#34; functions (and other similar parsing functions) as well as any string whose value has been set with the ASN1_STRING_set() function will additionally NUL terminate the byte array in the ASN1_STRING structure. However, it is possible for applications to directly construct valid ASN1_STRING structures which do not NUL terminate the byte array by directly setting the &#34;data&#34; and &#34;length&#34; fields in the ASN1_STRING array. This can also happen by using the ASN1_STRING_set0() function. Numerous OpenSSL functions that print ASN.1 data have been found to assume that the ASN1_STRING byte array will be NUL terminated, even though this is not guaranteed for strings that have been directly constructed. Where an application requests an ASN.1 structure to be printed, and where that ASN.1 structure contains ASN1_STRINGs that have been directly constructed by the application without NUL terminating the &#34;data&#34; field, then a read buffer overrun can occur. The same thing can also occur during name constraints processing of certificates (for example if a certificate has been directly constructed by the application instead of loading it via the OpenSSL parsing functions, and the certificate contains non NUL terminated ASN1_STRING structures). It can also occur in the X509_get1_email(), X509_REQ_get1_email() and X509_get1_ocsp() functions. If a malicious actor can cause an application to directly construct an ASN1_STRING and then process it through one of the affected OpenSSL functions then this issue could be hit. This might result in a crash (causing a Denial of Service attack). It could also result in the disclosure of private memory contents (such as private keys, or sensitive plaintext). Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k). Fixed in OpenSSL 1.0.2za (Affected 1.0.2-1.0.2y).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-5.ksplice1.el8_5 or higher.  \nThis issue was patched in `ELSA-2021-9632`.\n## References\n- [CVE-2021-3712](https://linux.oracle.com/cve/CVE-2021-3712.html)\n- [ELSA-2021-5226](https://linux.oracle.com/errata/ELSA-2021-5226.html)\n- [ELSA-2021-9632](https://linux.oracle.com/errata/ELSA-2021-9632.html)\n- [ELSA-2022-9017](https://linux.oracle.com/errata/ELSA-2022-9017.html)\n- [ELSA-2022-9023](https://linux.oracle.com/errata/ELSA-2022-9023.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210824.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=94d23fcff9b2a7a8368dfe52214d5c2569882c11)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ccb0a11145ee72b042d10593a64eaf9e8a55ec12)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4963)\n- [MLIST](https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/08/26/2)\n- [MLIST](https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210827-0010/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-16)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2021/09/msg00021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10366)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-02)\n- [MISC](https://www.oracle.com/security-alerts/cpujan2022.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-244969.pdf)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [GENTOO](https://security.gentoo.org/glsa/202209-02)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-3712"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T08:59:16.728550Z",
+      "disclosureTime": "2021-08-24T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:55:56.541254Z",
+      "modificationTime": "2022-12-07T01:11:48.998019Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-5.ksplice1.el8_5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-5.ksplice1.el8_5"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2603821",
+      "cpes": [],
+      "title": "Loop with Unreachable Exit Condition ('Infinite Loop')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-6.ksplice1.el8_5"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-0778.html",
+          "title": "CVE-2022-0778"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1065.html",
+          "title": "ELSA-2022-1065"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1066.html",
+          "title": "ELSA-2022-1066"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9224.html",
+          "title": "ELSA-2022-9224"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9225.html",
+          "title": "ELSA-2022-9225"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9233.html",
+          "title": "ELSA-2022-9233"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9237.html",
+          "title": "ELSA-2022-9237"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9243.html",
+          "title": "ELSA-2022-9243"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9246.html",
+          "title": "ELSA-2022-9246"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9249.html",
+          "title": "ELSA-2022-9249"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9255.html",
+          "title": "ELSA-2022-9255"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9258.html",
+          "title": "ELSA-2022-9258"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9272.html",
+          "title": "ELSA-2022-9272"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=380085481c64de749a6dd25cdf0bcf4360b30f83",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220315.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=a466912611aa6cbdf550cd10601390e587451246",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=3118eb64934499d93db3230748a452351d1d9a65",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5103",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00024.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00023.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220321-0002/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GDB3GQVJPXJE7X5C5JN6JAA4XUDWD6E6/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0002",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-06",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-07",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/323SNN6ZX7PRJJWP2BUAFLPUAE42XWLZ/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W6K3PR542DXWLEFFMFIDMME4CWMHJRMG/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-08",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220429-0005/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213256",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213255",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213257",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/38",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/35",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/33",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://packetstormsecurity.com/files/167344/OpenSSL-1.0.2-1.1.1-3.0-BN_mod_sqrt-Infinite-Loop.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-712929.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-06-01T11:06:13.508994Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-11-10T01:11:47.822021Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-11-27T21:32:10.336778Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-6.ksplice1.el8_5 or higher.  \nThis issue was patched in `ELSA-2022-9258`.\n## References\n- [CVE-2022-0778](https://linux.oracle.com/cve/CVE-2022-0778.html)\n- [ELSA-2022-1065](https://linux.oracle.com/errata/ELSA-2022-1065.html)\n- [ELSA-2022-1066](https://linux.oracle.com/errata/ELSA-2022-1066.html)\n- [ELSA-2022-9224](https://linux.oracle.com/errata/ELSA-2022-9224.html)\n- [ELSA-2022-9225](https://linux.oracle.com/errata/ELSA-2022-9225.html)\n- [ELSA-2022-9233](https://linux.oracle.com/errata/ELSA-2022-9233.html)\n- [ELSA-2022-9237](https://linux.oracle.com/errata/ELSA-2022-9237.html)\n- [ELSA-2022-9243](https://linux.oracle.com/errata/ELSA-2022-9243.html)\n- [ELSA-2022-9246](https://linux.oracle.com/errata/ELSA-2022-9246.html)\n- [ELSA-2022-9249](https://linux.oracle.com/errata/ELSA-2022-9249.html)\n- [ELSA-2022-9255](https://linux.oracle.com/errata/ELSA-2022-9255.html)\n- [ELSA-2022-9258](https://linux.oracle.com/errata/ELSA-2022-9258.html)\n- [ELSA-2022-9272](https://linux.oracle.com/errata/ELSA-2022-9272.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=380085481c64de749a6dd25cdf0bcf4360b30f83)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220315.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a466912611aa6cbdf550cd10601390e587451246)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3118eb64934499d93db3230748a452351d1d9a65)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5103)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/03/msg00024.html)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/03/msg00023.html)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220321-0002/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GDB3GQVJPXJE7X5C5JN6JAA4XUDWD6E6/)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0002)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-06)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-07)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/323SNN6ZX7PRJJWP2BUAFLPUAE42XWLZ/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W6K3PR542DXWLEFFMFIDMME4CWMHJRMG/)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-08)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-09)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220429-0005/)\n- [CONFIRM](https://support.apple.com/kb/HT213256)\n- [CONFIRM](https://support.apple.com/kb/HT213255)\n- [CONFIRM](https://support.apple.com/kb/HT213257)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/May/38)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/May/35)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/May/33)\n- [MISC](http://packetstormsecurity.com/files/167344/OpenSSL-1.0.2-1.1.1-3.0-BN_mod_sqrt-Infinite-Loop.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-712929.pdf)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-0778"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T09:10:46.256237Z",
+      "disclosureTime": "2022-03-15T17:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T09:10:28.648629Z",
+      "modificationTime": "2022-11-27T21:32:10.336778Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-6.ksplice1.el8_5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-6.ksplice1.el8_5"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2606887",
+      "cpes": [],
+      "title": "ELSA-2019-4852",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1c-2.ksplice1.el8"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2019-4852.html",
+          "title": "ELSA-2019-4852"
+        }
+      ],
+      "cvssDetails": [],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1c-2.ksplice1.el8 or higher.  \nThis issue was patched in `ELSA-2019-4852`.\n## References\n- [ELSA-2019-4852](https://linux.oracle.com/errata/ELSA-2019-4852.html)\n",
+      "identifiers": {
+        "CVE": [],
+        "CWE": [],
+        "ELSA": [
+          "ELSA-2019-4852"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl",
+      "creationTime": "2022-04-10T12:52:05.681171Z",
+      "disclosureTime": null,
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T12:50:34.563434Z",
+      "modificationTime": "2022-04-10T12:52:05.685212Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1c-2.ksplice1.el8"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1c-2.ksplice1.el8"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2966351",
+      "cpes": [],
+      "title": "OS Command Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-7.ksplice1.el8_6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 9.8,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-2068.html",
+          "title": "CVE-2022-2068"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5818.html",
+          "title": "ELSA-2022-5818"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9683.html",
+          "title": "ELSA-2022-9683"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9751.html",
+          "title": "ELSA-2022-9751"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9639817dac8bbbaa64d09efad7464ccc405527c7",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220621.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c9c35870601b4a44d86ddbf512b38df38285cfa",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5169",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WZZBKUHQFGSKGNXXKICSRPL7AMVW5M5/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220707-0008/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-07-08T11:05:55.603187Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2022-07-23T13:11:01.306646Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-11-27T15:47:38.348959Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nIn addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-7.ksplice1.el8_6 or higher.  \nThis issue was patched in `ELSA-2022-9683`.\n## References\n- [CVE-2022-2068](https://linux.oracle.com/cve/CVE-2022-2068.html)\n- [ELSA-2022-5818](https://linux.oracle.com/errata/ELSA-2022-5818.html)\n- [ELSA-2022-9683](https://linux.oracle.com/errata/ELSA-2022-9683.html)\n- [ELSA-2022-9751](https://linux.oracle.com/errata/ELSA-2022-9751.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9639817dac8bbbaa64d09efad7464ccc405527c7)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220621.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c9c35870601b4a44d86ddbf512b38df38285cfa)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5169)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WZZBKUHQFGSKGNXXKICSRPL7AMVW5M5/)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220707-0008/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-2068"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "critical",
+      "packageName": "openssl",
+      "creationTime": "2022-08-03T02:00:39.621413Z",
+      "disclosureTime": "2022-06-21T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-08-03T02:00:39.567860Z",
+      "modificationTime": "2022-11-27T15:47:38.348959Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-7.ksplice1.el8_6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-7.ksplice1.el8_6"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2966359",
+      "cpes": [],
+      "title": "OS Command Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-7.ksplice1.el8_6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 9.8,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-1292.html",
+          "title": "CVE-2022-1292"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5818.html",
+          "title": "ELSA-2022-5818"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9683.html",
+          "title": "ELSA-2022-9683"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9751.html",
+          "title": "ELSA-2022-9751"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220503.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=1ad73b4d27bd8c1b369a3cd453681d3a4f1bb9b2",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=e5fd1728ef4c7a5bf7c7a7163ca60370460a6e23",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=548d3f280a6e737673f5b61fce24bb100108dfeb",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/05/msg00019.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5139",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220602-0009/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VX4KWHPMKYJL6ZLW4M5IU7E5UV5ZWJQU/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNU5M7BXMML26G3GPYKFGQYPQDRSNKDD/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0011",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220729-0004/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2022-10-22T01:10:28.409337Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-07-08T11:05:49.965692Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-11-27T15:44:02.180062Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe c_rehash script does not properly sanitise shell metacharacters to prevent command injection. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2). Fixed in OpenSSL 1.1.1o (Affected 1.1.1-1.1.1n). Fixed in OpenSSL 1.0.2ze (Affected 1.0.2-1.0.2zd).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-7.ksplice1.el8_6 or higher.  \nThis issue was patched in `ELSA-2022-9683`.\n## References\n- [CVE-2022-1292](https://linux.oracle.com/cve/CVE-2022-1292.html)\n- [ELSA-2022-5818](https://linux.oracle.com/errata/ELSA-2022-5818.html)\n- [ELSA-2022-9683](https://linux.oracle.com/errata/ELSA-2022-9683.html)\n- [ELSA-2022-9751](https://linux.oracle.com/errata/ELSA-2022-9751.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220503.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1ad73b4d27bd8c1b369a3cd453681d3a4f1bb9b2)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=e5fd1728ef4c7a5bf7c7a7163ca60370460a6e23)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=548d3f280a6e737673f5b61fce24bb100108dfeb)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/05/msg00019.html)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5139)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220602-0009/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VX4KWHPMKYJL6ZLW4M5IU7E5UV5ZWJQU/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNU5M7BXMML26G3GPYKFGQYPQDRSNKDD/)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0011)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220729-0004/)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-1292"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "critical",
+      "packageName": "openssl",
+      "creationTime": "2022-08-03T02:00:49.366951Z",
+      "disclosureTime": "2022-05-03T16:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-08-03T02:00:49.296363Z",
+      "modificationTime": "2022-11-27T15:44:02.180062Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-7.ksplice1.el8_6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-7.ksplice1.el8_6"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSL-2966384",
+      "cpes": [],
+      "title": "Inadequate Encryption Strength",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-7.ksplice1.el8_6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-2097.html",
+          "title": "CVE-2022-2097"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5818.html",
+          "title": "ELSA-2022-5818"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9683.html",
+          "title": "ELSA-2022-9683"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9751.html",
+          "title": "ELSA-2022-9751"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220705.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=a98f339ddd7e8f487d6e0088d4a9a42324885a93",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=919925673d6c9cfed3c1085497f5dfbbed5fc431",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6567JERRHHJW2GNGJGKDRNHR7SNPZK7/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6CK57NBQFTPUMXAPJURCGXUYT76NQAK/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220715-0011/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-07-08T11:05:39.204823Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2022-10-29T01:10:46.043102Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2022-11-27T21:34:17.930640Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nAES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn&#39;t written. In the special case of &#34;in place&#34; encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).\n## Remediation\nUpgrade `Oracle:8` `openssl` to version 2:1.1.1k-7.ksplice1.el8_6 or higher.  \nThis issue was patched in `ELSA-2022-9683`.\n## References\n- [CVE-2022-2097](https://linux.oracle.com/cve/CVE-2022-2097.html)\n- [ELSA-2022-5818](https://linux.oracle.com/errata/ELSA-2022-5818.html)\n- [ELSA-2022-9683](https://linux.oracle.com/errata/ELSA-2022-9683.html)\n- [ELSA-2022-9751](https://linux.oracle.com/errata/ELSA-2022-9751.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220705.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a98f339ddd7e8f487d6e0088d4a9a42324885a93)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=919925673d6c9cfed3c1085497f5dfbbed5fc431)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6567JERRHHJW2GNGJGKDRNHR7SNPZK7/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6CK57NBQFTPUMXAPJURCGXUYT76NQAK/)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220715-0011/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-2097"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2022-08-03T02:01:44.578096Z",
+      "disclosureTime": "2022-07-05T11:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-08-03T02:00:44.403425Z",
+      "modificationTime": "2022-11-27T21:34:17.930640Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl@2:1.1.1k-7.ksplice1.el8_6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-7.ksplice1.el8_6"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2579536",
+      "cpes": [],
+      "title": "Improper Certificate Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1g-15.ksplice1.el8_3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-3450.html",
+          "title": "CVE-2021-3450"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-1024.html",
+          "title": "ELSA-2021-1024"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9151.html",
+          "title": "ELSA-2021-9151"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2a40b7bc7b94dd7de897a74571e7024f0cf0d63b",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210325.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd",
+          "title": "CISCO"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210326-0006/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc",
+          "title": "MISC"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/1",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/2",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/3",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/4",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-05",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-08",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10356",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://mta.openssl.org/pipermail/openssl-announce/2021-March/000198.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-05-03T21:58:01.222205Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-09-01T22:10:57.756043Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-07-26T01:11:34.576726Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe X509_V_FLAG_X509_STRICT flag enables additional security checks of the certificates present in a certificate chain. It is not set by default. Starting from OpenSSL version 1.1.1h a check to disallow certificates in the chain that have explicitly encoded elliptic curve parameters was added as an additional strict check. An error in the implementation of this check meant that the result of a previous check to confirm that certificates in the chain are valid CA certificates was overwritten. This effectively bypasses the check that non-CA certificates must not be able to issue other certificates. If a &#34;purpose&#34; has been configured then there is a subsequent opportunity for checks that the certificate is a valid CA. All of the named &#34;purpose&#34; values implemented in libcrypto perform this check. Therefore, where a purpose is set the certificate chain will still be rejected even when the strict flag has been used. A purpose is set by default in libssl client and server certificate verification routines, but it can be overridden or removed by an application. In order to be affected, an application must explicitly set the X509_V_FLAG_X509_STRICT verification flag and either not set a purpose for the certificate verification or, in the case of TLS client or server applications, override the default purpose. OpenSSL versions 1.1.1h and newer are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1h-1.1.1j).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1g-15.ksplice1.el8_3 or higher.  \nThis issue was patched in `ELSA-2021-9151`.\n## References\n- [CVE-2021-3450](https://linux.oracle.com/cve/CVE-2021-3450.html)\n- [ELSA-2021-1024](https://linux.oracle.com/errata/ELSA-2021-1024.html)\n- [ELSA-2021-9151](https://linux.oracle.com/errata/ELSA-2021-9151.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2a40b7bc7b94dd7de897a74571e7024f0cf0d63b)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210325.txt)\n- [CISCO](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210326-0006/)\n- [MISC](https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/1)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/2)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/3)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/4)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-05)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-08)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10356)\n- [MISC](https://mta.openssl.org/pipermail/openssl-announce/2021-March/000198.html)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-3450"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T08:39:57.169488Z",
+      "disclosureTime": "2021-03-25T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:38:58.878666Z",
+      "modificationTime": "2022-09-01T22:10:57.756043Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1g-15.ksplice1.el8_3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1g-15.ksplice1.el8_3"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2581455",
+      "cpes": [],
+      "title": "NULL Pointer Dereference",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1g-15.ksplice1.el8_3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-3449.html",
+          "title": "CVE-2021-3449"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-1024.html",
+          "title": "ELSA-2021-1024"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9151.html",
+          "title": "ELSA-2021-9151"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fb9fa6b51defd48157eeb207f52181f735d96148",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210325.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd",
+          "title": "CISCO"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4875",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210326-0006/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc",
+          "title": "MISC"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/1",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/27/2",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/3",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/03/28/4",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-06",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-05",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10356",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210513-0002/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-10",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-772220.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/08/msg00029.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-05-03T22:27:03.698718Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-09-01T22:09:54.715634Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-08-30T01:11:01.536520Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nAn OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a NULL pointer dereference will result, leading to a crash and a denial of service attack. A server is only vulnerable if it has TLSv1.2 and renegotiation enabled (which is the default configuration). OpenSSL TLS clients are not impacted by this issue. All OpenSSL 1.1.1 versions are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1-1.1.1j).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1g-15.ksplice1.el8_3 or higher.  \nThis issue was patched in `ELSA-2021-9151`.\n## References\n- [CVE-2021-3449](https://linux.oracle.com/cve/CVE-2021-3449.html)\n- [ELSA-2021-1024](https://linux.oracle.com/errata/ELSA-2021-1024.html)\n- [ELSA-2021-9151](https://linux.oracle.com/errata/ELSA-2021-9151.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fb9fa6b51defd48157eeb207f52181f735d96148)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210325.txt)\n- [CISCO](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-openssl-2021-GHY28dJd)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4875)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210326-0006/)\n- [MISC](https://security.FreeBSD.org/advisories/FreeBSD-SA-21:07.openssl.asc)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/1)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/27/2)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/3)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/03/28/4)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-06)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-05)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CCBFLLVQVILIVGZMBJL3IXZGKWQISYNP/)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10356)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210513-0002/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-10)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-772220.pdf)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44845)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0013)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2021/08/msg00029.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-3449"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T08:42:07.977193Z",
+      "disclosureTime": "2021-03-25T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:39:53.738969Z",
+      "modificationTime": "2022-09-01T22:09:54.715634Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1g-15.ksplice1.el8_3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1g-15.ksplice1.el8_3"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2594083",
+      "cpes": [],
+      "title": "NULL Pointer Dereference",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-4.ksplice1.el8"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-23841.html",
+          "title": "CVE-2021-23841"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-3798.html",
+          "title": "ELSA-2021-3798"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9478.html",
+          "title": "ELSA-2021-9478"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+          "title": "ELSA-2021-9528"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9561.html",
+          "title": "ELSA-2021-9561"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210216.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8252ee4d90f3f2004d3d0aeeed003ad49c9a7807",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=122a19ab48091c657f7cb1fb3af9fc07bd557bbf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4855",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210219-0009/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-03",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210513-0002/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT212529",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT212528",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT212534",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2021/May/68",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2021/May/67",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2021/May/70",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf",
+          "title": "CONFIRM"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-05-03T22:30:40.116402Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-09-01T19:41:07.840018Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-10-08T01:10:56.402659Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if the issuer field is maliciously constructed). This may subsequently result in a NULL pointer deref and a crash leading to a potential denial of service attack. The function X509_issuer_and_serial_hash() is never directly called by OpenSSL itself so applications are only vulnerable if they use this function directly and they use it on certificates that may have been obtained from untrusted sources. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-4.ksplice1.el8 or higher.  \nThis issue was patched in `ELSA-2021-9561`.\n## References\n- [CVE-2021-23841](https://linux.oracle.com/cve/CVE-2021-23841.html)\n- [ELSA-2021-3798](https://linux.oracle.com/errata/ELSA-2021-3798.html)\n- [ELSA-2021-9478](https://linux.oracle.com/errata/ELSA-2021-9478.html)\n- [ELSA-2021-9528](https://linux.oracle.com/errata/ELSA-2021-9528.html)\n- [ELSA-2021-9561](https://linux.oracle.com/errata/ELSA-2021-9561.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210216.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8252ee4d90f3f2004d3d0aeeed003ad49c9a7807)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=122a19ab48091c657f7cb1fb3af9fc07bd557bbf)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4855)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210219-0009/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-03)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210513-0002/)\n- [CONFIRM](https://support.apple.com/kb/HT212529)\n- [CONFIRM](https://support.apple.com/kb/HT212528)\n- [CONFIRM](https://support.apple.com/kb/HT212534)\n- [FULLDISC](http://seclists.org/fulldisclosure/2021/May/68)\n- [FULLDISC](http://seclists.org/fulldisclosure/2021/May/67)\n- [FULLDISC](http://seclists.org/fulldisclosure/2021/May/70)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-637483.pdf)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-23841"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T08:55:23.433773Z",
+      "disclosureTime": "2021-02-16T17:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:47:58.435395Z",
+      "modificationTime": "2022-10-08T01:10:56.521161Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-4.ksplice1.el8"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-4.ksplice1.el8"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2594112",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-4.ksplice1.el8"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-23840.html",
+          "title": "CVE-2021-23840"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-3798.html",
+          "title": "ELSA-2021-3798"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9478.html",
+          "title": "ELSA-2021-9478"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9528.html",
+          "title": "ELSA-2021-9528"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9561.html",
+          "title": "ELSA-2021-9561"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9b1129239f3ebb1d1c98ce9ed41d5c9476c47cb2",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=6a51b9e1d0cf0bf8515f7201b68fb0a3482b3dc1",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210216.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4855",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210219-0009/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-03",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202103-03",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-10",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10366",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2022-05-03T22:33:33.433434Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-08-30T01:10:59.844335Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-10-26T23:52:28.879159Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nCalls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-4.ksplice1.el8 or higher.  \nThis issue was patched in `ELSA-2021-9561`.\n## References\n- [CVE-2021-23840](https://linux.oracle.com/cve/CVE-2021-23840.html)\n- [ELSA-2021-3798](https://linux.oracle.com/errata/ELSA-2021-3798.html)\n- [ELSA-2021-9478](https://linux.oracle.com/errata/ELSA-2021-9478.html)\n- [ELSA-2021-9528](https://linux.oracle.com/errata/ELSA-2021-9528.html)\n- [ELSA-2021-9561](https://linux.oracle.com/errata/ELSA-2021-9561.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9b1129239f3ebb1d1c98ce9ed41d5c9476c47cb2)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a51b9e1d0cf0bf8515f7201b68fb0a3482b3dc1)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210216.txt)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4855)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210219-0009/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-03)\n- [GENTOO](https://security.gentoo.org/glsa/202103-03)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-09)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-10)\n- [MISC](https://www.oracle.com/security-alerts/cpuApr2021.html)\n- [MLIST](https://lists.apache.org/thread.html/rf4c02775860db415b4955778a131c2795223f61cb8c6a450893651e4@%3Cissues.bookkeeper.apache.org%3E)\n- [MLIST](https://lists.apache.org/thread.html/r58af02e294bd07f487e2c64ffc0a29b837db5600e33b6e698b9d696b@%3Cissues.bookkeeper.apache.org%3E)\n- [CONFIRM](https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44846)\n- [N/A](https://www.oracle.com//security-alerts/cpujul2021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10366)\n- [MISC](https://www.oracle.com/security-alerts/cpujan2022.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-23840"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T08:55:25.738262Z",
+      "disclosureTime": "2021-02-16T17:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:48:58.201154Z",
+      "modificationTime": "2022-10-26T23:52:28.879159Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-4.ksplice1.el8"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-4.ksplice1.el8"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2594650",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-5.ksplice1.el8_5"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2021-3712.html",
+          "title": "CVE-2021-3712"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-5226.html",
+          "title": "ELSA-2021-5226"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2021-9632.html",
+          "title": "ELSA-2021-9632"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9017.html",
+          "title": "ELSA-2022-9017"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9023.html",
+          "title": "ELSA-2022-9023"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20210824.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=94d23fcff9b2a7a8368dfe52214d5c2569882c11",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=ccb0a11145ee72b042d10593a64eaf9e8a55ec12",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2021/dsa-4963",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2021/08/26/2",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20210827-0010/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2021-16",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2021/09/msg00021.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://kc.mcafee.com/corporate/index?page=content&id=SB10366",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-02",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-244969.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202209-02",
+          "title": "GENTOO"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-10-25T23:39:35.344116Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2022-05-03T21:47:28.652747Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-10-17T01:10:39.512050Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nASN.1 strings are represented internally within OpenSSL as an ASN1_STRING structure which contains a buffer holding the string data and a field holding the buffer length. This contrasts with normal C strings which are repesented as a buffer for the string data which is terminated with a NUL (0) byte. Although not a strict requirement, ASN.1 strings that are parsed using OpenSSL&#39;s own &#34;d2i&#34; functions (and other similar parsing functions) as well as any string whose value has been set with the ASN1_STRING_set() function will additionally NUL terminate the byte array in the ASN1_STRING structure. However, it is possible for applications to directly construct valid ASN1_STRING structures which do not NUL terminate the byte array by directly setting the &#34;data&#34; and &#34;length&#34; fields in the ASN1_STRING array. This can also happen by using the ASN1_STRING_set0() function. Numerous OpenSSL functions that print ASN.1 data have been found to assume that the ASN1_STRING byte array will be NUL terminated, even though this is not guaranteed for strings that have been directly constructed. Where an application requests an ASN.1 structure to be printed, and where that ASN.1 structure contains ASN1_STRINGs that have been directly constructed by the application without NUL terminating the &#34;data&#34; field, then a read buffer overrun can occur. The same thing can also occur during name constraints processing of certificates (for example if a certificate has been directly constructed by the application instead of loading it via the OpenSSL parsing functions, and the certificate contains non NUL terminated ASN1_STRING structures). It can also occur in the X509_get1_email(), X509_REQ_get1_email() and X509_get1_ocsp() functions. If a malicious actor can cause an application to directly construct an ASN1_STRING and then process it through one of the affected OpenSSL functions then this issue could be hit. This might result in a crash (causing a Denial of Service attack). It could also result in the disclosure of private memory contents (such as private keys, or sensitive plaintext). Fixed in OpenSSL 1.1.1l (Affected 1.1.1-1.1.1k). Fixed in OpenSSL 1.0.2za (Affected 1.0.2-1.0.2y).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-5.ksplice1.el8_5 or higher.  \nThis issue was patched in `ELSA-2021-9632`.\n## References\n- [CVE-2021-3712](https://linux.oracle.com/cve/CVE-2021-3712.html)\n- [ELSA-2021-5226](https://linux.oracle.com/errata/ELSA-2021-5226.html)\n- [ELSA-2021-9632](https://linux.oracle.com/errata/ELSA-2021-9632.html)\n- [ELSA-2022-9017](https://linux.oracle.com/errata/ELSA-2022-9017.html)\n- [ELSA-2022-9023](https://linux.oracle.com/errata/ELSA-2022-9023.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20210824.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=94d23fcff9b2a7a8368dfe52214d5c2569882c11)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ccb0a11145ee72b042d10593a64eaf9e8a55ec12)\n- [DEBIAN](https://www.debian.org/security/2021/dsa-4963)\n- [MLIST](https://lists.apache.org/thread.html/r18995de860f0e63635f3008fd2a6aca82394249476d21691e7c59c9e@%3Cdev.tomcat.apache.org%3E)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/08/26/2)\n- [MLIST](https://lists.apache.org/thread.html/rad5d9f83f0d11fb3f8bb148d179b8a9ad7c6a17f18d70e5805a713d1@%3Cdev.tomcat.apache.org%3E)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210827-0010/)\n- [CONFIRM](https://www.tenable.com/security/tns-2021-16)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2021/09/msg00014.html)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2021/09/msg00021.html)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [CONFIRM](https://kc.mcafee.com/corporate/index?page=content&id=SB10366)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-02)\n- [MISC](https://www.oracle.com/security-alerts/cpujan2022.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-244969.pdf)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [GENTOO](https://security.gentoo.org/glsa/202209-02)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-3712"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T08:55:59.488244Z",
+      "disclosureTime": "2021-08-24T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T08:55:56.541254Z",
+      "modificationTime": "2022-12-07T01:11:48.998019Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-5.ksplice1.el8_5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-5.ksplice1.el8_5"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2605508",
+      "cpes": [],
+      "title": "Loop with Unreachable Exit Condition ('Infinite Loop')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-6.ksplice1.el8_5"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-0778.html",
+          "title": "CVE-2022-0778"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1065.html",
+          "title": "ELSA-2022-1065"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-1066.html",
+          "title": "ELSA-2022-1066"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9224.html",
+          "title": "ELSA-2022-9224"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9225.html",
+          "title": "ELSA-2022-9225"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9233.html",
+          "title": "ELSA-2022-9233"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9237.html",
+          "title": "ELSA-2022-9237"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9243.html",
+          "title": "ELSA-2022-9243"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9246.html",
+          "title": "ELSA-2022-9246"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9249.html",
+          "title": "ELSA-2022-9249"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9255.html",
+          "title": "ELSA-2022-9255"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9258.html",
+          "title": "ELSA-2022-9258"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9272.html",
+          "title": "ELSA-2022-9272"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=380085481c64de749a6dd25cdf0bcf4360b30f83",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220315.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=a466912611aa6cbdf550cd10601390e587451246",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=3118eb64934499d93db3230748a452351d1d9a65",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5103",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00024.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/03/msg00023.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220321-0002/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GDB3GQVJPXJE7X5C5JN6JAA4XUDWD6E6/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0002",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-06",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-07",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/323SNN6ZX7PRJJWP2BUAFLPUAE42XWLZ/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W6K3PR542DXWLEFFMFIDMME4CWMHJRMG/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-08",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.tenable.com/security/tns-2022-09",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220429-0005/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213256",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213255",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213257",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/38",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/35",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/May/33",
+          "title": "FULLDISC"
+        },
+        {
+          "url": "http://packetstormsecurity.com/files/167344/OpenSSL-1.0.2-1.1.1-3.0-BN_mod_sqrt-Infinite-Loop.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-712929.pdf",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-06-01T11:06:13.508994Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-11-10T01:11:47.822021Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-11-27T21:32:10.336778Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-6.ksplice1.el8_5 or higher.  \nThis issue was patched in `ELSA-2022-9258`.\n## References\n- [CVE-2022-0778](https://linux.oracle.com/cve/CVE-2022-0778.html)\n- [ELSA-2022-1065](https://linux.oracle.com/errata/ELSA-2022-1065.html)\n- [ELSA-2022-1066](https://linux.oracle.com/errata/ELSA-2022-1066.html)\n- [ELSA-2022-9224](https://linux.oracle.com/errata/ELSA-2022-9224.html)\n- [ELSA-2022-9225](https://linux.oracle.com/errata/ELSA-2022-9225.html)\n- [ELSA-2022-9233](https://linux.oracle.com/errata/ELSA-2022-9233.html)\n- [ELSA-2022-9237](https://linux.oracle.com/errata/ELSA-2022-9237.html)\n- [ELSA-2022-9243](https://linux.oracle.com/errata/ELSA-2022-9243.html)\n- [ELSA-2022-9246](https://linux.oracle.com/errata/ELSA-2022-9246.html)\n- [ELSA-2022-9249](https://linux.oracle.com/errata/ELSA-2022-9249.html)\n- [ELSA-2022-9255](https://linux.oracle.com/errata/ELSA-2022-9255.html)\n- [ELSA-2022-9258](https://linux.oracle.com/errata/ELSA-2022-9258.html)\n- [ELSA-2022-9272](https://linux.oracle.com/errata/ELSA-2022-9272.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=380085481c64de749a6dd25cdf0bcf4360b30f83)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220315.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a466912611aa6cbdf550cd10601390e587451246)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3118eb64934499d93db3230748a452351d1d9a65)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5103)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/03/msg00024.html)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/03/msg00023.html)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220321-0002/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GDB3GQVJPXJE7X5C5JN6JAA4XUDWD6E6/)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0002)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-06)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-07)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/323SNN6ZX7PRJJWP2BUAFLPUAE42XWLZ/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W6K3PR542DXWLEFFMFIDMME4CWMHJRMG/)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-08)\n- [MISC](https://www.oracle.com/security-alerts/cpuapr2022.html)\n- [CONFIRM](https://www.tenable.com/security/tns-2022-09)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220429-0005/)\n- [CONFIRM](https://support.apple.com/kb/HT213256)\n- [CONFIRM](https://support.apple.com/kb/HT213255)\n- [CONFIRM](https://support.apple.com/kb/HT213257)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/May/38)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/May/35)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/May/33)\n- [MISC](http://packetstormsecurity.com/files/167344/OpenSSL-1.0.2-1.1.1-3.0-BN_mod_sqrt-Infinite-Loop.html)\n- [CONFIRM](https://cert-portal.siemens.com/productcert/pdf/ssa-712929.pdf)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-0778"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T09:13:07.302359Z",
+      "disclosureTime": "2022-03-15T17:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T09:10:28.648629Z",
+      "modificationTime": "2022-11-27T21:32:10.336778Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-6.ksplice1.el8_5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-6.ksplice1.el8_5"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2606720",
+      "cpes": [],
+      "title": "ELSA-2019-4852",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1c-2.ksplice1.el8"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2019-4852.html",
+          "title": "ELSA-2019-4852"
+        }
+      ],
+      "cvssDetails": [],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1c-2.ksplice1.el8 or higher.  \nThis issue was patched in `ELSA-2019-4852`.\n## References\n- [ELSA-2019-4852](https://linux.oracle.com/errata/ELSA-2019-4852.html)\n",
+      "identifiers": {
+        "CVE": [],
+        "CWE": [],
+        "ELSA": [
+          "ELSA-2019-4852"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "openssl-libs",
+      "creationTime": "2022-04-10T12:50:34.585478Z",
+      "disclosureTime": null,
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-04-10T12:50:34.563434Z",
+      "modificationTime": "2022-04-10T12:50:34.590469Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "IMPORTANT",
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1c-2.ksplice1.el8"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1c-2.ksplice1.el8"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2966354",
+      "cpes": [],
+      "title": "Inadequate Encryption Strength",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-7.ksplice1.el8_6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-2097.html",
+          "title": "CVE-2022-2097"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5818.html",
+          "title": "ELSA-2022-5818"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9683.html",
+          "title": "ELSA-2022-9683"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9751.html",
+          "title": "ELSA-2022-9751"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220705.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=a98f339ddd7e8f487d6e0088d4a9a42324885a93",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=919925673d6c9cfed3c1085497f5dfbbed5fc431",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6567JERRHHJW2GNGJGKDRNHR7SNPZK7/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6CK57NBQFTPUMXAPJURCGXUYT76NQAK/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220715-0011/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-07-08T11:05:39.204823Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2022-10-29T01:10:46.043102Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2022-11-27T21:34:17.930640Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nAES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn&#39;t written. In the special case of &#34;in place&#34; encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-7.ksplice1.el8_6 or higher.  \nThis issue was patched in `ELSA-2022-9683`.\n## References\n- [CVE-2022-2097](https://linux.oracle.com/cve/CVE-2022-2097.html)\n- [ELSA-2022-5818](https://linux.oracle.com/errata/ELSA-2022-5818.html)\n- [ELSA-2022-9683](https://linux.oracle.com/errata/ELSA-2022-9683.html)\n- [ELSA-2022-9751](https://linux.oracle.com/errata/ELSA-2022-9751.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220705.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=a98f339ddd7e8f487d6e0088d4a9a42324885a93)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=919925673d6c9cfed3c1085497f5dfbbed5fc431)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6567JERRHHJW2GNGJGKDRNHR7SNPZK7/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R6CK57NBQFTPUMXAPJURCGXUYT76NQAK/)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220715-0011/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-2097"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-08-03T02:00:44.419063Z",
+      "disclosureTime": "2022-07-05T11:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-08-03T02:00:44.403425Z",
+      "modificationTime": "2022-11-27T21:34:17.930640Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-7.ksplice1.el8_6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-7.ksplice1.el8_6"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2966419",
+      "cpes": [],
+      "title": "OS Command Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-7.ksplice1.el8_6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 9.8,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-2068.html",
+          "title": "CVE-2022-2068"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5818.html",
+          "title": "ELSA-2022-5818"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9683.html",
+          "title": "ELSA-2022-9683"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9751.html",
+          "title": "ELSA-2022-9751"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9639817dac8bbbaa64d09efad7464ccc405527c7",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220621.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c9c35870601b4a44d86ddbf512b38df38285cfa",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5169",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WZZBKUHQFGSKGNXXKICSRPL7AMVW5M5/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220707-0008/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-07-08T11:05:55.603187Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2022-07-23T13:11:01.306646Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-11-27T15:47:38.348959Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nIn addition to the c_rehash shell command injection identified in CVE-2022-1292, further circumstances where the c_rehash script does not properly sanitise shell metacharacters to prevent command injection were found by code review. When the CVE-2022-1292 was fixed it was not discovered that there are other places in the script where the file names of certificates being hashed were possibly passed to a command executed through the shell. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.4 (Affected 3.0.0,3.0.1,3.0.2,3.0.3). Fixed in OpenSSL 1.1.1p (Affected 1.1.1-1.1.1o). Fixed in OpenSSL 1.0.2zf (Affected 1.0.2-1.0.2ze).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-7.ksplice1.el8_6 or higher.  \nThis issue was patched in `ELSA-2022-9683`.\n## References\n- [CVE-2022-2068](https://linux.oracle.com/cve/CVE-2022-2068.html)\n- [ELSA-2022-5818](https://linux.oracle.com/errata/ELSA-2022-5818.html)\n- [ELSA-2022-9683](https://linux.oracle.com/errata/ELSA-2022-9683.html)\n- [ELSA-2022-9751](https://linux.oracle.com/errata/ELSA-2022-9751.html)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9639817dac8bbbaa64d09efad7464ccc405527c7)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220621.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=7a9c027159fe9e1bbc2cd38a8a2914bff0d5abd9)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c9c35870601b4a44d86ddbf512b38df38285cfa)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5169)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6WZZBKUHQFGSKGNXXKICSRPL7AMVW5M5/)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220707-0008/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VCMNWKERPBKOEBNL7CLTTX3ZZCZLH7XA/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-2068"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "critical",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-08-03T02:02:49.163195Z",
+      "disclosureTime": "2022-06-21T15:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-08-03T02:00:39.567860Z",
+      "modificationTime": "2022-11-27T15:47:38.348959Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-7.ksplice1.el8_6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-7.ksplice1.el8_6"
+    },
+    {
+      "id": "SNYK-ORACLE8-OPENSSLLIBS-2966422",
+      "cpes": [],
+      "title": "OS Command Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<2:1.1.1k-7.ksplice1.el8_6"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 9.8,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://linux.oracle.com/cve/CVE-2022-1292.html",
+          "title": "CVE-2022-1292"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-5818.html",
+          "title": "ELSA-2022-5818"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9683.html",
+          "title": "ELSA-2022-9683"
+        },
+        {
+          "url": "https://linux.oracle.com/errata/ELSA-2022-9751.html",
+          "title": "ELSA-2022-9751"
+        },
+        {
+          "url": "https://www.openssl.org/news/secadv/20220503.txt",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=1ad73b4d27bd8c1b369a3cd453681d3a4f1bb9b2",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=e5fd1728ef4c7a5bf7c7a7163ca60370460a6e23",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=548d3f280a6e737673f5b61fce24bb100108dfeb",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/05/msg00019.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5139",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220602-0009/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VX4KWHPMKYJL6ZLW4M5IU7E5UV5ZWJQU/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNU5M7BXMML26G3GPYKFGQYPQDRSNKDD/",
+          "title": "FEDORA"
+        },
+        {
+          "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0011",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "title": "N/A"
+        },
+        {
+          "url": "https://security.netapp.com/advisory/ntap-20220729-0004/",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-02",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2022-10-22T01:10:28.409337Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-07-08T11:05:49.965692Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.7,
+          "modificationTime": "2022-11-27T15:44:02.180062Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `openssl-libs` package._\n_See `How to fix?` for `Oracle:8` relevant versions._\n\nThe c_rehash script does not properly sanitise shell metacharacters to prevent command injection. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2). Fixed in OpenSSL 1.1.1o (Affected 1.1.1-1.1.1n). Fixed in OpenSSL 1.0.2ze (Affected 1.0.2-1.0.2zd).\n## Remediation\nUpgrade `Oracle:8` `openssl-libs` to version 2:1.1.1k-7.ksplice1.el8_6 or higher.  \nThis issue was patched in `ELSA-2022-9683`.\n## References\n- [CVE-2022-1292](https://linux.oracle.com/cve/CVE-2022-1292.html)\n- [ELSA-2022-5818](https://linux.oracle.com/errata/ELSA-2022-5818.html)\n- [ELSA-2022-9683](https://linux.oracle.com/errata/ELSA-2022-9683.html)\n- [ELSA-2022-9751](https://linux.oracle.com/errata/ELSA-2022-9751.html)\n- [CONFIRM](https://www.openssl.org/news/secadv/20220503.txt)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=1ad73b4d27bd8c1b369a3cd453681d3a4f1bb9b2)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=e5fd1728ef4c7a5bf7c7a7163ca60370460a6e23)\n- [CONFIRM](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=548d3f280a6e737673f5b61fce24bb100108dfeb)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/05/msg00019.html)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5139)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220602-0009/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VX4KWHPMKYJL6ZLW4M5IU7E5UV5ZWJQU/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNU5M7BXMML26G3GPYKFGQYPQDRSNKDD/)\n- [CONFIRM](https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0011)\n- [N/A](https://www.oracle.com/security-alerts/cpujul2022.html)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20220729-0004/)\n- [GENTOO](https://security.gentoo.org/glsa/202210-02)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-1292"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "critical",
+      "packageName": "openssl-libs",
+      "creationTime": "2022-08-03T02:02:52.130468Z",
+      "disclosureTime": "2022-05-03T16:15:00Z",
+      "packageManager": "oracle:8",
+      "publicationTime": "2022-08-03T02:00:49.296363Z",
+      "modificationTime": "2022-11-27T15:44:02.180062Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "MODERATE",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mysql@latest",
+        "openssl-libs@1:1.1.1k-7.el8_6"
+      ],
+      "upgradePath": [
+        false,
+        "openssl-libs@2:1.1.1k-7.ksplice1.el8_6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "openssl-libs",
+      "version": "1:1.1.1k-7.el8_6",
+      "nearestFixedInVersion": "2:1.1.1k-7.ksplice1.el8_6"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 119,
+  "org": "cooltieyi",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "rpm",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {
+    "baseImage": "mysql:8.0.31-oracle",
+    "baseImageRemediation": {
+      "code": "OUTDATED_BASE_IMAGE",
+      "baseImageOutdated": true,
+      "advice": [
+        {
+          "message": "Your base image is out of date",
+          "bold": true
+        },
+        {
+          "message": "1) Pull the latest version of your base image by running 'docker pull mysql:8.0.31-oracle'"
+        },
+        {
+          "message": "2) Rebuild your local image"
+        }
+      ]
+    }
+  },
+  "summary": "21 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 21,
+  "projectName": "docker-image|mysql",
+  "platform": "linux/amd64",
+  "hasUnknownVersions": false,
+  "path": "mysql"
+}

@@ -1,0 +1,51 @@
+{
+    "image": "percona/percona-xtradb-cluster-operator:1.13.0",
+    "unapproved": [
+        "RHSA-2023:0110",
+        "RHSA-2023:0173",
+        "RHSA-2023:0116",
+        "RHSA-2023:0100"
+    ],
+    "vulnerabilities": [
+        {
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-16.el8_6",
+            "vulnerability": "RHSA-2023:0110",
+            "namespace": "centos:8",
+            "description": "SQLite is a C library that implements an SQL database engine. A large subset of SQL92 is supported. A complete database is stored in a single disk file. The API is designed for convenience and ease of use. Applications that link against SQLite can enjoy the power and flexibility of an SQL database without the administrative hassles of supporting a separate database server. Security Fix(es): * sqlite: an array-bounds overflow if billions of bytes are used in a string argument to a C API (CVE-2022-35737) For more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+            "link": "https://access.redhat.com/errata/RHSA-2023:0110",
+            "severity": "Medium",
+            "fixedby": "0:3.26.0-17.el8_7"
+        },
+        {
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-15.el8",
+            "vulnerability": "RHSA-2023:0173",
+            "namespace": "centos:8",
+            "description": "The libxml2 library is a development toolbox providing the implementation of various XML standards. Security Fix(es): * libxml2: integer overflows with XML_PARSE_HUGE (CVE-2022-40303) * libxml2: dict corruption caused by entity reference cycles (CVE-2022-40304) For more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+            "link": "https://access.redhat.com/errata/RHSA-2023:0173",
+            "severity": "Medium",
+            "fixedby": "0:2.9.7-15.el8_7.1"
+        },
+        {
+            "featurename": "libtasn1",
+            "featureversion": "4.13-3.el8",
+            "vulnerability": "RHSA-2023:0116",
+            "namespace": "centos:8",
+            "description": "A library that provides Abstract Syntax Notation One (ASN.1, as specified by the X.680 ITU-T recommendation) parsing and structures management, and Distinguished Encoding Rules (DER, as per X.690) encoding and decoding functions. Security Fix(es): * libtasn1: Out-of-bound access in ETYPE_OK (CVE-2021-46848) For more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+            "link": "https://access.redhat.com/errata/RHSA-2023:0116",
+            "severity": "Medium",
+            "fixedby": "0:4.13-4.el8_7"
+        },
+        {
+            "featurename": "systemd-libs",
+            "featureversion": "239-68.el8",
+            "vulnerability": "RHSA-2023:0100",
+            "namespace": "centos:8",
+            "description": "The systemd packages contain systemd, a system and service manager for Linux, compatible with the SysV and LSB init scripts. It provides aggressive parallelism capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, and keeps track of processes using Linux cgroups. In addition, it supports snapshotting and restoring of the system state, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic. It can also work as a drop-in replacement for sysvinit. Security Fix(es): * systemd: buffer overrun in format_timespan() function (CVE-2022-3821) For more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section. Bug Fix(es): * ShutdownWatchdogSec value is not taken into account on reboot (BZ#2127170)",
+            "link": "https://access.redhat.com/errata/RHSA-2023:0100",
+            "severity": "Medium",
+            "fixedby": "0:239-68.el8_7.1"
+        }
+    ]
+}

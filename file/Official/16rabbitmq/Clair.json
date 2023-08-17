@@ -1,0 +1,128 @@
+{
+    "image": "rabbitmq",
+    "unapproved": [
+        "CVE-2022-29458",
+        "CVE-2021-39537",
+        "CVE-2017-11164",
+        "CVE-2022-42800",
+        "CVE-2016-20013",
+        "CVE-2013-4235",
+        "CVE-2022-3715",
+        "CVE-2016-2781",
+        "CVE-2022-3219",
+        "CVE-2020-13844",
+        "CVE-2022-3821"
+    ],
+    "vulnerabilities": [
+        {
+            "featurename": "zlib",
+            "featureversion": "1:1.2.11.dfsg-2ubuntu1.5",
+            "vulnerability": "CVE-2022-42800",
+            "namespace": "ubuntu:20.04",
+            "description": "This issue was addressed with improved checks. This issue is fixed in iOS 15.7.1 and iPadOS 15.7.1, macOS Ventura 13, watchOS 9.1, iOS 16.1 and iPadOS 16, macOS Monterey 12.6.1, macOS Big Sur 11.7.1. A user may be able to cause unexpected app termination or arbitrary code execution.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-42800",
+            "severity": "Medium",
+            "fixedby": ""
+        },
+        {
+            "featurename": "bash",
+            "featureversion": "5.0-6ubuntu1.2",
+            "vulnerability": "CVE-2022-3715",
+            "namespace": "ubuntu:20.04",
+            "description": "bash: a heap-buffer-overflow in valid_parameter_transform",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715",
+            "severity": "Medium",
+            "fixedby": ""
+        },
+        {
+            "featurename": "gcc-9",
+            "featureversion": "9.4.0-1ubuntu1~20.04.1",
+            "vulnerability": "CVE-2020-13844",
+            "namespace": "ubuntu:20.04",
+            "description": "Arm Armv8-A core implementations utilizing speculative execution past unconditional changes in control flow may allow unauthorized disclosure of information to an attacker with local user access via a side-channel analysis, aka \"straight-line speculation.\"",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-13844",
+            "severity": "Medium",
+            "fixedby": ""
+        },
+        {
+            "featurename": "systemd",
+            "featureversion": "245.4-4ubuntu3.18",
+            "vulnerability": "CVE-2022-3821",
+            "namespace": "ubuntu:20.04",
+            "description": "An off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+            "severity": "Medium",
+            "fixedby": ""
+        },
+        {
+            "featurename": "shadow",
+            "featureversion": "1:4.8.1-1ubuntu5.20.04.2",
+            "vulnerability": "CVE-2013-4235",
+            "namespace": "ubuntu:20.04",
+            "description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+            "severity": "Low",
+            "fixedby": ""
+        },
+        {
+            "featurename": "coreutils",
+            "featureversion": "8.30-3ubuntu2",
+            "vulnerability": "CVE-2016-2781",
+            "namespace": "ubuntu:20.04",
+            "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
+            "severity": "Low",
+            "fixedby": ""
+        },
+        {
+            "featurename": "gnupg2",
+            "featureversion": "2.2.19-3ubuntu2.2",
+            "vulnerability": "CVE-2022-3219",
+            "namespace": "ubuntu:20.04",
+            "description": "gnupg: denial of service issue (resource consumption) using compressed packets",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219",
+            "severity": "Low",
+            "fixedby": ""
+        },
+        {
+            "featurename": "ncurses",
+            "featureversion": "6.2-0ubuntu2",
+            "vulnerability": "CVE-2022-29458",
+            "namespace": "ubuntu:20.04",
+            "description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+            "severity": "Negligible",
+            "fixedby": ""
+        },
+        {
+            "featurename": "ncurses",
+            "featureversion": "6.2-0ubuntu2",
+            "vulnerability": "CVE-2021-39537",
+            "namespace": "ubuntu:20.04",
+            "description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-39537",
+            "severity": "Negligible",
+            "fixedby": ""
+        },
+        {
+            "featurename": "pcre3",
+            "featureversion": "2:8.39-12ubuntu0.1",
+            "vulnerability": "CVE-2017-11164",
+            "namespace": "ubuntu:20.04",
+            "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+            "severity": "Negligible",
+            "fixedby": ""
+        },
+        {
+            "featurename": "glibc",
+            "featureversion": "2.31-0ubuntu9.9",
+            "vulnerability": "CVE-2016-20013",
+            "namespace": "ubuntu:20.04",
+            "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+            "link": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+            "severity": "Negligible",
+            "fixedby": ""
+        }
+    ]
+}

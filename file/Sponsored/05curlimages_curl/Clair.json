@@ -1,0 +1,18 @@
+{
+    "image": "curlimages/curl",
+    "unapproved": [
+        "CVE-2023-24056"
+    ],
+    "vulnerabilities": [
+        {
+            "featurename": "pkgconf",
+            "featureversion": "1.8.0-r1",
+            "vulnerability": "CVE-2023-24056",
+            "namespace": "alpine:v3.16",
+            "description": "",
+            "link": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24056",
+            "severity": "Unknown",
+            "fixedby": "1.8.1-r0"
+        }
+    ]
+}

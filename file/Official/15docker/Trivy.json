@@ -1,0 +1,450 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "docker",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.17.0"
+    },
+    "ImageID": "sha256:81a4721a045e389ed8754844971b3277b59757fe75c69120e6cea0dbc8de6301",
+    "DiffIDs": [
+      "sha256:ded7a220bb058e28ee3254fbba04ca90b679070424424761a53a043b93b612bf",
+      "sha256:b68ba483d73b1d3282b9d9dbb93f32b294d96fcc54058651ba57592588bed674",
+      "sha256:204d5314c0d19d43dc84bc81ed1ecf8e7b4046de65e1faf81260b60e69fc5148",
+      "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290",
+      "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61",
+      "sha256:f0a4416a13d04733ff85b4e2d2bcf462a60d5f28ec72e557850b3a04ac129e59",
+      "sha256:6769898275408579f73743da74e6e2209d3151ccd6125b62538c1693961f67ff",
+      "sha256:7f494a062210406a14e592371067a289356720c6f608eab20ab9951bb6894d83"
+    ],
+    "RepoTags": [
+      "docker:latest"
+    ],
+    "RepoDigests": [
+      "docker@sha256:812ff1098c97878ae26ca8e0423e00aa157596a8b28d4bd52c120c4d087e8ae1"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "fbbcc596bed8867d6770df4dc9c8be564a4ae8526c5cb732356474359b510403",
+      "created": "2022-12-05T21:20:14.75675378Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-11-22T22:19:28Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:587cae71969871d3c6456d844a8795df9b64b12c710c275295a1182b46f630e7 in / "
+        },
+        {
+          "created": "2022-11-22T22:19:29Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T01:27:01Z",
+          "created_by": "/bin/sh -c apk add --no-cache \t\tca-certificates \t\tlibc6-compat \t\topenssh-client"
+        },
+        {
+          "created": "2022-11-29T01:27:02Z",
+          "created_by": "/bin/sh -c [ -e /etc/nsswitch.conf ] \u0026\u0026 grep '^hosts: files dns' /etc/nsswitch.conf"
+        },
+        {
+          "created": "2022-11-29T01:27:39Z",
+          "created_by": "/bin/sh -c #(nop)  ENV DOCKER_VERSION=20.10.21",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T01:27:43Z",
+          "created_by": "/bin/sh -c set -eux; \t\tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\t'x86_64') \t\t\turl='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.21.tgz'; \t\t\t;; \t\t'armhf') \t\t\turl='https://download.docker.com/linux/static/stable/armel/docker-20.10.21.tgz'; \t\t\t;; \t\t'armv7') \t\t\turl='https://download.docker.com/linux/static/stable/armhf/docker-20.10.21.tgz'; \t\t\t;; \t\t'aarch64') \t\t\turl='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.21.tgz'; \t\t\t;; \t\t*) echo \u003e\u00262 \"error: unsupported 'docker.tgz' architecture ($apkArch)\"; exit 1 ;; \tesac; \t\twget -O 'docker.tgz' \"$url\"; \t\ttar --extract \t\t--file docker.tgz \t\t--strip-components 1 \t\t--directory /usr/local/bin/ \t\t--no-same-owner \t\t'docker/docker' \t; \trm docker.tgz; \t\tdocker --version"
+        },
+        {
+          "created": "2022-11-29T01:27:43Z",
+          "created_by": "/bin/sh -c #(nop)  ENV DOCKER_BUILDX_VERSION=0.9.1",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T01:27:46Z",
+          "created_by": "/bin/sh -c set -eux; \t\tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\t'x86_64') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-amd64'; \t\t\tsha256='a7fb95177792ca8ffc7243fad7bf2f33738b8b999a184b6201f002a63c43d136'; \t\t\t;; \t\t'armhf') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-arm-v6'; \t\t\tsha256='159925b4e679eb66e7f0312c7d57a97e68a418c1fa602a00dd8b29b6406768f0'; \t\t\t;; \t\t'armv7') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-arm-v7'; \t\t\tsha256='ba8e5359ce9ba24fec6da07f73591c1b20ac0797a2248b0ef8088f57ae3340fc'; \t\t\t;; \t\t'aarch64') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-arm64'; \t\t\tsha256='bbf6a76bf9aef9c5759ff225b97ce23a24fc11e4fa3cdcae36e5dcf1de2cffc5'; \t\t\t;; \t\t'ppc64le') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-ppc64le'; \t\t\tsha256='1b2441886e556c720c1bf12f18f240113cc45f9eb404c0f162166ca1c96c1b60'; \t\t\t;; \t\t'riscv64') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-riscv64'; \t\t\tsha256='c32372dad653fc70eb756b2cffd026e74425e807c01accaeed4559da881ff57c'; \t\t\t;; \t\t's390x') \t\t\turl='https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-s390x'; \t\t\tsha256='90b0ecf315d741888920dddeac9fe2e141123c4fe79465b7b10fe23521c9c366'; \t\t\t;; \t\t*) echo \u003e\u00262 \"warning: unsupported 'docker-buildx' architecture ($apkArch); skipping\"; exit 0 ;; \tesac; \t\twget -O 'docker-buildx' \"$url\"; \techo \"$sha256 *\"'docker-buildx' | sha256sum -c -; \t\tplugin='/usr/libexec/docker/cli-plugins/docker-buildx'; \tmkdir -p \"$(dirname \"$plugin\")\"; \tmv -vT 'docker-buildx' \"$plugin\"; \tchmod +x \"$plugin\"; \t\tdocker buildx version"
+        },
+        {
+          "created": "2022-12-05T21:20:11Z",
+          "created_by": "/bin/sh -c #(nop)  ENV DOCKER_COMPOSE_VERSION=2.14.0",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-12-05T21:20:13Z",
+          "created_by": "/bin/sh -c set -eux; \t\tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\t'x86_64') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-x86_64'; \t\t\tsha256='fdf634ab2b01aca33372bef2bf866699ef2e1f2dab19972e37967b1fc2a11402'; \t\t\t;; \t\t'armhf') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-armv6'; \t\t\tsha256='63e0826ddebc1ae776f38ab872b41f68b48fca246cdf67c709e07eef543cdf88'; \t\t\t;; \t\t'armv7') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-armv7'; \t\t\tsha256='c1664c4dcefc2a56a4f16f4dbd76e531f237bfbf713b90d3acea50df42a1aada'; \t\t\t;; \t\t'aarch64') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-aarch64'; \t\t\tsha256='0265f45b30f4f0e1d53c1968c590181f64c546129d967460de382c6de38af191'; \t\t\t;; \t\t'ppc64le') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-ppc64le'; \t\t\tsha256='dbee58426af567787e5c1d14e925cca0d0a958edc55203c4b29c10dda8e27355'; \t\t\t;; \t\t'riscv64') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-riscv64'; \t\t\tsha256='d447a75ff4d900b19d40e0c69811b335518f8a5fbc6377e0aff25a3b999a8c49'; \t\t\t;; \t\t's390x') \t\t\turl='https://github.com/docker/compose/releases/download/v2.14.0/docker-compose-linux-s390x'; \t\t\tsha256='2c5bbb6513d7377919bd4189f25d8bf5d8706a5345f10609d8c49d5cf4d8ab88'; \t\t\t;; \t\t*) echo \u003e\u00262 \"warning: unsupported 'docker-compose' architecture ($apkArch); skipping\"; exit 0 ;; \tesac; \t\twget -O 'docker-compose' \"$url\"; \techo \"$sha256 *\"'docker-compose' | sha256sum -c -; \t\tplugin='/usr/libexec/docker/cli-plugins/docker-compose'; \tmkdir -p \"$(dirname \"$plugin\")\"; \tmv -vT 'docker-compose' \"$plugin\"; \tchmod +x \"$plugin\"; \t\tln -sv \"$plugin\" /usr/local/bin/; \tdocker-compose --version; \tdocker compose version"
+        },
+        {
+          "created": "2022-12-05T21:20:13Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe "
+        },
+        {
+          "created": "2022-12-05T21:20:13Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ "
+        },
+        {
+          "created": "2022-12-05T21:20:13Z",
+          "created_by": "/bin/sh -c #(nop)  ENV DOCKER_TLS_CERTDIR=/certs",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-12-05T21:20:14Z",
+          "created_by": "/bin/sh -c mkdir /certs /certs/client \u0026\u0026 chmod 1777 /certs /certs/client"
+        },
+        {
+          "created": "2022-12-05T21:20:14Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-12-05T21:20:14Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"sh\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:ded7a220bb058e28ee3254fbba04ca90b679070424424761a53a043b93b612bf",
+          "sha256:b68ba483d73b1d3282b9d9dbb93f32b294d96fcc54058651ba57592588bed674",
+          "sha256:204d5314c0d19d43dc84bc81ed1ecf8e7b4046de65e1faf81260b60e69fc5148",
+          "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290",
+          "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61",
+          "sha256:f0a4416a13d04733ff85b4e2d2bcf462a60d5f28ec72e557850b3a04ac129e59",
+          "sha256:6769898275408579f73743da74e6e2209d3151ccd6125b62538c1693961f67ff",
+          "sha256:7f494a062210406a14e592371067a289356720c6f608eab20ab9951bb6894d83"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "sh"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "DOCKER_VERSION=20.10.21",
+          "DOCKER_BUILDX_VERSION=0.9.1",
+          "DOCKER_COMPOSE_VERSION=2.14.0",
+          "DOCKER_TLS_CERTDIR=/certs"
+        ],
+        "Image": "sha256:24c20e9b708d3cfde14d595ff3e5e25224cb82e0a24a902605d8a8ed27ecff24"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "docker (alpine 3.17.0)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "usr/libexec/docker/cli-plugins/docker-buildx",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-41092",
+          "PkgName": "github.com/docker/cli",
+          "InstalledVersion": "v20.10.3-0.20220803220330-418ca3b4d46f+incompatible",
+          "FixedVersion": "v20.10.9",
+          "Layer": {
+            "DiffID": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41092",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "docker: cli leaks private registry credentials to registry-1.docker.io",
+          "Description": "Docker CLI is the command line interface for the docker container runtime. A bug was found in the Docker CLI where running `docker login my-private-registry.example.com` with a misconfigured configuration file (typically `~/.docker/config.json`) listing a `credsStore` or `credHelpers` that could not be executed would result in any provided credentials being sent to `registry-1.docker.io` rather than the intended private registry. This bug has been fixed in Docker CLI 20.10.9. Users should update to this version as soon as possible. For users unable to update ensure that any configured credsStore or credHelpers entries in the configuration file reference an installed credential helper that is executable and on the PATH.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-41092",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-222547.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41092",
+            "https://github.com/docker/cli/commit/893e52cf4ba4b048d72e99748e0f86b2767c6c6b",
+            "https://github.com/docker/cli/security/advisories/GHSA-99pg-grm5-qq3v",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B5Q6G6I4W5COQE25QMC7FJY3I3PAYFBB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNFADTCHHYWVM6W4NJ6CB4FNFM2VMBIB/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-41092",
+            "https://ubuntu.com/security/notices/USN-5134-1"
+          ],
+          "PublishedDate": "2021-10-04T20:15:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-27664",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.0.0-20220127200216-cd36cc0744dd",
+          "FixedVersion": "0.0.0-20220906165146-f3363e06e74c",
+          "Layer": {
+            "DiffID": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-27664",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: net/http: handle server errors after sending GOAWAY",
+          "Description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:7129",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27664.json",
+            "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32189.json",
+            "https://access.redhat.com/security/cve/CVE-2022-27664",
+            "https://bugzilla.redhat.com/1913333",
+            "https://bugzilla.redhat.com/1913338",
+            "https://bugzilla.redhat.com/2107371",
+            "https://bugzilla.redhat.com/2107374",
+            "https://bugzilla.redhat.com/2107383",
+            "https://bugzilla.redhat.com/2107386",
+            "https://bugzilla.redhat.com/2107388",
+            "https://bugzilla.redhat.com/2113814",
+            "https://bugzilla.redhat.com/2124669",
+            "https://errata.almalinux.org/8/ALSA-2022-7129.html",
+            "https://go.dev/cl/428735",
+            "https://go.dev/issue/54658",
+            "https://groups.google.com/g/golang-announce",
+            "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s",
+            "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s/m/0tgO0pjiBQAJ",
+            "https://linux.oracle.com/cve/CVE-2022-27664.html",
+            "https://linux.oracle.com/errata/ELSA-2022-7129.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXKTHIGE5F576MAPFYCIJXNRGBSPISUF/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TXS2OQ57KZC5XZKK5UW4SYKPVQAHIOJX/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
+            "https://pkg.go.dev/vuln/GO-2022-0969",
+            "https://security.gentoo.org/glsa/202209-26",
+            "https://security.netapp.com/advisory/ntap-20220923-0004/"
+          ],
+          "PublishedDate": "2022-09-06T18:15:00Z",
+          "LastModifiedDate": "2022-10-28T12:42:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32149",
+          "PkgName": "golang.org/x/text",
+          "InstalledVersion": "v0.3.7",
+          "FixedVersion": "0.3.8",
+          "Layer": {
+            "DiffID": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32149",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags",
+          "Description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32149",
+            "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+            "https://github.com/golang/go/issues/56152",
+            "https://github.com/golang/text/commit/434eadcdbc3b0256971992e8c70027278364c72c",
+            "https://go.dev/cl/442235",
+            "https://go.dev/issue/56152",
+            "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+            "https://groups.google.com/g/golang-dev/c/qfPIly0X7aU",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+            "https://pkg.go.dev/vuln/GO-2022-1059"
+          ],
+          "PublishedDate": "2022-10-14T15:15:00Z",
+          "LastModifiedDate": "2022-10-18T17:41:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-69ch-w2m2-3vjp",
+          "PkgName": "golang.org/x/text",
+          "InstalledVersion": "v0.3.7",
+          "FixedVersion": "0.3.8",
+          "Layer": {
+            "DiffID": "sha256:4a5220d21baccc7f02029ec49f02f45f1bbcc0a8df014eebf34b0015341cf290"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://go.dev/cl/442235",
+            "https://go.dev/issue/56152",
+            "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+            "https://pkg.go.dev/vuln/GO-2022-1059"
+          ]
+        }
+      ]
+    },
+    {
+      "Target": "usr/libexec/docker/cli-plugins/docker-compose",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-41092",
+          "PkgName": "github.com/docker/cli",
+          "InstalledVersion": "v20.10.3-0.20221013132413-1d6c6e2367e2+incompatible",
+          "FixedVersion": "v20.10.9",
+          "Layer": {
+            "DiffID": "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-41092",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "docker: cli leaks private registry credentials to registry-1.docker.io",
+          "Description": "Docker CLI is the command line interface for the docker container runtime. A bug was found in the Docker CLI where running `docker login my-private-registry.example.com` with a misconfigured configuration file (typically `~/.docker/config.json`) listing a `credsStore` or `credHelpers` that could not be executed would result in any provided credentials being sent to `registry-1.docker.io` rather than the intended private registry. This bug has been fixed in Docker CLI 20.10.9. Users should update to this version as soon as possible. For users unable to update ensure that any configured credsStore or credHelpers entries in the configuration file reference an installed credential helper that is executable and on the PATH.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-41092",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-222547.pdf",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41092",
+            "https://github.com/docker/cli/commit/893e52cf4ba4b048d72e99748e0f86b2767c6c6b",
+            "https://github.com/docker/cli/security/advisories/GHSA-99pg-grm5-qq3v",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B5Q6G6I4W5COQE25QMC7FJY3I3PAYFBB/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNFADTCHHYWVM6W4NJ6CB4FNFM2VMBIB/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-41092",
+            "https://ubuntu.com/security/notices/USN-5134-1"
+          ],
+          "PublishedDate": "2021-10-04T20:15:00Z",
+          "LastModifiedDate": "2022-06-14T11:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-32149",
+          "PkgName": "golang.org/x/text",
+          "InstalledVersion": "v0.3.7",
+          "FixedVersion": "0.3.8",
+          "Layer": {
+            "DiffID": "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-32149",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: golang.org/x/text/language: ParseAcceptLanguage takes a long time to parse complex tags",
+          "Description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-772"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-32149",
+            "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+            "https://github.com/golang/go/issues/56152",
+            "https://github.com/golang/text/commit/434eadcdbc3b0256971992e8c70027278364c72c",
+            "https://go.dev/cl/442235",
+            "https://go.dev/issue/56152",
+            "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+            "https://groups.google.com/g/golang-dev/c/qfPIly0X7aU",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+            "https://pkg.go.dev/vuln/GO-2022-1059"
+          ],
+          "PublishedDate": "2022-10-14T15:15:00Z",
+          "LastModifiedDate": "2022-10-18T17:41:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-69ch-w2m2-3vjp",
+          "PkgName": "golang.org/x/text",
+          "InstalledVersion": "v0.3.7",
+          "FixedVersion": "0.3.8",
+          "Layer": {
+            "DiffID": "sha256:43e076238f74d940821b6f3561092c66a334de9dcebd0482096edb8aab148d61"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://go.dev/cl/442235",
+            "https://go.dev/issue/56152",
+            "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+            "https://pkg.go.dev/vuln/GO-2022-1059"
+          ]
+        }
+      ]
+    }
+  ]
+}

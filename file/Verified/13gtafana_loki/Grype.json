@@ -1,0 +1,1351 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd%40%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836%40%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4%40%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/loki",
+      "layerID": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/grafana/loki"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-3826",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-3826",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/prometheus/prometheus/pull/5163",
+     "https://github.com/prometheus/prometheus/commit/62e591f9",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826",
+     "https://access.redhat.com/errata/RHBA-2019:0327",
+     "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177@%3Ccommits.zookeeper.apache.org%3E",
+     "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8@%3Ccommits.zookeeper.apache.org%3E",
+     "https://advisory.checkmarx.net/advisory/CX-2019-4297"
+    ],
+    "description": "A stored, DOM based, cross-site scripting (XSS) flaw was found in Prometheus before version 2.7.1. An attacker could exploit this by convincing an authenticated user to visit a crafted URL on a Prometheus server, allowing for the execution and persistent storage of arbitrary scripts.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "metrics": {
+       "baseScore": 6.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 2.7
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:prometheus:prometheus:v0.39.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 2.7.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:prometheus:prometheus:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/prometheus/prometheus",
+    "version": "v0.39.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/loki",
+      "layerID": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:prometheus:v0.39.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/prometheus@v0.39.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/grafana/loki"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/loki",
+      "layerID": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/grafana/loki"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4304",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4304",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcrypto1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libcrypto1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4304",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "Unknown",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4304",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libssl1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libssl1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4450",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4450",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcrypto1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libcrypto1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4450",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4450",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libssl1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libssl1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0215",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0215",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcrypto1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libcrypto1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0215",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0215",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libssl1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libssl1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0286",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0286",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libcrypto1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libcrypto1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-0286",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.1t-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-0286",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20230207.txt"
+     ],
+     "description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.4,
+        "exploitabilityScore": 2.2,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "openssl",
+       "version": "1.1.1q-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.1t-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libssl1.1",
+    "version": "1.1.1q-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "OpenSSL"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1q-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libssl1.1@1.1.1q-r0?arch=x86_64&upstream=openssl&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69ch-w2m2-3vjp",
+    "dataSource": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69ch-w2m2-3vjp"
+    ],
+    "description": "Denial of service in golang.org/x/text/language",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-32149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/442235",
+      "https://go.dev/issue/56152",
+      "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+      "https://pkg.go.dev/vuln/GO-2022-1059"
+     ],
+     "description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.3.8 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/text",
+    "version": "v0.3.7",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/loki",
+      "layerID": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/text:v0.3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/grafana/loki"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-7rg2-cxvp-9p7p",
+    "dataSource": "https://github.com/advisories/GHSA-7rg2-cxvp-9p7p",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-7rg2-cxvp-9p7p"
+    ],
+    "description": "Prometheus Exporter-Toolkit is vulnerable to authentication bypass",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-46146",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-46146",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
+      "https://github.com/prometheus/exporter-toolkit/commit/5b1eab34484ddd353986bce736cd119d863e4ff5",
+      "http://www.openwall.com/lists/oss-security/2022/11/29/1",
+      "http://www.openwall.com/lists/oss-security/2022/11/29/2",
+      "http://www.openwall.com/lists/oss-security/2022/11/29/4"
+     ],
+     "description": "Prometheus Exporter Toolkit is a utility package to build exporters. Prior to versions 0.7.2 and 0.8.2, if someone has access to a Prometheus web.yml file and users' bcrypted passwords, they can bypass security by poisoning the built-in authentication cache. Versions 0.7.2 and 0.8.2 contain a fix for the issue. There is no workaround, but attacker must have access to the hashed password to use this functionality.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.3 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/prometheus/exporter-toolkit",
+    "version": "v0.7.2-0.20220901134540-2434b08435da",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/loki",
+      "layerID": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:prometheus:exporter-toolkit:v0.7.2-0.20220901134540-2434b08435da:*:*:*:*:*:*:*",
+     "cpe:2.3:a:prometheus:exporter_toolkit:v0.7.2-0.20220901134540-2434b08435da:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/prometheus/exporter-toolkit@v0.7.2-0.20220901134540-2434b08435da",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/grafana/loki"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220920203100-d0c6ba3f52d9",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/bin/loki",
+      "layerID": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220920203100-d0c6ba3f52d9:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220920203100-d0c6ba3f52d9",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.5",
+     "architecture": "amd64",
+     "mainModule": "github.com/grafana/loki"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "grafana/loki",
+   "imageID": "sha256:0a7fd5b2c85c883937e43fc4de280a590e7c9e3017041049359f7cec365f5453",
+   "manifestDigest": "sha256:308fa5dd3547ab4d151e777fffbdd93dbb35d07b033b735b346abd7fec2726f1",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "grafana/loki:latest"
+   ],
+   "imageSize": 63066173,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+     "size": 5539349
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:5a53c7c6ae37b596bf860345015ac125941c201866dc976410fb60e10661cd72",
+     "size": 663291
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8230caa3eec2dc24e104956618fd6021feb2feeb5f070dd6d7dae4a8d93567d8",
+     "size": 56856576
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:48c732cde8bcdaf8f3aad63024db35abbab6d54f2432f5358e671cbd11a9eb9a",
+     "size": 1121
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:ac3cd139acecf3b859e0c262ca03d4d2da4800929be07f926ebd29f8ac6f18c3",
+     "size": 4698
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:349d5393e434f8867f21018ea27c741eb10c9890013b329f1ffa6a3086e612a4",
+     "size": 1121
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8a07b4abdfbdeb08ae83004c8a287ac45819743ba7314e23ff6bbc7178352174",
+     "size": 17
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NzcyLCJkaWdlc3QiOiJzaGEyNTY6MGE3ZmQ1YjJjODVjODgzOTM3ZTQzZmM0ZGUyODBhNTkwZTdjOWUzMDE3MDQxMDQ5MzU5ZjdjZWMzNjVmNTQ1MyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1ODI2NTYwLCJkaWdlc3QiOiJzaGEyNTY6OTk0MzkzZGM1OGU3OTMxODYyNTU4ZDA2ZTQ2YWEyYmIxNzQ4NzA0NGY2NzBmMzEwZGZmZTFkMjRlNGQxZWVjNyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjkzNjQ0OCwiZGlnZXN0Ijoic2hhMjU2OjVhNTNjN2M2YWUzN2I1OTZiZjg2MDM0NTAxNWFjMTI1OTQxYzIwMTg2NmRjOTc2NDEwZmI2MGUxMDY2MWNkNzIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1Njg1OTEzNiwiZGlnZXN0Ijoic2hhMjU2OjgyMzBjYWEzZWVjMmRjMjRlMTA0OTU2NjE4ZmQ2MDIxZmViMmZlZWI1ZjA3MGRkNmQ3ZGFlNGE4ZDkzNTY3ZDgifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo0MDk2LCJkaWdlc3QiOiJzaGEyNTY6NDhjNzMyY2RlOGJjZGFmOGYzYWFkNjMwMjRkYjM1YWJiYWI2ZDU0ZjI0MzJmNTM1OGU2NzFjYmQxMWE5ZWI5YSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjExNzc2LCJkaWdlc3QiOiJzaGEyNTY6YWMzY2QxMzlhY2VjZjNiODU5ZTBjMjYyY2EwM2Q0ZDJkYTQ4MDA5MjliZTA3ZjkyNmViZDI5ZjhhYzZmMThjMyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjU2MzIsImRpZ2VzdCI6InNoYTI1NjozNDlkNTM5M2U0MzRmODg2N2YyMTAxOGVhMjdjNzQxZWIxMGM5ODkwMDEzYjMyOWYxZmZhNmEzMDg2ZTYxMmE0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjU2MCwiZGlnZXN0Ijoic2hhMjU2OjhhMDdiNGFiZGZiZGViMDhhZTgzMDA0YzhhMjg3YWM0NTgxOTc0M2JhNzMxNGUyM2ZmNmJiYzcxNzgzNTIxNzQifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiMTAwMDEiLCJBdHRhY2hTdGRpbiI6ZmFsc2UsIkF0dGFjaFN0ZG91dCI6ZmFsc2UsIkF0dGFjaFN0ZGVyciI6ZmFsc2UsIkV4cG9zZWRQb3J0cyI6eyIzMTAwL3RjcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi1jb25maWcuZmlsZT0vZXRjL2xva2kvbG9jYWwtY29uZmlnLnlhbWwiXSwiSW1hZ2UiOiJzaGEyNTY6ZTIyY2JjNjdkN2I0NzBlYjdlMzIwZmJlOWJjNDE0NDIxYjU2ZmM0ODgxYjZiYjBkNDY5MDhhMWNjNjU5OWY0NSIsIlZvbHVtZXMiOm51bGwsIldvcmtpbmdEaXIiOiIiLCJFbnRyeXBvaW50IjpbIi91c3IvYmluL2xva2kiXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyMy0wMi0wMVQxMDo0MTozMloiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmV2aXNpb24iOiJhODgwZWEzYmY0NTY5ZWE1ZmUyNWI3ZTY4N2JmMDcwM2Y0OWMwMWMzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9ncmFmYW5hL2xva2kuZ2l0Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9ncmFmYW5hL2xva2kifX0sImNvbnRhaW5lciI6ImM5ODMzMTUzMTE3YjBkZDQ0MzRiODFmMWVmMzMxNGYwYjcxNDAwNDU2NjM2MjExMjgyN2Q5NjM3NDQzNTNjYmQiLCJjb250YWluZXJfY29uZmlnIjp7Ikhvc3RuYW1lIjoiYzk4MzMxNTMxMTdiIiwiRG9tYWlubmFtZSI6IiIsIlVzZXIiOiIxMDAwMSIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjMxMDAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkxBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmw9aHR0cHM6Ly9naXRodWIuY29tL2dyYWZhbmEvbG9raSJdLCJJbWFnZSI6InNoYTI1NjplMjJjYmM2N2Q3YjQ3MGViN2UzMjBmYmU5YmM0MTQ0MjFiNTZmYzQ4ODFiNmJiMGQ0NjkwOGExY2M2NTk5ZjQ1IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vbG9raSJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmNyZWF0ZWQiOiIyMDIzLTAyLTAxVDEwOjQxOjMyWiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZXZpc2lvbiI6ImE4ODBlYTNiZjQ1NjllYTVmZTI1YjdlNjg3YmYwNzAzZjQ5YzAxYzMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlIjoiaHR0cHM6Ly9naXRodWIuY29tL2dyYWZhbmEvbG9raS5naXQiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsIjoiaHR0cHM6Ly9naXRodWIuY29tL2dyYWZhbmEvbG9raSJ9fSwiY3JlYXRlZCI6IjIwMjMtMDItMDFUMTA6NDI6NDUuNTY5MTQ0MTU4WiIsImRvY2tlcl92ZXJzaW9uIjoiMjAuMTAuMTQiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMi0wOC0wOVQxNzoxOTo1My4yNzQwNjk1ODZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEFERCBmaWxlOjJhOTQ5Njg2ZDk4ODZhYzdjMTA1ODJhNmMyOTExNmZkMjlkMzA3N2QwMjc1NWU4N2UxMTE4NzBkNjM2MDc3MjUgaW4gLyAifSx7ImNyZWF0ZWQiOiIyMDIyLTA4LTA5VDE3OjE5OjUzLjQ3Mzc0MzMxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wMVQxMDo0Mjo0Mi40NzI2NTEyMzRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgYXBrIGFkZCAtLW5vLWNhY2hlIGNhLWNlcnRpZmljYXRlcyBsaWJjYXAifSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAxVDEwOjQyOjQzLjAxOTI0NjQ5OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQ09QWSBmaWxlOjNjMWNlODY2ZDhhYjFkMzQ2MWVmNTBhYWVlNGFmZGI2OWM3NGU3OGU5OWNhZmRlZWVjOTc4NTI4ZmY0NWM5NmUgaW4gL3Vzci9iaW4vbG9raSAifSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAxVDEwOjQyOjQzLjExNzU2MDA5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBDT1BZIGZpbGU6ZWQwNzljMDcxNjQxMWNjYjFmNTM3MTRmY2ZiNGIxYjk5ZjFjNjA4MDY5MzdiNTI2NDM0ODcyMGExYWU2Zjk1NyBpbiAvZXRjL2xva2kvbG9jYWwtY29uZmlnLnlhbWwgIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0wMVQxMDo0Mjo0My43NDAwOTY2NjRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgYWRkZ3JvdXAgLWcgMTAwMDEgLVMgbG9raSBcdTAwMjZcdTAwMjYgICAgIGFkZHVzZXIgLXUgMTAwMDEgLVMgbG9raSAtRyBsb2tpIn0seyJjcmVhdGVkIjoiMjAyMy0wMi0wMVQxMDo0Mjo0NC4zODc3OTMzMDZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgbWtkaXIgLXAgL2xva2kvcnVsZXMgXHUwMDI2XHUwMDI2ICAgICBta2RpciAtcCAvbG9raS9ydWxlcy10ZW1wIFx1MDAyNlx1MDAyNiAgICAgY2hvd24gLVIgbG9raTpsb2tpIC9ldGMvbG9raSAvbG9raSJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDFUMTA6NDI6NDQuOTU4MDU4OTczWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIFsgISAtZSAvZXRjL25zc3dpdGNoLmNvbmYgXSBcdTAwMjZcdTAwMjYgZWNobyAnaG9zdHM6IGZpbGVzIGRucycgXHUwMDNlIC9ldGMvbnNzd2l0Y2guY29uZiJ9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDFUMTA6NDI6NDUuMDM2OTkzNzcyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgVVNFUiAxMDAwMSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAxVDEwOjQyOjQ1LjExMjgxMjM2NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVYUE9TRSAzMTAwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDFUMTA6NDI6NDUuMTkwNzIyNTI5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5UUllQT0lOVCBbXCIvdXNyL2Jpbi9sb2tpXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDFUMTA6NDI6NDUuMjY5MzUwOTM3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi1jb25maWcuZmlsZT0vZXRjL2xva2kvbG9jYWwtY29uZmlnLnlhbWxcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wMVQxMDo0Mjo0NS4zNDM2MTczMjNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZD0yMDIzLTAyLTAxVDEwOjQxOjMyWiIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTAyLTAxVDEwOjQyOjQ1LjQxOTQ3MzMxNFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5yZXZpc2lvbj1hODgwZWEzYmY0NTY5ZWE1ZmUyNWI3ZTY4N2JmMDcwM2Y0OWMwMWMzIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDItMDFUMTA6NDI6NDUuNDkyNzkxM1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2U9aHR0cHM6Ly9naXRodWIuY29tL2dyYWZhbmEvbG9raS5naXQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wMi0wMVQxMDo0Mjo0NS41NjkxNDQxNThaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsPWh0dHBzOi8vZ2l0aHViLmNvbS9ncmFmYW5hL2xva2kiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6OTk0MzkzZGM1OGU3OTMxODYyNTU4ZDA2ZTQ2YWEyYmIxNzQ4NzA0NGY2NzBmMzEwZGZmZTFkMjRlNGQxZWVjNyIsInNoYTI1Njo1YTUzYzdjNmFlMzdiNTk2YmY4NjAzNDUwMTVhYzEyNTk0MWMyMDE4NjZkYzk3NjQxMGZiNjBlMTA2NjFjZDcyIiwic2hhMjU2OjgyMzBjYWEzZWVjMmRjMjRlMTA0OTU2NjE4ZmQ2MDIxZmViMmZlZWI1ZjA3MGRkNmQ3ZGFlNGE4ZDkzNTY3ZDgiLCJzaGEyNTY6NDhjNzMyY2RlOGJjZGFmOGYzYWFkNjMwMjRkYjM1YWJiYWI2ZDU0ZjI0MzJmNTM1OGU2NzFjYmQxMWE5ZWI5YSIsInNoYTI1NjphYzNjZDEzOWFjZWNmM2I4NTllMGMyNjJjYTAzZDRkMmRhNDgwMDkyOWJlMDdmOTI2ZWJkMjlmOGFjNmYxOGMzIiwic2hhMjU2OjM0OWQ1MzkzZTQzNGY4ODY3ZjIxMDE4ZWEyN2M3NDFlYjEwYzk4OTAwMTNiMzI5ZjFmZmE2YTMwODZlNjEyYTQiLCJzaGEyNTY6OGEwN2I0YWJkZmJkZWIwOGFlODMwMDRjOGEyODdhYzQ1ODE5NzQzYmE3MzE0ZTIzZmY2YmJjNzE3ODM1MjE3NCJdfX0=",
+   "repoDigests": [
+    "grafana/loki@sha256:0c86eba2dee75220d99b604503a91bc07532d238454fcfd712ec60d9d8a43c5d"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.16.2",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "Grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2023-02-25T08:13:48Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:fd83377bf2233596b4c7140477d98aee18a2dec94108e0b923dc7e54a4b00051",
+   "error": null
+  }
+ }
+}

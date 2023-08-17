@@ -1,0 +1,3965 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd%40%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836%40%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4%40%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/portainer",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ=",
+     "mainModule": "github.com/portainer/portainer/api"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd%40%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836%40%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4%40%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd%40%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5%40%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf%40%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836%40%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb%40%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08%40%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1%40%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4%40%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-10892",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-10892",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/moby/moby/pull/37404",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10892",
+     "https://access.redhat.com/errata/RHSA-2018:2482",
+     "https://access.redhat.com/errata/RHSA-2018:2729",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00084.html",
+     "https://access.redhat.com/errata/RHBA-2018:2796"
+    ],
+    "description": "The default OCI linux spec in oci/defaults{_linux}.go in Docker/Moby from 1.11 to current does not block /proc/acpi pathnames. The flaw allows an attacker to modify host's hardware like enabling/disabling bluetooth or turning up/down keyboard brightness.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.11, <= 18.03.1 || >= 1.11, <= 18.03.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:community_edition:*:*:*",
+       "cpe:2.3:a:docker:docker:*:*:*:*:enterprise_edition:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-13139",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-13139",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://docs.docker.com/engine/release-notes/#18094",
+     "https://staaldraad.github.io/post/2019-07-16-cve-2019-13139-docker-build/",
+     "https://github.com/moby/moby/pull/38944",
+     "https://www.debian.org/security/2019/dsa-4521",
+     "https://security.netapp.com/advisory/ntap-20190910-0001/",
+     "https://seclists.org/bugtraq/2019/Sep/21",
+     "https://access.redhat.com/errata/RHBA-2019:3092"
+    ],
+    "description": "In Docker before 18.09.4, an attacker who is capable of supplying or manipulating the build path for the \"docker build\" command would be able to gain command execution. An issue exists in the way \"docker build\" processes remote git URLs, and results in command injection into the underlying \"git clone\" command, leading to code execution in the context of the user executing the \"docker build\" command. This occurs because git ref can be misinterpreted as a flag.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 4.6,
+       "exploitabilityScore": 3.9,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.4,
+       "exploitabilityScore": 2.5,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 18.09.4 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-13509",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-13509",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://docs.docker.com/engine/release-notes/",
+     "http://www.securityfocus.com/bid/109253",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFFBVE7O73TAVY2BCWXSA2OOSLJVCPXC/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N674WD3OBDPHLWY6EABRHQH5ON6SUJBU/",
+     "https://security.netapp.com/advisory/ntap-20190828-0003/",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00084.html",
+     "https://www.debian.org/security/2019/dsa-4521",
+     "https://seclists.org/bugtraq/2019/Sep/21"
+    ],
+    "description": "In Docker CE and EE before 18.09.8 (as well as Docker EE before 17.06.2-ee-23 and 18.x before 18.03.1-ee-10), Docker Engine in debug mode may sometimes add secrets to the debug log. This applies to a scenario where docker stack deploy is run to redeploy a stack that includes (non external) secrets. It potentially applies to other API users of the stack API if they resend the secret.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "= 17.03.2 || = 17.03.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 17.06.2 || = 18.03.1 || = 18.03.1 || = 18.03.1 || = 18.03.1 || = 18.03.1 || = 18.03.1 || = 18.03.1 || = 18.03.1 || = 18.03.1 || >= 18.09.0, < 18.09.8 || = 17.03.2 || = 17.03.2 || = 17.03.2 || = 17.03.2 || = 17.03.2 || = 17.03.2 || < 18.09.8 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:community:*:*:*",
+       "cpe:2.3:a:docker:docker:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-16884",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-16884",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/opencontainers/runc/issues/2128",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DGK6IV5JGVDXHOXEKJOJWKOVNZLT6MYR/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/62OQ2P7K5YDZ5BRCH2Q6DHUJIHQD3QCD/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SPK4JWP32BUIVDJ3YODZSOEVEW6BHQCF/",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00073.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00009.html",
+     "https://access.redhat.com/errata/RHSA-2019:3940",
+     "https://access.redhat.com/errata/RHSA-2019:4074",
+     "https://access.redhat.com/errata/RHSA-2019:4269",
+     "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00010.html",
+     "https://security.gentoo.org/glsa/202003-21",
+     "https://usn.ubuntu.com/4297-1/",
+     "https://security.netapp.com/advisory/ntap-20220221-0004/",
+     "https://lists.debian.org/debian-lts-announce/2023/02/msg00016.html"
+    ],
+    "description": "runc through 1.0.0-rc8, as used in Docker through 19.03.2-ce and other products, allows AppArmor restriction bypass because libcontainer/rootfs_linux.go incorrectly checks mount targets, and thus a malicious Docker image can mount over a /proc directory.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 19.03.2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:community:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-5736",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-5736",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://www.openwall.com/lists/oss-security/2019/02/11/2",
+     "https://github.com/opencontainers/runc/commit/6635b4f0c6af3810594d2770f662f34ddc15b40d",
+     "https://github.com/opencontainers/runc/commit/0a8e4117e7f715d5fbeef398405813ce8e88558b",
+     "https://github.com/docker/docker-ce/releases/tag/v18.09.2",
+     "https://access.redhat.com/security/vulnerabilities/runcescape",
+     "https://access.redhat.com/security/cve/cve-2019-5736",
+     "https://www.twistlock.com/2019/02/11/how-to-mitigate-cve-2019-5736-in-runc-and-docker/",
+     "https://github.com/rancher/runc-cve",
+     "https://cloud.google.com/kubernetes-engine/docs/security-bulletins#february-11-2019-runc",
+     "https://brauner.github.io/2019/02/12/privileged-containers.html",
+     "https://aws.amazon.com/security/security-bulletins/AWS-2019-002/",
+     "https://access.redhat.com/errata/RHSA-2019:0304",
+     "https://access.redhat.com/errata/RHSA-2019:0303",
+     "https://kubernetes.io/blog/2019/02/11/runc-and-cve-2019-5736/",
+     "https://www.exploit-db.com/exploits/46359/",
+     "http://www.securityfocus.com/bid/106976",
+     "https://www.exploit-db.com/exploits/46369/",
+     "https://github.com/q3k/cve-2019-5736-poc",
+     "https://github.com/Frichetten/CVE-2019-5736-PoC",
+     "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20190215-runc",
+     "https://www.synology.com/security/advisory/Synology_SA_19_06",
+     "https://access.redhat.com/errata/RHSA-2019:0401",
+     "https://access.redhat.com/errata/RHSA-2019:0408",
+     "https://support.hpe.com/hpsc/doc/public/display?docLocale=en_US&docId=emr_na-hpesbhf03913en_us",
+     "https://security.netapp.com/advisory/ntap-20190307-0008/",
+     "https://lists.apache.org/thread.html/b162dd624dc088cd634292f0402282a1d1d0ce853baeae8205bc033c@%3Cdev.mesos.apache.org%3E",
+     "https://lists.apache.org/thread.html/a258757af84c5074dc7bf932622020fd4f60cef65a84290380386706@%3Cuser.mesos.apache.org%3E",
+     "http://www.openwall.com/lists/oss-security/2019/03/23/1",
+     "https://bugzilla.suse.com/show_bug.cgi?id=1121967",
+     "https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html",
+     "https://support.mesosphere.com/s/article/Known-Issue-Container-Runtime-Vulnerability-MSPH-2019-0003",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00044.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00074.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00091.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/V6A4OSFM5GGOWW4ECELV5OHX2XRAUSPH/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SWFJGIPYAAAMVSWWI3QWYXGA3ZBU2H4W/",
+     "https://softwaresupport.softwaregrp.com/document/-/facetsearch/document/KM03410944",
+     "https://access.redhat.com/errata/RHSA-2019:0975",
+     "https://azure.microsoft.com/en-us/updates/iot-edge-fix-cve-2019-5736/",
+     "https://azure.microsoft.com/en-us/updates/cve-2019-5736-and-runc-vulnerability/",
+     "https://lists.apache.org/thread.html/acacf018c12636e41667e94ac0a1e9244e887eef2debdd474640aa6e@%3Cdev.dlab.apache.org%3E",
+     "https://lists.apache.org/thread.html/a585f64d14c31ab393b90c5f17e41d9765a1a17eec63856ce750af46@%3Cdev.dlab.apache.org%3E",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00060.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-05/msg00073.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00011.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00015.html",
+     "http://www.openwall.com/lists/oss-security/2019/06/28/2",
+     "http://www.openwall.com/lists/oss-security/2019/07/06/4",
+     "http://www.openwall.com/lists/oss-security/2019/07/06/3",
+     "https://usn.ubuntu.com/4048-1/",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00084.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DLC52IOJN6IQJWJ6CUI6AIUP6GVVG2QP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EGZKRCKI3Y7FMADO2MENMT4TU24QGHFR/",
+     "https://lists.apache.org/thread.html/24e54e3c6b2259e3903b6b8fe26896ac649c481ea99c5739468c92a3@%3Cdev.dlab.apache.org%3E",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00007.html",
+     "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00029.html",
+     "http://www.openwall.com/lists/oss-security/2019/10/24/1",
+     "http://www.openwall.com/lists/oss-security/2019/10/29/3",
+     "https://security.gentoo.org/glsa/202003-21",
+     "https://lists.apache.org/thread.html/rc494623986d76593873ce5a40dd69cb3629400d10750d5d7e96b8587@%3Cdev.dlab.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf1bbc0ea4a9f014cf94df9a12a6477d24a27f52741dbc87f2fd52ff2@%3Cissues.geode.apache.org%3E",
+     "http://packetstormsecurity.com/files/163339/Docker-Container-Escape.html",
+     "http://packetstormsecurity.com/files/165197/Docker-runc-Command-Execution-Proof-Of-Concept.html"
+    ],
+    "description": "runc through 1.0-rc6, as used in Docker before 18.09.2 and other products, allows attackers to overwrite the host runc binary (and consequently obtain host root access) by leveraging the ability to execute a command as root within one of these types of containers: (1) a new container with an attacker-controlled image, or (2) an existing container, to which the attacker previously had write access, that can be attached with docker exec. This occurs because of file-descriptor mishandling, related to /proc/self/exe.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+      "metrics": {
+       "baseScore": 9.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 10
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.6,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 18.09.2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-27534",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-27534",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "http://web.archive.org/web/20200530054359/https://docs.docker.com/engine/release-notes/",
+     "https://github.com/moby/buildkit/pull/1462",
+     "https://golang.org/pkg/os/#TempDir",
+     "https://github.com/moby/moby/pull/40877",
+     "https://golang.org/pkg/io/ioutil/#TempDir"
+    ],
+    "description": "util/binfmt_misc/check.go in Builder in Docker Engine before 19.03.9 calls os.OpenFile with a potentially unsafe qemu-check temporary pathname, constructed with an empty first argument in an ioutil.TempDir call.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 3.9,
+       "impactScore": 1.4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 19.03.9 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-21284",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21284",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/moby/moby/commit/64bd4485b3a66a597c02c95f5776395e540b2c7c",
+     "https://docs.docker.com/engine/release-notes/#20103",
+     "https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc",
+     "https://github.com/moby/moby/releases/tag/v19.03.15",
+     "https://github.com/moby/moby/releases/tag/v20.10.3",
+     "https://security.netapp.com/advisory/ntap-20210226-0005/",
+     "https://www.debian.org/security/2021/dsa-4865",
+     "https://security.gentoo.org/glsa/202107-23"
+    ],
+    "description": "In Docker before versions 9.03.15, 20.10.3 there is a vulnerability involving the --userns-remap option in which access to remapped root allows privilege escalation to real root. When using \"--userns-remap\", if the root user in the remapped namespace has access to the host filesystem they can modify files under \"/var/lib/docker/<remapping>\" that cause writing files with extended privileges. Versions 20.10.3 and 19.03.15 contain patches that prevent privilege escalation from remapped user.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:A/AC:L/Au:S/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 2.7,
+       "exploitabilityScore": 5.1,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 2.3,
+       "impactScore": 4
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 20.0.0, < 20.10.3 || < 19.03.15 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-21285",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-21285",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://docs.docker.com/engine/release-notes/#20103",
+     "https://github.com/moby/moby/security/advisories/GHSA-6fj5-m822-rqx8",
+     "https://github.com/moby/moby/commit/8d3179546e79065adefa67cc697c09d0ab137d30",
+     "https://github.com/moby/moby/releases/tag/v19.03.15",
+     "https://github.com/moby/moby/releases/tag/v20.10.3",
+     "https://security.netapp.com/advisory/ntap-20210226-0005/",
+     "https://www.debian.org/security/2021/dsa-4865",
+     "https://security.gentoo.org/glsa/202107-23"
+    ],
+    "description": "In Docker before versions 9.03.15, 20.10.3 there is a vulnerability in which pulling an intentionally malformed Docker image manifest crashes the dockerd daemon. Versions 20.10.3 and 19.03.15 contain patches that prevent the daemon from crashing.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 20.0.0, < 20.10.3 || < 19.03.15 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/docker",
+    "version": "v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:docker:v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/docker@v17.12.0-ce-rc1.0.20180220021536-8e435b8279f2+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:kgBGZ0En4szh4tNOo9yHh+c5oGjrNYUb5xBOsKXM+rs=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.27.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/portainer",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ=",
+     "mainModule": "github.com/portainer/portainer/api"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-259w-8hf6-59c2",
+    "dataSource": "https://github.com/advisories/GHSA-259w-8hf6-59c2",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-259w-8hf6-59c2"
+    ],
+    "description": "OCI image importer memory exhaustion in github.com/containerd/containerd",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25153",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25153",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+      "https://github.com/containerd/containerd/commit/0c314901076a74a7b797a545d2f462285fdbb8c4",
+      "https://github.com/containerd/containerd/security/advisories/GHSA-259w-8hf6-59c2"
+     ],
+     "description": "containerd is an open source container runtime. Before versions 1.6.18 and 1.5.18, when importing an OCI image, there was no limit on the number of bytes read for certain files. A maliciously crafted image with a large file where a limit was not applied could cause a denial of service. This bug has been fixed in containerd 1.6.18 and 1.5.18. Users should update to these versions to resolve the issue. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.18 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:xJNPhbrmz8xAMDNoVjHy9YHtWwEQNS+CDkcIRh7t8Y0=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-259w-8hf6-59c2",
+    "dataSource": "https://github.com/advisories/GHSA-259w-8hf6-59c2",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-259w-8hf6-59c2"
+    ],
+    "description": "OCI image importer memory exhaustion in github.com/containerd/containerd",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25153",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25153",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+      "https://github.com/containerd/containerd/commit/0c314901076a74a7b797a545d2f462285fdbb8c4",
+      "https://github.com/containerd/containerd/security/advisories/GHSA-259w-8hf6-59c2"
+     ],
+     "description": "containerd is an open source container runtime. Before versions 1.6.18 and 1.5.18, when importing an OCI image, there was no limit on the number of bytes read for certain files. A maliciously crafted image with a large file where a limit was not applied could cause a denial of service. This bug has been fixed in containerd 1.6.18 and 1.5.18. Users should update to these versions to resolve the issue. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.18 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.8",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.8:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.8",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:h4dOFDwzHmqFEP754PgfgTeVXFnLiRc6kiqC7tplDJs=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2qjp-425j-52j9",
+    "dataSource": "https://github.com/advisories/GHSA-2qjp-425j-52j9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2qjp-425j-52j9"
+    ],
+    "description": "containerd CRI stream server vulnerable to host memory exhaustion via terminal",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.12"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23471",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9",
+      "https://github.com/containerd/containerd/commit/a05d175400b1145e5e6a735a6710579d181e7fb0"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.12 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:xJNPhbrmz8xAMDNoVjHy9YHtWwEQNS+CDkcIRh7t8Y0=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2qjp-425j-52j9",
+    "dataSource": "https://github.com/advisories/GHSA-2qjp-425j-52j9",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-2qjp-425j-52j9"
+    ],
+    "description": "containerd CRI stream server vulnerable to host memory exhaustion via terminal",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.12"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23471",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23471",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9",
+      "https://github.com/containerd/containerd/commit/a05d175400b1145e5e6a735a6710579d181e7fb0"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in containerd's CRI implementation where a user can exhaust memory on the host. In the CRI stream server, a goroutine is launched to handle terminal resize events if a TTY is requested. If the user's process fails to launch due to, for example, a faulty command, the goroutine will be stuck waiting to send without a receiver, resulting in a memory leak. Kubernetes and crictl can both be configured to use containerd's CRI implementation and the stream server is used for handling container IO. This bug has been fixed in containerd 1.6.12 and 1.5.16. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used and that only trusted users have permissions to execute commands in running containers.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.12 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.8",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.8:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.8",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:h4dOFDwzHmqFEP754PgfgTeVXFnLiRc6kiqC7tplDJs=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69cg-p879-7622",
+    "dataSource": "https://github.com/advisories/GHSA-69cg-p879-7622",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69cg-p879-7622"
+    ],
+    "description": "golang.org/x/net/http2 Denial of Service vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.0.0-20220906165146-f3363e06e74c"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27664",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s",
+      "https://groups.google.com/g/golang-announce",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TXS2OQ57KZC5XZKK5UW4SYKPVQAHIOJX/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXKTHIGE5F576MAPFYCIJXNRGBSPISUF/",
+      "https://security.netapp.com/advisory/ntap-20220923-0004/",
+      "https://security.gentoo.org/glsa/202209-26"
+     ],
+     "description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.0.0-20220906165146-f3363e06e74c (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20200324143707-d3edc9973b7e",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20200324143707-d3edc9973b7e:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20200324143707-d3edc9973b7e",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:3G+cUijn7XD+S4eJFddp53Pv7+slrESplyjG25HgL+k=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69cg-p879-7622",
+    "dataSource": "https://github.com/advisories/GHSA-69cg-p879-7622",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69cg-p879-7622"
+    ],
+    "description": "golang.org/x/net/http2 Denial of Service vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.0.0-20220906165146-f3363e06e74c"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27664",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s",
+      "https://groups.google.com/g/golang-announce",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TXS2OQ57KZC5XZKK5UW4SYKPVQAHIOJX/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXKTHIGE5F576MAPFYCIJXNRGBSPISUF/",
+      "https://security.netapp.com/advisory/ntap-20220923-0004/",
+      "https://security.gentoo.org/glsa/202209-26"
+     ],
+     "description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.0.0-20220906165146-f3363e06e74c (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20211216030914-fe4d6282115f",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/portainer",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20211216030914-fe4d6282115f:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20211216030914-fe4d6282115f",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:hEYJvxw1lSnWIl8X9ofsYMklzaDs90JI2az5YMd4fPM=",
+     "mainModule": "github.com/portainer/portainer/api"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69cg-p879-7622",
+    "dataSource": "https://github.com/advisories/GHSA-69cg-p879-7622",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69cg-p879-7622"
+    ],
+    "description": "golang.org/x/net/http2 Denial of Service vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.0.0-20220906165146-f3363e06e74c"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27664",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s",
+      "https://groups.google.com/g/golang-announce",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TXS2OQ57KZC5XZKK5UW4SYKPVQAHIOJX/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXKTHIGE5F576MAPFYCIJXNRGBSPISUF/",
+      "https://security.netapp.com/advisory/ntap-20220923-0004/",
+      "https://security.gentoo.org/glsa/202209-26"
+     ],
+     "description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.0.0-20220906165146-f3363e06e74c (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220225172249-27dd8689420f",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220225172249-27dd8689420f:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220225172249-27dd8689420f",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:oA4XRj0qtSt8Yo1Zms0CUlsT3KG69V2UGQWPBxujDmc=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69cg-p879-7622",
+    "dataSource": "https://github.com/advisories/GHSA-69cg-p879-7622",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69cg-p879-7622"
+    ],
+    "description": "golang.org/x/net/http2 Denial of Service vulnerability",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.0.0-20220906165146-f3363e06e74c"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27664",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/golang-announce/c/x49AQzIVX-s",
+      "https://groups.google.com/g/golang-announce",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TXS2OQ57KZC5XZKK5UW4SYKPVQAHIOJX/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JXKTHIGE5F576MAPFYCIJXNRGBSPISUF/",
+      "https://security.netapp.com/advisory/ntap-20220923-0004/",
+      "https://security.gentoo.org/glsa/202209-26"
+     ],
+     "description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.0.0-20220906165146-f3363e06e74c (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220225172249-27dd8689420f",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220225172249-27dd8689420f:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220225172249-27dd8689420f",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:oA4XRj0qtSt8Yo1Zms0CUlsT3KG69V2UGQWPBxujDmc=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69ch-w2m2-3vjp",
+    "dataSource": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69ch-w2m2-3vjp"
+    ],
+    "description": "Denial of service in golang.org/x/text/language",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-32149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/442235",
+      "https://go.dev/issue/56152",
+      "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+      "https://pkg.go.dev/vuln/GO-2022-1059"
+     ],
+     "description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.3.8 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/text",
+    "version": "v0.3.3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/text:v0.3.3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/text@v0.3.3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:cokOdA+Jmi5PJGXLlLllQSgYigAEfHXJAERHVMaCc2k=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69ch-w2m2-3vjp",
+    "dataSource": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69ch-w2m2-3vjp"
+    ],
+    "description": "Denial of service in golang.org/x/text/language",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-32149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/442235",
+      "https://go.dev/issue/56152",
+      "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+      "https://pkg.go.dev/vuln/GO-2022-1059"
+     ],
+     "description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.3.8 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/text",
+    "version": "v0.3.7",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/text:v0.3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69ch-w2m2-3vjp",
+    "dataSource": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69ch-w2m2-3vjp"
+    ],
+    "description": "Denial of service in golang.org/x/text/language",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-32149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/442235",
+      "https://go.dev/issue/56152",
+      "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+      "https://pkg.go.dev/vuln/GO-2022-1059"
+     ],
+     "description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.3.8 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/text",
+    "version": "v0.3.7",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/portainer",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/text:v0.3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=",
+     "mainModule": "github.com/portainer/portainer/api"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-69ch-w2m2-3vjp",
+    "dataSource": "https://github.com/advisories/GHSA-69ch-w2m2-3vjp",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-69ch-w2m2-3vjp"
+    ],
+    "description": "Denial of service in golang.org/x/text/language",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.3.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-32149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-32149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://go.dev/cl/442235",
+      "https://go.dev/issue/56152",
+      "https://groups.google.com/g/golang-announce/c/-hjNw559_tE/m/KlGTfid5CAAJ",
+      "https://pkg.go.dev/vuln/GO-2022-1059"
+     ],
+     "description": "An attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.3.8 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/text",
+    "version": "v0.3.7",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/text:v0.3.7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:olpwvP2KacW1ZWvsR7uQhoyTYvKAupfQrRGBFM352Gk=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-77vh-xpmg-72qh",
+    "dataSource": "https://github.com/advisories/GHSA-77vh-xpmg-72qh",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-77vh-xpmg-72qh"
+    ],
+    "description": "Clarify `mediaType` handling",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.0.2 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/image-spec",
+    "version": "v1.0.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:image-spec:v1.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:opencontainers:image_spec:v1.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/image-spec@v1.0.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:JMemWkRwHx4Zj+fVxWoMCFm/8sYGGrUVojFA6h/TRcI=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8c26-wmh5-6g9v",
+    "dataSource": "https://github.com/advisories/GHSA-8c26-wmh5-6g9v",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-8c26-wmh5-6g9v"
+    ],
+    "description": "Use of a Broken or Risky Cryptographic Algorithm in golang.org/x/crypto/ssh",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.0.0-20220314234659-1baeb1ce4c0b"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27191",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27191",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/golang-announce/c/-cp44ypCT5s",
+      "https://groups.google.com/g/golang-announce",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HHGBEGJ54DZZGTXFUQNS7ZIG3E624YAF/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QTFOIDHQRGNI4P6LYN6ILH5G443RYYKB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQNPPQWSTP2IX7SHE6TS4SP4EVMI5EZK/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YHYRQB7TRMHDB3NEHW5XBRG7PPMUTPGV/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J5WPM42UR6XIBQNQPNQHM32X7S4LJTRX/",
+      "https://security.netapp.com/advisory/ntap-20220429-0002/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EZ3S7LB65N54HXXBCB67P4TTOHTNPP5O/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZFUNHFHQVJSADNH7EZ3B53CYDZVEEPBP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DLUJZV3HBP56ADXU6QH2V7RNYUPMVBXQ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RQXU752ALW53OJAF5MG3WMR5CCZVLWW6/"
+     ],
+     "description": "The golang.org/x/crypto/ssh package before 0.0.0-20220314234659-1baeb1ce4c0b for Go allows an attacker to crash a server in certain circumstances involving AddHostKey.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.0.0-20220314234659-1baeb1ce4c0b (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/crypto",
+    "version": "v0.0.0-20211215153901-e495a2d5b3d3",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/portainer",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/crypto:v0.0.0-20211215153901-e495a2d5b3d3:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20211215153901-e495a2d5b3d3",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:0es+/5331RGQPcXlMfP+WrnIIS6dNnNRe0WB02W0F4M=",
+     "mainModule": "github.com/portainer/portainer/api"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8c26-wmh5-6g9v",
+    "dataSource": "https://github.com/advisories/GHSA-8c26-wmh5-6g9v",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-8c26-wmh5-6g9v"
+    ],
+    "description": "Use of a Broken or Risky Cryptographic Algorithm in golang.org/x/crypto/ssh",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.0.0-20220314234659-1baeb1ce4c0b"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-27191",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-27191",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://groups.google.com/g/golang-announce/c/-cp44ypCT5s",
+      "https://groups.google.com/g/golang-announce",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HHGBEGJ54DZZGTXFUQNS7ZIG3E624YAF/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QTFOIDHQRGNI4P6LYN6ILH5G443RYYKB/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQNPPQWSTP2IX7SHE6TS4SP4EVMI5EZK/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YHYRQB7TRMHDB3NEHW5XBRG7PPMUTPGV/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/J5WPM42UR6XIBQNQPNQHM32X7S4LJTRX/",
+      "https://security.netapp.com/advisory/ntap-20220429-0002/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EZ3S7LB65N54HXXBCB67P4TTOHTNPP5O/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZFUNHFHQVJSADNH7EZ3B53CYDZVEEPBP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DLUJZV3HBP56ADXU6QH2V7RNYUPMVBXQ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RQXU752ALW53OJAF5MG3WMR5CCZVLWW6/"
+     ],
+     "description": "The golang.org/x/crypto/ssh package before 0.0.0-20220314234659-1baeb1ce4c0b for Go allows an attacker to crash a server in certain circumstances involving AddHostKey.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 8.6,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.0.0-20220314234659-1baeb1ce4c0b (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/crypto",
+    "version": "v0.0.0-20220214200702-86341886e292",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/crypto:v0.0.0-20220214200702-86341886e292:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20220214200702-86341886e292",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:f+lwQ+GtmgoY+A2YaQxlSOnDjXcQ7ZRLWOHbC6HtRqE=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c3h9-896r-86jm",
+    "dataSource": "https://github.com/advisories/GHSA-c3h9-896r-86jm",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-c3h9-896r-86jm"
+    ],
+    "description": "Improper Input Validation in GoGo Protobuf",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.3.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-3121",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3121",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/gogo/protobuf/compare/v1.3.1...v1.3.2",
+      "https://github.com/gogo/protobuf/commit/b03c65ea87cdc3521ede29f62fe3ce239267c1bc",
+      "https://lists.apache.org/thread.html/rc1e9ff22c5641d73701ba56362fb867d40ed287cca000b131dcf4a44@%3Ccommits.pulsar.apache.org%3E",
+      "https://lists.apache.org/thread.html/r88d69555cb74a129a7bf84838073b61259b4a3830190e05a3b87994e@%3Ccommits.pulsar.apache.org%3E",
+      "https://security.netapp.com/advisory/ntap-20210219-0006/",
+      "https://discuss.hashicorp.com/t/hcsec-2021-23-consul-exposed-to-denial-of-service-in-gogo-protobuf-dependency/29025",
+      "https://lists.apache.org/thread.html/r68032132c0399c29d6cdc7bd44918535da54060a10a12b1591328bff@%3Cnotifications.skywalking.apache.org%3E"
+     ],
+     "description": "An issue was discovered in GoGo Protobuf before 1.3.2. plugin/unmarshal/unmarshal.go lacks certain index validation, aka the \"skippy peanut butter\" issue.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+       "metrics": {
+        "baseScore": 8.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4.7
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.3.2 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/gogo/protobuf",
+    "version": "v1.3.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:gogo:protobuf:v1.3.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:DqDEcV5aeaTmdFBePNpYsp3FlcVH/2ISVVM9Qf8PSls=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-c3xm-pvg7-gh7r",
+    "dataSource": "https://github.com/advisories/GHSA-c3xm-pvg7-gh7r",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-c3xm-pvg7-gh7r"
+    ],
+    "description": "mount destinations can be swapped via symlink-exchange to cause mounts outside the rootfs",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.0-rc95"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-30465",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-30465",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-c3xm-pvg7-gh7r",
+      "https://github.com/opencontainers/runc/releases",
+      "http://www.openwall.com/lists/oss-security/2021/05/19/2",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4HOARVIT47RULTTFWAU7XBG4WY6TDDHV/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/35ZW6NBZSBH5PWIT7JU4HXOXGFVDCOHH/",
+      "https://bugzilla.opensuse.org/show_bug.cgi?id=1185405",
+      "https://github.com/opencontainers/runc/commit/0ca91f44f1664da834bc61115a849b56d22f595f",
+      "https://security.netapp.com/advisory/ntap-20210708-0003/",
+      "https://security.gentoo.org/glsa/202107-26"
+     ],
+     "description": "runc before 1.0.0-rc95 allows a Container Filesystem Breakout via Directory Traversal. To exploit the vulnerability, an attacker must be able to create multiple containers with a fairly specific mount configuration. The problem occurs via a symlink-exchange attack that relies on a race condition.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<=1.0.0-rc94 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f3fp-gc8g-vw66",
+    "dataSource": "https://github.com/advisories/GHSA-f3fp-gc8g-vw66",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f3fp-gc8g-vw66"
+    ],
+    "description": "Default inheritable capabilities for linux container should be empty",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-29162",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29162",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/d04de3a9b72d7a2455c1885fc75eb36d02cd17b5",
+      "https://github.com/opencontainers/runc/releases/tag/v1.1.2",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D77CKD3AXPMU4PMQIQI5Q74SI4JATNND/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPQU4YC4AAY54JDXGDQHJEYKSXXG5T2Y/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AVPZBV7ISA7QKRPTC7ZXWKMIQI2HZEBB/"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.1.2 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fgv8-vj5c-2ppq",
+    "dataSource": "https://github.com/advisories/GHSA-fgv8-vj5c-2ppq",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-fgv8-vj5c-2ppq"
+    ],
+    "description": "Incorrect Authorization in runc",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.0-rc8.0.20190930145003-cad42f6e0932"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-16884",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-16884",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/issues/2128",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DGK6IV5JGVDXHOXEKJOJWKOVNZLT6MYR/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/62OQ2P7K5YDZ5BRCH2Q6DHUJIHQD3QCD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SPK4JWP32BUIVDJ3YODZSOEVEW6BHQCF/",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-10/msg00073.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00009.html",
+      "https://access.redhat.com/errata/RHSA-2019:3940",
+      "https://access.redhat.com/errata/RHSA-2019:4074",
+      "https://access.redhat.com/errata/RHSA-2019:4269",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00010.html",
+      "https://security.gentoo.org/glsa/202003-21",
+      "https://usn.ubuntu.com/4297-1/",
+      "https://security.netapp.com/advisory/ntap-20220221-0004/",
+      "https://lists.debian.org/debian-lts-announce/2023/02/msg00016.html"
+     ],
+     "description": "runc through 1.0.0-rc8, as used in Docker through 19.03.2-ce and other products, allows AppArmor restriction bypass because libcontainer/rootfs_linux.go incorrectly checks mount targets, and thus a malicious Docker image can mount over a /proc directory.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.0.0-rc8.0.20190930145003-cad42f6e0932 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-fh74-hm69-rqjw",
+    "dataSource": "https://github.com/advisories/GHSA-fh74-hm69-rqjw",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-fh74-hm69-rqjw"
+    ],
+    "description": "opencontainers runc contains procfs race condition with a shared volume mount",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.0-rc9.0.20200122160610-2fc03cc11c77"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-19921",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-19921",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/issues/2197",
+      "https://github.com/opencontainers/runc/pull/2190",
+      "https://security-tracker.debian.org/tracker/CVE-2019-19921",
+      "https://github.com/opencontainers/runc/releases",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-02/msg00018.html",
+      "https://access.redhat.com/errata/RHSA-2020:0688",
+      "https://access.redhat.com/errata/RHSA-2020:0695",
+      "https://security.gentoo.org/glsa/202003-21",
+      "https://usn.ubuntu.com/4297-1/"
+     ],
+     "description": "runc through 1.0.0-rc9 has Incorrect Access Control leading to Escalation of Privileges, related to libcontainer/rootfs_linux.go. To exploit this, an attacker must be able to spawn two containers with custom volume-mount configurations, and be able to run custom images. (This vulnerability does not affect Docker due to an implementation detail that happens to block the attack.)",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.4,
+        "exploitabilityScore": 3.4,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7,
+        "exploitabilityScore": 1,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.0.0-rc9.0.20200122160610-2fc03cc11c77 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-g54h-m393-cpwq",
+    "dataSource": "https://github.com/advisories/GHSA-g54h-m393-cpwq",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-g54h-m393-cpwq"
+    ],
+    "description": "devices resource list treated as a blacklist by default",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.0-rc91"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<=1.0.0-rc90 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-gp4j-w3vj-7299",
+    "dataSource": "https://github.com/advisories/GHSA-gp4j-w3vj-7299",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-gp4j-w3vj-7299"
+    ],
+    "description": "Information Exposure in RunC",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.0-rc3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-9962",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-9962",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://security.gentoo.org/glsa/201701-34",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WUQ3MQNEL5IBZZLMLR72Q4YDCL2SCKRK/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UVM7FCOQMPKOFLDTUYSS4ES76DDM56VP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FINGBFMIXBG6B6ZWYH3TMRP5V3PDBNXR/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BQAXJMMLRU7DD2IMG47SR2K4BOFFG7FZ/",
+      "https://github.com/opencontainers/runc/commit/50a19c6ff828c58e5dab13830bd3dacde268afe5",
+      "https://github.com/docker/docker/releases/tag/v1.12.6",
+      "https://bugzilla.suse.com/show_bug.cgi?id=1012568#c6",
+      "https://access.redhat.com/security/vulnerabilities/cve-2016-9962",
+      "http://seclists.org/fulldisclosure/2017/Jan/29",
+      "http://seclists.org/fulldisclosure/2017/Jan/21",
+      "http://www.securityfocus.com/bid/95361",
+      "http://rhn.redhat.com/errata/RHSA-2017-0127.html",
+      "http://rhn.redhat.com/errata/RHSA-2017-0123.html",
+      "http://rhn.redhat.com/errata/RHSA-2017-0116.html",
+      "http://www.securityfocus.com/archive/1/540001/100/0/threaded"
+     ],
+     "description": "RunC allowed additional container processes via 'runc exec' to be ptraced by the pid 1 of the container.  This allows the main processes of the container, if running as root, to gain access to file-descriptors of these new processes during the initialization and can lead to container escapes or modification of runC state before the process is fully placed inside the container.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.4,
+        "exploitabilityScore": 3.4,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 6.4,
+        "exploitabilityScore": 0.5,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<=1.0.0-rc2 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hmfx-3pcx-653p",
+    "dataSource": "https://github.com/advisories/GHSA-hmfx-3pcx-653p",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hmfx-3pcx-653p"
+    ],
+    "description": "Supplementary groups are not set up properly in github.com/containerd/containerd",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25173",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25173",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/advisories/GHSA-phjr-8j92-w5v7",
+      "https://github.com/containerd/containerd/commit/133f6bb6cd827ce35a5fb279c1ead12b9d21460a",
+      "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+      "https://github.com/advisories/GHSA-4wjj-jwc9-2x96",
+      "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/",
+      "https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4",
+      "https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p",
+      "https://github.com/advisories/GHSA-fjm8-m7m6-2fjp"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in containerd prior to versions 1.6.18 and 1.5.18 where supplementary groups are not set up properly inside a container. If an attacker has direct access to a container and manipulates their supplementary group access, they may be able to use supplementary group access to bypass primary group restrictions in some cases, potentially gaining access to sensitive information or gaining the ability to execute code in that container. Downstream applications that use the containerd client library may be affected as well. This bug has been fixed in containerd v1.6.18 and v.1.5.18. Users should update to these versions and recreate containers to resolve this issue. Users who rely on a downstream application that uses containerd's client library should check that application for a separate advisory and instructions. As a workaround, ensure that the `\"USER $USERNAME\"` Dockerfile instruction is not used. Instead, set the container entrypoint to a value similar to `ENTRYPOINT [\"su\", \"-\", \"user\"]` to allow `su` to properly set up supplementary groups.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.18 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.6",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.6",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:xJNPhbrmz8xAMDNoVjHy9YHtWwEQNS+CDkcIRh7t8Y0=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hmfx-3pcx-653p",
+    "dataSource": "https://github.com/advisories/GHSA-hmfx-3pcx-653p",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hmfx-3pcx-653p"
+    ],
+    "description": "Supplementary groups are not set up properly in github.com/containerd/containerd",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.6.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-25173",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-25173",
+     "namespace": "nvd:cpe",
+     "severity": "Unknown",
+     "urls": [
+      "https://github.com/advisories/GHSA-phjr-8j92-w5v7",
+      "https://github.com/containerd/containerd/commit/133f6bb6cd827ce35a5fb279c1ead12b9d21460a",
+      "https://github.com/containerd/containerd/releases/tag/v1.5.18",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.18",
+      "https://github.com/advisories/GHSA-4wjj-jwc9-2x96",
+      "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/",
+      "https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4",
+      "https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p",
+      "https://github.com/advisories/GHSA-fjm8-m7m6-2fjp"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in containerd prior to versions 1.6.18 and 1.5.18 where supplementary groups are not set up properly inside a container. If an attacker has direct access to a container and manipulates their supplementary group access, they may be able to use supplementary group access to bypass primary group restrictions in some cases, potentially gaining access to sensitive information or gaining the ability to execute code in that container. Downstream applications that use the containerd client library may be affected as well. This bug has been fixed in containerd v1.6.18 and v.1.5.18. Users should update to these versions and recreate containers to resolve this issue. Users who rely on a downstream application that uses containerd's client library should check that application for a separate advisory and instructions. As a workaround, ensure that the `\"USER $USERNAME\"` Dockerfile instruction is not used. Instead, set the container entrypoint to a value similar to `ENTRYPOINT [\"su\", \"-\", \"user\"]` to allow `su` to properly set up supplementary groups.",
+     "cvss": []
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.6.0,<1.6.18 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.6.8",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.6.8:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.6.8",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:h4dOFDwzHmqFEP754PgfgTeVXFnLiRc6kiqC7tplDJs=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v95c-p5hm-xq8f",
+    "dataSource": "https://github.com/advisories/GHSA-v95c-p5hm-xq8f",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v95c-p5hm-xq8f"
+    ],
+    "description": "Overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-43784",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-43784",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/d72d057ba794164c3cce9451a00b72a78b25e1ae",
+      "https://github.com/opencontainers/runc/commit/9c444070ec7bb83995dbc0185da68284da71c554",
+      "https://github.com/opencontainers/runc/commit/f50369af4b571e358f20b139eea52d612eb55eed",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f",
+      "https://bugs.chromium.org/p/project-zero/issues/detail?id=2241",
+      "https://lists.debian.org/debian-lts-announce/2021/12/msg00005.html"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc, netlink is used internally as a serialization system for specifying the relevant container configuration to the `C` portion of the code (responsible for the based namespace setup of containers). In all versions of runc prior to 1.0.3, the encoder did not handle the possibility of an integer overflow in the 16-bit length field for the byte array attribute type, meaning that a large enough malicious byte array attribute could result in the length overflowing and the attribute contents being parsed as netlink messages for container configuration. This vulnerability requires the attacker to have some control over the configuration of the container and would allow the attacker to bypass the namespace restrictions of the container by simply adding their own netlink payload which disables all namespaces. The main users impacted are those who allow untrusted images with untrusted configurations to run on their machines (such as with shared cloud infrastructure). runc version 1.0.3 contains a fix for this bug. As a workaround, one may try disallowing untrusted namespace paths from your container. It should be noted that untrusted namespace paths would allow the attacker to disable namespace protections entirely even in the absence of this bug.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 1.6,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.0.3 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v0.1.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v0.1.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v0.1.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:GlxAyO6x8rfZYN9Tt0Kti5a/cP41iuiO2yYT0IJGY8Y=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20200324143707-d3edc9973b7e",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/kompose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20200324143707-d3edc9973b7e:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20200324143707-d3edc9973b7e",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:3G+cUijn7XD+S4eJFddp53Pv7+slrESplyjG25HgL+k=",
+     "mainModule": "github.com/kubernetes/kompose"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20211216030914-fe4d6282115f",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/portainer",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20211216030914-fe4d6282115f:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20211216030914-fe4d6282115f",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:hEYJvxw1lSnWIl8X9ofsYMklzaDs90JI2az5YMd4fPM=",
+     "mainModule": "github.com/portainer/portainer/api"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220225172249-27dd8689420f",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/docker-compose",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220225172249-27dd8689420f:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220225172249-27dd8689420f",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.18.5",
+     "architecture": "amd64",
+     "h1Digest": "h1:oA4XRj0qtSt8Yo1Zms0CUlsT3KG69V2UGQWPBxujDmc=",
+     "mainModule": "github.com/docker/compose/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-vvpx-j8f3-3w6h",
+    "dataSource": "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+    ],
+    "description": "Uncontrolled Resource Consumption",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "0.7.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<0.7.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "golang.org/x/net",
+    "version": "v0.0.0-20220225172249-27dd8689420f",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/helm",
+      "layerID": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:golang:x/net:v0.0.0-20220225172249-27dd8689420f:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220225172249-27dd8689420f",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.17.13",
+     "architecture": "x86_64",
+     "h1Digest": "h1:oA4XRj0qtSt8Yo1Zms0CUlsT3KG69V2UGQWPBxujDmc=",
+     "mainModule": "helm.sh/helm/v3"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "portainer/portainer",
+   "imageID": "sha256:5f11582196a42b895cdb9322f7a650f42a0c1ed062efc71864352f314228a187",
+   "manifestDigest": "sha256:f5986723cfeb7ac7ea64c533cd86afe8ee8b1826b00588cdda8bdd3aa3b4cc0f",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "portainer/portainer:latest"
+   ],
+   "imageSize": 286752740,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8c004456aeb58b75f792fa091b194c20d6ed4f0d95dd25b0150d71c5c9ab601b",
+     "size": 203223
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4776464837fd1834e012242676d2138d5d4288d05b00ab29ca1a76d50fcdcbe4",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4f6d7e40085b065276a24971150367ac1f678f494139ff39bf5f085082b509ea",
+     "size": 286543544
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:f6177839027a8673b4e6c89de1b93497f2a4b9eb08084ce7f577a012760e68f8",
+     "size": 5973
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxMDUwOSwiZGlnZXN0Ijoic2hhMjU2OjVmMTE1ODIxOTZhNDJiODk1Y2RiOTMyMmY3YTY1MGY0MmEwYzFlZDA2MmVmYzcxODY0MzUyZjMxNDIyOGExODcifSwibGF5ZXJzIjpbeyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjA2MzM2LCJkaWdlc3QiOiJzaGEyNTY6OGMwMDQ0NTZhZWI1OGI3NWY3OTJmYTA5MWIxOTRjMjBkNmVkNGYwZDk1ZGQyNWIwMTUwZDcxYzVjOWFiNjAxYiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE1MzYsImRpZ2VzdCI6InNoYTI1Njo0Nzc2NDY0ODM3ZmQxODM0ZTAxMjI0MjY3NmQyMTM4ZDVkNDI4OGQwNWIwMGFiMjljYTFhNzZkNTBmY2RjYmU0In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6Mjg2NjczOTIwLCJkaWdlc3QiOiJzaGEyNTY6NGY2ZDdlNDAwODViMDY1Mjc2YTI0OTcxMTUwMzY3YWMxZjY3OGY0OTQxMzlmZjM5YmY1ZjA4NTA4MmI1MDllYSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEwMjQwLCJkaWdlc3QiOiJzaGEyNTY6ZjYxNzc4MzkwMjdhODY3M2I0ZTZjODlkZTFiOTM0OTdmMmE0YjllYjA4MDg0Y2U3ZjU3N2EwMTI3NjBlNjhmOCJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFeHBvc2VkUG9ydHMiOnsiODAwMC90Y3AiOnt9LCI5MDAwL3RjcCI6e30sIjk0NDMvdGNwIjp7fX0sIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiJdLCJFbnRyeXBvaW50IjpbIi9wb3J0YWluZXIiXSwiVm9sdW1lcyI6eyIvZGF0YSI6e319LCJXb3JraW5nRGlyIjoiLyIsIkxhYmVscyI6eyJjb20uZG9ja2VyLmRlc2t0b3AuZXh0ZW5zaW9uLmFwaS52ZXJzaW9uIjoiXHUwMDNlPSAwLjIuMiIsImNvbS5kb2NrZXIuZGVza3RvcC5leHRlbnNpb24uaWNvbiI6Imh0dHBzOi8vcG9ydGFpbmVyLWlvLWFzc2V0cy5zZm8yLmNkbi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL2xvZ29zL3BvcnRhaW5lci5wbmciLCJjb20uZG9ja2VyLmV4dGVuc2lvbi5hZGRpdGlvbmFsLXVybHMiOiJbe1widGl0bGVcIjpcIldlYnNpdGVcIixcInVybFwiOlwiaHR0cHM6Ly93d3cucG9ydGFpbmVyLmlvP3V0bV9jYW1wYWlnbj1Eb2NrZXJDb25cdTAwMjZ1dG1fc291cmNlPURvY2tlckRlc2t0b3BcIn0se1widGl0bGVcIjpcIkRvY3VtZW50YXRpb25cIixcInVybFwiOlwiaHR0cHM6Ly9kb2NzLnBvcnRhaW5lci5pb1wifSx7XCJ0aXRsZVwiOlwiU3VwcG9ydFwiLFwidXJsXCI6XCJodHRwczovL2pvaW4uc2xhY2suY29tL3QvcG9ydGFpbmVyL3NoYXJlZF9pbnZpdGUvenQtdHhoM2xqYWItNTJRSFR5akNxYmU1UmliQzJsY2pLQVwifV0iLCJjb20uZG9ja2VyLmV4dGVuc2lvbi5kZXRhaWxlZC1kZXNjcmlwdGlvbiI6Ilx1MDAzY3AgZGF0YS1yZW5kZXJlci1zdGFydC1wb3M9XCIyMjZcIlx1MDAzZVBvcnRhaW5lclx1MDAyNnJzcXVvO3MgRG9ja2VyIERlc2t0b3AgZXh0ZW5zaW9uIGdpdmVzIHlvdSBhY2Nlc3MgdG8gYWxsIG9mIFBvcnRhaW5lclx1MDAyNnJzcXVvO3MgcmljaCBtYW5hZ2VtZW50IGZ1bmN0aW9uYWxpdHkgd2l0aGluIHlvdXIgZG9ja2VyIGRlc2t0b3AgZXhwZXJpZW5jZS5cdTAwM2MvcFx1MDAzZVx1MDAzY2gyIGRhdGEtcmVuZGVyZXItc3RhcnQtcG9zPVwiMzc0XCJcdTAwM2VXaXRoIFBvcnRhaW5lciB5b3UgY2FuOlx1MDAzYy9oMlx1MDAzZVx1MDAzY3VsXHUwMDNlXHUwMDNjbGlcdTAwM2VTZWUgYWxsIHlvdXIgcnVubmluZyBjb250YWluZXJzXHUwMDNjL2xpXHUwMDNlXHUwMDNjbGlcdTAwM2VFYXNpbHkgdmlldyBhbGwgb2YgeW91ciBjb250YWluZXIgbG9nc1x1MDAzYy9saVx1MDAzZVx1MDAzY2xpXHUwMDNlQ29uc29sZSBpbnRvIGNvbnRhaW5lcnNcdTAwM2MvbGlcdTAwM2VcdTAwM2NsaVx1MDAzZUVhc2lseSBkZXBsb3kgeW91ciBjb2RlIGludG8gY29udGFpbmVycyB1c2luZyBhIHNpbXBsZSBmb3JtXHUwMDNjL2xpXHUwMDNlXHUwMDNjbGlcdTAwM2VUdXJuIHlvdXIgWUFNTCBpbnRvIGN1c3RvbSB0ZW1wbGF0ZXMgZm9yIGVhc3kgcmV1c2VcdTAwM2MvbGlcdTAwM2VcdTAwM2MvdWxcdTAwM2VcdTAwM2NoMiBkYXRhLXJlbmRlcmVyLXN0YXJ0LXBvcz1cIjY2MFwiXHUwMDNlQWJvdXQgUG9ydGFpbmVyXHUwMDI2bmJzcDtcdTAwM2MvaDJcdTAwM2VcdTAwM2NwIGRhdGEtcmVuZGVyZXItc3RhcnQtcG9zPVwiNjgwXCJcdTAwM2VQb3J0YWluZXIgaXMgdGhlIHdvcmxkc1x1MDAyNnJzcXVvOyBtb3N0IHBvcHVsYXIgdW5pdmVyc2FsIGNvbnRhaW5lciBtYW5hZ2VtZW50IHBsYXRmb3JtIHdpdGggbW9yZSB0aGFuIDY1MCwwMDAgYWN0aXZlIG1vbnRobHkgdXNlcnMuIFBvcnRhaW5lciBjYW4gYmUgdXNlZCB0byBtYW5hZ2UgRG9ja2VyIFN0YW5kYWxvbmUsIEt1YmVybmV0ZXMsIERvY2tlciBTd2FybSBhbmQgTm9tYWQgZW52aXJvbm1lbnRzIHRocm91Z2ggYSBzaW5nbGUgY29tbW9uIGludGVyZmFjZS4gSXQgaW5jbHVkZXMgYSBzaW1wbGUgR2l0T3BzIGF1dG9tYXRpb24gZW5naW5lIGFuZCBhIEt1YmUgQVBJLlx1MDAyNm5ic3A7XHUwMDNjL3BcdTAwM2VcdTAwM2NwIGRhdGEtcmVuZGVyZXItc3RhcnQtcG9zPVwiMTAwNlwiXHUwMDNlUG9ydGFpbmVyIEJ1c2luZXNzIEVkaXRpb24gaXMgb3VyIGZ1bGx5IHN1cHBvcnRlZCBjb21tZXJjaWFsIGdyYWRlIHByb2R1Y3QgZm9yIGJ1c2luZXNzLXdpZGUgdXNlLiBJdCBpbmNsdWRlcyBhbGwgdGhlIGZ1bmN0aW9uYWxpdHkgdGhhdCBidXNpbmVzc2VzIG5lZWQgdG8gbWFuYWdlIGNvbnRhaW5lcnMgYXQgc2NhbGUuIFZpc2l0IFx1MDAzY2EgY2xhc3M9XCJzYy1qS0psVGUgZFBmQXRiXCIgaHJlZj1cImh0dHA6Ly9wb3J0YWluZXIuaW8vXCIgdGl0bGU9XCJodHRwOi8vUG9ydGFpbmVyLmlvXCIgZGF0YS1yZW5kZXJlci1tYXJrPVwidHJ1ZVwiXHUwMDNlUG9ydGFpbmVyLmlvXHUwMDNjL2FcdTAwM2UgdG8gbGVhcm4gbW9yZSBhYm91dCBQb3J0YWluZXIgQnVzaW5lc3MgYW5kIFx1MDAzY2EgY2xhc3M9XCJzYy1qS0psVGUgZFBmQXRiXCIgaHJlZj1cImh0dHA6Ly9wb3J0YWluZXIuaW8vdGFrZTU/dXRtX2NhbXBhaWduPURvY2tlckNvblx1MDAyNmFtcDt1dG1fc291cmNlPURvY2tlciUyMERlc2t0b3BcIiB0aXRsZT1cImh0dHA6Ly9wb3J0YWluZXIuaW8vdGFrZTU/dXRtX2NhbXBhaWduPURvY2tlckNvblx1MDAyNmFtcDt1dG1fc291cmNlPURvY2tlciUyMERlc2t0b3BcIiBkYXRhLXJlbmRlcmVyLW1hcms9XCJ0cnVlXCJcdTAwM2VnZXQgNSBmcmVlIG5vZGVzLlx1MDAzYy9hXHUwMDNlXHUwMDNjL3BcdTAwM2UiLCJjb20uZG9ja2VyLmV4dGVuc2lvbi5wdWJsaXNoZXItdXJsIjoiaHR0cHM6Ly93d3cucG9ydGFpbmVyLmlvIiwiY29tLmRvY2tlci5leHRlbnNpb24uc2NyZWVuc2hvdHMiOiJbe1wiYWx0XCI6IFwic2NyZWVuc2hvdCBvbmVcIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tMS5wbmdcIn0se1wiYWx0XCI6IFwic2NyZWVuc2hvdCB0d29cIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tMi5wbmdcIn0se1wiYWx0XCI6IFwic2NyZWVuc2hvdCB0aHJlZVwiLCBcInVybFwiOiBcImh0dHBzOi8vcG9ydGFpbmVyLWlvLWFzc2V0cy5zZm8yLmRpZ2l0YWxvY2VhbnNwYWNlcy5jb20vc2NyZWVuc2hvdHMvZG9ja2VyLWV4dGVuc2lvbi0zLnBuZ1wifSx7XCJhbHRcIjogXCJzY3JlZW5zaG90IGZvdXJcIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tNC5wbmdcIn0se1wiYWx0XCI6IFwic2NyZWVuc2hvdCBmaXZlXCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTUucG5nXCJ9LHtcImFsdFwiOiBcInNjcmVlbnNob3Qgc2l4XCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTYucG5nXCJ9LHtcImFsdFwiOiBcInNjcmVlbnNob3Qgc2V2ZW5cIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tNy5wbmdcIn0se1wiYWx0XCI6IFwic2NyZWVuc2hvdCBlaWdodFwiLCBcInVybFwiOiBcImh0dHBzOi8vcG9ydGFpbmVyLWlvLWFzc2V0cy5zZm8yLmRpZ2l0YWxvY2VhbnNwYWNlcy5jb20vc2NyZWVuc2hvdHMvZG9ja2VyLWV4dGVuc2lvbi04LnBuZ1wifSx7XCJhbHRcIjogXCJzY3JlZW5zaG90IG5pbmVcIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tOS5wbmdcIn1dIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoiRG9ja2VyIGNvbnRhaW5lciBtYW5hZ2VtZW50IG1hZGUgc2ltcGxlLCB3aXRoIHRoZSB3b3JsZOKAmXMgbW9zdCBwb3B1bGFyIEdVSS1iYXNlZCBjb250YWluZXIgbWFuYWdlbWVudCBwbGF0Zm9ybS4iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJQb3J0YWluZXIiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yIjoiUG9ydGFpbmVyLmlvIn0sIk9uQnVpbGQiOm51bGx9LCJjcmVhdGVkIjoiMjAyMi0xMS0yMVQwMDo0MDoxOC4zNzk3NzM2NDdaIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjItMDEtMjVUMDQ6NTQ6MjMuMzYxMTcxNjVaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL2V0Yy9zc2wvY2VydHMvY2EtY2VydGlmaWNhdGVzLmNydCAvZXRjL3NzbC9jZXJ0cy9jYS1jZXJ0aWZpY2F0ZXMuY3J0ICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjItMDEtMjVUMDQ6NTQ6MjMuNDY3NzY0MjU1WiIsImNyZWF0ZWRfYnkiOiJDT1BZIC9idWlsZHRtcCAvdG1wICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjFUMDA6NDA6MTguMzU5MDIwOTc5WiIsImNyZWF0ZWRfYnkiOiJMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGU9UG9ydGFpbmVyIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbj1Eb2NrZXIgY29udGFpbmVyIG1hbmFnZW1lbnQgbWFkZSBzaW1wbGUsIHdpdGggdGhlIHdvcmxk4oCZcyBtb3N0IHBvcHVsYXIgR1VJLWJhc2VkIGNvbnRhaW5lciBtYW5hZ2VtZW50IHBsYXRmb3JtLiBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yPVBvcnRhaW5lci5pbyBjb20uZG9ja2VyLmRlc2t0b3AuZXh0ZW5zaW9uLmFwaS52ZXJzaW9uPVx1MDAzZT0gMC4yLjIgY29tLmRvY2tlci5kZXNrdG9wLmV4dGVuc2lvbi5pY29uPWh0dHBzOi8vcG9ydGFpbmVyLWlvLWFzc2V0cy5zZm8yLmNkbi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL2xvZ29zL3BvcnRhaW5lci5wbmcgY29tLmRvY2tlci5leHRlbnNpb24uc2NyZWVuc2hvdHM9W3tcImFsdFwiOiBcInNjcmVlbnNob3Qgb25lXCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTEucG5nXCJ9LHtcImFsdFwiOiBcInNjcmVlbnNob3QgdHdvXCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTIucG5nXCJ9LHtcImFsdFwiOiBcInNjcmVlbnNob3QgdGhyZWVcIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tMy5wbmdcIn0se1wiYWx0XCI6IFwic2NyZWVuc2hvdCBmb3VyXCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTQucG5nXCJ9LHtcImFsdFwiOiBcInNjcmVlbnNob3QgZml2ZVwiLCBcInVybFwiOiBcImh0dHBzOi8vcG9ydGFpbmVyLWlvLWFzc2V0cy5zZm8yLmRpZ2l0YWxvY2VhbnNwYWNlcy5jb20vc2NyZWVuc2hvdHMvZG9ja2VyLWV4dGVuc2lvbi01LnBuZ1wifSx7XCJhbHRcIjogXCJzY3JlZW5zaG90IHNpeFwiLCBcInVybFwiOiBcImh0dHBzOi8vcG9ydGFpbmVyLWlvLWFzc2V0cy5zZm8yLmRpZ2l0YWxvY2VhbnNwYWNlcy5jb20vc2NyZWVuc2hvdHMvZG9ja2VyLWV4dGVuc2lvbi02LnBuZ1wifSx7XCJhbHRcIjogXCJzY3JlZW5zaG90IHNldmVuXCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTcucG5nXCJ9LHtcImFsdFwiOiBcInNjcmVlbnNob3QgZWlnaHRcIiwgXCJ1cmxcIjogXCJodHRwczovL3BvcnRhaW5lci1pby1hc3NldHMuc2ZvMi5kaWdpdGFsb2NlYW5zcGFjZXMuY29tL3NjcmVlbnNob3RzL2RvY2tlci1leHRlbnNpb24tOC5wbmdcIn0se1wiYWx0XCI6IFwic2NyZWVuc2hvdCBuaW5lXCIsIFwidXJsXCI6IFwiaHR0cHM6Ly9wb3J0YWluZXItaW8tYXNzZXRzLnNmbzIuZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9zY3JlZW5zaG90cy9kb2NrZXItZXh0ZW5zaW9uLTkucG5nXCJ9XSBjb20uZG9ja2VyLmV4dGVuc2lvbi5kZXRhaWxlZC1kZXNjcmlwdGlvbj1cdTAwM2NwIGRhdGEtcmVuZGVyZXItc3RhcnQtcG9zPVwiMjI2XCJcdTAwM2VQb3J0YWluZXJcdTAwMjZyc3F1bztzIERvY2tlciBEZXNrdG9wIGV4dGVuc2lvbiBnaXZlcyB5b3UgYWNjZXNzIHRvIGFsbCBvZiBQb3J0YWluZXJcdTAwMjZyc3F1bztzIHJpY2ggbWFuYWdlbWVudCBmdW5jdGlvbmFsaXR5IHdpdGhpbiB5b3VyIGRvY2tlciBkZXNrdG9wIGV4cGVyaWVuY2UuXHUwMDNjL3BcdTAwM2VcdTAwM2NoMiBkYXRhLXJlbmRlcmVyLXN0YXJ0LXBvcz1cIjM3NFwiXHUwMDNlV2l0aCBQb3J0YWluZXIgeW91IGNhbjpcdTAwM2MvaDJcdTAwM2VcdTAwM2N1bFx1MDAzZVx1MDAzY2xpXHUwMDNlU2VlIGFsbCB5b3VyIHJ1bm5pbmcgY29udGFpbmVyc1x1MDAzYy9saVx1MDAzZVx1MDAzY2xpXHUwMDNlRWFzaWx5IHZpZXcgYWxsIG9mIHlvdXIgY29udGFpbmVyIGxvZ3NcdTAwM2MvbGlcdTAwM2VcdTAwM2NsaVx1MDAzZUNvbnNvbGUgaW50byBjb250YWluZXJzXHUwMDNjL2xpXHUwMDNlXHUwMDNjbGlcdTAwM2VFYXNpbHkgZGVwbG95IHlvdXIgY29kZSBpbnRvIGNvbnRhaW5lcnMgdXNpbmcgYSBzaW1wbGUgZm9ybVx1MDAzYy9saVx1MDAzZVx1MDAzY2xpXHUwMDNlVHVybiB5b3VyIFlBTUwgaW50byBjdXN0b20gdGVtcGxhdGVzIGZvciBlYXN5IHJldXNlXHUwMDNjL2xpXHUwMDNlXHUwMDNjL3VsXHUwMDNlXHUwMDNjaDIgZGF0YS1yZW5kZXJlci1zdGFydC1wb3M9XCI2NjBcIlx1MDAzZUFib3V0IFBvcnRhaW5lclx1MDAyNm5ic3A7XHUwMDNjL2gyXHUwMDNlXHUwMDNjcCBkYXRhLXJlbmRlcmVyLXN0YXJ0LXBvcz1cIjY4MFwiXHUwMDNlUG9ydGFpbmVyIGlzIHRoZSB3b3JsZHNcdTAwMjZyc3F1bzsgbW9zdCBwb3B1bGFyIHVuaXZlcnNhbCBjb250YWluZXIgbWFuYWdlbWVudCBwbGF0Zm9ybSB3aXRoIG1vcmUgdGhhbiA2NTAsMDAwIGFjdGl2ZSBtb250aGx5IHVzZXJzLiBQb3J0YWluZXIgY2FuIGJlIHVzZWQgdG8gbWFuYWdlIERvY2tlciBTdGFuZGFsb25lLCBLdWJlcm5ldGVzLCBEb2NrZXIgU3dhcm0gYW5kIE5vbWFkIGVudmlyb25tZW50cyB0aHJvdWdoIGEgc2luZ2xlIGNvbW1vbiBpbnRlcmZhY2UuIEl0IGluY2x1ZGVzIGEgc2ltcGxlIEdpdE9wcyBhdXRvbWF0aW9uIGVuZ2luZSBhbmQgYSBLdWJlIEFQSS5cdTAwMjZuYnNwO1x1MDAzYy9wXHUwMDNlXHUwMDNjcCBkYXRhLXJlbmRlcmVyLXN0YXJ0LXBvcz1cIjEwMDZcIlx1MDAzZVBvcnRhaW5lciBCdXNpbmVzcyBFZGl0aW9uIGlzIG91ciBmdWxseSBzdXBwb3J0ZWQgY29tbWVyY2lhbCBncmFkZSBwcm9kdWN0IGZvciBidXNpbmVzcy13aWRlIHVzZS4gSXQgaW5jbHVkZXMgYWxsIHRoZSBmdW5jdGlvbmFsaXR5IHRoYXQgYnVzaW5lc3NlcyBuZWVkIHRvIG1hbmFnZSBjb250YWluZXJzIGF0IHNjYWxlLiBWaXNpdCBcdTAwM2NhIGNsYXNzPVwic2MtaktKbFRlIGRQZkF0YlwiIGhyZWY9XCJodHRwOi8vcG9ydGFpbmVyLmlvL1wiIHRpdGxlPVwiaHR0cDovL1BvcnRhaW5lci5pb1wiIGRhdGEtcmVuZGVyZXItbWFyaz1cInRydWVcIlx1MDAzZVBvcnRhaW5lci5pb1x1MDAzYy9hXHUwMDNlIHRvIGxlYXJuIG1vcmUgYWJvdXQgUG9ydGFpbmVyIEJ1c2luZXNzIGFuZCBcdTAwM2NhIGNsYXNzPVwic2MtaktKbFRlIGRQZkF0YlwiIGhyZWY9XCJodHRwOi8vcG9ydGFpbmVyLmlvL3Rha2U1P3V0bV9jYW1wYWlnbj1Eb2NrZXJDb25cdTAwMjZhbXA7dXRtX3NvdXJjZT1Eb2NrZXIlMjBEZXNrdG9wXCIgdGl0bGU9XCJodHRwOi8vcG9ydGFpbmVyLmlvL3Rha2U1P3V0bV9jYW1wYWlnbj1Eb2NrZXJDb25cdTAwMjZhbXA7dXRtX3NvdXJjZT1Eb2NrZXIlMjBEZXNrdG9wXCIgZGF0YS1yZW5kZXJlci1tYXJrPVwidHJ1ZVwiXHUwMDNlZ2V0IDUgZnJlZSBub2Rlcy5cdTAwM2MvYVx1MDAzZVx1MDAzYy9wXHUwMDNlIGNvbS5kb2NrZXIuZXh0ZW5zaW9uLnB1Ymxpc2hlci11cmw9aHR0cHM6Ly93d3cucG9ydGFpbmVyLmlvIGNvbS5kb2NrZXIuZXh0ZW5zaW9uLmFkZGl0aW9uYWwtdXJscz1be1widGl0bGVcIjpcIldlYnNpdGVcIixcInVybFwiOlwiaHR0cHM6Ly93d3cucG9ydGFpbmVyLmlvP3V0bV9jYW1wYWlnbj1Eb2NrZXJDb25cdTAwMjZ1dG1fc291cmNlPURvY2tlckRlc2t0b3BcIn0se1widGl0bGVcIjpcIkRvY3VtZW50YXRpb25cIixcInVybFwiOlwiaHR0cHM6Ly9kb2NzLnBvcnRhaW5lci5pb1wifSx7XCJ0aXRsZVwiOlwiU3VwcG9ydFwiLFwidXJsXCI6XCJodHRwczovL2pvaW4uc2xhY2suY29tL3QvcG9ydGFpbmVyL3NoYXJlZF9pbnZpdGUvenQtdHhoM2xqYWItNTJRSFR5akNxYmU1UmliQzJsY2pLQVwifV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTIxVDAwOjQwOjE4LjM1OTAyMDk3OVoiLCJjcmVhdGVkX2J5IjoiQ09QWSBkaXN0IC8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0yMVQwMDo0MDoxOC4zNzk3NzM2NDdaIiwiY3JlYXRlZF9ieSI6IkNPUFkgYnVpbGQvZG9ja2VyLWV4dGVuc2lvbiAvICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjFUMDA6NDA6MTguMzc5NzczNjQ3WiIsImNyZWF0ZWRfYnkiOiJWT0xVTUUgWy9kYXRhXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjFUMDA6NDA6MTguMzc5NzczNjQ3WiIsImNyZWF0ZWRfYnkiOiJXT1JLRElSIC8iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTIxVDAwOjQwOjE4LjM3OTc3MzY0N1oiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFs5MDAwL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTIxVDAwOjQwOjE4LjM3OTc3MzY0N1oiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFs5NDQzL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTIxVDAwOjQwOjE4LjM3OTc3MzY0N1oiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFs4MDAwL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTIxVDAwOjQwOjE4LjM3OTc3MzY0N1oiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvcG9ydGFpbmVyXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJtb2J5LmJ1aWxka2l0LmJ1aWxkaW5mby52MSI6ImV5Sm1jbTl1ZEdWdVpDSTZJbVJ2WTJ0bGNtWnBiR1V1ZGpBaUxDSnpiM1Z5WTJWeklqcGJleUowZVhCbElqb2laRzlqYTJWeUxXbHRZV2RsSWl3aWNtVm1Jam9pWkc5amEyVnlMbWx2TDNCdmNuUmhhVzVsY2k5aVlYTmxPbXhoZEdWemRDSXNJbkJwYmlJNkluTm9ZVEkxTmpwak1EUXlObU00Tm1Fek1HVTVaVEUwTm1aak1qUmtZakkzTnpjd1pXWm1PVGt6TTJVNE9EaGlOVGhqTWpNMU1qUmtaRE01TW1Zd01qTXlaRFEzTnpFNEluMWRmUT09Iiwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OjhjMDA0NDU2YWViNThiNzVmNzkyZmEwOTFiMTk0YzIwZDZlZDRmMGQ5NWRkMjViMDE1MGQ3MWM1YzlhYjYwMWIiLCJzaGEyNTY6NDc3NjQ2NDgzN2ZkMTgzNGUwMTIyNDI2NzZkMjEzOGQ1ZDQyODhkMDViMDBhYjI5Y2ExYTc2ZDUwZmNkY2JlNCIsInNoYTI1Njo0ZjZkN2U0MDA4NWIwNjUyNzZhMjQ5NzExNTAzNjdhYzFmNjc4ZjQ5NDEzOWZmMzliZjVmMDg1MDgyYjUwOWVhIiwic2hhMjU2OmY2MTc3ODM5MDI3YTg2NzNiNGU2Yzg5ZGUxYjkzNDk3ZjJhNGI5ZWIwODA4NGNlN2Y1NzdhMDEyNzYwZTY4ZjgiXX19",
+   "repoDigests": [
+    "portainer/portainer@sha256:47b064434edf437badf7337e516e07f64477485c8ecc663ddabbe824b20c672d"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "Grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2023-02-25T08:13:48Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:fd83377bf2233596b4c7140477d98aee18a2dec94108e0b923dc7e54a4b00051",
+   "error": null
+  }
+ }
+}

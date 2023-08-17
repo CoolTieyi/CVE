@@ -1,0 +1,2835 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-9261",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-9261",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://git.busybox.net/busybox/commit/?id=1de25a6e87e0e627aa34298105a3d17c60a1f44e",
+     "https://bugs.debian.org/803097",
+     "http://www.openwall.com/lists/oss-security/2015/10/25/3",
+     "https://lists.debian.org/debian-lts-announce/2018/07/msg00037.html",
+     "https://usn.ubuntu.com/3935-1/",
+     "http://seclists.org/fulldisclosure/2019/Jun/18",
+     "https://seclists.org/bugtraq/2019/Jun/14",
+     "http://packetstormsecurity.com/files/153278/WAGO-852-Industrial-Managed-Switch-Series-Code-Execution-Hardcoded-Credentials.html",
+     "http://seclists.org/fulldisclosure/2019/Sep/7",
+     "https://seclists.org/bugtraq/2019/Sep/7",
+     "http://packetstormsecurity.com/files/154361/Cisco-Device-Hardcoded-Credentials-GNU-glibc-BusyBox.html",
+     "http://seclists.org/fulldisclosure/2020/Aug/20",
+     "https://lists.debian.org/debian-lts-announce/2021/02/msg00020.html",
+     "http://seclists.org/fulldisclosure/2022/Jun/36",
+     "http://packetstormsecurity.com/files/167552/Nexans-FTTO-GigaSwitch-Outdated-Components-Hardcoded-Backdoor.html"
+    ],
+    "description": "huft_build in archival/libarchive/decompress_gunzip.c in BusyBox before 1.27.2 misuses a pointer, causing segfaults and an application crash during an unzip operation on a specially crafted ZIP file.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 4.3,
+       "exploitabilityScore": 8.6,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 1.27.2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-0495",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.6.5-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-0495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-0495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://www.nccgroup.trust/us/our-research/technical-advisory-return-of-the-hidden-number-problem/",
+      "https://lists.gnupg.org/pipermail/gnupg-announce/2018q2/000426.html",
+      "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=9010d1576e278a4274ad3f4aa15776c28f6ba965",
+      "https://dev.gnupg.org/T4011",
+      "https://www.debian.org/security/2018/dsa-4231",
+      "https://usn.ubuntu.com/3689-2/",
+      "https://usn.ubuntu.com/3689-1/",
+      "http://www.securitytracker.com/id/1041147",
+      "http://www.securitytracker.com/id/1041144",
+      "https://usn.ubuntu.com/3692-2/",
+      "https://usn.ubuntu.com/3692-1/",
+      "https://lists.debian.org/debian-lts-announce/2018/06/msg00013.html",
+      "https://access.redhat.com/errata/RHSA-2018:3221",
+      "https://access.redhat.com/errata/RHSA-2018:3505",
+      "https://usn.ubuntu.com/3850-1/",
+      "https://usn.ubuntu.com/3850-2/",
+      "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+      "https://access.redhat.com/errata/RHSA-2019:1297",
+      "https://access.redhat.com/errata/RHSA-2019:1296",
+      "https://access.redhat.com/errata/RHSA-2019:1543",
+      "https://access.redhat.com/errata/RHSA-2019:2237"
+     ],
+     "description": "Libgcrypt before 1.7.10 and 1.8.x before 1.8.3 allows a memory-cache side-channel attack on ECDSA signatures that can be mitigated through the use of blinding during the signing process in the _gcry_ecc_ecdsa_sign function in cipher/ecc-ecdsa.c, aka the Return Of the Hidden Number Problem or ROHNP. To discover an ECDSA key, the attacker needs access to either the local machine or a different virtual machine on the same physical host.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "libressl",
+       "version": "2.6.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.6.5-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libressl2.6-libcrypto",
+    "version": "2.6.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "custom"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libressl2.6-libcrypto:libressl2.6-libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6-libcrypto:libressl2.6_libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libcrypto:libressl2.6-libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libcrypto:libressl2.6_libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6-libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6_libcrypto:2.6.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libressl2.6-libcrypto@2.6.3-r0?arch=x86_64&upstream=libressl&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "libressl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-0495",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0495"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.6.5-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-0495",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-0495",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://www.nccgroup.trust/us/our-research/technical-advisory-return-of-the-hidden-number-problem/",
+      "https://lists.gnupg.org/pipermail/gnupg-announce/2018q2/000426.html",
+      "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=9010d1576e278a4274ad3f4aa15776c28f6ba965",
+      "https://dev.gnupg.org/T4011",
+      "https://www.debian.org/security/2018/dsa-4231",
+      "https://usn.ubuntu.com/3689-2/",
+      "https://usn.ubuntu.com/3689-1/",
+      "http://www.securitytracker.com/id/1041147",
+      "http://www.securitytracker.com/id/1041144",
+      "https://usn.ubuntu.com/3692-2/",
+      "https://usn.ubuntu.com/3692-1/",
+      "https://lists.debian.org/debian-lts-announce/2018/06/msg00013.html",
+      "https://access.redhat.com/errata/RHSA-2018:3221",
+      "https://access.redhat.com/errata/RHSA-2018:3505",
+      "https://usn.ubuntu.com/3850-1/",
+      "https://usn.ubuntu.com/3850-2/",
+      "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+      "https://access.redhat.com/errata/RHSA-2019:1297",
+      "https://access.redhat.com/errata/RHSA-2019:1296",
+      "https://access.redhat.com/errata/RHSA-2019:1543",
+      "https://access.redhat.com/errata/RHSA-2019:2237"
+     ],
+     "description": "Libgcrypt before 1.7.10 and 1.8.x before 1.8.3 allows a memory-cache side-channel attack on ECDSA signatures that can be mitigated through the use of blinding during the signing process in the _gcry_ecc_ecdsa_sign function in cipher/ecc-ecdsa.c, aka the Return Of the Hidden Number Problem or ROHNP. To discover an ECDSA key, the attacker needs access to either the local machine or a different virtual machine on the same physical host.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 1.9,
+        "exploitabilityScore": 3.4,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 4.7,
+        "exploitabilityScore": 1,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "libressl",
+       "version": "2.6.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.6.5-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libressl2.6-libssl",
+    "version": "2.6.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "custom"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libressl2.6-libssl:libressl2.6-libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6-libssl:libressl2.6_libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libssl:libressl2.6-libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libssl:libressl2.6_libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6-libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6_libssl:2.6.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libressl2.6-libssl@2.6.3-r0?arch=x86_64&upstream=libressl&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "libressl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-0732",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.6.5-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-0732",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-0732",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20180612.txt",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ea7abeeabf92b7aca160bdd0208636d4da69f4f4",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3984ef0b72831da8b3ece4745cac4f8575b19098",
+      "http://www.securitytracker.com/id/1041090",
+      "http://www.securityfocus.com/bid/104442",
+      "https://usn.ubuntu.com/3692-2/",
+      "https://usn.ubuntu.com/3692-1/",
+      "https://lists.debian.org/debian-lts-announce/2018/07/msg00043.html",
+      "https://access.redhat.com/errata/RHSA-2018:2553",
+      "https://access.redhat.com/errata/RHSA-2018:2552",
+      "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/",
+      "https://www.tenable.com/security/tns-2018-12",
+      "https://securityadvisories.paloaltonetworks.com/Home/Detail/133",
+      "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+      "https://www.tenable.com/security/tns-2018-14",
+      "https://www.tenable.com/security/tns-2018-13",
+      "https://access.redhat.com/errata/RHSA-2018:3221",
+      "https://security.netapp.com/advisory/ntap-20181105-0001/",
+      "https://access.redhat.com/errata/RHSA-2018:3505",
+      "https://security.gentoo.org/glsa/201811-03",
+      "https://www.debian.org/security/2018/dsa-4348",
+      "https://www.debian.org/security/2018/dsa-4355",
+      "https://www.tenable.com/security/tns-2018-17",
+      "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+      "https://security.netapp.com/advisory/ntap-20190118-0002/",
+      "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+      "https://access.redhat.com/errata/RHSA-2019:1297",
+      "https://access.redhat.com/errata/RHSA-2019:1296",
+      "https://access.redhat.com/errata/RHSA-2019:1543",
+      "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EWC42UXL5GHTU5G77VKBF6JYUUNGSHOM/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZBEV5QGDRFUZDMNECFXUSN5FMYOZDE4V/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y3IVFGSERAZLNJCK35TEM2R4726XIH3Z/",
+      "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html",
+      "https://www.oracle.com/security-alerts/cpuapr2020.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-419820.pdf"
+     ],
+     "description": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o).",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "libressl",
+       "version": "2.6.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.6.5-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libressl2.6-libcrypto",
+    "version": "2.6.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "custom"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libressl2.6-libcrypto:libressl2.6-libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6-libcrypto:libressl2.6_libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libcrypto:libressl2.6-libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libcrypto:libressl2.6_libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6-libcrypto:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6_libcrypto:2.6.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libressl2.6-libcrypto@2.6.3-r0?arch=x86_64&upstream=libressl&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "libressl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-0732",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.6.5-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-0732",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-0732",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://www.openssl.org/news/secadv/20180612.txt",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=ea7abeeabf92b7aca160bdd0208636d4da69f4f4",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=3984ef0b72831da8b3ece4745cac4f8575b19098",
+      "http://www.securitytracker.com/id/1041090",
+      "http://www.securityfocus.com/bid/104442",
+      "https://usn.ubuntu.com/3692-2/",
+      "https://usn.ubuntu.com/3692-1/",
+      "https://lists.debian.org/debian-lts-announce/2018/07/msg00043.html",
+      "https://access.redhat.com/errata/RHSA-2018:2553",
+      "https://access.redhat.com/errata/RHSA-2018:2552",
+      "https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/",
+      "https://www.tenable.com/security/tns-2018-12",
+      "https://securityadvisories.paloaltonetworks.com/Home/Detail/133",
+      "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+      "https://www.tenable.com/security/tns-2018-14",
+      "https://www.tenable.com/security/tns-2018-13",
+      "https://access.redhat.com/errata/RHSA-2018:3221",
+      "https://security.netapp.com/advisory/ntap-20181105-0001/",
+      "https://access.redhat.com/errata/RHSA-2018:3505",
+      "https://security.gentoo.org/glsa/201811-03",
+      "https://www.debian.org/security/2018/dsa-4348",
+      "https://www.debian.org/security/2018/dsa-4355",
+      "https://www.tenable.com/security/tns-2018-17",
+      "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+      "https://security.netapp.com/advisory/ntap-20190118-0002/",
+      "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+      "https://access.redhat.com/errata/RHSA-2019:1297",
+      "https://access.redhat.com/errata/RHSA-2019:1296",
+      "https://access.redhat.com/errata/RHSA-2019:1543",
+      "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EWC42UXL5GHTU5G77VKBF6JYUUNGSHOM/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZBEV5QGDRFUZDMNECFXUSN5FMYOZDE4V/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Y3IVFGSERAZLNJCK35TEM2R4726XIH3Z/",
+      "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html",
+      "https://www.oracle.com/security-alerts/cpuapr2020.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://cert-portal.siemens.com/productcert/pdf/ssa-419820.pdf"
+     ],
+     "description": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o).",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "libressl",
+       "version": "2.6.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.6.5-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libressl2.6-libssl",
+    "version": "2.6.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "custom"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libressl2.6-libssl:libressl2.6-libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6-libssl:libressl2.6_libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libssl:libressl2.6-libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6_libssl:libressl2.6_libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6-libssl:2.6.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libressl2.6:libressl2.6_libssl:2.6.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/libressl2.6-libssl@2.6.3-r0?arch=x86_64&upstream=libressl&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "libressl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-1000500",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000500",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "http://lists.busybox.net/pipermail/busybox/2018-May/086462.html",
+     "https://git.busybox.net/busybox/commit/?id=45fa3f18adf57ef9d743038743d9c90573aeeb91",
+     "https://usn.ubuntu.com/4531-1/"
+    ],
+    "description": "Busybox contains a Missing SSL certificate validation vulnerability in The \"busybox wget\" applet that can result in arbitrary code execution. This attack appear to be exploitable via Simply download any file over HTTPS using \"busybox wget https://compromised-domain.com/important-file\".",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 8.6,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 1.32.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-1000517",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-1000517",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://git.busybox.net/busybox/commit/?id=8e2174e9bd836e53c8b9c6e00d1bc6e2a718686e",
+     "https://lists.debian.org/debian-lts-announce/2018/07/msg00037.html",
+     "https://usn.ubuntu.com/3935-1/",
+     "https://lists.debian.org/debian-lts-announce/2021/02/msg00020.html"
+    ],
+    "description": "BusyBox project BusyBox wget version prior to commit 8e2174e9bd836e53c8b9c6e00d1bc6e2a718686e contains a Buffer Overflow vulnerability in Busybox wget that can result in heap buffer overflow. This attack appear to be exploitable via network connectivity. This vulnerability appears to have been fixed in after commit 8e2174e9bd836e53c8b9c6e00d1bc6e2a718686e.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 10,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 1.29.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20217",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20217",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "Medium",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20217"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.15.4-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-20217",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20217",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2KNHELH4YHNT6H2ESJWX2UIDXLBNGB2O/",
+      "https://github.com/krb5/krb5/commit/5e6d1796106df8ba6bc1973ee0917c170d929086",
+      "http://krbdev.mit.edu/rt/Ticket/Display.html?id=8763",
+      "https://lists.debian.org/debian-lts-announce/2019/01/msg00020.html",
+      "https://security.netapp.com/advisory/ntap-20190416-0006/",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00019.html"
+     ],
+     "description": "A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 3.5,
+        "exploitabilityScore": 6.8,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 1.6,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "krb5",
+       "version": "1.15.3-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.15.4-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "krb5-libs",
+    "version": "1.15.3-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:krb5-libs:krb5-libs:1.15.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:krb5-libs:krb5_libs:1.15.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:krb5_libs:krb5-libs:1.15.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:krb5_libs:krb5_libs:1.15.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:krb5:krb5-libs:1.15.3-r0:*:*:*:*:*:*:*",
+     "cpe:2.3:a:krb5:krb5_libs:1.15.3-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/krb5-libs@1.15.3-r0?arch=x86_64&upstream=krb5&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "krb5"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20483",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20483",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20483"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.20.1-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-20483",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20483",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://twitter.com/marcan42/status/1077676739877232640",
+      "http://git.savannah.gnu.org/cgit/wget.git/tree/NEWS",
+      "http://www.securityfocus.com/bid/106358",
+      "https://security.gentoo.org/glsa/201903-08",
+      "https://security.netapp.com/advisory/ntap-20190321-0002/",
+      "https://usn.ubuntu.com/3943-1/",
+      "https://access.redhat.com/errata/RHSA-2019:3701"
+     ],
+     "description": "set_file_metadata in xattr.c in GNU Wget before 1.20.1 stores a file's origin URL in the user.xdg.origin.url metadata attribute of the extended attributes of the downloaded file, which allows local users to obtain sensitive information (e.g., credentials contained in the URL) by reading this attribute, as demonstrated by getfattr. This also applies to Referer information in the user.xdg.referrer.url metadata attribute. According to 2016-07-22 in the Wget ChangeLog, user.xdg.origin.url was partially based on the behavior of fwrite_xattr in tool_xattr.c in curl.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "wget",
+       "version": "1.19.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.20.1-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "wget",
+    "version": "1.19.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL3+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:wget:wget:1.19.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/wget@1.19.5-r0?arch=x86_64&upstream=wget&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "wget"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20679",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20679",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://git.busybox.net/busybox/commit/?id=6d3b4bb24da9a07c263f3c1acf8df85382ff562c",
+     "https://busybox.net/news.html",
+     "https://bugs.busybox.net/show_bug.cgi?id=11506",
+     "https://usn.ubuntu.com/3935-1/",
+     "http://seclists.org/fulldisclosure/2019/Sep/7",
+     "https://seclists.org/bugtraq/2019/Sep/7",
+     "http://packetstormsecurity.com/files/154361/Cisco-Device-Hardcoded-Credentials-GNU-glibc-BusyBox.html"
+    ],
+    "description": "An issue was discovered in BusyBox before 1.30.0. An out of bounds read in udhcp components (consumed by the DHCP server, client, and relay) allows a remote attacker to leak sensitive information from the stack by sending a crafted DHCP message. This is related to verification in udhcp_get_option() in networking/udhcp/common.c that 4-byte options are indeed 4 bytes.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.0",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 1.30.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-20843",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20843",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20843"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.2.7-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2018-20843",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-20843",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/libexpat/libexpat/issues/186",
+      "https://github.com/libexpat/libexpat/pull/262",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5226",
+      "https://github.com/libexpat/libexpat/pull/262/commits/11f8838bf99ea0a6f0b76f9760c43704d00c4ff6",
+      "https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes",
+      "https://usn.ubuntu.com/4040-1/",
+      "https://usn.ubuntu.com/4040-2/",
+      "https://seclists.org/bugtraq/2019/Jun/39",
+      "https://www.debian.org/security/2019/dsa-4472",
+      "https://lists.debian.org/debian-lts-announce/2019/06/msg00028.html",
+      "https://security.netapp.com/advisory/ntap-20190703-0001/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CEJJSQSG3KSUQY4FPVHZ7ZTT7FORMFVD/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IDAUGEB3TUP6NEKJDBUBZX7N5OAUOOOK/",
+      "https://support.f5.com/csp/article/K51011533",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-07/msg00039.html",
+      "https://security.gentoo.org/glsa/201911-08",
+      "https://www.oracle.com/security-alerts/cpuapr2020.html",
+      "https://www.oracle.com/security-alerts/cpuoct2020.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.tenable.com/security/tns-2021-11",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html"
+     ],
+     "description": "In libexpat in Expat before 2.2.7, XML input including XML names that contain a large number of colons could make the XML parser consume a high amount of RAM and CPU resources while processing (enough to be usable for denial-of-service attacks).",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "expat",
+       "version": "2.2.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.2.7-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "expat",
+    "version": "2.2.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:expat:expat:2.2.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/expat@2.2.5-r0?arch=x86_64&upstream=expat&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "expat"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2018-25032",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2018-25032",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://www.openwall.com/lists/oss-security/2022/03/24/1",
+     "https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531",
+     "http://www.openwall.com/lists/oss-security/2022/03/25/2",
+     "http://www.openwall.com/lists/oss-security/2022/03/26/1",
+     "https://www.openwall.com/lists/oss-security/2022/03/28/1",
+     "https://github.com/madler/zlib/compare/v1.2.11...v1.2.12",
+     "https://www.openwall.com/lists/oss-security/2022/03/28/3",
+     "https://github.com/madler/zlib/issues/605",
+     "https://www.debian.org/security/2022/dsa-5111",
+     "https://lists.debian.org/debian-lts-announce/2022/04/msg00000.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NS2D2GFPFGOJUL4WQ3DUAY7HF4VWQ77F/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XOKFMSNQ5D5WGMALBNBXU3GE442V74WU/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VOKNP2L734AEL47NRYGVZIKEFOUBQY5Y/",
+     "https://lists.debian.org/debian-lts-announce/2022/05/msg00008.html",
+     "https://support.apple.com/kb/HT213255",
+     "https://support.apple.com/kb/HT213256",
+     "https://support.apple.com/kb/HT213257",
+     "http://seclists.org/fulldisclosure/2022/May/33",
+     "http://seclists.org/fulldisclosure/2022/May/35",
+     "http://seclists.org/fulldisclosure/2022/May/38",
+     "https://security.netapp.com/advisory/ntap-20220526-0009/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DF62MVMH3QUGMBDCB3DY2ERQ6EBHTADB/",
+     "https://www.oracle.com/security-alerts/cpujul2022.html",
+     "https://security.netapp.com/advisory/ntap-20220729-0004/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JZZPTWRYQULAOL3AW7RZJNVZ2UONXCV4/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DCZFIJBJTZ7CL5QXBFKTQ22Q26VINRUF/",
+     "https://lists.debian.org/debian-lts-announce/2022/09/msg00023.html",
+     "https://security.gentoo.org/glsa/202210-42",
+     "https://cert-portal.siemens.com/productcert/pdf/ssa-333517.pdf"
+    ],
+    "description": "zlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:zlib:zlib:1.2.11-r1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 1.2.12 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "zlib",
+    "version": "1.2.11-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "zlib"
+    ],
+    "cpes": [
+     "cpe:2.3:a:zlib:zlib:1.2.11-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/zlib@1.2.11-r1?arch=x86_64&upstream=zlib&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "zlib"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-14697",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14697",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "Critical",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14697"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.18-r4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-14697",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-14697",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://www.openwall.com/lists/musl/2019/08/06/1",
+      "http://www.openwall.com/lists/oss-security/2019/08/06/4",
+      "https://security.gentoo.org/glsa/202003-13"
+     ],
+     "description": "musl libc through 1.1.23 has an x87 floating-point stack adjustment imbalance, related to the math/i386/ directory. In some cases, use of this library could introduce out-of-bounds writes that are not present in an application's source code.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "musl",
+       "version": "1.1.18-r2"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.18-r4 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "musl",
+    "version": "1.1.18-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:musl:musl:1.1.18-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/musl@1.1.18-r2?arch=x86_64&upstream=musl&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "musl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-14697",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14697",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "Critical",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14697"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.18-r4"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-14697",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-14697",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://www.openwall.com/lists/musl/2019/08/06/1",
+      "http://www.openwall.com/lists/oss-security/2019/08/06/4",
+      "https://security.gentoo.org/glsa/202003-13"
+     ],
+     "description": "musl libc through 1.1.23 has an x87 floating-point stack adjustment imbalance, related to the math/i386/ directory. In some cases, use of this library could introduce out-of-bounds writes that are not present in an application's source code.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "musl",
+       "version": "1.1.18-r2"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 1.1.18-r4 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "musl-utils",
+    "version": "1.1.18-r2",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT",
+     "BSD",
+     "GPL2+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:musl-utils:musl-utils:1.1.18-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:musl-utils:musl_utils:1.1.18-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:musl_utils:musl-utils:1.1.18-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:musl_utils:musl_utils:1.1.18-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:musl:musl-utils:1.1.18-r2:*:*:*:*:*:*:*",
+     "cpe:2.3:a:musl:musl_utils:1.1.18-r2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/musl-utils@1.1.18-r2?arch=x86_64&upstream=musl&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "musl"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-15903",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15903",
+    "namespace": "alpine:distro:alpine:3.7",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15903"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.2.7-r1"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2019-15903",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-15903",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/libexpat/libexpat/pull/318",
+      "https://github.com/libexpat/libexpat/commit/c20b758c332d9a13afbbb276d30db1d183a85d43",
+      "https://github.com/libexpat/libexpat/issues/317",
+      "https://usn.ubuntu.com/4132-1/",
+      "https://github.com/libexpat/libexpat/issues/342",
+      "https://seclists.org/bugtraq/2019/Sep/30",
+      "http://packetstormsecurity.com/files/154503/Slackware-Security-Advisory-expat-Updates.html",
+      "https://usn.ubuntu.com/4132-2/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BDUTI5TVQWIGGQXPEVI4T2ENHFSBMIBP/",
+      "https://www.debian.org/security/2019/dsa-4530",
+      "https://seclists.org/bugtraq/2019/Sep/37",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A4TZKPJFTURRLXIGLB34WVKQ5HGY6JJA/",
+      "https://security.netapp.com/advisory/ntap-20190926-0004/",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-09/msg00081.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-09/msg00080.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/S26LGXXQ7YF2BP3RGOWELBFKM6BHF6UG/",
+      "https://seclists.org/bugtraq/2019/Oct/29",
+      "http://packetstormsecurity.com/files/154927/Slackware-Security-Advisory-python-Updates.html",
+      "http://packetstormsecurity.com/files/154947/Slackware-Security-Advisory-mozilla-firefox-Updates.html",
+      "https://usn.ubuntu.com/4165-1/",
+      "https://www.debian.org/security/2019/dsa-4549",
+      "https://access.redhat.com/errata/RHSA-2019:3237",
+      "https://access.redhat.com/errata/RHSA-2019:3210",
+      "https://seclists.org/bugtraq/2019/Nov/1",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00000.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00002.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00003.html",
+      "https://access.redhat.com/errata/RHSA-2019:3756",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00013.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00017.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00019.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00016.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2019-11/msg00018.html",
+      "https://lists.debian.org/debian-lts-announce/2019/11/msg00006.html",
+      "https://seclists.org/bugtraq/2019/Nov/24",
+      "https://www.debian.org/security/2019/dsa-4571",
+      "https://lists.debian.org/debian-lts-announce/2019/11/msg00017.html",
+      "https://security.gentoo.org/glsa/201911-08",
+      "https://usn.ubuntu.com/4202-1/",
+      "https://support.apple.com/kb/HT210788",
+      "https://support.apple.com/kb/HT210785",
+      "https://support.apple.com/kb/HT210790",
+      "https://support.apple.com/kb/HT210789",
+      "https://seclists.org/bugtraq/2019/Dec/21",
+      "https://seclists.org/bugtraq/2019/Dec/23",
+      "https://seclists.org/bugtraq/2019/Dec/17",
+      "https://support.apple.com/kb/HT210793",
+      "https://support.apple.com/kb/HT210795",
+      "https://support.apple.com/kb/HT210794",
+      "http://seclists.org/fulldisclosure/2019/Dec/23",
+      "http://seclists.org/fulldisclosure/2019/Dec/26",
+      "http://seclists.org/fulldisclosure/2019/Dec/27",
+      "http://seclists.org/fulldisclosure/2019/Dec/30",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00008.html",
+      "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00040.html",
+      "https://www.oracle.com/security-alerts/cpuapr2020.html",
+      "https://usn.ubuntu.com/4335-1/",
+      "https://www.oracle.com/security-alerts/cpuoct2020.html",
+      "https://www.tenable.com/security/tns-2021-11"
+     ],
+     "description": "In libexpat before 2.2.8, crafted XML input could fool the parser into changing from DTD parsing to document parsing too early; a consecutive call to XML_GetCurrentLineNumber (or XML_GetCurrentColumnNumber) then resulted in a heap-based buffer over-read.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.7.0"
+      },
+      "namespace": "alpine:distro:alpine:3.7",
+      "package": {
+       "name": "expat",
+       "version": "2.2.5-r0"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 2.2.7-r1 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "expat",
+    "version": "2.2.5-r0",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "MIT"
+    ],
+    "cpes": [
+     "cpe:2.3:a:expat:expat:2.2.5-r0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/expat@2.2.5-r0?arch=x86_64&upstream=expat&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "expat"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2019-5747",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2019-5747",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://git.busybox.net/busybox/commit/?id=74d9f1ba37010face4bd1449df4d60dd84450b06",
+     "https://bugs.busybox.net/show_bug.cgi?id=11506",
+     "https://usn.ubuntu.com/3935-1/",
+     "http://seclists.org/fulldisclosure/2019/Sep/7",
+     "https://seclists.org/bugtraq/2019/Sep/7",
+     "http://packetstormsecurity.com/files/154361/Cisco-Device-Hardcoded-Credentials-GNU-glibc-BusyBox.html"
+    ],
+    "description": "An issue was discovered in BusyBox through 1.30.0. An out of bounds read in udhcp components (consumed by the DHCP client, server, and/or relay) might allow a remote attacker to leak sensitive information from the stack by sending a crafted DHCP message. This is related to assurance of a 4-byte length when decoding DHCP_SUBNET. NOTE: this issue exists because of an incomplete fix for CVE-2018-20679.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 1.30.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42374",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42374",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:P",
+      "metrics": {
+       "baseScore": 3.3,
+       "exploitabilityScore": 3.4,
+       "impactScore": 4.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.3,
+       "exploitabilityScore": 1,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.27.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42376",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42376",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A NULL pointer dereference in Busybox's hush applet leads to denial of service when processing a crafted shell command, due to missing validation after a \\x03 delimiter character. This may be used for DoS under very rare conditions of filtered command input.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 1.9,
+       "exploitabilityScore": 3.4,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.16.0, < 1.34.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42378",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42378",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_i function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.16.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42379",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42379",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the next_input_file function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.18.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42381",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42381",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the hash_init function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.21.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42382",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42382",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the getvar_s function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.26.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42384",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42384",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the handle_special function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.18.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42385",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42385",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the evaluate function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.16.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-42386",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-42386",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/",
+     "https://security.netapp.com/advisory/ntap-20211223-0002/"
+    ],
+    "description": "A use-after-free in Busybox's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the nvalloc function",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 7.2,
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.16.0, <= 1.33.1 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-28391",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-28391",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://git.alpinelinux.org/aports/plain/main/busybox/0002-nslookup-sanitize-all-printed-strings-with-printable.patch",
+     "https://gitlab.alpinelinux.org/alpine/aports/-/issues/13661",
+     "https://git.alpinelinux.org/aports/plain/main/busybox/0001-libbb-sockaddr2str-ensure-only-printable-characters-.patch"
+    ],
+    "description": "BusyBox through 1.35.0 allows remote attackers to execute arbitrary code if netstat is used to print a DNS PTR record's value to a VT compatible terminal. Alternatively, the attacker could choose to change the terminal's colors.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.8,
+       "exploitabilityScore": 8.6,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 1.35.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:busybox:busybox:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "busybox",
+    "version": "1.27.2-r7",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:busybox:busybox:1.27.2-r7:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/busybox@1.27.2-r7?arch=x86_64&upstream=busybox&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "busybox"
+     }
+    ]
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-37434",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-37434",
+    "namespace": "nvd:cpe",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/nodejs/node/blob/75b68c6e4db515f76df73af476eccf382bbcb00a/deps/zlib/inflate.c#L762-L764",
+     "https://github.com/ivd38/zlib_overflow",
+     "https://github.com/madler/zlib/commit/eff308af425b67093bab25f80f1ae950166bece1",
+     "https://github.com/madler/zlib/blob/21767c654d31d2dccdde4330529775c6c5fd5389/zlib.h#L1062-L1063",
+     "http://www.openwall.com/lists/oss-security/2022/08/05/2",
+     "https://github.com/curl/curl/issues/9271",
+     "http://www.openwall.com/lists/oss-security/2022/08/09/1",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YRQAI7H4M4RQZ2IWZUEEXECBE5D56BH2/",
+     "https://www.debian.org/security/2022/dsa-5218",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NMBOJ77A7T7PQCARMDUK75TE6LLESZ3O/",
+     "https://security.netapp.com/advisory/ntap-20220901-0005/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JWN4VE3JQR4O2SOUS5TXNLANRPMHWV4I/",
+     "https://lists.debian.org/debian-lts-announce/2022/09/msg00012.html",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/X5U7OTKZSHY2I3ZFJSR2SHFHW72RKGDK/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PAVPQNCG3XRLCLNSQRM3KAN5ZFMVXVTY/",
+     "https://support.apple.com/kb/HT213490",
+     "https://support.apple.com/kb/HT213493",
+     "https://support.apple.com/kb/HT213494",
+     "https://support.apple.com/kb/HT213491",
+     "https://support.apple.com/kb/HT213488",
+     "https://support.apple.com/kb/HT213489",
+     "http://seclists.org/fulldisclosure/2022/Oct/41"
+    ],
+    "description": "zlib through 1.2.12 has a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field. NOTE: only applications that call inflateGetHeader are affected. Some common applications bundle the affected zlib source code but may be unable to call inflateGetHeader (e.g., see the nodejs/node reference).",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:zlib:zlib:1.2.11-r1:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 1.2.12 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:zlib:zlib:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "zlib",
+    "version": "1.2.11-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "zlib"
+    ],
+    "cpes": [
+     "cpe:2.3:a:zlib:zlib:1.2.11-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/zlib@1.2.11-r1?arch=x86_64&upstream=zlib&distro=alpine-3.7.0",
+    "upstreams": [
+     {
+      "name": "zlib"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "google/cadvisor",
+   "imageID": "sha256:eb12107075737019dce2d795dd82f5a72197eb3c64b2140392eaad3ba3b8a34e",
+   "manifestDigest": "sha256:f277d00a137554d2227deda6c02deb28dee07e591d4ff002a834ccfec81b6055",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "google/cadvisor:latest"
+   ],
+   "imageSize": 69559183,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215",
+     "size": 4143449
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:9ea477e6d99e5efac213c55ec6f4e39592c7da07f2c9559410ce9d017a610089",
+     "size": 32543574
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:66b3c2e84199a8f55c119adabeb3ddacb78cc390c5ac6a46078baf86141575fb",
+     "size": 32872160
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NDE2LCJkaWdlc3QiOiJzaGEyNTY6ZWIxMjEwNzA3NTczNzAxOWRjZTJkNzk1ZGQ4MmY1YTcyMTk3ZWIzYzY0YjIxNDAzOTJlYWFkM2JhM2I4YTM0ZSJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo0NDAzMjAwLCJkaWdlc3QiOiJzaGEyNTY6Y2Q3MTAwYTcyNDEwNjA2NTg5YTU0YjkzMmNhYmQ4MDRhMTdmOWFlNWI0MmExODgyYmQ1NmQyNjNlMDJiNjIxNSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMzMDkyNjA4LCJkaWdlc3QiOiJzaGEyNTY6OWVhNDc3ZTZkOTllNWVmYWMyMTNjNTVlYzZmNGUzOTU5MmM3ZGEwN2YyYzk1NTk0MTBjZTlkMDE3YTYxMDA4OSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMyODc1MDA4LCJkaWdlc3QiOiJzaGEyNTY6NjZiM2MyZTg0MTk5YThmNTVjMTE5YWRhYmViM2RkYWNiNzhjYzM5MGM1YWM2YTQ2MDc4YmFmODYxNDE1NzVmYiJ9XX0=",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImRlbmduYW5AZ29vZ2xlLmNvbSB2bWFybW9sQGdvb2dsZS5jb20gdmlzaG51a0Bnb29nbGUuY29tIGppbW1pZHlzb25AZ21haWwuY29tIHN0Y2xhaXJAZ29vZ2xlLmNvbSIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiR0xJQkNfVkVSU0lPTj0yLjI4LXIwIl0sIkNtZCI6bnVsbCwiQXJnc0VzY2FwZWQiOnRydWUsIkltYWdlIjoic2hhMjU2Ojk3YjFmYTM4YTg4ZmY3NTM4ZDZjMmJiYzc3MzRjZmZhZWJkMGFiMzlmNGYwNjE2ZmQwOWI1ODVhNTQ3OTJmZGQiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyIvdXNyL2Jpbi9jYWR2aXNvciIsIi1sb2d0b3N0ZGVyciJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOm51bGx9LCJjb250YWluZXIiOiJlMjkxMzU4YmRmZmRiNDg1N2JmMWFhYmY0NWE2OTI5MjIyYTM0NTgyOTJiZDg2YTMwMTBlYWNmYTBmZDNmODY5IiwiY29udGFpbmVyX2NvbmZpZyI6eyJIb3N0bmFtZSI6ImUyOTEzNThiZGZmZCIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODA4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiR0xJQkNfVkVSU0lPTj0yLjI4LXIwIl0sIkNtZCI6WyIvYmluL3NoIiwiLWMiLCIjKG5vcCkgIiwiRU5UUllQT0lOVCBbXCIvdXNyL2Jpbi9jYWR2aXNvclwiIFwiLWxvZ3Rvc3RkZXJyXCJdIl0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJJbWFnZSI6InNoYTI1Njo5N2IxZmEzOGE4OGZmNzUzOGQ2YzJiYmM3NzM0Y2ZmYWViZDBhYjM5ZjRmMDYxNmZkMDliNTg1YTU0NzkyZmRkIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vY2Fkdmlzb3IiLCItbG9ndG9zdGRlcnIiXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDE4LTExLTEyVDIxOjU4OjExLjA0MzY3MzYyMloiLCJkb2NrZXJfdmVyc2lvbiI6IjE3LjEyLjAtY2UiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAxOC0wMS0wOVQyMToxMDo1OC4zNjU3Mzc1ODlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEFERCBmaWxlOjA5M2YwNzIzZmE0NmY2Y2RiZDZmN2JkMTQ2NDQ4YmI3MGVjY2U1NDI1NGMzNTcwMWZlZWNlYjk1NjQxNDYyMmYgaW4gLyAifSx7ImNyZWF0ZWQiOiIyMDE4LTAxLTA5VDIxOjEwOjU4LjU3OTcwODYzNFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCIvYmluL3NoXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMTgtMDYtMDVUMTg6MDg6NTMuMDY5Njg0NzE2WiIsImF1dGhvciI6ImRlbmduYW5AZ29vZ2xlLmNvbSB2bWFybW9sQGdvb2dsZS5jb20gdmlzaG51a0Bnb29nbGUuY29tIGppbW1pZHlzb25AZ21haWwuY29tIHN0Y2xhaXJAZ29vZ2xlLmNvbSIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTUFJTlRBSU5FUiBkZW5nbmFuQGdvb2dsZS5jb20gdm1hcm1vbEBnb29nbGUuY29tIHZpc2hudWtAZ29vZ2xlLmNvbSBqaW1taWR5c29uQGdtYWlsLmNvbSBzdGNsYWlyQGdvb2dsZS5jb20iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAxOC0wOS0wN1QyMzowNzoxNS4yMjUzNzYzOTVaIiwiYXV0aG9yIjoiZGVuZ25hbkBnb29nbGUuY29tIHZtYXJtb2xAZ29vZ2xlLmNvbSB2aXNobnVrQGdvb2dsZS5jb20gamltbWlkeXNvbkBnbWFpbC5jb20gc3RjbGFpckBnb29nbGUuY29tIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgR0xJQkNfVkVSU0lPTj0yLjI4LXIwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMTgtMDktMDdUMjM6MDc6MjYuNjYxOTQxOTQzWiIsImF1dGhvciI6ImRlbmduYW5AZ29vZ2xlLmNvbSB2bWFybW9sQGdvb2dsZS5jb20gdmlzaG51a0Bnb29nbGUuY29tIGppbW1pZHlzb25AZ21haWwuY29tIHN0Y2xhaXJAZ29vZ2xlLmNvbSIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIGFwayAtLW5vLWNhY2hlIGFkZCBjYS1jZXJ0aWZpY2F0ZXMgd2dldCBkZXZpY2UtbWFwcGVyIGZpbmR1dGlscyBcdTAwMjZcdTAwMjYgICAgIGFwayAtLW5vLWNhY2hlIGFkZCB6ZnMgLS1yZXBvc2l0b3J5IGh0dHA6Ly9kbC0zLmFscGluZWxpbnV4Lm9yZy9hbHBpbmUvZWRnZS9tYWluLyBcdTAwMjZcdTAwMjYgICAgIGFwayAtLW5vLWNhY2hlIGFkZCB0aGluLXByb3Zpc2lvbmluZy10b29scyAtLXJlcG9zaXRvcnkgaHR0cDovL2RsLTMuYWxwaW5lbGludXgub3JnL2FscGluZS9lZGdlL21haW4vIFx1MDAyNlx1MDAyNiAgICAgd2dldCAtcSAtTyAvZXRjL2Fway9rZXlzL3NnZXJyYW5kLnJzYS5wdWIgaHR0cHM6Ly9hbHBpbmUtcGtncy5zZ2VycmFuZC5jb20vc2dlcnJhbmQucnNhLnB1YiBcdTAwMjZcdTAwMjYgICAgIHdnZXQgaHR0cHM6Ly9naXRodWIuY29tL3NnZXJyYW5kL2FscGluZS1wa2ctZ2xpYmMvcmVsZWFzZXMvZG93bmxvYWQvJHtHTElCQ19WRVJTSU9OfS9nbGliYy0ke0dMSUJDX1ZFUlNJT059LmFwayBcdTAwMjZcdTAwMjYgICAgIHdnZXQgaHR0cHM6Ly9naXRodWIuY29tL3NnZXJyYW5kL2FscGluZS1wa2ctZ2xpYmMvcmVsZWFzZXMvZG93bmxvYWQvJHtHTElCQ19WRVJTSU9OfS9nbGliYy1iaW4tJHtHTElCQ19WRVJTSU9OfS5hcGsgXHUwMDI2XHUwMDI2ICAgICBhcGsgYWRkIGdsaWJjLSR7R0xJQkNfVkVSU0lPTn0uYXBrIGdsaWJjLWJpbi0ke0dMSUJDX1ZFUlNJT059LmFwayBcdTAwMjZcdTAwMjYgICAgIC91c3IvZ2xpYmMtY29tcGF0L3NiaW4vbGRjb25maWcgL2xpYiAvdXNyL2dsaWJjLWNvbXBhdC9saWIgXHUwMDI2XHUwMDI2ICAgICBlY2hvICdob3N0czogZmlsZXMgbWRuczRfbWluaW1hbCBbTk9URk9VTkQ9cmV0dXJuXSBkbnMgbWRuczQnIFx1MDAzZVx1MDAzZSAvZXRjL25zc3dpdGNoLmNvbmYgXHUwMDI2XHUwMDI2ICAgICBybSAtcmYgL3Zhci9jYWNoZS9hcGsvKiJ9LHsiY3JlYXRlZCI6IjIwMTgtMTEtMTJUMjE6NTg6MDkuNzA0NzM0ODUzWiIsImF1dGhvciI6ImRlbmduYW5AZ29vZ2xlLmNvbSB2bWFybW9sQGdvb2dsZS5jb20gdmlzaG51a0Bnb29nbGUuY29tIGppbW1pZHlzb25AZ21haWwuY29tIHN0Y2xhaXJAZ29vZ2xlLmNvbSIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTowYTlhZjJmY2FlYzgzZWU5ZDVlM2EwZDI2YTUxNTQ0ZjQ3M2IxMWVmYzg4ZTQ2NDk5YWYyY2FmZWUzMTU1OWY0IGluIC91c3IvYmluL2NhZHZpc29yICJ9LHsiY3JlYXRlZCI6IjIwMTgtMTEtMTJUMjE6NTg6MTAuNjY1MjIzNjYzWiIsImF1dGhvciI6ImRlbmduYW5AZ29vZ2xlLmNvbSB2bWFybW9sQGdvb2dsZS5jb20gdmlzaG51a0Bnb29nbGUuY29tIGppbW1pZHlzb25AZ21haWwuY29tIHN0Y2xhaXJAZ29vZ2xlLmNvbSIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRVhQT1NFIDgwODAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAxOC0xMS0xMlQyMTo1ODoxMS4wNDM2NzM2MjJaIiwiYXV0aG9yIjoiZGVuZ25hbkBnb29nbGUuY29tIHZtYXJtb2xAZ29vZ2xlLmNvbSB2aXNobnVrQGdvb2dsZS5jb20gamltbWlkeXNvbkBnbWFpbC5jb20gc3RjbGFpckBnb29nbGUuY29tIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlRSWVBPSU5UIFtcIi91c3IvYmluL2NhZHZpc29yXCIgXCItbG9ndG9zdGRlcnJcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6Y2Q3MTAwYTcyNDEwNjA2NTg5YTU0YjkzMmNhYmQ4MDRhMTdmOWFlNWI0MmExODgyYmQ1NmQyNjNlMDJiNjIxNSIsInNoYTI1Njo5ZWE0NzdlNmQ5OWU1ZWZhYzIxM2M1NWVjNmY0ZTM5NTkyYzdkYTA3ZjJjOTU1OTQxMGNlOWQwMTdhNjEwMDg5Iiwic2hhMjU2OjY2YjNjMmU4NDE5OWE4ZjU1YzExOWFkYWJlYjNkZGFjYjc4Y2MzOTBjNWFjNmE0NjA3OGJhZjg2MTQxNTc1ZmIiXX19",
+   "repoDigests": [
+    "google/cadvisor@sha256:815386ebbe9a3490f38785ab11bda34ec8dacf4634af77b8912832d4f85dca04"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.7.0",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "Grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2023-02-25T08:13:48Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:fd83377bf2233596b4c7140477d98aee18a2dec94108e0b923dc7e54a4b00051",
+   "error": null
+  }
+ }
+}

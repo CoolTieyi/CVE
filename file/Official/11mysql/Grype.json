@@ -1,0 +1,777 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "ELSA-2022-9221",
+    "dataSource": "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+    "namespace": "oracle:distro:oraclelinux:8",
+    "severity": "Medium",
+    "urls": [
+     "https://linux.oracle.com/errata/ELSA-2022-9221.html",
+     "https://linux.oracle.com/cve/CVE-2021-20232.html",
+     "https://linux.oracle.com/cve/CVE-2021-3580.html",
+     "https://linux.oracle.com/cve/CVE-2021-20231.html"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "10:3.6.16-4.0.1.el8_fips"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-20232",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-20232",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1922275",
+      "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+      "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+      "https://security.netapp.com/advisory/ntap-20210416-0005/",
+      "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E"
+     ],
+     "description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2021-3580",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-3580",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1967983",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00008.html",
+      "https://security.netapp.com/advisory/ntap-20211104-0006/"
+     ],
+     "description": "A flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    },
+    {
+     "id": "CVE-2021-20231",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-20231",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=1922276",
+      "https://www.gnutls.org/security-new.html#GNUTLS-SA-2021-03-10",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OSLAE6PP33A7VYRYMYMUVB3U6B26GZER/",
+      "https://lists.apache.org/thread.html/r5f88bed447742fcc5c47bf1c7be965ef450131914a6e1f85feba2779@%3Cissues.spark.apache.org%3E",
+      "https://security.netapp.com/advisory/ntap-20210416-0005/",
+      "https://lists.apache.org/thread.html/rcd70a4c88a47a75fd2d5f3ffb7cee8c2a18c713320bd90fdcb57495f@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r5d4001031e7790d8c6396c499522b4ed2aab782da87b1a14184793bb@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r9cbc69e57276413788e90a6ee16c7c034ea4258d31935b70db2bd158@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/rfd5273d72d244178441e6904a2f2b41a3268f569e8092ea0b3b2bb20@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/rf5e1256d870193def4a82ad89ab95e63943a313b5ff0d81aa87e4532@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r50661d6f0082709aad9a584431b59ec364f9974b63b07e0800230168@%3Cissues.spark.apache.org%3E",
+      "https://lists.apache.org/thread.html/r6ac143ba6dd98bd4bf6bf010d46e56e254056459721ba18822d611f7@%3Cissues.spark.apache.org%3E"
+     ],
+     "description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "oraclelinux",
+       "version": "8.7"
+      },
+      "namespace": "oracle:distro:oraclelinux:8",
+      "package": {
+       "name": "gnutls",
+       "version": "0:3.6.16-5.el8_6"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 10:3.6.16-4.0.1.el8_fips (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "gnutls",
+    "version": "3.6.16-5.el8_6",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/var/lib/rpm/Packages",
+      "layerID": "sha256:f7b20bf0a308668148d51343a6816dbd4bd718815a3c9742e88d2e83e4fdf681"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPLv3+ and LGPLv2+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:oracleamerica:gnutls:3.6.16-5.el8_6:*:*:*:*:*:*:*",
+     "cpe:2.3:a:gnutls:gnutls:3.6.16-5.el8_6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/ol/gnutls@3.6.16-5.el8_6?arch=x86_64&upstream=gnutls-3.6.16-5.el8_6.src.rpm&distro=ol-8.7",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "ELSA-2022-9263",
+    "dataSource": "https://linux.oracle.com/errata/ELSA-2022-9263.html",
+    "namespace": "oracle:distro:oraclelinux:8",
+    "severity": "Medium",
+    "urls": [
+     "https://linux.oracle.com/errata/ELSA-2022-9263.html",
+     "https://linux.oracle.com/cve/CVE-2021-33560.html"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "10:1.8.5-6.el8_fips"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-33560",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-33560",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://dev.gnupg.org/T5466",
+      "https://dev.gnupg.org/rCe8b7f10be275bcedb5fc05ed4837a89bfd605c61",
+      "https://dev.gnupg.org/T5305",
+      "https://dev.gnupg.org/T5328",
+      "https://lists.debian.org/debian-lts-announce/2021/06/msg00021.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/R7OAPCUGPF3VLA7QAJUQSL255D4ITVTL/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BKKTOIGFW2SGN3DO2UHHVZ7MJSYN4AAB/",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://security.gentoo.org/glsa/202210-13"
+     ],
+     "description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "oraclelinux",
+       "version": "8.7"
+      },
+      "namespace": "oracle:distro:oraclelinux:8",
+      "package": {
+       "name": "libgcrypt",
+       "version": "0:1.8.5-7.el8_6"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 10:1.8.5-6.el8_fips (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libgcrypt",
+    "version": "1.8.5-7.el8_6",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/var/lib/rpm/Packages",
+      "layerID": "sha256:f7b20bf0a308668148d51343a6816dbd4bd718815a3c9742e88d2e83e4fdf681"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPLv2+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:oracleamerica:libgcrypt:1.8.5-7.el8_6:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcrypt:libgcrypt:1.8.5-7.el8_6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/ol/libgcrypt@1.8.5-7.el8_6?arch=x86_64&upstream=libgcrypt-1.8.5-7.el8_6.src.rpm&distro=ol-8.7",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "ELSA-2022-9564",
+    "dataSource": "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+    "namespace": "oracle:distro:oraclelinux:8",
+    "severity": "High",
+    "urls": [
+     "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+     "https://linux.oracle.com/cve/CVE-2021-40528.html"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "10:1.8.5-7.el8_6_fips"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-40528",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-40528",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://ibm.github.io/system-security-research-updates/2021/07/20/insecurity-elgamal-pt1",
+      "https://ibm.github.io/system-security-research-updates/2021/09/06/insecurity-elgamal-pt2",
+      "https://eprint.iacr.org/2021/923",
+      "https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgcrypt.git;a=commit;h=3462280f2e23e16adf3ed5176e0f2413d8861320",
+      "https://security.gentoo.org/glsa/202210-13"
+     ],
+     "description": "The ElGamal implementation in Libgcrypt before 1.9.4 allows plaintext recovery because, during interaction between two cryptographic libraries, a certain dangerous combination of the prime defined by the receiver's public key, the generator defined by the receiver's public key, and the sender's ephemeral exponents can lead to a cross-configuration attack against OpenPGP.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 2.6,
+        "exploitabilityScore": 4.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 5.9,
+        "exploitabilityScore": 2.2,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "rpm-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "oraclelinux",
+       "version": "8.7"
+      },
+      "namespace": "oracle:distro:oraclelinux:8",
+      "package": {
+       "name": "libgcrypt",
+       "version": "0:1.8.5-7.el8_6"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 10:1.8.5-7.el8_6_fips (rpm)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "libgcrypt",
+    "version": "1.8.5-7.el8_6",
+    "type": "rpm",
+    "locations": [
+     {
+      "path": "/var/lib/rpm/Packages",
+      "layerID": "sha256:f7b20bf0a308668148d51343a6816dbd4bd718815a3c9742e88d2e83e4fdf681"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPLv2+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:oracleamerica:libgcrypt:1.8.5-7.el8_6:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libgcrypt:libgcrypt:1.8.5-7.el8_6:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:rpm/ol/libgcrypt@1.8.5-7.el8_6?arch=x86_64&upstream=libgcrypt-1.8.5-7.el8_6.src.rpm&distro=ol-8.7",
+    "upstreams": [],
+    "metadataType": "RpmMetadata",
+    "metadata": {
+     "epoch": null,
+     "modularityLabel": ""
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f3fp-gc8g-vw66",
+    "dataSource": "https://github.com/advisories/GHSA-f3fp-gc8g-vw66",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-f3fp-gc8g-vw66"
+    ],
+    "description": "Default inheritable capabilities for linux container should be empty",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.1.2"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-29162",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29162",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/d04de3a9b72d7a2455c1885fc75eb36d02cd17b5",
+      "https://github.com/opencontainers/runc/releases/tag/v1.1.2",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D77CKD3AXPMU4PMQIQI5Q74SI4JATNND/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GPQU4YC4AAY54JDXGDQHJEYKSXXG5T2Y/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AVPZBV7ISA7QKRPTC7ZXWKMIQI2HZEBB/"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 4.6,
+        "exploitabilityScore": 3.9,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.1.2 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.0.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/gosu",
+      "layerID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v1.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.0.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.16.7",
+     "architecture": "x86_64",
+     "h1Digest": "h1:G18PGckGdAm3yVQRWDVQ1rLSLntiniKJ0cNRT2Tm5gs=",
+     "mainModule": "github.com/tianon/gosu"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-v95c-p5hm-xq8f",
+    "dataSource": "https://github.com/advisories/GHSA-v95c-p5hm-xq8f",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-v95c-p5hm-xq8f"
+    ],
+    "description": "Overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.0.3"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-43784",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-43784",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/opencontainers/runc/commit/d72d057ba794164c3cce9451a00b72a78b25e1ae",
+      "https://github.com/opencontainers/runc/commit/9c444070ec7bb83995dbc0185da68284da71c554",
+      "https://github.com/opencontainers/runc/commit/f50369af4b571e358f20b139eea52d612eb55eed",
+      "https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f",
+      "https://bugs.chromium.org/p/project-zero/issues/detail?id=2241",
+      "https://lists.debian.org/debian-lts-announce/2021/12/msg00005.html"
+     ],
+     "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc, netlink is used internally as a serialization system for specifying the relevant container configuration to the `C` portion of the code (responsible for the based namespace setup of containers). In all versions of runc prior to 1.0.3, the encoder did not handle the possibility of an integer overflow in the 16-bit length field for the byte array attribute type, meaning that a large enough malicious byte array attribute could result in the length overflowing and the attribute contents being parsed as netlink messages for container configuration. This vulnerability requires the attacker to have some control over the configuration of the container and would allow the attacker to bypass the namespace restrictions of the container by simply adding their own netlink payload which disables all namespaces. The main users impacted are those who allow untrusted images with untrusted configurations to run on their machines (such as with shared cloud infrastructure). runc version 1.0.3 contains a fix for this bug. As a workaround, one may try disallowing untrusted namespace paths from your container. It should be noted that untrusted namespace paths would allow the attacker to disable namespace protections entirely even in the absence of this bug.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 1.6,
+        "impactScore": 3.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.0.3 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/opencontainers/runc",
+    "version": "v1.0.1",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/gosu",
+      "layerID": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:opencontainers:runc:v1.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/opencontainers/runc@v1.0.1",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.16.7",
+     "architecture": "x86_64",
+     "h1Digest": "h1:G18PGckGdAm3yVQRWDVQ1rLSLntiniKJ0cNRT2Tm5gs=",
+     "mainModule": "github.com/tianon/gosu"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "mysql",
+   "imageID": "sha256:a3a2968869cf080dbbd2adaac9e4075cc358b50a1451ff5e2b9ae90551a4735f",
+   "manifestDigest": "sha256:6b84b7615b895df1be2941562c69a6d977881f3cfa66a7a13eebeba982d17a16",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "mysql:latest"
+   ],
+   "imageSize": 537972529,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:51c82b74fabc86a4c3e8afb6dc64f7816a7c935e8ea88086db9dd42d6766fb55",
+     "size": 106380153
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4f6d265bb82f07d1c03acad01b58610f9772fb336a62ac9b5873dcfc2bec367d",
+     "size": 2768
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:f37b1bde1fa4e4b0781caf56baeed15269451853be534fcc3c6caddd77c6cd15",
+     "size": 2289664
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:7976784b8d0c480e45ae044ecaff9e18daf6735463aef6167719dfb8a57d40b6",
+     "size": 13584639
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8d0987c0490b867f528e6f5048c75ef894d39be67de4cd55fe2c0fe6e087a727",
+     "size": 3175
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:3da94018787ede4afc294563adc36660bdef9d8946a80facecaccf86d9c984c2",
+     "size": 225
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:bc085ca01cd2a8f6df59638f1ad0acec0496974fe44bb985df13451dda189154",
+     "size": 178210477
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:6b9ff45f8ba3db16631435bfea49e3e29688b347d09c0c3c66143a353f35a778",
+     "size": 215
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:f7b20bf0a308668148d51343a6816dbd4bd718815a3c9742e88d2e83e4fdf681",
+     "size": 237487024
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:4c3d499b74303893ea9720de23d52f33854fdf72871ddc2ded1296439aeeb669",
+     "size": 14189
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b5701ecf75defdff4fb3542e56bcc6934a6a822e13b6d96e361f619566a0662b",
+     "size": 0
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo3NDYyLCJkaWdlc3QiOiJzaGEyNTY6YTNhMjk2ODg2OWNmMDgwZGJiZDJhZGFhYzllNDA3NWNjMzU4YjUwYTE0NTFmZjVlMmI5YWU5MDU1MWE0NzM1ZiJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMDkxODk2MzIsImRpZ2VzdCI6InNoYTI1Njo1MWM4MmI3NGZhYmM4NmE0YzNlOGFmYjZkYzY0Zjc4MTZhN2M5MzVlOGVhODgwODZkYjlkZDQyZDY3NjZmYjU1In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTEyNjQsImRpZ2VzdCI6InNoYTI1Njo0ZjZkMjY1YmI4MmYwN2QxYzAzYWNhZDAxYjU4NjEwZjk3NzJmYjMzNmE2MmFjOWI1ODczZGNmYzJiZWMzNjdkIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjI5MzI0OCwiZGlnZXN0Ijoic2hhMjU2OmYzN2IxYmRlMWZhNGU0YjA3ODFjYWY1NmJhZWVkMTUyNjk0NTE4NTNiZTUzNGZjYzNjNmNhZGRkNzdjNmNkMTUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMzkxNjY3MiwiZGlnZXN0Ijoic2hhMjU2Ojc5NzY3ODRiOGQwYzQ4MGU0NWFlMDQ0ZWNhZmY5ZTE4ZGFmNjczNTQ2M2FlZjYxNjc3MTlkZmI4YTU3ZDQwYjYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3MTY4LCJkaWdlc3QiOiJzaGEyNTY6OGQwOTg3YzA0OTBiODY3ZjUyOGU2ZjUwNDhjNzVlZjg5NGQzOWJlNjdkZTRjZDU1ZmUyYzBmZTZlMDg3YTcyNyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMwNzIsImRpZ2VzdCI6InNoYTI1NjozZGE5NDAxODc4N2VkZTRhZmMyOTQ1NjNhZGMzNjY2MGJkZWY5ZDg5NDZhODBmYWNlY2FjY2Y4NmQ5Yzk4NGMyIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTc4NDQxMjE2LCJkaWdlc3QiOiJzaGEyNTY6YmMwODVjYTAxY2QyYThmNmRmNTk2MzhmMWFkMGFjZWMwNDk2OTc0ZmU0NGJiOTg1ZGYxMzQ1MWRkYTE4OTE1NCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMwNzIsImRpZ2VzdCI6InNoYTI1Njo2YjlmZjQ1ZjhiYTNkYjE2NjMxNDM1YmZlYTQ5ZTNlMjk2ODhiMzQ3ZDA5YzBjM2M2NjE0M2EzNTNmMzVhNzc4In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjQ2NTExMTA0LCJkaWdlc3QiOiJzaGEyNTY6ZjdiMjBiZjBhMzA4NjY4MTQ4ZDUxMzQzYTY4MTZkYmQ0YmQ3MTg4MTVhM2M5NzQyZTg4ZDJlODNlNGZkZjY4MSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE3NDA4LCJkaWdlc3QiOiJzaGEyNTY6NGMzZDQ5OWI3NDMwMzg5M2VhOTcyMGRlMjNkNTJmMzM4NTRmZGY3Mjg3MWRkYzJkZWQxMjk2NDM5YWVlYjY2OSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE1MzYsImRpZ2VzdCI6InNoYTI1NjpiNTcwMWVjZjc1ZGVmZGZmNGZiMzU0MmU1NmJjYzY5MzRhNmE4MjJlMTNiNmQ5NmUzNjFmNjE5NTY2YTA2NjJiIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMzMwNi90Y3AiOnt9LCIzMzA2MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiR09TVV9WRVJTSU9OPTEuMTQiLCJNWVNRTF9NQUpPUj04LjAiLCJNWVNRTF9WRVJTSU9OPTguMC4zMS0xLmVsOCIsIk1ZU1FMX1NIRUxMX1ZFUlNJT049OC4wLjMxLTEuZWw4Il0sIkNtZCI6WyJteXNxbGQiXSwiSW1hZ2UiOiJzaGEyNTY6ZDcyYmNjZjg3ZjYzMWNhZmZlMzE5MmM2YTkzZWNjOWQyMGM4OGFhNTBjZGY2YTQyNzlhMzcyMDE2MGNlMTdlMCIsIlZvbHVtZXMiOnsiL3Zhci9saWIvbXlzcWwiOnt9fSwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjpudWxsfSwiY29udGFpbmVyIjoiZTE3M2I1YjFjMWFkMjlmYWM0NTkyYTBjODE0Yjc1MTc2NWIyNjY4MjdmZDdiMmRlZTkzNjQwMWQ4OWM5OWE3YyIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiJlMTczYjViMWMxYWQiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjMzMDYvdGNwIjp7fSwiMzMwNjAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiIsIkdPU1VfVkVSU0lPTj0xLjE0IiwiTVlTUUxfTUFKT1I9OC4wIiwiTVlTUUxfVkVSU0lPTj04LjAuMzEtMS5lbDgiLCJNWVNRTF9TSEVMTF9WRVJTSU9OPTguMC4zMS0xLmVsOCJdLCJDbWQiOlsiL2Jpbi9zaCIsIi1jIiwiIyhub3ApICIsIkNNRCBbXCJteXNxbGRcIl0iXSwiSW1hZ2UiOiJzaGEyNTY6ZDcyYmNjZjg3ZjYzMWNhZmZlMzE5MmM2YTkzZWNjOWQyMGM4OGFhNTBjZGY2YTQyNzlhMzcyMDE2MGNlMTdlMCIsIlZvbHVtZXMiOnsiL3Zhci9saWIvbXlzcWwiOnt9fSwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7fX0sImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjQwOjEwLjU2NzYwMzc5OFoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjEyIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjItMTEtMjlUMTk6MjA6NTcuODA3MTQyNDQ5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTo2NzY3ZGVlZDg0Y2ZmMTY3Zjc3ZjdkOWY4MzU5MjVjZDhhNWQzMDkzZDBiOTlmMDE4MDI0NWNmZDYzMTJhZTA2IGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOToyMDo1OC4xNDExNjI3NTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9iYXNoXCJdIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjlUMTk6Mzg6MzMuNzI3NTM4MDU5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXV4OyBcdGdyb3VwYWRkIC0tc3lzdGVtIC0tZ2lkIDk5OSBteXNxbDsgXHR1c2VyYWRkIC0tc3lzdGVtIC0tdWlkIDk5OSAtLWdpZCA5OTkgLS1ob21lLWRpciAvdmFyL2xpYi9teXNxbCAtLW5vLWNyZWF0ZS1ob21lIG15c3FsIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTozODozMy44Mjc5Mzk4MDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgR09TVV9WRVJTSU9OPTEuMTQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTozODozNy4wNzc3MjA4NDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0YXJjaD1cIiQodW5hbWUgLW0pXCI7IFx0Y2FzZSBcIiRhcmNoXCIgaW4gXHRcdGFhcmNoNjQpIGdvc3VBcmNoPSdhcm02NCcgOzsgXHRcdHg4Nl82NCkgZ29zdUFyY2g9J2FtZDY0JyA7OyBcdFx0KikgZWNobyBcdTAwM2VcdTAwMjYyIFwiZXJyb3I6IHVuc3VwcG9ydGVkIGFyY2hpdGVjdHVyZTogJyRhcmNoJ1wiOyBleGl0IDEgOzsgXHRlc2FjOyBcdGN1cmwgLWZMIC1vIC91c3IvbG9jYWwvYmluL2dvc3UuYXNjIFwiaHR0cHM6Ly9naXRodWIuY29tL3RpYW5vbi9nb3N1L3JlbGVhc2VzL2Rvd25sb2FkLyRHT1NVX1ZFUlNJT04vZ29zdS0kZ29zdUFyY2guYXNjXCI7IFx0Y3VybCAtZkwgLW8gL3Vzci9sb2NhbC9iaW4vZ29zdSBcImh0dHBzOi8vZ2l0aHViLmNvbS90aWFub24vZ29zdS9yZWxlYXNlcy9kb3dubG9hZC8kR09TVV9WRVJTSU9OL2dvc3UtJGdvc3VBcmNoXCI7IFx0ZXhwb3J0IEdOVVBHSE9NRT1cIiQobWt0ZW1wIC1kKVwiOyBcdGdwZyAtLWJhdGNoIC0ta2V5c2VydmVyIGhrcHM6Ly9rZXlzLm9wZW5wZ3Aub3JnIC0tcmVjdi1rZXlzIEI0MkY2ODE5MDA3RjAwRjg4RTM2NEZENDAzNkE5QzI1QkYzNTdERDQ7IFx0Z3BnIC0tYmF0Y2ggLS12ZXJpZnkgL3Vzci9sb2NhbC9iaW4vZ29zdS5hc2MgL3Vzci9sb2NhbC9iaW4vZ29zdTsgXHRybSAtcmYgXCIkR05VUEdIT01FXCIgL3Vzci9sb2NhbC9iaW4vZ29zdS5hc2M7IFx0Y2htb2QgK3ggL3Vzci9sb2NhbC9iaW4vZ29zdTsgXHRnb3N1IC0tdmVyc2lvbjsgXHRnb3N1IG5vYm9keSB0cnVlIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTozOTowMC41MjkyNTMyNTZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0bWljcm9kbmYgaW5zdGFsbCAteSBcdFx0YnppcDIgXHRcdGd6aXAgXHRcdG9wZW5zc2wgXHRcdHh6IFx0XHR6c3RkIFx0XHRmaW5kdXRpbHMgXHQ7IFx0bWljcm9kbmYgY2xlYW4gYWxsIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTozOTowMS45Mjg5NzA3MTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0a2V5PSc4NTlCRThEN0M1ODZGNTM4NDMwQjE5QzI0NjdCOTQyRDNBNzlCRDI5JzsgXHRleHBvcnQgR05VUEdIT01FPVwiJChta3RlbXAgLWQpXCI7IFx0Z3BnIC0tYmF0Y2ggLS1rZXlzZXJ2ZXIga2V5c2VydmVyLnVidW50dS5jb20gLS1yZWN2LWtleXMgXCIka2V5XCI7IFx0Z3BnIC0tYmF0Y2ggLS1leHBvcnQgLS1hcm1vciBcIiRrZXlcIiBcdTAwM2UgL2V0Yy9wa2kvcnBtLWdwZy9SUE0tR1BHLUtFWS1teXNxbDsgXHRybSAtcmYgXCIkR05VUEdIT01FXCIifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjM5OjAyLjAyNjU2OTgzNloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBNWVNRTF9NQUpPUj04LjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTozOTowMi4xMjIxMDU0ODRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFTlYgTVlTUUxfVkVSU0lPTj04LjAuMzEtMS5lbDgiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTozOTowMi42OTAwNjU2MzhaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldTsgXHQuIC9ldGMvb3MtcmVsZWFzZTsgXHR7IFx0XHRlY2hvICdbbXlzcWw4LjAtc2VydmVyLW1pbmltYWxdJzsgXHRcdGVjaG8gJ25hbWU9TXlTUUwgOC4wIFNlcnZlciBNaW5pbWFsJzsgXHRcdGVjaG8gJ2VuYWJsZWQ9MSc7IFx0XHRlY2hvIFwiYmFzZXVybD1odHRwczovL3JlcG8ubXlzcWwuY29tL3l1bS9teXNxbC04LjAtY29tbXVuaXR5L2RvY2tlci9lbC8ke1ZFUlNJT05fSUQlJVsuLV0qfS9cXCRiYXNlYXJjaC9cIjsgXHRcdGVjaG8gJ2dwZ2NoZWNrPTEnOyBcdFx0ZWNobyAnZ3Bna2V5PWZpbGU6Ly8vZXRjL3BraS9ycG0tZ3BnL1JQTS1HUEctS0VZLW15c3FsJzsgXHRcdGVjaG8gJ21vZHVsZV9ob3RmaXhlcz10cnVlJzsgXHR9IHwgdGVlIC9ldGMveXVtLnJlcG9zLmQvbXlzcWwtY29tbXVuaXR5LW1pbmltYWwucmVwbyJ9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjlUMTk6Mzk6MzIuNTg4NjE4NTNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0bWljcm9kbmYgaW5zdGFsbCAteSBcIm15c3FsLWNvbW11bml0eS1zZXJ2ZXItbWluaW1hbC0kTVlTUUxfVkVSU0lPTlwiOyBcdG1pY3JvZG5mIGNsZWFuIGFsbDsgXHRncmVwIC1GICdzb2NrZXQ9L3Zhci9saWIvbXlzcWwvbXlzcWwuc29jaycgL2V0Yy9teS5jbmY7IFx0c2VkIC1pICdzIV5zb2NrZXQ9Liohc29ja2V0PS92YXIvcnVuL215c3FsZC9teXNxbGQuc29jayEnIC9ldGMvbXkuY25mOyBcdGdyZXAgLUYgJ3NvY2tldD0vdmFyL3J1bi9teXNxbGQvbXlzcWxkLnNvY2snIC9ldGMvbXkuY25mOyBcdHsgZWNobyAnW2NsaWVudF0nOyBlY2hvICdzb2NrZXQ9L3Zhci9ydW4vbXlzcWxkL215c3FsZC5zb2NrJzsgfSBcdTAwM2VcdTAwM2UgL2V0Yy9teS5jbmY7IFx0XHQhIGdyZXAgLUYgJyFpbmNsdWRlZGlyJyAvZXRjL215LmNuZjsgXHR7IGVjaG87IGVjaG8gJyFpbmNsdWRlZGlyIC9ldGMvbXlzcWwvY29uZi5kLyc7IH0gXHUwMDNlXHUwMDNlIC9ldGMvbXkuY25mOyBcdG1rZGlyIC1wIC9ldGMvbXlzcWwvY29uZi5kOyBcdG1rZGlyIC1wIC92YXIvbGliL215c3FsIC92YXIvcnVuL215c3FsZDsgXHRjaG93biBteXNxbDpteXNxbCAvdmFyL2xpYi9teXNxbCAvdmFyL3J1bi9teXNxbGQ7IFx0Y2htb2QgMTc3NyAvdmFyL2xpYi9teXNxbCAvdmFyL3J1bi9teXNxbGQ7IFx0XHRta2RpciAvZG9ja2VyLWVudHJ5cG9pbnQtaW5pdGRiLmQ7IFx0XHRteXNxbGQgLS12ZXJzaW9uOyBcdG15c3FsIC0tdmVyc2lvbiJ9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjlUMTk6Mzk6MzMuNTE1NzQ3NDIyWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXU7IFx0LiAvZXRjL29zLXJlbGVhc2U7IFx0eyBcdFx0ZWNobyAnW215c3FsLXRvb2xzLWNvbW11bml0eV0nOyBcdFx0ZWNobyAnbmFtZT1NeVNRTCBUb29scyBDb21tdW5pdHknOyBcdFx0ZWNobyBcImJhc2V1cmw9aHR0cHM6Ly9yZXBvLm15c3FsLmNvbS95dW0vbXlzcWwtdG9vbHMtY29tbXVuaXR5L2VsLyR7VkVSU0lPTl9JRCUlWy4tXSp9L1xcJGJhc2VhcmNoL1wiOyBcdFx0ZWNobyAnZW5hYmxlZD0xJzsgXHRcdGVjaG8gJ2dwZ2NoZWNrPTEnOyBcdFx0ZWNobyAnZ3Bna2V5PWZpbGU6Ly8vZXRjL3BraS9ycG0tZ3BnL1JQTS1HUEctS0VZLW15c3FsJzsgXHRcdGVjaG8gJ21vZHVsZV9ob3RmaXhlcz10cnVlJzsgXHR9IHwgdGVlIC9ldGMveXVtLnJlcG9zLmQvbXlzcWwtY29tbXVuaXR5LXRvb2xzLnJlcG8ifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjM5OjMzLjYyMzUzMjY5NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOViBNWVNRTF9TSEVMTF9WRVJTSU9OPTguMC4zMS0xLmVsOCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjQwOjA4LjY4MjQyNjY5M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBzZXQgLWV1eDsgXHRtaWNyb2RuZiBpbnN0YWxsIC15IFwibXlzcWwtc2hlbGwtJE1ZU1FMX1NIRUxMX1ZFUlNJT05cIjsgXHRtaWNyb2RuZiBjbGVhbiBhbGw7IFx0XHRteXNxbHNoIC0tdmVyc2lvbiJ9LHsiY3JlYXRlZCI6IjIwMjItMTEtMjlUMTk6NDA6MDkuNTcxMjcwMzM4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgVk9MVU1FIFsvdmFyL2xpYi9teXNxbF0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTo0MDowOS42ODQzNjkxNjhaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIENPUFkgZmlsZTplOWMyMjM1M2ExMTMzYjg5YzViY2EyNGVjYWNkMzQ4YWNkMDk0ZTUwZTVlNWM0NTM3NWE5OTdjNmIxZjA3MTkyIGluIC91c3IvbG9jYWwvYmluLyAifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjQwOjEwLjI1Njk3ODVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgbG4gLXMgdXNyL2xvY2FsL2Jpbi9kb2NrZXItZW50cnlwb2ludC5zaCAvZW50cnlwb2ludC5zaCAjIGJhY2t3YXJkcyBjb21wYXQifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjQwOjEwLjM2MDU1MDY4MVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiZG9ja2VyLWVudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0yOVQxOTo0MDoxMC40NjUzMDczODFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFWFBPU0UgMzMwNiAzMzA2MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTI5VDE5OjQwOjEwLjU2NzYwMzc5OFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCJteXNxbGRcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NTFjODJiNzRmYWJjODZhNGMzZThhZmI2ZGM2NGY3ODE2YTdjOTM1ZThlYTg4MDg2ZGI5ZGQ0MmQ2NzY2ZmI1NSIsInNoYTI1Njo0ZjZkMjY1YmI4MmYwN2QxYzAzYWNhZDAxYjU4NjEwZjk3NzJmYjMzNmE2MmFjOWI1ODczZGNmYzJiZWMzNjdkIiwic2hhMjU2OmYzN2IxYmRlMWZhNGU0YjA3ODFjYWY1NmJhZWVkMTUyNjk0NTE4NTNiZTUzNGZjYzNjNmNhZGRkNzdjNmNkMTUiLCJzaGEyNTY6Nzk3Njc4NGI4ZDBjNDgwZTQ1YWUwNDRlY2FmZjllMThkYWY2NzM1NDYzYWVmNjE2NzcxOWRmYjhhNTdkNDBiNiIsInNoYTI1Njo4ZDA5ODdjMDQ5MGI4NjdmNTI4ZTZmNTA0OGM3NWVmODk0ZDM5YmU2N2RlNGNkNTVmZTJjMGZlNmUwODdhNzI3Iiwic2hhMjU2OjNkYTk0MDE4Nzg3ZWRlNGFmYzI5NDU2M2FkYzM2NjYwYmRlZjlkODk0NmE4MGZhY2VjYWNjZjg2ZDljOTg0YzIiLCJzaGEyNTY6YmMwODVjYTAxY2QyYThmNmRmNTk2MzhmMWFkMGFjZWMwNDk2OTc0ZmU0NGJiOTg1ZGYxMzQ1MWRkYTE4OTE1NCIsInNoYTI1Njo2YjlmZjQ1ZjhiYTNkYjE2NjMxNDM1YmZlYTQ5ZTNlMjk2ODhiMzQ3ZDA5YzBjM2M2NjE0M2EzNTNmMzVhNzc4Iiwic2hhMjU2OmY3YjIwYmYwYTMwODY2ODE0OGQ1MTM0M2E2ODE2ZGJkNGJkNzE4ODE1YTNjOTc0MmU4OGQyZTgzZTRmZGY2ODEiLCJzaGEyNTY6NGMzZDQ5OWI3NDMwMzg5M2VhOTcyMGRlMjNkNTJmMzM4NTRmZGY3Mjg3MWRkYzJkZWQxMjk2NDM5YWVlYjY2OSIsInNoYTI1NjpiNTcwMWVjZjc1ZGVmZGZmNGZiMzU0MmU1NmJjYzY5MzRhNmE4MjJlMTNiNmQ5NmUzNjFmNjE5NTY2YTA2NjJiIl19fQ==",
+   "repoDigests": [
+    "mysql@sha256:66efaaa129f12b1c5871508bc8481a9b28c5b388d74ac5d2a6fc314359bbef91"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "oraclelinux",
+  "version": "8.7",
+  "idLike": [
+   "fedora"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "grype-mysql.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2022-12-07T08:17:22Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:8774b3b0460c2ab121c966fd48f53bdd61ef096fa9c88a32c98784cb3091ab2a",
+   "error": null
+  }
+ }
+}

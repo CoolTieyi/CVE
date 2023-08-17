@@ -1,0 +1,1203 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2015-5237",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2015-5237",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://github.com/google/protobuf/issues/760",
+     "https://bugzilla.redhat.com/show_bug.cgi?id=1256426",
+     "http://www.openwall.com/lists/oss-security/2015/08/27/2",
+     "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f@%3Cdev.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/ra28fed69eef3a71e5fe5daea001d0456b05b102044237330ec5c7c82@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc@%3Cissues.drill.apache.org%3E",
+     "https://lists.apache.org/thread.html/r17dc6f394429f6bffb5e4c66555d93c2e9923cbbdc5a93db9a56c1c7@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42e47994734cd1980ef3e204a40555336e10cc80096927aca2f37d90@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/re6d04a214424a97ea59c62190d79316edf311a0a6346524dfef3b940@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1263fa5b51e4ec3cb8f09ff40e4747428c71198e9bee93349ec96a3c@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r42ef6acfb0d86a2df0c2390702ecbe97d2104a331560f2790d17ca69@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb71dac1d9dd4e8a8ae3dbc033aeae514eda9be1263c1df3b42a530a2@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r320dc858da88846ba00bb077bcca2cdf75b7dde0f6eb3a3d60dba6a1@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r85c9a764b573c786224688cc906c27e28343e18f5b33387f94cae90f@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cuser.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cdev.flink.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5e52caf41dc49df55b4ee80758356fe1ff2a88179ff24c685de7c28d@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/rf7539287c90be979bac94af9aaba34118fbf968864944b4871af48dd@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r1d274d647b3c2060df9be21eade4ce56d3a59998cf19ac72662dd994@%3Ccommits.pulsar.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4886108206d4c535db9b20c813fe4723d4fe6a91b9278382af8b9d08@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/rb40dc9d63a5331bce8e80865b7fa3af9dd31e16555affd697b6f3526@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r5741f4dbdd129dbb9885f5fb170dc1b24a06b9313bedef5e67fded94@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r14fa8d38d5757254f1a2e112270c996711d514de2e3b01c93d397ab4@%3Cissues.spark.apache.org%3E",
+     "https://lists.apache.org/thread.html/r2ea33ce5591a9cb9ed52750b6ab42ab658f529a7028c3166ba93c7d5@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00d9ab1fc0f1daf14cd4386564dd84f7889404438d81462c86dfa836@%3Ccommon-dev.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r764fc66435ee4d185d359c28c0887d3e5866d7292a8d5598d9e7cbc4@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r0ca83171c4898dc92b86fa6f484a7be1dc96206765f4d01dce0f1b28@%3Ccommon-issues.hadoop.apache.org%3E",
+     "https://lists.apache.org/thread.html/r00097d0b5b6164ea428554007121d5dc1f88ba2af7b9e977a10572cd@%3Cdev.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/rd64381fb8f92d640c1975dc50dcdf1b8512e02a2a7b20292d3565cae@%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r4ef574a5621b0e670a3ce641e9922543e34f22bf4c9ee9584aa67fcf@%3Cissues.hbase.apache.org%3E",
+     "https://lists.apache.org/thread.html/r7fed8dd9bee494094e7011cf3c2ab75bd8754ea314c6734688c42932@%3Ccommon-issues.hadoop.apache.org%3E"
+    ],
+    "description": "protobuf allows remote authenticated attackers to cause a heap-based buffer overflow.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 8,
+       "impactScore": 6.4
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.8,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "<= 3.1.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-22570",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-22570",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.0",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IFX6KPNOFHYD6L4XES5PCM3QNSKZBOTQ/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3DVUZPALAQ34TQP6KFNLM4IZS6B32XSA/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BTRGBRC5KGCA4SK5MUNLPYJRAGXMBIYY/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NVTWVQRB5OCCTMKEQFY5MYED3DXDVSLP/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5PAGL5M2KGYPN3VEQCRJJE6NA7D5YG5X/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KQJB6ZPRLKV6WCMX2PRRRQBFAOXFBK6B/",
+     "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MRWRAXAFR3JR7XCFWTHC2KALSZKWACCE/",
+     "https://www.oracle.com/security-alerts/cpuapr2022.html",
+     "https://security.netapp.com/advisory/ntap-20220429-0005/"
+    ],
+    "description": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 2.1,
+       "exploitabilityScore": 3.9,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 5.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 3.15.0 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:google:protobuf:*:*:*:*:*:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "google.golang.org/protobuf",
+    "version": "v1.28.0",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-41803",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-41803",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://www.hashicorp.com/blog/category/consul",
+     "https://discuss.hashicorp.com/t/hcsec-2022-19-consul-auto-config-jwt-authorization-missing-input-validation/44627"
+    ],
+    "description": "HashiCorp Consul 1.8.1 up to 1.11.8, 1.12.4, and 1.13.1 do not properly validate the node or segment names prior to interpolation and usage in JWT claim assertions with the auto config RPC. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "= 1.12.4 || = 1.13.1 || = 1.12.4 || = 1.13.1 || >= 1.8.1, < 1.11.9 || >= 1.8.1, < 1.11.9 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-24687",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-24687",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2022-05-consul-ingress-gateway-panic-can-shutdown-servers/",
+     "https://discuss.hashicorp.com",
+     "https://security.netapp.com/advisory/ntap-20220331-0006/",
+     "https://security.gentoo.org/glsa/202208-09"
+    ],
+    "description": "HashiCorp Consul and Consul Enterprise 1.9.0 through 1.9.14, 1.10.7, and 1.11.2 clusters with at least one Ingress Gateway allow a user with service:write to register a specifically-defined service that can cause Consul servers to panic. Fixed in 1.9.15, 1.10.8, and 1.11.3.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+      "metrics": {
+       "baseScore": 3.5,
+       "exploitabilityScore": 6.8,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.8.0, < 1.9.15 || >= 1.8.0, < 1.9.15 || >= 1.10.0, < 1.10.8 || >= 1.10.0, < 1.10.8 || >= 1.11.0, < 1.11.3 || >= 1.11.0, < 1.11.3 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-29153",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29153",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+     "https://discuss.hashicorp.com",
+     "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/38393",
+     "https://security.netapp.com/advisory/ntap-20220602-0005/",
+     "https://security.gentoo.org/glsa/202208-09",
+     "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/"
+    ],
+    "description": "HashiCorp Consul and Consul Enterprise up to 1.9.16, 1.10.9, and 1.11.4 may allow server side request forgery when the Consul client agent follows redirects returned by HTTP health check endpoints. Fixed in 1.9.17, 1.10.10, and 1.11.5.",
+    "cvss": [
+     {
+      "version": "2.0",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+      "metrics": {
+       "baseScore": 5,
+       "exploitabilityScore": 10,
+       "impactScore": 2.9
+      },
+      "vendorMetadata": {}
+     },
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": ">= 1.11.0, < 1.11.5 || >= 1.11.0, < 1.11.5 || >= 1.10.0, < 1.10.10 || >= 1.10.0, < 1.10.10 || < 1.9.17 || < 1.9.17 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-40716",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-40716",
+    "namespace": "nvd:cpe",
+    "severity": "Medium",
+    "urls": [
+     "https://discuss.hashicorp.com/t/hcsec-2022-20-consul-service-mesh-intention-bypass-with-malicious-certificate-signing-request/44628",
+     "https://discuss.hashicorp.com"
+    ],
+    "description": "HashiCorp Consul and Consul Enterprise up to 1.11.8, 1.12.4, and 1.13.1 do not check for multiple SAN URI values in a CSR on the internal RPC endpoint, enabling leverage of privileged access to bypass service mesh intentions. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {}
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "unknown"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "cpe-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "namespace": "nvd:cpe",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+      ]
+     },
+     "found": {
+      "versionConstraint": "< 1.11.9 || < 1.11.9 || >= 1.12.0, < 1.12.5 || >= 1.13.0, < 1.13.2 || >= 1.12.0, < 1.12.5 || >= 1.13.0, < 1.13.2 (unknown)",
+      "cpes": [
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:-:*:*:*",
+       "cpe:2.3:a:hashicorp:consul:*:*:*:*:enterprise:*:*:*"
+      ]
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-5ffw-gxpp-mxpf",
+    "dataSource": "https://github.com/advisories/GHSA-5ffw-gxpp-mxpf",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-5ffw-gxpp-mxpf"
+    ],
+    "description": "containerd CRI plugin: Host memory exhaustion through ExecSync",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.5.13"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-31030",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-31030",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/containerd/containerd/security/advisories/GHSA-5ffw-gxpp-mxpf",
+      "http://www.openwall.com/lists/oss-security/2022/06/07/1",
+      "https://github.com/containerd/containerd/commit/c1bcabb4541930f643aa36a2b38655e131346382",
+      "https://www.debian.org/security/2022/dsa-5162",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/REOZCUAPCA7NFDWYBDYX6EYXWLHABKBO/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WSIGDBHAB3I75JBJNGWEPBTJPS2FOVHD/"
+     ],
+     "description": "containerd is an open source container runtime. A bug was found in the containerd's CRI implementation where programs inside a container can cause the containerd daemon to consume memory without bound during invocation of the `ExecSync` API. This can cause containerd to consume all available memory on the computer, denying service to other legitimate workloads. Kubernetes and crictl can both be configured to use containerd's CRI implementation; `ExecSync` may be used when running probes or when executing processes via an \"exec\" facility. This bug has been fixed in containerd 1.6.6 and 1.5.13. Users should update to these versions to resolve the issue. Users unable to upgrade should ensure that only trusted images and commands are used.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 5.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.5.13 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.5.9",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.5.9:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.5.9",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rs6Xg1gtIxaeyG+Smsb/0xaSDu1VgFhOCKBXxMxbsF4=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-crp2-qrr5-8pq7",
+    "dataSource": "https://github.com/advisories/GHSA-crp2-qrr5-8pq7",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-crp2-qrr5-8pq7"
+    ],
+    "description": "containerd CRI plugin: Insecure handling of image volumes",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.5.10"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-23648",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-23648",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7",
+      "https://github.com/containerd/containerd/releases/tag/v1.4.13",
+      "https://github.com/containerd/containerd/releases/tag/v1.6.1",
+      "https://github.com/containerd/containerd/releases/tag/v1.5.10",
+      "https://github.com/containerd/containerd/commit/10f428dac7cec44c864e1b830a4623af27a9fc70",
+      "https://www.debian.org/security/2022/dsa-5091",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OCCARJ6FU4MWBTXHZNMS7NELPDBIX2VO/",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AUDQUQBZJGBWJPMRVB6QCCCRF7O3O4PA/",
+      "http://packetstormsecurity.com/files/166421/containerd-Image-Volume-Insecure-Handling.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HFTS2EF3S7HNYSNZSEJZIJHPRU7OPUV3/"
+     ],
+     "description": "containerd is a container runtime available as a daemon for Linux and Windows. A bug was found in containerd prior to versions 1.6.1, 1.5.10, and 1.14.12 where containers launched through containerd’s CRI implementation on Linux with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd’s CRI implementation. This bug has been fixed in containerd 1.6.1, 1.5.10, and 1.4.12. Users should update to these versions to resolve the issue.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.5.0,<1.5.10 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/containerd/containerd",
+    "version": "v1.5.9",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:containerd:containerd:v1.5.9:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/containerd/containerd@v1.5.9",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rs6Xg1gtIxaeyG+Smsb/0xaSDu1VgFhOCKBXxMxbsF4=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hj93-5fg3-3chr",
+    "dataSource": "https://github.com/advisories/GHSA-hj93-5fg3-3chr",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-hj93-5fg3-3chr"
+    ],
+    "description": "HashiCorp Consul Ingress Gateway Panic Can Shutdown Servers",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.10.8"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-24687",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-24687",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2022-05-consul-ingress-gateway-panic-can-shutdown-servers/",
+      "https://discuss.hashicorp.com",
+      "https://security.netapp.com/advisory/ntap-20220331-0006/",
+      "https://security.gentoo.org/glsa/202208-09"
+     ],
+     "description": "HashiCorp Consul and Consul Enterprise 1.9.0 through 1.9.14, 1.10.7, and 1.11.2 clusters with at least one Ingress Gateway allow a user with service:write to register a specifically-defined service that can cause Consul servers to panic. Fixed in 1.9.15, 1.10.8, and 1.11.3.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 3.5,
+        "exploitabilityScore": 6.8,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.10.0,<=1.10.7 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-m69r-9g56-7mv8",
+    "dataSource": "https://github.com/advisories/GHSA-m69r-9g56-7mv8",
+    "namespace": "github:language:go",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-m69r-9g56-7mv8"
+    ],
+    "description": "HashiCorp Consul vulnerable to authorization bypass",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.11.9"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-40716",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-40716",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://discuss.hashicorp.com/t/hcsec-2022-20-consul-service-mesh-intention-bypass-with-malicious-certificate-signing-request/44628",
+      "https://discuss.hashicorp.com"
+     ],
+     "description": "HashiCorp Consul and Consul Enterprise up to 1.11.8, 1.12.4, and 1.13.1 do not check for multiple SAN URI values in a CSR on the internal RPC endpoint, enabling leverage of privileged access to bypass service mesh intentions. Fixed in 1.11.9, 1.12.5, and 1.13.2.\"",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<1.11.9 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-q6h7-4qgw-2j9p",
+    "dataSource": "https://github.com/advisories/GHSA-q6h7-4qgw-2j9p",
+    "namespace": "github:language:go",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-q6h7-4qgw-2j9p"
+    ],
+    "description": "Hashicorp Consul HTTP health check endpoints returning an HTTP redirect may be abused as SSRF vector",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "1.10.10"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-29153",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-29153",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://discuss.hashicorp.com",
+      "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/38393",
+      "https://security.netapp.com/advisory/ntap-20220602-0005/",
+      "https://security.gentoo.org/glsa/202208-09",
+      "https://discuss.hashicorp.com/t/hcsec-2022-10-consul-s-http-health-check-may-allow-server-side-request-forgery/"
+     ],
+     "description": "HashiCorp Consul and Consul Enterprise up to 1.9.16, 1.10.9, and 1.11.4 may allow server side request forgery when the Consul client agent follows redirects returned by HTTP health check endpoints. Fixed in 1.9.17, 1.10.10, and 1.11.5.",
+     "cvss": [
+      {
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": ">=1.10.0,<1.10.10 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/hashicorp/consul",
+    "version": "v1.10.4",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:hashicorp:consul:v1.10.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/hashicorp/consul@v1.10.4",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:rqKmYP49KnCSSxbiaJ4J2CnLA3zUAmI6KwASKxmPqFc=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qq97-vm5h-rrhg",
+    "dataSource": "https://github.com/advisories/GHSA-qq97-vm5h-rrhg",
+    "namespace": "github:language:go",
+    "severity": "Low",
+    "urls": [
+     "https://github.com/advisories/GHSA-qq97-vm5h-rrhg"
+    ],
+    "description": "OCI Manifest Type Confusion Issue",
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "2.8.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "go-module-matcher",
+     "searchedBy": {
+      "language": "go",
+      "namespace": "github:language:go"
+     },
+     "found": {
+      "versionConstraint": "<2.8.0 (unknown)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "github.com/docker/distribution",
+    "version": "v2.7.1+incompatible",
+    "type": "go-module",
+    "locations": [
+     {
+      "path": "/usr/local/bin/traefik",
+      "layerID": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365"
+     }
+    ],
+    "language": "go",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:docker:distribution:v2.7.1+incompatible:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:golang/github.com/docker/distribution@v2.7.1+incompatible",
+    "upstreams": [],
+    "metadataType": "GolangBinMetadata",
+    "metadata": {
+     "goCompiledVersion": "go1.19.3",
+     "architecture": "amd64",
+     "h1Digest": "h1:a5mlkVzth6W5A4fOsS3D2EO5BUmsJpcB+cRlLU7cSug=",
+     "mainModule": "github.com/traefik/traefik/v2"
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "traefik",
+   "imageID": "sha256:d3cd2c35d32c1bfe78d93c2fda68314b39de4f405ff4f82c86eebd3420d108b3",
+   "manifestDigest": "sha256:2d5fc71b59712c73874503729b734f4bbdcd1d62d17565953e5948a44c5a9690",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "traefik:latest"
+   ],
+   "imageSize": 134987778,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5",
+     "size": 5581140
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:694ee27c6a0b97918e1eed0204b26103fa760f66f4b24a887e00e9f59fd72bb7",
+     "size": 1754379
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:aa03065005e92a9684632673c1f8f8665de19dbe6d767605181a0c684bb5f365",
+     "size": 127651840
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b71a966b3625f7b0f59a8819abdbf01e5b3c9b62981d17fd802b1d76f31d3e5a",
+     "size": 419
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo0NTk1LCJkaWdlc3QiOiJzaGEyNTY6ZDNjZDJjMzVkMzJjMWJmZTc4ZDkzYzJmZGE2ODMxNGIzOWRlNGY0MDVmZjRmODJjODZlZWJkMzQyMGQxMDhiMyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1ODY2NDk2LCJkaWdlc3QiOiJzaGEyNTY6MzRkNWViYWE1NDEwZDJhYjQxNTRiYmQ3YzNjOTljMzg1ZWM1MDllYjljMWQwM2Q1NDg2YWZmMDFiYmQ2MThjNSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjI4NTE4NDAsImRpZ2VzdCI6InNoYTI1Njo2OTRlZTI3YzZhMGI5NzkxOGUxZWVkMDIwNGIyNjEwM2ZhNzYwZjY2ZjRiMjRhODg3ZTAwZTlmNTlmZDcyYmI3In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTI3NjU1NDI0LCJkaWdlc3QiOiJzaGEyNTY6YWEwMzA2NTAwNWU5MmE5Njg0NjMyNjczYzFmOGY4NjY1ZGUxOWRiZTZkNzY3NjA1MTgxYTBjNjg0YmI1ZjM2NSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjIwNDgsImRpZ2VzdCI6InNoYTI1NjpiNzFhOTY2YjM2MjVmN2IwZjU5YTg4MTlhYmRiZjAxZTViM2M5YjYyOTgxZDE3ZmQ4MDJiMWQ3NmYzMWQzZTVhIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiODAvdGNwIjp7fX0sIlR0eSI6ZmFsc2UsIk9wZW5TdGRpbiI6ZmFsc2UsIlN0ZGluT25jZSI6ZmFsc2UsIkVudiI6WyJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL3NiaW46L3Vzci9iaW46L3NiaW46L2JpbiJdLCJDbWQiOlsidHJhZWZpayJdLCJJbWFnZSI6InNoYTI1NjphYWJiMWYzYzA5MzdmYjJiYTViNDc0NWU3YjdjNzk0MTVmOTliZTE2NzA1OTE5ZTlkNzg4NTE1YmZlMzFlZjk1IiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6IiIsIkVudHJ5cG9pbnQiOlsiL2VudHJ5cG9pbnQuc2giXSwiT25CdWlsZCI6bnVsbCwiTGFiZWxzIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbiI6IkEgbW9kZXJuIHJldmVyc2UtcHJveHkiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbiI6Imh0dHBzOi8vZG9jcy50cmFlZmlrLmlvIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS90cmFlZmlrL3RyYWVmaWsiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJUcmFlZmlrIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnVybCI6Imh0dHBzOi8vdHJhZWZpay5pbyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJUcmFlZmlrIExhYnMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6InYyLjkuNSJ9fSwiY29udGFpbmVyIjoiN2I3MjE3ZDI5ZDE1ZDM1MThlMTgyOTIzNGNjMmY5NjdkZjRkZTgyYmI0MzE1MmQ2MWE0YWU0OTljYzMwZTVhYSIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiI3YjcyMTdkMjlkMTUiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjgwL3RjcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yPVRyYWVmaWsgTGFicyBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsPWh0dHBzOi8vdHJhZWZpay5pbyBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlPWh0dHBzOi8vZ2l0aHViLmNvbS90cmFlZmlrL3RyYWVmaWsgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnRpdGxlPVRyYWVmaWsgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uPUEgbW9kZXJuIHJldmVyc2UtcHJveHkgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb249djIuOS41IG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kb2N1bWVudGF0aW9uPWh0dHBzOi8vZG9jcy50cmFlZmlrLmlvIl0sIkltYWdlIjoic2hhMjU2OmFhYmIxZjNjMDkzN2ZiMmJhNWI0NzQ1ZTdiN2M3OTQxNWY5OWJlMTY3MDU5MTllOWQ3ODg1MTViZmUzMWVmOTUiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiIiwiRW50cnlwb2ludCI6WyIvZW50cnlwb2ludC5zaCJdLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoiQSBtb2Rlcm4gcmV2ZXJzZS1wcm94eSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kb2N1bWVudGF0aW9uIjoiaHR0cHM6Ly9kb2NzLnRyYWVmaWsuaW8iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlIjoiaHR0cHM6Ly9naXRodWIuY29tL3RyYWVmaWsvdHJhZWZpayIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZSI6IlRyYWVmaWsiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsIjoiaHR0cHM6Ly90cmFlZmlrLmlvIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvciI6IlRyYWVmaWsgTGFicyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZXJzaW9uIjoidjIuOS41In19LCJjcmVhdGVkIjoiMjAyMi0xMS0xN1QyMDoyMzowOS43Njk0MzA3NTJaIiwiZG9ja2VyX3ZlcnNpb24iOiIyMC4xMC4xMiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA4LTA5VDE3OjIwOjAwLjk2OTQ3MzQ0M1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6Zjc3ZTNmNTFmMDIwODkwZDIyOTk3ZTZjMmNhOTg5NjhiNzViOGJjOGM0NjMzNDFhMjAxMGZmMDY1NWQ0Yzg4ZiBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMDgtMDlUMTc6MjA6MDEuMDgyOTA4MTgxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQ01EIFtcIi9iaW4vc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMC0wN1QwNDoyMToxNC45NzM5ODMyNTZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgYXBrIC0tbm8tY2FjaGUgYWRkIGNhLWNlcnRpZmljYXRlcyB0emRhdGEifSx7ImNyZWF0ZWQiOiIyMDIyLTExLTE3VDIwOjIzOjA5LjAyNDc0NDY5NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBzZXQgLWV4OyBcdGFwa0FyY2g9XCIkKGFwayAtLXByaW50LWFyY2gpXCI7IFx0Y2FzZSBcIiRhcGtBcmNoXCIgaW4gXHRcdGFybWhmKSBhcmNoPSdhcm12NicgOzsgXHRcdGFhcmNoNjQpIGFyY2g9J2FybTY0JyA7OyBcdFx0eDg2XzY0KSBhcmNoPSdhbWQ2NCcgOzsgXHRcdHMzOTB4KSBhcmNoPSdzMzkweCcgOzsgXHRcdCopIGVjaG8gXHUwMDNlXHUwMDI2MiBcImVycm9yOiB1bnN1cHBvcnRlZCBhcmNoaXRlY3R1cmU6ICRhcGtBcmNoXCI7IGV4aXQgMSA7OyBcdGVzYWM7IFx0d2dldCAtLXF1aWV0IC1PIC90bXAvdHJhZWZpay50YXIuZ3ogXCJodHRwczovL2dpdGh1Yi5jb20vdHJhZWZpay90cmFlZmlrL3JlbGVhc2VzL2Rvd25sb2FkL3YyLjkuNS90cmFlZmlrX3YyLjkuNV9saW51eF8kYXJjaC50YXIuZ3pcIjsgXHR0YXIgeHp2ZiAvdG1wL3RyYWVmaWsudGFyLmd6IC1DIC91c3IvbG9jYWwvYmluIHRyYWVmaWs7IFx0cm0gLWYgL3RtcC90cmFlZmlrLnRhci5nejsgXHRjaG1vZCAreCAvdXNyL2xvY2FsL2Jpbi90cmFlZmlrIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0xN1QyMDoyMzowOS4zNzY3MjU1MjRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIENPUFkgZmlsZTo1OWEyMTlhMWZiN2E5ZGM4OTRhN2E5YTQ3MThmYTk3ZmQyNGFkYjBhNGE2NDU1MjQwZWMyYWIwMTgzZGE3OTZlIGluIC8gIn0seyJjcmVhdGVkIjoiMjAyMi0xMS0xN1QyMDoyMzowOS40NzE1NzU0MDlaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFWFBPU0UgODAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0xN1QyMDoyMzowOS41NzA2NzQwOVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVOVFJZUE9JTlQgW1wiL2VudHJ5cG9pbnQuc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMi0xMS0xN1QyMDoyMzowOS42NjgzMjMxNDhaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1widHJhZWZpa1wiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTExLTE3VDIwOjIzOjA5Ljc2OTQzMDc1MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3I9VHJhZWZpayBMYWJzIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmw9aHR0cHM6Ly90cmFlZmlrLmlvIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2U9aHR0cHM6Ly9naXRodWIuY29tL3RyYWVmaWsvdHJhZWZpayBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGU9VHJhZWZpayBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZGVzY3JpcHRpb249QSBtb2Rlcm4gcmV2ZXJzZS1wcm94eSBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbj12Mi45LjUgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRvY3VtZW50YXRpb249aHR0cHM6Ly9kb2NzLnRyYWVmaWsuaW8iLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6MzRkNWViYWE1NDEwZDJhYjQxNTRiYmQ3YzNjOTljMzg1ZWM1MDllYjljMWQwM2Q1NDg2YWZmMDFiYmQ2MThjNSIsInNoYTI1Njo2OTRlZTI3YzZhMGI5NzkxOGUxZWVkMDIwNGIyNjEwM2ZhNzYwZjY2ZjRiMjRhODg3ZTAwZTlmNTlmZDcyYmI3Iiwic2hhMjU2OmFhMDMwNjUwMDVlOTJhOTY4NDYzMjY3M2MxZjhmODY2NWRlMTlkYmU2ZDc2NzYwNTE4MWEwYzY4NGJiNWYzNjUiLCJzaGEyNTY6YjcxYTk2NmIzNjI1ZjdiMGY1OWE4ODE5YWJkYmYwMWU1YjNjOWI2Mjk4MWQxN2ZkODAyYjFkNzZmMzFkM2U1YSJdfX0=",
+   "repoDigests": [
+    "traefik@sha256:ac1480ce3203541705b01d6dce40ef4bf563cdb29d5b00db88cc396fa9fa9cd5"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.15.6",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.53.1",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "grype-traefik.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/root/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   },
+   "show-suppressed": false
+  },
+  "db": {
+   "built": "2022-12-07T08:17:22Z",
+   "schemaVersion": 5,
+   "location": "/root/.cache/grype/db/5",
+   "checksum": "sha256:8774b3b0460c2ab121c966fd48f53bdd61ef096fa9c88a32c98784cb3091ab2a",
+   "error": null
+  }
+ }
+}

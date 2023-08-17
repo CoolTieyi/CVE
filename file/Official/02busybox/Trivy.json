@@ -1,0 +1,50 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "busybox",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:9d5226e6ce3fb6aee2822206a5ef85f38c303d2b37bfc894b419fca2c0501269",
+    "DiffIDs": [
+      "sha256:40cf597a9181e86497f4121c604f9f0ab208950a98ca21db883f26b0a548a2eb"
+    ],
+    "RepoTags": [
+      "busybox:latest"
+    ],
+    "RepoDigests": [
+      "busybox@sha256:59f225fdf34f28a07d22343ee415ee417f6b8365cf4a0d3a2933cbd8fd7cf8c1"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "65aaed1d1f89cd3cd5aac9137c4786831e99a845ad823496c6008a22a725c780",
+      "created": "2022-11-18T01:19:29.442257773Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-11-18T01:19:29Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:36d9f497f679d56737ac1379d93f7b6a2e4c814e38e868a5a8e719c4b226ef6e in / "
+        },
+        {
+          "created": "2022-11-18T01:19:29Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"sh\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:40cf597a9181e86497f4121c604f9f0ab208950a98ca21db883f26b0a548a2eb"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:688db7a53b2e8d0358c0e1f309856290bb25ce7acabbf9938f580582e921833f"
+      }
+    }
+  }
+}

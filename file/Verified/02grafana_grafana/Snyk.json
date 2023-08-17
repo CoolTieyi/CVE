@@ -1,0 +1,3092 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "ca-certificates/ca-certificates@20220614-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "ca-certificates/ca-certificates@20220614-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "ca-certificates/ca-certificates@20220614-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "ca-certificates/ca-certificates@20220614-r0",
+        "openssl/libcrypto1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libcrypto1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "apk-tools/apk-tools@2.12.7-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314621",
+      "cpes": [],
+      "title": "Use After Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=9816136fe31d92ace4037d5da5257f763aeeb4eb",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=c3829dd8825c654652201e16f8a0a0c46ee3f344",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:40.725795Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:05.088415Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:07:54.575544Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=8818064ce3c3c0f1b740a5aaba2a987e75bfbafd)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9816136fe31d92ace4037d5da5257f763aeeb4eb)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=c3829dd8825c654652201e16f8a0a0c46ee3f344)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0215"
+        ],
+        "CWE": [
+          "CWE-416"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.483635Z",
+      "disclosureTime": "2023-02-08T20:15:24.107000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.455207Z",
+      "modificationTime": "2023-03-17T15:25:01.330206Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314622",
+      "cpes": [],
+      "title": "Access of Resource Using Incompatible Type ('Type Confusion')",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=2f7530077e0ef79d98718138716bc51ca0cad658",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=fd2af07dc083a350c959147097003a14a5e8ac4d",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T11:02:49.901461Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-08T14:09:55.912158Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2023-02-22T01:10:16.512288Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThere is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2c6c9d439b484e1ba9830d8454a34fa4f80fdfe9)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=2f7530077e0ef79d98718138716bc51ca0cad658)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=fd2af07dc083a350c959147097003a14a5e8ac4d)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-0286"
+        ],
+        "CWE": [
+          "CWE-843"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:34:37.842698Z",
+      "disclosureTime": "2023-02-08T20:15:24.267000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:37.826943Z",
+      "modificationTime": "2023-03-11T15:25:01.577066Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314628",
+      "cpes": [],
+      "title": "CVE-2022-4304",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:28.056697Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T14:06:47.788308Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-25T01:10:09.572394Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nA timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4304"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:23.536662Z",
+      "disclosureTime": "2023-02-08T20:15:23.887000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:34:59.076540Z",
+      "modificationTime": "2023-02-25T01:10:09.589347Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    },
+    {
+      "id": "SNYK-ALPINE315-OPENSSL-3314629",
+      "cpes": [],
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.1t-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://www.openssl.org/news/secadv/20230207.txt",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=63bcf189be73a9cc1264059bed6f57974be74a83",
+          "title": "openssl-security@openssl.org"
+        },
+        {
+          "url": "https://git.openssl.org/gitweb/?p=openssl.git%3Ba=commitdiff%3Bh=bbcf509bd046b34cca19c766bbddc31683d0858b",
+          "title": "openssl-security@openssl.org"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-02-08T11:02:33.065415Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-19T01:10:04.885061Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-02-21T14:05:10.113489Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Alpine:3.15`._\n_See `How to fix?` for `Alpine:3.15` relevant fixed versions and status._\n\nThe function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the &#34;name&#34; (e.g. &#34;CERTIFICATE&#34;), any header data and the payload data. If the function succeeds then the &#34;name_out&#34;, &#34;header&#34; and &#34;data&#34; arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.\n## Remediation\nUpgrade `Alpine:3.15` `openssl` to version 1.1.1t-r0 or higher.\n## References\n- [openssl-security@openssl.org](https://www.openssl.org/news/secadv/20230207.txt)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=63bcf189be73a9cc1264059bed6f57974be74a83)\n- [openssl-security@openssl.org](https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=bbcf509bd046b34cca19c766bbddc31683d0858b)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-4450"
+        ],
+        "CWE": [
+          "CWE-415"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "openssl",
+      "creationTime": "2023-02-08T02:35:24.181756Z",
+      "disclosureTime": "2023-02-08T20:15:23.973000Z",
+      "packageManager": "alpine:3.15",
+      "publicationTime": "2023-02-08T02:35:02.821119Z",
+      "modificationTime": "2023-02-25T01:10:07.323148Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|grafana/grafana@latest",
+        "libretls/libretls@3.3.4-r3",
+        "openssl/libssl1.1@1.1.1q-r0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "openssl/libssl1.1",
+      "version": "1.1.1q-r0",
+      "nearestFixedInVersion": "1.1.1t-r0",
+      "dockerfileInstruction": "apk add --no-cache ca-certificates bash tzdata musl-utils",
+      "dockerBaseImage": "grafana/grafana:9.3.6"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 24,
+  "org": "cooltieyi",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "apk",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {
+    "baseImage": "grafana/grafana:9.3.6",
+    "baseImageRemediation": {
+      "code": "REMEDIATION_AVAILABLE",
+      "advice": [
+        {
+          "message": "Base Image             Vulnerabilities  Severity\ngrafana/grafana:9.3.6  4                0 critical, 3 high, 1 medium, 0 low\n"
+        },
+        {
+          "message": "Recommendations for base image upgrade:\n",
+          "bold": true
+        },
+        {
+          "message": "Minor upgrades",
+          "bold": true
+        },
+        {
+          "message": "Base Image              Vulnerabilities  Severity\ngrafana/grafana:latest  0                0 critical, 0 high, 0 medium, 0 low\n"
+        },
+        {
+          "message": "Major upgrades",
+          "bold": true
+        },
+        {
+          "message": "Base Image                  Vulnerabilities  Severity\ngrafana/grafana:9799770991  0                0 critical, 0 high, 0 medium, 0 low\n"
+        }
+      ]
+    }
+  },
+  "summary": "32 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 4,
+  "projectName": "docker-image|grafana/grafana",
+  "platform": "linux/amd64",
+  "hasUnknownVersions": false,
+  "path": "grafana/grafana/grafana"
+}

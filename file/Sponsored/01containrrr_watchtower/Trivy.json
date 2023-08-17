@@ -1,0 +1,116 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "containrrr/watchtower",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:f847e1adb570c2cc11d1e613cad97baf3cdfe83ddd3c1a29ada848cfbd4f7f3f",
+    "DiffIDs": [
+      "sha256:3a26d205940c7fc9083fa9d5d9a7729c3d5c6eea72c814c7543d9a4b59ffcaaa",
+      "sha256:8b277bccf8116aa0fa2b8c71d17096187c5a46eae9353bf1f06ee720dc1eed15",
+      "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611"
+    ],
+    "RepoTags": [
+      "containrrr/watchtower:latest"
+    ],
+    "RepoDigests": [
+      "containrrr/watchtower@sha256:0ca7a88fd0748aa6f32e50b67eb11148cdb989fc595264c2778c85297a2c1abe"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-01-30T00:20:33.766949736Z",
+      "history": [
+        {
+          "created": "2023-01-30T00:20:32Z",
+          "created_by": "LABEL com.centurylinklabs.watchtower=true",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-30T00:20:32Z",
+          "created_by": "COPY /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-30T00:20:32Z",
+          "created_by": "COPY /usr/share/zoneinfo /usr/share/zoneinfo # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-30T00:20:32Z",
+          "created_by": "EXPOSE map[8080/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-30T00:20:33Z",
+          "created_by": "COPY watchtower / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-30T00:20:33Z",
+          "created_by": "ENTRYPOINT [\"/watchtower\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:3a26d205940c7fc9083fa9d5d9a7729c3d5c6eea72c814c7543d9a4b59ffcaaa",
+          "sha256:8b277bccf8116aa0fa2b8c71d17096187c5a46eae9353bf1f06ee720dc1eed15",
+          "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/watchtower"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "com.centurylinklabs.watchtower": "true"
+        },
+        "WorkingDir": "/"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "watchtower",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-41723",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.5.0",
+          "FixedVersion": "0.7.0",
+          "Layer": {
+            "DiffID": "sha256:c3544bba169316d212dac1f6ca64d7fbda71fc0c35ba5bc58657f1d7a0b71611"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41723",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "[http2/hpack: avoid quadratic complexity in hpack decoding]",
+          "Description": "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption in the HPACK decoder, sufficient to cause a denial of service from a small number of small requests.",
+          "Severity": "LOW",
+          "References": [
+            "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+            "https://go.dev/cl/468135",
+            "https://go.dev/cl/468295",
+            "https://go.dev/issue/57855",
+            "https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41723",
+            "https://pkg.go.dev/vuln/GO-2023-1571",
+            "https://vuln.go.dev/ID/GO-2023-1571.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

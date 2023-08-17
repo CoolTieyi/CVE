@@ -1,0 +1,1150 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "rabbitmq",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "ubuntu",
+      "Name": "20.04"
+    },
+    "ImageID": "sha256:4e32840503137061fe8acee4130abb18a07ef208dcc927e67a0d3929295aa07a",
+    "DiffIDs": [
+      "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a",
+      "sha256:53ad5b5284ae0591f1e85c2d446dee86329152eb89d2c91e0ab32fce3e3763e7",
+      "sha256:c9057bf62d1fac474fd99957fcbd179a45ee429c69ce5614e2601408aba3f172",
+      "sha256:aad0afc11ed999e1c8fdaf9436ecff326b1ba318cc87c3e9ffb4b9873d32e233",
+      "sha256:79914e721fd4eef373050ba653e54cc1ab9204f827a9bac4d1d6b92088a7988d",
+      "sha256:2ad9f7a0e1ad1cdc35e65b82f0696b04927537d83f15019f0d7dfb9a0f0bc793",
+      "sha256:ce84ffb368e7e85fbd4ebadd588ef11d37f9458080e4b227ebde5fa1f71c81be",
+      "sha256:db777b4d75c58c3da8cf2cc9779ae3da04dd4cf599318d8113bdceedc84e22b6",
+      "sha256:3aba6c6e0333341798a34ac69e806c9d5e8dc1f3a6c514c809de0022c20fc5e0"
+    ],
+    "RepoTags": [
+      "rabbitmq:latest"
+    ],
+    "RepoDigests": [
+      "rabbitmq@sha256:a642b685c8e37987815bce1c3deecad415f906a38a6ba71a0d739f2315b11bf3"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "7282d78444bb452dbe90ba531aedfb38ebe1fbe3381bee5c40e5bdfbb8db78ab",
+      "created": "2022-11-29T04:27:31.478967177Z",
+      "docker_version": "20.10.12",
+      "history": [
+        {
+          "created": "2022-10-25T01:53:34Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:7633003155a1059419aa1a6756fafb6e4f419d65bff7feb7c945de1e29dccb1e in / "
+        },
+        {
+          "created": "2022-10-25T01:53:35Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-25T02:21:38Z",
+          "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tgosu \t\ttzdata \t; \trm -rf /var/lib/apt/lists/*; \tgosu nobody true"
+        },
+        {
+          "created": "2022-10-25T02:21:38Z",
+          "created_by": "/bin/sh -c #(nop)  ARG PGP_KEYSERVER=keyserver.ubuntu.com",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:20:56Z",
+          "created_by": "/bin/sh -c #(nop)  ENV OPENSSL_VERSION=1.1.1s",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:20:56Z",
+          "created_by": "/bin/sh -c #(nop)  ENV OPENSSL_SOURCE_SHA256=c5ac01e760ee6ff0dab61d6b2bbd30146724d063eb322180c6f18a6f74e4b6aa",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:20:56Z",
+          "created_by": "/bin/sh -c #(nop)  ENV OPENSSL_PGP_KEY_IDS=0x8657ABB260F056B1E5190839D9C4D26D0E604491 0xB7C1C14360F353A36862E4D5231C84CDDCC69C45 0xC1F33DD8CE1D4CC613AF14DA9195C48241FBF7DD 0x95A9908DDFA16830BE9FB9003D30A3A9FF1360DC 0x7953AC1FBC3DC8B3B292393ED5E9E43F7DF9EE8C 0xA21FAB74B0088AA361152586B8EF1A6BA9DA2D5C 0xE5E52560DD91C556DDBDA5D02064C53641C25E5D",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:20:57Z",
+          "created_by": "/bin/sh -c #(nop)  ENV OTP_VERSION=25.1.2",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:20:57Z",
+          "created_by": "/bin/sh -c #(nop)  ENV OTP_SOURCE_SHA256=5442dea694e7555d479d80bc81f1428020639c258f8e40b2052732d1cc95cca5",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:23:55Z",
+          "created_by": "|1 PGP_KEYSERVER=keyserver.ubuntu.com /bin/sh -c set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install --yes --no-install-recommends \t\tautoconf \t\tca-certificates \t\tdpkg-dev \t\tgcc \t\tg++ \t\tgnupg \t\tlibncurses5-dev \t\tmake \t\twget \t; \trm -rf /var/lib/apt/lists/*; \t\tOPENSSL_SOURCE_URL=\"https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz\"; \tOPENSSL_PATH=\"/usr/local/src/openssl-$OPENSSL_VERSION\"; \tOPENSSL_CONFIG_DIR=/usr/local/etc/ssl; \t\twget --progress dot:giga --output-document \"$OPENSSL_PATH.tar.gz.asc\" \"$OPENSSL_SOURCE_URL.asc\"; \twget --progress dot:giga --output-document \"$OPENSSL_PATH.tar.gz\" \"$OPENSSL_SOURCE_URL\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tfor key in $OPENSSL_PGP_KEY_IDS; do \t\tgpg --batch --keyserver \"$PGP_KEYSERVER\" --recv-keys \"$key\"; \tdone; \tgpg --batch --verify \"$OPENSSL_PATH.tar.gz.asc\" \"$OPENSSL_PATH.tar.gz\"; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \techo \"$OPENSSL_SOURCE_SHA256 *$OPENSSL_PATH.tar.gz\" | sha256sum --check --strict -; \tmkdir -p \"$OPENSSL_PATH\"; \ttar --extract --file \"$OPENSSL_PATH.tar.gz\" --directory \"$OPENSSL_PATH\" --strip-components 1; \t\tcd \"$OPENSSL_PATH\"; \tdebMultiarch=\"$(dpkg-architecture --query DEB_HOST_MULTIARCH)\"; \tMACHINE=\"$(dpkg-architecture --query DEB_BUILD_GNU_CPU)\" \tRELEASE=\"4.x.y-z\" \tSYSTEM='Linux' \tBUILD='???' \t./config \t\t--openssldir=\"$OPENSSL_CONFIG_DIR\" \t\t--libdir=\"lib/$debMultiarch\" \t\t-Wl,-rpath=/usr/local/lib \t; \tmake -j \"$(getconf _NPROCESSORS_ONLN)\"; \tmake install_sw install_ssldirs; \tcd ..; \trm -rf \"$OPENSSL_PATH\"*; \tldconfig; \trmdir \"$OPENSSL_CONFIG_DIR/certs\" \"$OPENSSL_CONFIG_DIR/private\"; \tln -sf /etc/ssl/certs /etc/ssl/private \"$OPENSSL_CONFIG_DIR\"; \topenssl version; \t\tOTP_SOURCE_URL=\"https://github.com/erlang/otp/releases/download/OTP-$OTP_VERSION/otp_src_$OTP_VERSION.tar.gz\"; \tOTP_PATH=\"/usr/local/src/otp-$OTP_VERSION\"; \t\tmkdir -p \"$OTP_PATH\"; \twget --progress dot:giga --output-document \"$OTP_PATH.tar.gz\" \"$OTP_SOURCE_URL\"; \techo \"$OTP_SOURCE_SHA256 *$OTP_PATH.tar.gz\" | sha256sum --check --strict -; \ttar --extract --file \"$OTP_PATH.tar.gz\" --directory \"$OTP_PATH\" --strip-components 1; \t\tcd \"$OTP_PATH\"; \texport ERL_TOP=\"$OTP_PATH\"; \t./otp_build autoconf; \tCFLAGS=\"$(dpkg-buildflags --get CFLAGS)\"; export CFLAGS; \texport CFLAGS=\"$CFLAGS -Wl,-rpath=/usr/local/lib\"; \thostArch=\"$(dpkg-architecture --query DEB_HOST_GNU_TYPE)\"; \tbuildArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \tdpkgArch=\"$(dpkg --print-architecture)\"; dpkgArch=\"${dpkgArch##*-}\"; \tjitFlag=; \tcase \"$dpkgArch\" in \t\tamd64) jitFlag='--enable-jit' ;; \tesac; \t./configure \t\t--host=\"$hostArch\" \t\t--build=\"$buildArch\" \t\t--disable-dynamic-ssl-lib \t\t--disable-hipe \t\t--disable-sctp \t\t--disable-silent-rules \t\t--enable-clock-gettime \t\t--enable-hybrid-heap \t\t--enable-kernel-poll \t\t--enable-shared-zlib \t\t--enable-smp-support \t\t--enable-threads \t\t--with-microstate-accounting=extra \t\t--without-common_test \t\t--without-debugger \t\t--without-dialyzer \t\t--without-diameter \t\t--without-edoc \t\t--without-erl_docgen \t\t--without-et \t\t--without-eunit \t\t--without-ftp \t\t--without-hipe \t\t--without-jinterface \t\t--without-megaco \t\t--without-observer \t\t--without-odbc \t\t--without-reltool \t\t--without-ssh \t\t--without-tftp \t\t--without-wx \t\t$jitFlag \t; \tmake -j \"$(getconf _NPROCESSORS_ONLN)\" GEN_OPT_FLGS=\"-O2 -fno-strict-aliasing\"; \tmake install; \tcd ..; \trm -rf \t\t\"$OTP_PATH\"* \t\t/usr/local/lib/erlang/lib/*/examples \t\t/usr/local/lib/erlang/lib/*/src \t; \t\tapt-mark auto '.*' \u003e /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=\u003e/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\topenssl version; \terl -noshell -eval 'io:format(\"~p~n~n~p~n~n\", [crypto:supports(), ssl:versions()]), init:stop().'"
+        },
+        {
+          "created": "2022-11-10T23:23:56Z",
+          "created_by": "/bin/sh -c #(nop)  ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-10T23:23:56Z",
+          "created_by": "|1 PGP_KEYSERVER=keyserver.ubuntu.com /bin/sh -c set -eux; \tgroupadd --gid 999 --system rabbitmq; \tuseradd --uid 999 --system --home-dir \"$RABBITMQ_DATA_DIR\" --gid rabbitmq rabbitmq; \tmkdir -p \"$RABBITMQ_DATA_DIR\" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; \tchown -fR rabbitmq:rabbitmq \"$RABBITMQ_DATA_DIR\" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; \tchmod 777 \"$RABBITMQ_DATA_DIR\" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; \tln -sf \"$RABBITMQ_DATA_DIR/.erlang.cookie\" /root/.erlang.cookie"
+        },
+        {
+          "created": "2022-11-29T04:26:53Z",
+          "created_by": "/bin/sh -c #(nop)  ENV RABBITMQ_VERSION=3.11.4",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:26:53Z",
+          "created_by": "/bin/sh -c #(nop)  ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:26:53Z",
+          "created_by": "/bin/sh -c #(nop)  ENV RABBITMQ_HOME=/opt/rabbitmq",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:26:53Z",
+          "created_by": "/bin/sh -c #(nop)  ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:27:28Z",
+          "created_by": "|1 PGP_KEYSERVER=keyserver.ubuntu.com /bin/sh -c set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install --yes --no-install-recommends \t\tca-certificates \t\tgnupg \t\twget \t\txz-utils \t; \trm -rf /var/lib/apt/lists/*; \t\tRABBITMQ_SOURCE_URL=\"https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz\"; \tRABBITMQ_PATH=\"/usr/local/src/rabbitmq-$RABBITMQ_VERSION\"; \t\twget --progress dot:giga --output-document \"$RABBITMQ_PATH.tar.xz.asc\" \"$RABBITMQ_SOURCE_URL.asc\"; \twget --progress dot:giga --output-document \"$RABBITMQ_PATH.tar.xz\" \"$RABBITMQ_SOURCE_URL\"; \t\texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$RABBITMQ_PGP_KEY_ID\"; \tgpg --batch --verify \"$RABBITMQ_PATH.tar.xz.asc\" \"$RABBITMQ_PATH.tar.xz\"; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \t\tmkdir -p \"$RABBITMQ_HOME\"; \ttar --extract --file \"$RABBITMQ_PATH.tar.xz\" --directory \"$RABBITMQ_HOME\" --strip-components 1; \trm -rf \"$RABBITMQ_PATH\"*; \tgrep -qE '^SYS_PREFIX=\\$\\{RABBITMQ_HOME\\}$' \"$RABBITMQ_HOME/sbin/rabbitmq-defaults\"; \tsed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' \"$RABBITMQ_HOME/sbin/rabbitmq-defaults\"; \tgrep -qE '^SYS_PREFIX=$' \"$RABBITMQ_HOME/sbin/rabbitmq-defaults\"; \tchown -R rabbitmq:rabbitmq \"$RABBITMQ_HOME\"; \t\tapt-mark auto '.*' \u003e /dev/null; \tapt-mark manual $savedAptMark; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\t[ ! -e \"$RABBITMQ_DATA_DIR/.erlang.cookie\" ]; \tgosu rabbitmq rabbitmqctl help; \tgosu rabbitmq rabbitmqctl list_ciphers; \tgosu rabbitmq rabbitmq-plugins list; \trm \"$RABBITMQ_DATA_DIR/.erlang.cookie\""
+        },
+        {
+          "created": "2022-11-29T04:27:30Z",
+          "created_by": "|1 PGP_KEYSERVER=keyserver.ubuntu.com /bin/sh -c set -eux; \tgosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus; \techo 'management_agent.disable_metrics_collector = true' \u003e /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf; \tchown rabbitmq:rabbitmq /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf"
+        },
+        {
+          "created": "2022-11-29T04:27:30Z",
+          "created_by": "|1 PGP_KEYSERVER=keyserver.ubuntu.com /bin/sh -c ln -sf /opt/rabbitmq/plugins /plugins"
+        },
+        {
+          "created": "2022-11-29T04:27:30Z",
+          "created_by": "/bin/sh -c #(nop)  ENV HOME=/var/lib/rabbitmq",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:27:30Z",
+          "created_by": "/bin/sh -c #(nop)  VOLUME [/var/lib/rabbitmq]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:27:30Z",
+          "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:27:31Z",
+          "created_by": "/bin/sh -c #(nop) COPY --chown=rabbitmq:rabbitmqfile:1010d75e6e011d4f35a78624739f459bbc98829ae9696991358350d1bd6a12ac in /etc/rabbitmq/conf.d/ "
+        },
+        {
+          "created": "2022-11-29T04:27:31Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:d7e54a3570407a262351dfa2e082aa1713b74883d564d1616d93787afcf4b8c0 in /usr/local/bin/ "
+        },
+        {
+          "created": "2022-11-29T04:27:31Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:27:31Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 15691 15692 25672 4369 5671 5672",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-11-29T04:27:31Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"rabbitmq-server\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a",
+          "sha256:53ad5b5284ae0591f1e85c2d446dee86329152eb89d2c91e0ab32fce3e3763e7",
+          "sha256:c9057bf62d1fac474fd99957fcbd179a45ee429c69ce5614e2601408aba3f172",
+          "sha256:aad0afc11ed999e1c8fdaf9436ecff326b1ba318cc87c3e9ffb4b9873d32e233",
+          "sha256:79914e721fd4eef373050ba653e54cc1ab9204f827a9bac4d1d6b92088a7988d",
+          "sha256:2ad9f7a0e1ad1cdc35e65b82f0696b04927537d83f15019f0d7dfb9a0f0bc793",
+          "sha256:ce84ffb368e7e85fbd4ebadd588ef11d37f9458080e4b227ebde5fa1f71c81be",
+          "sha256:db777b4d75c58c3da8cf2cc9779ae3da04dd4cf599318d8113bdceedc84e22b6",
+          "sha256:3aba6c6e0333341798a34ac69e806c9d5e8dc1f3a6c514c809de0022c20fc5e0"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "rabbitmq-server"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "OPENSSL_VERSION=1.1.1s",
+          "OPENSSL_SOURCE_SHA256=c5ac01e760ee6ff0dab61d6b2bbd30146724d063eb322180c6f18a6f74e4b6aa",
+          "OPENSSL_PGP_KEY_IDS=0x8657ABB260F056B1E5190839D9C4D26D0E604491 0xB7C1C14360F353A36862E4D5231C84CDDCC69C45 0xC1F33DD8CE1D4CC613AF14DA9195C48241FBF7DD 0x95A9908DDFA16830BE9FB9003D30A3A9FF1360DC 0x7953AC1FBC3DC8B3B292393ED5E9E43F7DF9EE8C 0xA21FAB74B0088AA361152586B8EF1A6BA9DA2D5C 0xE5E52560DD91C556DDBDA5D02064C53641C25E5D",
+          "OTP_VERSION=25.1.2",
+          "OTP_SOURCE_SHA256=5442dea694e7555d479d80bc81f1428020639c258f8e40b2052732d1cc95cca5",
+          "RABBITMQ_DATA_DIR=/var/lib/rabbitmq",
+          "RABBITMQ_VERSION=3.11.4",
+          "RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA",
+          "RABBITMQ_HOME=/opt/rabbitmq",
+          "HOME=/var/lib/rabbitmq",
+          "LANG=C.UTF-8",
+          "LANGUAGE=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ],
+        "Image": "sha256:d4bf4a5798c1cdeb1c21b380e0b1ad2d2e5a991104ea9e4930b48fab0b16a749",
+        "Volumes": {
+          "/var/lib/rabbitmq": {}
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "rabbitmq (ubuntu 20.04)",
+      "Class": "os-pkgs",
+      "Type": "ubuntu",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2016-2781",
+          "PkgID": "coreutils@8.30-3ubuntu2",
+          "PkgName": "coreutils",
+          "InstalledVersion": "8.30-3ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "coreutils: Non-privileged session can escape to the parent session in chroot",
+          "Description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+              "V2Score": 2.1,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V2Score": 6.2,
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "http://seclists.org/oss-sec/2016/q1/452",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+            "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+            "https://access.redhat.com/security/cve/CVE-2016-2781",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2781",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://lore.kernel.org/patchwork/patch/793178/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-2781"
+          ],
+          "PublishedDate": "2017-02-07T15:59:00Z",
+          "LastModifiedDate": "2021-02-25T17:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-13844",
+          "PkgID": "gcc-9-base@9.4.0-1ubuntu1~20.04.1",
+          "PkgName": "gcc-9-base",
+          "InstalledVersion": "9.4.0-1ubuntu1~20.04.1",
+          "Layer": {
+            "DiffID": "sha256:c9057bf62d1fac474fd99957fcbd179a45ee429c69ce5614e2601408aba3f172"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-13844",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "kernel: ARM straight-line speculation vulnerability",
+          "Description": "Arm Armv8-A core implementations utilizing speculative execution past unconditional changes in control flow may allow unauthorized disclosure of information to an attacker with local user access via a side-channel analysis, aka \"straight-line speculation.\"",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-203"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://lists.llvm.org/pipermail/llvm-dev/2020-June/142109.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00039.html",
+            "http://lists.opensuse.org/opensuse-security-announce/2020-10/msg00040.html",
+            "https://access.redhat.com/security/cve/CVE-2020-13844",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13844",
+            "https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability",
+            "https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability/downloads/straight-line-speculation",
+            "https://developer.arm.com/support/arm-security-updates/speculative-processor-vulnerability/frequently-asked-questions",
+            "https://gcc.gnu.org/pipermail/gcc-patches/2020-June/547520.html",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=679db70801da9fda91d26caf13bf5b5ccc74e8e8"
+          ],
+          "PublishedDate": "2020-06-08T23:15:00Z",
+          "LastModifiedDate": "2022-04-28T19:30:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3219",
+          "PkgID": "gpgv@2.2.19-3ubuntu2.2",
+          "PkgName": "gpgv",
+          "InstalledVersion": "2.2.19-3ubuntu2.2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3219",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "gnupg: denial of service issue (resource consumption) using compressed packets",
+          "Description": "No description is available for this CVE.",
+          "Severity": "LOW",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3219",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3219",
+            "https://marc.info/?l=oss-security\u0026m=165696590211434\u0026w=4"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2016-20013",
+          "PkgID": "libc-bin@2.31-0ubuntu9.9",
+          "PkgName": "libc-bin",
+          "InstalledVersion": "2.31-0ubuntu9.9",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-20013",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://akkadia.org/drepper/SHA-crypt.txt",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-20013",
+            "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+            "https://twitter.com/solardiz/status/795601240151457793"
+          ],
+          "PublishedDate": "2022-02-19T05:15:00Z",
+          "LastModifiedDate": "2022-03-03T16:43:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-20013",
+          "PkgID": "libc6@2.31-0ubuntu9.9",
+          "PkgName": "libc6",
+          "InstalledVersion": "2.31-0ubuntu9.9",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-20013",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://akkadia.org/drepper/SHA-crypt.txt",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-20013",
+            "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+            "https://twitter.com/solardiz/status/795601240151457793"
+          ],
+          "PublishedDate": "2022-02-19T05:15:00Z",
+          "LastModifiedDate": "2022-03-03T16:43:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgID": "libncurses6@6.2-0ubuntu2",
+          "PkgName": "libncurses6",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1\u0026content-type=text/x-cvsweb-markup",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2022-10-31T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29458",
+          "PkgID": "libncurses6@6.2-0ubuntu2",
+          "PkgName": "libncurses6",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29458",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segfaulting OOB read",
+          "Description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "https://access.redhat.com/security/cve/CVE-2022-29458",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29458",
+            "https://invisible-island.net/ncurses/NEWS.html#t20220416",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2022-04-18T21:15:00Z",
+          "LastModifiedDate": "2022-11-08T19:46:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgID": "libncursesw6@6.2-0ubuntu2",
+          "PkgName": "libncursesw6",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1\u0026content-type=text/x-cvsweb-markup",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2022-10-31T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29458",
+          "PkgID": "libncursesw6@6.2-0ubuntu2",
+          "PkgName": "libncursesw6",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29458",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segfaulting OOB read",
+          "Description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "https://access.redhat.com/security/cve/CVE-2022-29458",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29458",
+            "https://invisible-island.net/ncurses/NEWS.html#t20220416",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2022-04-18T21:15:00Z",
+          "LastModifiedDate": "2022-11-08T19:46:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2017-11164",
+          "PkgID": "libpcre3@2:8.39-12ubuntu0.1",
+          "PkgName": "libpcre3",
+          "InstalledVersion": "2:8.39-12ubuntu0.1",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-11164",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "pcre: OP_KETRMAX feature in the match function in pcre_exec.c",
+          "Description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "http://openwall.com/lists/oss-security/2017/07/11/3",
+            "http://www.securityfocus.com/bid/99575",
+            "https://access.redhat.com/security/cve/CVE-2017-11164",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11164",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+          ],
+          "PublishedDate": "2017-07-11T03:29:00Z",
+          "LastModifiedDate": "2021-02-25T17:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3821",
+          "PkgID": "libsystemd0@245.4-4ubuntu3.18",
+          "PkgName": "libsystemd0",
+          "InstalledVersion": "245.4-4ubuntu3.18",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3821",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "systemd: buffer overrun in format_timespan() function",
+          "Description": "An off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-193"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3821",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3821",
+            "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+            "https://github.com/systemd/systemd/issues/23928",
+            "https://github.com/systemd/systemd/pull/23933",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3821"
+          ],
+          "PublishedDate": "2022-11-08T22:15:00Z",
+          "LastModifiedDate": "2022-12-02T22:45:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgID": "libtinfo6@6.2-0ubuntu2",
+          "PkgName": "libtinfo6",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1\u0026content-type=text/x-cvsweb-markup",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2022-10-31T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29458",
+          "PkgID": "libtinfo6@6.2-0ubuntu2",
+          "PkgName": "libtinfo6",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29458",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segfaulting OOB read",
+          "Description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "https://access.redhat.com/security/cve/CVE-2022-29458",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29458",
+            "https://invisible-island.net/ncurses/NEWS.html#t20220416",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2022-04-18T21:15:00Z",
+          "LastModifiedDate": "2022-11-08T19:46:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3821",
+          "PkgID": "libudev1@245.4-4ubuntu3.18",
+          "PkgName": "libudev1",
+          "InstalledVersion": "245.4-4ubuntu3.18",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3821",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "systemd: buffer overrun in format_timespan() function",
+          "Description": "An off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-193"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3821",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3821",
+            "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+            "https://github.com/systemd/systemd/issues/23928",
+            "https://github.com/systemd/systemd/pull/23933",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3821"
+          ],
+          "PublishedDate": "2022-11-08T22:15:00Z",
+          "LastModifiedDate": "2022-12-02T22:45:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2013-4235",
+          "PkgID": "login@1:4.8.1-1ubuntu5.20.04.2",
+          "PkgName": "login",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-4235",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow-utils: TOCTOU race conditions by copying and removing directory trees",
+          "Description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-367"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 3.3,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 3.7,
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2013-4235",
+            "https://access.redhat.com/security/cve/cve-2013-4235",
+            "https://bugs.launchpad.net/ubuntu/+source/shadow/+bug/1998169",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4235",
+            "https://github.com/shadow-maint/shadow/issues/317",
+            "https://github.com/shadow-maint/shadow/pull/545",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+            "https://security.gentoo.org/glsa/202210-26",
+            "https://ubuntu.com/security/notices/USN-5745-1",
+            "https://ubuntu.com/security/notices/USN-5745-2"
+          ],
+          "PublishedDate": "2019-12-03T15:15:00Z",
+          "LastModifiedDate": "2022-12-03T02:58:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgID": "ncurses-base@6.2-0ubuntu2",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1\u0026content-type=text/x-cvsweb-markup",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2022-10-31T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29458",
+          "PkgID": "ncurses-base@6.2-0ubuntu2",
+          "PkgName": "ncurses-base",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29458",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segfaulting OOB read",
+          "Description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "https://access.redhat.com/security/cve/CVE-2022-29458",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29458",
+            "https://invisible-island.net/ncurses/NEWS.html#t20220416",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2022-04-18T21:15:00Z",
+          "LastModifiedDate": "2022-11-08T19:46:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-39537",
+          "PkgID": "ncurses-bin@6.2-0ubuntu2",
+          "PkgName": "ncurses-bin",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-39537",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c",
+          "Description": "An issue was discovered in ncurses through v6.2-1. _nc_captoinfo in captoinfo.c has a heap-based buffer overflow.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/devel/ncurses/patches/patch-ncurses_tinfo_captoinfo.c?rev=1.1\u0026content-type=text/x-cvsweb-markup",
+            "http://seclists.org/fulldisclosure/2022/Oct/28",
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "http://seclists.org/fulldisclosure/2022/Oct/43",
+            "http://seclists.org/fulldisclosure/2022/Oct/45",
+            "https://access.redhat.com/security/cve/CVE-2021-39537",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39537",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2020-08/msg00006.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2021-10/msg00023.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-39537",
+            "https://support.apple.com/kb/HT213443",
+            "https://support.apple.com/kb/HT213444",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2021-09-20T16:15:00Z",
+          "LastModifiedDate": "2022-10-31T00:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-29458",
+          "PkgID": "ncurses-bin@6.2-0ubuntu2",
+          "PkgName": "ncurses-bin",
+          "InstalledVersion": "6.2-0ubuntu2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-29458",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "ncurses: segfaulting OOB read",
+          "Description": "ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-125"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "V2Score": 5.8,
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2022/Oct/41",
+            "https://access.redhat.com/security/cve/CVE-2022-29458",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29458",
+            "https://invisible-island.net/ncurses/NEWS.html#t20220416",
+            "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+            "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+            "https://support.apple.com/kb/HT213488",
+            "https://ubuntu.com/security/notices/USN-5477-1"
+          ],
+          "PublishedDate": "2022-04-18T21:15:00Z",
+          "LastModifiedDate": "2022-11-08T19:46:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2013-4235",
+          "PkgID": "passwd@1:4.8.1-1ubuntu5.20.04.2",
+          "PkgName": "passwd",
+          "InstalledVersion": "1:4.8.1-1ubuntu5.20.04.2",
+          "Layer": {
+            "DiffID": "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a"
+          },
+          "SeveritySource": "ubuntu",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-4235",
+          "DataSource": {
+            "ID": "ubuntu",
+            "Name": "Ubuntu CVE Tracker",
+            "URL": "https://git.launchpad.net/ubuntu-cve-tracker"
+          },
+          "Title": "shadow-utils: TOCTOU race conditions by copying and removing directory trees",
+          "Description": "shadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-367"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 3.3,
+              "V3Score": 4.7
+            },
+            "redhat": {
+              "V2Vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 3.7,
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2013-4235",
+            "https://access.redhat.com/security/cve/cve-2013-4235",
+            "https://bugs.launchpad.net/ubuntu/+source/shadow/+bug/1998169",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4235",
+            "https://github.com/shadow-maint/shadow/issues/317",
+            "https://github.com/shadow-maint/shadow/pull/545",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+            "https://security.gentoo.org/glsa/202210-26",
+            "https://ubuntu.com/security/notices/USN-5745-1",
+            "https://ubuntu.com/security/notices/USN-5745-2"
+          ],
+          "PublishedDate": "2019-12-03T15:15:00Z",
+          "LastModifiedDate": "2022-12-03T02:58:00Z"
+        }
+      ]
+    }
+  ]
+}

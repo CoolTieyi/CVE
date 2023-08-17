@@ -1,0 +1,4963 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-UBUNTU2204-BASH-3098342",
+      "cpes": [],
+      "title": "CVE-2022-3715",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715",
+          "title": "ADVISORY"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-27T21:40:29.127569Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `bash`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3715"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "bash",
+      "creationTime": "2022-11-03T02:51:19.616476Z",
+      "disclosureTime": null,
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:51:19.581151Z",
+      "modificationTime": "2022-12-06T18:38:57.223121Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "bash@5.1-6ubuntu1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "bash",
+      "version": "5.1-6ubuntu1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-COREUTILS-2801226",
+      "cpes": [],
+      "title": "Improper Input Validation",
+      "CVSSv3": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 6.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2016-2781",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+          "title": "OSS security Advisory"
+        },
+        {
+          "url": "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+          "title": "OSS security Advisory"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2022-01-03T17:47:58.488186Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.6,
+          "modificationTime": "2022-09-01T14:17:34.337978Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `coreutils` package._\n\nchroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal&#39;s input buffer.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `coreutils`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2016-2781)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [OSS security Advisory](http://www.openwall.com/lists/oss-security/2016/02/28/2)\n- [OSS security Advisory](http://www.openwall.com/lists/oss-security/2016/02/28/3)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2016-2781"
+        ],
+        "CWE": [
+          "CWE-20"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "coreutils",
+      "creationTime": "2022-04-25T05:15:30.066448Z",
+      "disclosureTime": "2017-02-07T15:59:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2017-02-07T15:59:00Z",
+      "modificationTime": "2022-10-27T10:27:47.666507Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "coreutils@8.32-4.1ubuntu1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "coreutils",
+      "version": "8.32-4.1ubuntu1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-GLIBC-2801292",
+      "cpes": [],
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://twitter.com/solardiz/status/795601240151457793",
+          "title": "MISC"
+        },
+        {
+          "url": "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+          "title": "MISC"
+        },
+        {
+          "url": "https://akkadia.org/drepper/SHA-crypt.txt",
+          "title": "MISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-03-04T04:10:33.756699Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `glibc` package._\n\nsha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `glibc`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013)\n- [MISC](https://twitter.com/solardiz/status/795601240151457793)\n- [MISC](https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/)\n- [MISC](https://akkadia.org/drepper/SHA-crypt.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2016-20013"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "glibc",
+      "creationTime": "2022-04-25T05:15:45.377615Z",
+      "disclosureTime": "2022-02-19T05:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-03-04T14:40:21.213633Z",
+      "modificationTime": "2022-09-13T07:07:57.263880Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "glibc/libc-bin@2.35-0ubuntu3.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "glibc/libc-bin",
+      "version": "2.35-0ubuntu3.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-GLIBC-2801292",
+      "cpes": [],
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://twitter.com/solardiz/status/795601240151457793",
+          "title": "MISC"
+        },
+        {
+          "url": "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+          "title": "MISC"
+        },
+        {
+          "url": "https://akkadia.org/drepper/SHA-crypt.txt",
+          "title": "MISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-03-04T04:10:33.756699Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `glibc` package._\n\nsha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm&#39;s runtime is proportional to the square of the length of the password.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `glibc`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013)\n- [MISC](https://twitter.com/solardiz/status/795601240151457793)\n- [MISC](https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/)\n- [MISC](https://akkadia.org/drepper/SHA-crypt.txt)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2016-20013"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "glibc",
+      "creationTime": "2022-04-25T05:15:45.377615Z",
+      "disclosureTime": "2022-02-19T05:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-03-04T14:40:21.213633Z",
+      "modificationTime": "2022-09-13T07:07:57.263880Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "meta-common-packages@meta",
+        "glibc/libc6@2.35-0ubuntu3.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "glibc/libc6",
+      "version": "2.35-0ubuntu3.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-GNUPG2-3035409",
+      "cpes": [],
+      "title": "CVE-2022-3219",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219",
+          "title": "ADVISORY"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.2,
+          "modificationTime": "2022-10-26T01:05:09.249829Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `gnupg2`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3219"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "gnupg2",
+      "creationTime": "2022-09-29T02:50:19.808745Z",
+      "disclosureTime": null,
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-09-29T02:50:19.734794Z",
+      "modificationTime": "2022-10-26T01:05:09.249829Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "gnupg2/gpgv@2.2.27-3ubuntu2.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "gnupg2/gpgv",
+      "version": "2.2.27-3ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-GNUPG2-3035409",
+      "cpes": [],
+      "title": "CVE-2022-3219",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219",
+          "title": "ADVISORY"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.2,
+          "modificationTime": "2022-10-26T01:05:09.249829Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `gnupg2`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3219"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "gnupg2",
+      "creationTime": "2022-09-29T02:50:19.808745Z",
+      "disclosureTime": null,
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-09-29T02:50:19.734794Z",
+      "modificationTime": "2022-10-26T01:05:09.249829Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "apt@2.4.8",
+        "gnupg2/gpgv@2.2.27-3ubuntu2.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "gnupg2/gpgv",
+      "version": "2.2.27-3ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-GNUPG2-3035409",
+      "cpes": [],
+      "title": "CVE-2022-3219",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219",
+          "title": "ADVISORY"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.2,
+          "modificationTime": "2022-10-26T01:05:09.249829Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `gnupg2`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3219"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "gnupg2",
+      "creationTime": "2022-09-29T02:50:19.808745Z",
+      "disclosureTime": null,
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-09-29T02:50:19.734794Z",
+      "modificationTime": "2022-10-26T01:05:09.249829Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "gnupg2/gpg@2.2.27-3ubuntu2.1",
+        "gnupg2/gpgconf@2.2.27-3ubuntu2.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "gnupg2/gpgconf",
+      "version": "2.2.27-3ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-GNUPG2-3035409",
+      "cpes": [],
+      "title": "CVE-2022-3219",
+      "CVSSv3": null,
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": null,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219",
+          "title": "ADVISORY"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.2,
+          "modificationTime": "2022-10-26T01:05:09.249829Z"
+        }
+      ],
+      "description": "## NVD Description\n_This vulnerability has not been analyzed by NVD yet._\n\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `gnupg2`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3219"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": null,
+      "packageName": "gnupg2",
+      "creationTime": "2022-09-29T02:50:19.808745Z",
+      "disclosureTime": null,
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-09-29T02:50:19.734794Z",
+      "modificationTime": "2022-10-26T01:05:09.249829Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "gnupg2/gpg@2.2.27-3ubuntu2.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "gnupg2/gpg",
+      "version": "2.2.27-3ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "krb5/libk5crypto3@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libk5crypto3",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "adduser@3.118ubuntu5",
+        "shadow/passwd@1:4.8.1-2ubuntu2",
+        "pam/libpam-modules@1.4.0-11ubuntu2",
+        "libnsl/libnsl2@1.3.0-2build2",
+        "libtirpc/libtirpc3@1.3.2-2ubuntu0.1",
+        "krb5/libgssapi-krb5-2@1.19.2-2",
+        "krb5/libk5crypto3@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libk5crypto3",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "adduser@3.118ubuntu5",
+        "shadow/passwd@1:4.8.1-2ubuntu2",
+        "pam/libpam-modules@1.4.0-11ubuntu2",
+        "libnsl/libnsl2@1.3.0-2build2",
+        "libtirpc/libtirpc3@1.3.2-2ubuntu0.1",
+        "krb5/libgssapi-krb5-2@1.19.2-2",
+        "krb5/libkrb5-3@1.19.2-2",
+        "krb5/libk5crypto3@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libk5crypto3",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "krb5/libkrb5-3@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libkrb5-3",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "adduser@3.118ubuntu5",
+        "shadow/passwd@1:4.8.1-2ubuntu2",
+        "pam/libpam-modules@1.4.0-11ubuntu2",
+        "libnsl/libnsl2@1.3.0-2build2",
+        "libtirpc/libtirpc3@1.3.2-2ubuntu0.1",
+        "krb5/libgssapi-krb5-2@1.19.2-2",
+        "krb5/libkrb5-3@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libkrb5-3",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "krb5/libgssapi-krb5-2@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libgssapi-krb5-2",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "adduser@3.118ubuntu5",
+        "shadow/passwd@1:4.8.1-2ubuntu2",
+        "pam/libpam-modules@1.4.0-11ubuntu2",
+        "libnsl/libnsl2@1.3.0-2build2",
+        "libtirpc/libtirpc3@1.3.2-2ubuntu0.1",
+        "krb5/libgssapi-krb5-2@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libgssapi-krb5-2",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-KRB5-2797765",
+      "cpes": [],
+      "title": "Integer Overflow or Wraparound",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2018-5709",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow",
+          "title": "GitHub Additional Information"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709",
+          "title": "Ubuntu CVE Tracker"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:29:48.950383Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `krb5` package._\n\nAn issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable &#34;dbentry-&gt;n_key_data&#34; in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a &#34;u4&#34; variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `krb5`.\n## References\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5709)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2018-5709)\n- [GitHub Additional Information](https://github.com/poojamnit/Kerberos-V5-1.16-Vulnerabilities/tree/master/Integer%20Overflow)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-5709)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-5709"
+        ],
+        "CWE": [
+          "CWE-190"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "krb5",
+      "creationTime": "2022-04-25T05:03:12.568225Z",
+      "disclosureTime": "2018-01-16T09:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-01-16T09:29:00Z",
+      "modificationTime": "2022-04-30T15:24:47.031937Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "meta-common-packages@meta",
+        "krb5/libkrb5support0@1.19.2-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "krb5/libkrb5support0",
+      "version": "1.19.2-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "bash@5.1-6ubuntu1",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/libncurses6@6.3-2",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/libncursesw6@6.3-2",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/ncurses-bin@6.3-2",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "util-linux@2.37.2-4ubuntu3",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-backup@1:10.10.2+maria~ubu2204",
+        "mariadb/mariadb-client-core@1:10.10.2+maria~ubu2204",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-server@1:10.10.2+maria~ubu2204",
+        "procps@2:3.3.17-6ubuntu2",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-server@1:10.10.2+maria~ubu2204",
+        "psmisc@23.4-2build3",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "gnupg2/gpg@2.2.27-3ubuntu2.1",
+        "gnupg2/gpgconf@2.2.27-3ubuntu2.1",
+        "readline/libreadline8@8.1.2-1",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-backup@1:10.10.2+maria~ubu2204",
+        "mariadb/mariadb-client-core@1:10.10.2+maria~ubu2204",
+        "libedit/libedit2@3.1-20210910-1build1",
+        "ncurses/libtinfo6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libtinfo6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/libncurses6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libncurses6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-backup@1:10.10.2+maria~ubu2204",
+        "mariadb/mariadb-client-core@1:10.10.2+maria~ubu2204",
+        "ncurses/libncurses6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libncurses6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-server@1:10.10.2+maria~ubu2204",
+        "procps@2:3.3.17-6ubuntu2",
+        "ncurses/libncurses6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libncurses6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/libncursesw6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libncursesw6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-server@1:10.10.2+maria~ubu2204",
+        "procps@2:3.3.17-6ubuntu2",
+        "ncurses/libncursesw6@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/libncursesw6",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/ncurses-base@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/ncurses-base",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-NCURSES-2801048",
+      "cpes": [],
+      "title": "Out-of-bounds Read",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.1,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://support.apple.com/kb/HT213488",
+          "title": "CONFIRM"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://seclists.org/fulldisclosure/2022/Oct/41",
+          "title": "FULLDISC"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.1,
+          "modificationTime": "2022-11-09T01:11:10.385236Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-08-10T11:02:33.982811Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2022-11-27T21:39:20.539186Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `ncurses` package._\n\nncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `ncurses`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-29458)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00016.html)\n- [MISC](https://lists.gnu.org/archive/html/bug-ncurses/2022-04/msg00014.html)\n- [CONFIRM](https://support.apple.com/kb/HT213488)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/10/msg00037.html)\n- [FULLDISC](http://seclists.org/fulldisclosure/2022/Oct/41)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-29458"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "ncurses",
+      "creationTime": "2022-04-25T05:14:48.053001Z",
+      "disclosureTime": "2022-04-18T21:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-04-21T04:10:28.464945Z",
+      "modificationTime": "2022-11-27T21:39:20.539186Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "ncurses/ncurses-bin@6.3-2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "ncurses/ncurses-bin",
+      "version": "6.3-2"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-PCRE3-2799820",
+      "cpes": [],
+      "title": "Uncontrolled Recursion",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11164",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2017-11164",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://openwall.com/lists/oss-security/2017/07/11/3",
+          "title": "OSS security Advisory"
+        },
+        {
+          "url": "http://www.securityfocus.com/bid/99575",
+          "title": "Security Focus"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:13:43.995246Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.3,
+          "modificationTime": "2022-09-01T20:46:07.346856Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `pcre3` package._\n\nIn PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `pcre3`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164)\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11164)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2017-11164)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [OSS security Advisory](http://openwall.com/lists/oss-security/2017/07/11/3)\n- [Security Focus](http://www.securityfocus.com/bid/99575)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2017-11164"
+        ],
+        "CWE": [
+          "CWE-674"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "pcre3",
+      "creationTime": "2022-04-25T05:10:08.569615Z",
+      "disclosureTime": "2017-07-11T03:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2017-07-11T03:29:00Z",
+      "modificationTime": "2022-10-27T10:24:48.805722Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "pcre3/libpcre3@2:8.39-13ubuntu0.22.04.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "pcre3/libpcre3",
+      "version": "2:8.39-13ubuntu0.22.04.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-PCRE3-2799820",
+      "cpes": [],
+      "title": "Uncontrolled Recursion",
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11164",
+          "title": "CVE Details"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2017-11164",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "http://openwall.com/lists/oss-security/2017/07/11/3",
+          "title": "OSS security Advisory"
+        },
+        {
+          "url": "http://www.securityfocus.com/bid/99575",
+          "title": "Security Focus"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:13:43.995246Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.3,
+          "modificationTime": "2022-09-01T20:46:07.346856Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `pcre3` package._\n\nIn PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `pcre3`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164)\n- [CVE Details](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11164)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2017-11164)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [OSS security Advisory](http://openwall.com/lists/oss-security/2017/07/11/3)\n- [Security Focus](http://www.securityfocus.com/bid/99575)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2017-11164"
+        ],
+        "CWE": [
+          "CWE-674"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "pcre3",
+      "creationTime": "2022-04-25T05:10:08.569615Z",
+      "disclosureTime": "2017-07-11T03:29:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2017-07-11T03:29:00Z",
+      "modificationTime": "2022-10-27T10:24:48.805722Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "negligible",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "grep@3.7-1build1",
+        "pcre3/libpcre3@2:8.39-13ubuntu0.22.04.1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "pcre3/libpcre3",
+      "version": "2:8.39-13ubuntu0.22.04.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SHADOW-2801886",
+      "cpes": [],
+      "title": "Time-of-check Time-of-use (TOCTOU)",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1:4.8.1-2ubuntu2.1"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 4.7,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+          "title": "RedHat Bugzilla Bug"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/cve-2013-4235",
+          "title": "RedHat CVE Database"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-26",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2022-09-01T13:45:37.284648Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.7,
+          "modificationTime": "2022-10-31T13:10:51.268370Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `shadow` package._\n_See `How to fix?` for `Ubuntu:22.04` relevant versions._\n\nshadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees\n## Remediation\nUpgrade `Ubuntu:22.04` `shadow` to version 1:4.8.1-2ubuntu2.1 or higher.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2013-4235)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235)\n- [RedHat CVE Database](https://access.redhat.com/security/cve/cve-2013-4235)\n- [GENTOO](https://security.gentoo.org/glsa/202210-26)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2013-4235"
+        ],
+        "CWE": [
+          "CWE-367"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "shadow",
+      "creationTime": "2022-04-25T05:17:55.172794Z",
+      "disclosureTime": "2019-12-03T15:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-06-27T16:11:53.712324Z",
+      "modificationTime": "2022-12-03T13:11:01.131830Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "shadow/passwd@1:4.8.1-2ubuntu2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "shadow/passwd",
+      "version": "1:4.8.1-2ubuntu2",
+      "nearestFixedInVersion": "1:4.8.1-2ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SHADOW-2801886",
+      "cpes": [],
+      "title": "Time-of-check Time-of-use (TOCTOU)",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1:4.8.1-2ubuntu2.1"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 4.7,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+          "title": "RedHat Bugzilla Bug"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/cve-2013-4235",
+          "title": "RedHat CVE Database"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-26",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2022-09-01T13:45:37.284648Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.7,
+          "modificationTime": "2022-10-31T13:10:51.268370Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `shadow` package._\n_See `How to fix?` for `Ubuntu:22.04` relevant versions._\n\nshadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees\n## Remediation\nUpgrade `Ubuntu:22.04` `shadow` to version 1:4.8.1-2ubuntu2.1 or higher.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2013-4235)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235)\n- [RedHat CVE Database](https://access.redhat.com/security/cve/cve-2013-4235)\n- [GENTOO](https://security.gentoo.org/glsa/202210-26)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2013-4235"
+        ],
+        "CWE": [
+          "CWE-367"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "shadow",
+      "creationTime": "2022-04-25T05:17:55.172794Z",
+      "disclosureTime": "2019-12-03T15:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-06-27T16:11:53.712324Z",
+      "modificationTime": "2022-12-03T13:11:01.131830Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "adduser@3.118ubuntu5",
+        "shadow/passwd@1:4.8.1-2ubuntu2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "shadow/passwd",
+      "version": "1:4.8.1-2ubuntu2",
+      "nearestFixedInVersion": "1:4.8.1-2ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SHADOW-2801886",
+      "cpes": [],
+      "title": "Time-of-check Time-of-use (TOCTOU)",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1:4.8.1-2ubuntu2.1"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 4.7,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+          "title": "RedHat Bugzilla Bug"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/cve-2013-4235",
+          "title": "RedHat CVE Database"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-26",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2022-09-01T13:45:37.284648Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.7,
+          "modificationTime": "2022-10-31T13:10:51.268370Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `shadow` package._\n_See `How to fix?` for `Ubuntu:22.04` relevant versions._\n\nshadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees\n## Remediation\nUpgrade `Ubuntu:22.04` `shadow` to version 1:4.8.1-2ubuntu2.1 or higher.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2013-4235)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235)\n- [RedHat CVE Database](https://access.redhat.com/security/cve/cve-2013-4235)\n- [GENTOO](https://security.gentoo.org/glsa/202210-26)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2013-4235"
+        ],
+        "CWE": [
+          "CWE-367"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "shadow",
+      "creationTime": "2022-04-25T05:17:55.172794Z",
+      "disclosureTime": "2019-12-03T15:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-06-27T16:11:53.712324Z",
+      "modificationTime": "2022-12-03T13:11:01.131830Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-server@1:10.10.2+maria~ubu2204",
+        "shadow/passwd@1:4.8.1-2ubuntu2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "shadow/passwd",
+      "version": "1:4.8.1-2ubuntu2",
+      "nearestFixedInVersion": "1:4.8.1-2ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SHADOW-2801886",
+      "cpes": [],
+      "title": "Time-of-check Time-of-use (TOCTOU)",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1:4.8.1-2ubuntu2.1"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "low",
+      "cvssScore": 4.7,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://security-tracker.debian.org/tracker/CVE-2013-4235",
+          "title": "Debian Security Tracker"
+        },
+        {
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235",
+          "title": "RedHat Bugzilla Bug"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/cve-2013-4235",
+          "title": "RedHat CVE Database"
+        },
+        {
+          "url": "https://security.gentoo.org/glsa/202210-26",
+          "title": "GENTOO"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.4,
+          "modificationTime": "2022-09-01T13:45:37.284648Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 4.7,
+          "modificationTime": "2022-10-31T13:10:51.268370Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `shadow` package._\n_See `How to fix?` for `Ubuntu:22.04` relevant versions._\n\nshadow: TOCTOU (time-of-check time-of-use) race condition when copying and removing directory trees\n## Remediation\nUpgrade `Ubuntu:22.04` `shadow` to version 1:4.8.1-2ubuntu2.1 or higher.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2013-4235)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2013-4235)\n- [MLIST](https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-4235)\n- [RedHat CVE Database](https://access.redhat.com/security/cve/cve-2013-4235)\n- [GENTOO](https://security.gentoo.org/glsa/202210-26)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2013-4235"
+        ],
+        "CWE": [
+          "CWE-367"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "shadow",
+      "creationTime": "2022-04-25T05:17:55.172794Z",
+      "disclosureTime": "2019-12-03T15:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2018-06-27T16:11:53.712324Z",
+      "modificationTime": "2022-12-03T13:11:01.131830Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "low",
+      "severityWithCritical": "low",
+      "from": [
+        "docker-image|mariadb@latest",
+        "shadow/login@1:4.8.1-2ubuntu2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "shadow/login",
+      "version": "1:4.8.1-2ubuntu2",
+      "nearestFixedInVersion": "1:4.8.1-2ubuntu2.1"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "apt@2.4.8",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-backup@1:10.10.2+maria~ubu2204",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "procps/libprocps8@2:3.3.17-6ubuntu2",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "util-linux@2.37.2-4ubuntu3",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "util-linux/bsdutils@1:2.37.2-4ubuntu3",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "apt@2.4.8",
+        "apt/libapt-pkg6.0@2.4.8",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-server@1:10.10.2+maria~ubu2204",
+        "mariadb/mariadb-server-core@1:10.10.2+maria~ubu2204",
+        "systemd/libsystemd0@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libsystemd0",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "systemd/libudev1@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libudev1",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "util-linux@2.37.2-4ubuntu3",
+        "systemd/libudev1@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libudev1",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "apt@2.4.8",
+        "apt/libapt-pkg6.0@2.4.8",
+        "systemd/libudev1@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libudev1",
+      "version": "249.11-0ubuntu3.6"
+    },
+    {
+      "id": "SNYK-UBUNTU2204-SYSTEMD-3098846",
+      "cpes": [],
+      "title": "Off-by-one Error",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "medium",
+      "cvssScore": 5.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821",
+          "title": "ADVISORY"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/issues/23928",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+          "title": "MISC"
+        },
+        {
+          "url": "https://github.com/systemd/systemd/pull/23933",
+          "title": "MISC"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-14T16:08:40.942013Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-20T13:11:40.538989Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.5,
+          "modificationTime": "2022-11-18T11:02:01.544316Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `systemd` package._\n\nAn off-by-one Error issue was discovered in Systemd in format_timespan() function of time-util.c. An attacker could supply specific values for time and accuracy that leads to buffer overrun in format_timespan(), leading to a Denial of Service.\n## Remediation\nThere is no fixed version for `Ubuntu:22.04` `systemd`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3821)\n- [MISC](https://github.com/systemd/systemd/issues/23928)\n- [MISC](https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e)\n- [MISC](https://github.com/systemd/systemd/pull/23933)\n- [MISC](https://bugzilla.redhat.com/show_bug.cgi?id=2139327)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3821"
+        ],
+        "CWE": [],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "medium",
+      "packageName": "systemd",
+      "creationTime": "2022-11-03T02:53:41.893744Z",
+      "disclosureTime": "2022-11-08T22:15:00Z",
+      "packageManager": "ubuntu:22.04",
+      "publicationTime": "2022-11-03T02:53:41.851546Z",
+      "modificationTime": "2022-12-03T01:11:09.107976Z",
+      "socialTrendAlert": false,
+      "relativeImportance": "medium",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|mariadb@latest",
+        "mariadb/mariadb-backup@1:10.10.2+maria~ubu2204",
+        "pmdk/libpmem1@1.11.1-3build1",
+        "ndctl/libndctl6@72.1-1",
+        "systemd/libudev1@249.11-0ubuntu3.6"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "systemd/libudev1",
+      "version": "249.11-0ubuntu3.6"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 177,
+  "org": "cooltieyi",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "deb",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {
+    "baseImage": "ubuntu:22.04",
+    "baseImageRemediation": {
+      "code": "NO_REMEDIATION_AVAILABLE",
+      "advice": [
+        {
+          "message": "According to our scan, you are currently using the most secure version of the selected base image",
+          "bold": true
+        }
+      ]
+    }
+  },
+  "summary": "52 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 9,
+  "projectName": "docker-image|mariadb",
+  "platform": "linux/amd64",
+  "hasUnknownVersions": false,
+  "path": "mariadb"
+}

@@ -1,0 +1,1116 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "grafana/grafana",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.15.6"
+    },
+    "ImageID": "sha256:f925787d0f79aa1c8847aedd8fff817682e12b2b7a03eebbd1eb5a47467628e2",
+    "DiffIDs": [
+      "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5",
+      "sha256:435dba88a65c6ba372a6453cad275cb17424cc26ee64ca71b393f15dfb28ff58",
+      "sha256:4aa0a2f6a1cd90576577c1c2ee7873c601332223676839b9b9798c2dc37beef9",
+      "sha256:ae03bbd8afd85c8c22ddd3c467c7d7747ac1e2f5c58a50ac6ef34b5fec796fb8",
+      "sha256:366ec574b2e95397a24c49b5d6479b521157a3765211c963a3a333f0d9d69e0f",
+      "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b",
+      "sha256:e405f5576dacd2938c1fe9f9f312fa630f553561c5d1257b8333adb5b12b2be9",
+      "sha256:f7ad9a3ebbb3f00d44c96df2eca576a70ff8cf1d9107ba382f3eaaf01bc7b06c",
+      "sha256:07fd224efbf23e9e22343539cd34c3d152d3623f08f8e7a8690e01964f2443c1"
+    ],
+    "RepoTags": [
+      "grafana/grafana:latest"
+    ],
+    "RepoDigests": [
+      "grafana/grafana@sha256:e5a9655dabef50b04847ee75da8bb9cf46f16480117b7a1d955d5648c1d6e5ba"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2023-01-26T15:31:36.016183151Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:20:00Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:f77e3f51f020890d22997e6c2ca98968b75b8bc8c463341a2010ff0655d4c88f in / "
+        },
+        {
+          "created": "2022-08-09T17:20:01Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-26T14:50:20Z",
+          "created_by": "ARG GF_UID=472",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-26T14:50:20Z",
+          "created_by": "ARG GF_GID=0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-26T14:50:20Z",
+          "created_by": "ENV PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin GF_PATHS_CONFIG=/etc/grafana/grafana.ini GF_PATHS_DATA=/var/lib/grafana GF_PATHS_HOME=/usr/share/grafana GF_PATHS_LOGS=/var/log/grafana GF_PATHS_PLUGINS=/var/lib/grafana/plugins GF_PATHS_PROVISIONING=/etc/grafana/provisioning",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-26T14:50:20Z",
+          "created_by": "WORKDIR /usr/share/grafana",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:29Z",
+          "created_by": "RUN |2 GF_UID=472 GF_GID=0 /bin/sh -c apk add --no-cache ca-certificates bash tzdata musl-utils # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:30Z",
+          "created_by": "RUN |2 GF_UID=472 GF_GID=0 /bin/sh -c apk info -vv | sort # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:32Z",
+          "created_by": "RUN |2 GF_UID=472 GF_GID=0 /bin/sh -c if [ `arch` = \"x86_64\" ]; then       wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.35-r0/glibc-2.35-r0.apk         -O /tmp/glibc-2.35-r0.apk \u0026\u0026       wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.35-r0/glibc-bin-2.35-r0.apk         -O /tmp/glibc-bin-2.35-r0.apk \u0026\u0026       apk add --no-cache --allow-untrusted /tmp/glibc-2.35-r0.apk /tmp/glibc-bin-2.35-r0.apk \u0026\u0026       rm -f /lib64/ld-linux-x86-64.so.2 \u0026\u0026       ln -s /usr/glibc-compat/lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2 \u0026\u0026       rm -f /tmp/glibc-2.35-r0.apk \u0026\u0026       rm -f /tmp/glibc-bin-2.35-r0.apk \u0026\u0026       rm -f /lib/ld-linux-x86-64.so.2 \u0026\u0026       rm -f /etc/ld.so.cache;     fi # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:35Z",
+          "created_by": "COPY /tmp/grafana /usr/share/grafana # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:35Z",
+          "created_by": "RUN |2 GF_UID=472 GF_GID=0 /bin/sh -c if [ ! $(getent group \"$GF_GID\") ]; then       addgroup -S -g $GF_GID grafana;     fi # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:35Z",
+          "created_by": "RUN |2 GF_UID=472 GF_GID=0 /bin/sh -c export GF_GID_NAME=$(getent group $GF_GID | cut -d':' -f1) \u0026\u0026     mkdir -p \"$GF_PATHS_HOME/.aws\" \u0026\u0026     adduser -S -u $GF_UID -G \"$GF_GID_NAME\" grafana \u0026\u0026     mkdir -p \"$GF_PATHS_PROVISIONING/datasources\"              \"$GF_PATHS_PROVISIONING/dashboards\"              \"$GF_PATHS_PROVISIONING/notifiers\"              \"$GF_PATHS_PROVISIONING/plugins\"              \"$GF_PATHS_PROVISIONING/access-control\"              \"$GF_PATHS_PROVISIONING/alerting\"              \"$GF_PATHS_LOGS\"              \"$GF_PATHS_PLUGINS\"              \"$GF_PATHS_DATA\" \u0026\u0026     cp \"$GF_PATHS_HOME/conf/sample.ini\" \"$GF_PATHS_CONFIG\" \u0026\u0026     cp \"$GF_PATHS_HOME/conf/ldap.toml\" /etc/grafana/ldap.toml \u0026\u0026     chown -R \"grafana:$GF_GID_NAME\" \"$GF_PATHS_DATA\" \"$GF_PATHS_HOME/.aws\" \"$GF_PATHS_LOGS\" \"$GF_PATHS_PLUGINS\" \"$GF_PATHS_PROVISIONING\" \u0026\u0026     chmod -R 777 \"$GF_PATHS_DATA\" \"$GF_PATHS_HOME/.aws\" \"$GF_PATHS_LOGS\" \"$GF_PATHS_PLUGINS\" \"$GF_PATHS_PROVISIONING\" # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:35Z",
+          "created_by": "EXPOSE map[3000/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-26T15:31:36Z",
+          "created_by": "COPY ./run.sh /run.sh # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2023-01-26T15:31:36Z",
+          "created_by": "USER 472",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-01-26T15:31:36Z",
+          "created_by": "ENTRYPOINT [\"/run.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5",
+          "sha256:435dba88a65c6ba372a6453cad275cb17424cc26ee64ca71b393f15dfb28ff58",
+          "sha256:4aa0a2f6a1cd90576577c1c2ee7873c601332223676839b9b9798c2dc37beef9",
+          "sha256:ae03bbd8afd85c8c22ddd3c467c7d7747ac1e2f5c58a50ac6ef34b5fec796fb8",
+          "sha256:366ec574b2e95397a24c49b5d6479b521157a3765211c963a3a333f0d9d69e0f",
+          "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b",
+          "sha256:e405f5576dacd2938c1fe9f9f312fa630f553561c5d1257b8333adb5b12b2be9",
+          "sha256:f7ad9a3ebbb3f00d44c96df2eca576a70ff8cf1d9107ba382f3eaaf01bc7b06c",
+          "sha256:07fd224efbf23e9e22343539cd34c3d152d3623f08f8e7a8690e01964f2443c1"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/run.sh"
+        ],
+        "Env": [
+          "PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GF_PATHS_CONFIG=/etc/grafana/grafana.ini",
+          "GF_PATHS_DATA=/var/lib/grafana",
+          "GF_PATHS_HOME=/usr/share/grafana",
+          "GF_PATHS_LOGS=/var/log/grafana",
+          "GF_PATHS_PLUGINS=/var/lib/grafana/plugins",
+          "GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+        ],
+        "User": "472",
+        "WorkingDir": "/usr/share/grafana"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "grafana/grafana (alpine 3.15.6)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-0286",
+          "PkgID": "libcrypto1.1@1.1.1q-r0",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-0286",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "There is a type confusion vulnerability relating to X.400 address proc ...",
+          "Description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286",
+            "https://github.com/advisories/GHSA-x4qr-2fvf-3mr5",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-x4qr-2fvf-3mr5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0006.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://ubuntu.com/security/notices/USN-5845-1",
+            "https://ubuntu.com/security/notices/USN-5845-2",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-18T21:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-4450",
+          "PkgID": "libcrypto1.1@1.1.1q-r0",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-4450",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses  ...",
+          "Description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-415"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
+            "https://github.com/advisories/GHSA-v5w6-wcm8-jm4q",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0010.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-18T21:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-0215",
+          "PkgID": "libcrypto1.1@1.1.1q-r0",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-0215",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "The public API function BIO_new_NDEF is a helper function used for str ...",
+          "Description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
+            "https://github.com/advisories/GHSA-r7jw-wp68-3xch",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0009.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://ubuntu.com/security/notices/USN-5845-1",
+            "https://ubuntu.com/security/notices/USN-5845-2",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-18T21:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-4304",
+          "PkgID": "libcrypto1.1@1.1.1q-r0",
+          "PkgName": "libcrypto1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-4304",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "A timing based side channel exists in the OpenSSL RSA Decryption imple ...",
+          "Description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
+            "https://github.com/advisories/GHSA-p52g-cm5j-mjv4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0007.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-09T14:26:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-0286",
+          "PkgID": "libssl1.1@1.1.1q-r0",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-0286",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "There is a type confusion vulnerability relating to X.400 address proc ...",
+          "Description": "There is a type confusion vulnerability relating to X.400 address processing inside an X.509 GeneralName. X.400 addresses were parsed as an ASN1_STRING but the public structure definition for GENERAL_NAME incorrectly specified the type of the x400Address field as ASN1_TYPE. This field is subsequently interpreted by the OpenSSL function GENERAL_NAME_cmp as an ASN1_TYPE rather than an ASN1_STRING. When CRL checking is enabled (i.e. the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or enact a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, neither of which need to have a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. As such, this vulnerability is most likely to only affect applications which have implemented their own functionality for retrieving CRLs over a network.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286",
+            "https://github.com/advisories/GHSA-x4qr-2fvf-3mr5",
+            "https://github.com/pyca/cryptography/security/advisories/GHSA-x4qr-2fvf-3mr5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-0286",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0006.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://ubuntu.com/security/notices/USN-5845-1",
+            "https://ubuntu.com/security/notices/USN-5845-2",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-18T21:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-4450",
+          "PkgID": "libssl1.1@1.1.1q-r0",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-4450",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses  ...",
+          "Description": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded data. The caller is responsible for freeing those buffers. It is possible to construct a PEM file that results in 0 bytes of payload data. In this case PEM_read_bio_ex() will return a failure code but will populate the header argument with a pointer to a buffer that has already been freed. If the caller also frees this buffer then a double free will occur. This will most likely lead to a crash. This could be exploited by an attacker who has the ability to supply malicious PEM files for parsing to achieve a denial of service attack. The functions PEM_read_bio() and PEM_read() are simple wrappers around PEM_read_bio_ex() and therefore these functions are also directly affected. These functions are also called indirectly by a number of other OpenSSL functions including PEM_X509_INFO_read_bio_ex() and SSL_CTX_use_serverinfo_file() which are also vulnerable. Some OpenSSL internal uses of these functions are not vulnerable because the caller does not free the header argument if PEM_read_bio_ex() returns a failure code. These locations include the PEM_read_bio_TYPE() functions as well as the decoders introduced in OpenSSL 3.0. The OpenSSL asn1parse command line application is also impacted by this issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-415"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4450",
+            "https://github.com/advisories/GHSA-v5w6-wcm8-jm4q",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-4450",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0010.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-18T21:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-0215",
+          "PkgID": "libssl1.1@1.1.1q-r0",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-0215",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "The public API function BIO_new_NDEF is a helper function used for str ...",
+          "Description": "The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally to OpenSSL to support the SMIME, CMS and PKCS7 streaming capabilities, but may also be called directly by end user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions, for example if a CMS recipient public key is invalid, the new filter BIO is freed and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then goes on to call BIO_pop() on the BIO then a use-after-free will occur. This will most likely result in a crash. This scenario occurs directly in the internal function B64_write_ASN1() which may cause BIO_new_NDEF() to be called and will subsequently call BIO_pop() on the BIO. This internal function is in turn called by the public API functions PEM_write_bio_ASN1_stream, PEM_write_bio_CMS_stream, PEM_write_bio_PKCS7_stream, SMIME_write_ASN1, SMIME_write_CMS and SMIME_write_PKCS7. Other public API functions that may be impacted by this include i2d_ASN1_bio_stream, BIO_new_CMS, BIO_new_PKCS7, i2d_CMS_bio_stream and i2d_PKCS7_bio_stream. The OpenSSL cms and smime command line applications are similarly affected.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215",
+            "https://github.com/advisories/GHSA-r7jw-wp68-3xch",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-0215",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0009.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://ubuntu.com/security/notices/USN-5845-1",
+            "https://ubuntu.com/security/notices/USN-5845-2",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-18T21:48:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-4304",
+          "PkgID": "libssl1.1@1.1.1q-r0",
+          "PkgName": "libssl1.1",
+          "InstalledVersion": "1.1.1q-r0",
+          "FixedVersion": "1.1.1t-r0",
+          "Layer": {
+            "DiffID": "sha256:34d5ebaa5410d2ab4154bbd7c3c99c385ec509eb9c1d03d5486aff01bbd618c5"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-4304",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "A timing based side channel exists in the OpenSSL RSA Decryption imple ...",
+          "Description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation which could be sufficient to recover a plaintext across a network in a Bleichenbacher style attack. To achieve a successful decryption an attacker would have to be able to send a very large number of trial messages for decryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP and RSASVE. For example, in a TLS connection, RSA is commonly used by a client to send an encrypted pre-master secret to the server. An attacker that had observed a genuine connection between a client and a server could use this flaw to send trial messages to the server and record the time taken to process them. After a sufficiently large number of messages the attacker could recover the pre-master secret used for the original connection and thus be able to decrypt the application data sent over that connection.",
+          "Severity": "MEDIUM",
+          "References": [
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304",
+            "https://github.com/advisories/GHSA-p52g-cm5j-mjv4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-4304",
+            "https://rustsec.org/advisories/RUSTSEC-2023-0007.html",
+            "https://ubuntu.com/security/notices/USN-5844-1",
+            "https://www.openssl.org/news/secadv/20230207.txt"
+          ],
+          "PublishedDate": "2023-02-08T20:15:00Z",
+          "LastModifiedDate": "2023-02-09T14:26:00Z"
+        }
+      ]
+    },
+    {
+      "Target": "usr/share/grafana/bin/grafana-cli",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-8911",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.146",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8911",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws/aws-sdk-go: CBC padding oracle issue in AWS S3 Crypto SDK for golang",
+          "Description": "A padding oracle vulnerability exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. The SDK allows users to encrypt files with AES-CBC without computing a Message Authentication Code (MAC), which then allows an attacker who has write access to the target's S3 bucket and can observe whether or not an endpoint with access to the key can decrypt a file, they can reconstruct the plaintext with (on average) 128*length (plaintext) queries to the endpoint, by exploiting CBC's ability to manipulate the bytes of the next block and PKCS5 padding errors. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8911",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869800",
+            "https://github.com/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8911",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-18T13:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8912",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.146",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8912",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws-sdk-go: In-band key negotiation issue in AWS S3 Crypto SDK for golang",
+          "Description": "A vulnerability in the in-band key negotiation exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. An attacker with write access to the targeted bucket can change the encryption algorithm of an object in the bucket, which can then allow them to change AES-GCM to AES-CTR. Using this in combination with a decryption oracle can reveal the authentication key used by AES-GCM as decrypting the GMAC tag leaves the authentication key recoverable as an algebraic equation. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 2.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8912",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869801",
+            "https://github.com/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8912",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-17T19:31:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-46146",
+          "PkgName": "github.com/prometheus/exporter-toolkit",
+          "InstalledVersion": "v0.7.1",
+          "FixedVersion": "0.7.2, 0.8.2",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-46146",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "exporter-toolkit: authentication bypass via cache poisoning",
+          "Description": "Prometheus Exporter Toolkit is a utility package to build exporters. Prior to versions 0.7.2 and 0.8.2, if someone has access to a Prometheus web.yml file and users' bcrypted passwords, they can bypass security by poisoning the built-in authentication cache. Versions 0.7.2 and 0.8.2 contain a fix for the issue. There is no workaround, but attacker must have access to the hashed password to use this functionality.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-287",
+            "CWE-303"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/11/29/1",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/2",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/4",
+            "https://access.redhat.com/security/cve/CVE-2022-46146",
+            "https://github.com/advisories/GHSA-7rg2-cxvp-9p7p",
+            "https://github.com/prometheus/exporter-toolkit/commit/5b1eab34484ddd353986bce736cd119d863e4ff5",
+            "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-46146",
+            "https://pkg.go.dev/vuln/GO-2022-1130"
+          ],
+          "PublishedDate": "2022-11-29T14:15:00Z",
+          "LastModifiedDate": "2023-02-01T15:39:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-3826",
+          "PkgName": "github.com/prometheus/prometheus",
+          "InstalledVersion": "v1.8.2-0.20211011171444-354d8d2ecfac",
+          "FixedVersion": "v2.7.1",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-3826",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "prometheus: Stored DOM cross-site scripting (XSS) attack via crafted URL",
+          "Description": "A stored, DOM based, cross-site scripting (XSS) flaw was found in Prometheus before version 2.7.1. An attacker could exploit this by convincing an authenticated user to visit a crafted URL on a Prometheus server, allowing for the execution and persistent storage of arbitrary scripts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-79"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 4.3,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHBA-2019:0327",
+            "https://access.redhat.com/security/cve/CVE-2019-3826",
+            "https://advisory.checkmarx.net/advisory/CX-2019-4297",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3826",
+            "https://github.com/prometheus/prometheus/commit/62e591f9",
+            "https://github.com/prometheus/prometheus/pull/5163",
+            "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573@%3Ccommits.zookeeper.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-3826"
+          ],
+          "PublishedDate": "2019-03-26T18:29:00Z",
+          "LastModifiedDate": "2021-03-31T21:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41721",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.1.0",
+          "FixedVersion": "0.1.1-0.20221104162952-702349b0e862",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41721",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "A request smuggling attack is possible when using MaxBytesHandler. Whe ...",
+          "Description": "A request smuggling attack is possible when using MaxBytesHandler. When using MaxBytesHandler, the body of an HTTP request is not fully consumed. When the server attempts to read HTTP2 frames from the connection, it will instead be reading the body of the HTTP request, which could be attacker-manipulated to represent arbitrary HTTP2 requests.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-fxg5-wq6x-vr4w",
+            "https://go.dev/cl/447396",
+            "https://go.dev/issue/56352",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41721",
+            "https://pkg.go.dev/vuln/GO-2023-1495"
+          ],
+          "PublishedDate": "2023-01-13T23:15:00Z",
+          "LastModifiedDate": "2023-01-24T17:25:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41717",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.1.0",
+          "FixedVersion": "0.4.0",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41717",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: net/http: An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests",
+          "Description": "An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-41717",
+            "https://github.com/advisories/GHSA-xrjj-mj9h-534m",
+            "https://go.dev/cl/455635",
+            "https://go.dev/cl/455717",
+            "https://go.dev/issue/56350",
+            "https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU/m/yZDrXjIiBQAJ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41717",
+            "https://pkg.go.dev/vuln/GO-2022-1144"
+          ],
+          "PublishedDate": "2022-12-08T20:15:00Z",
+          "LastModifiedDate": "2022-12-12T17:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41723",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.1.0",
+          "FixedVersion": "0.7.0",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41723",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "[http2/hpack: avoid quadratic complexity in hpack decoding]",
+          "Description": "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption in the HPACK decoder, sufficient to cause a denial of service from a small number of small requests.",
+          "Severity": "LOW",
+          "References": [
+            "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+            "https://go.dev/cl/468135",
+            "https://go.dev/cl/468295",
+            "https://go.dev/issue/57855",
+            "https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41723",
+            "https://pkg.go.dev/vuln/GO-2023-1571",
+            "https://vuln.go.dev/ID/GO-2023-1571.json"
+          ]
+        }
+      ]
+    },
+    {
+      "Target": "usr/share/grafana/bin/grafana-server",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-8911",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.146",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8911",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws/aws-sdk-go: CBC padding oracle issue in AWS S3 Crypto SDK for golang",
+          "Description": "A padding oracle vulnerability exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. The SDK allows users to encrypt files with AES-CBC without computing a Message Authentication Code (MAC), which then allows an attacker who has write access to the target's S3 bucket and can observe whether or not an endpoint with access to the key can decrypt a file, they can reconstruct the plaintext with (on average) 128*length (plaintext) queries to the endpoint, by exploiting CBC's ability to manipulate the bytes of the next block and PKCS5 padding errors. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8911",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869800",
+            "https://github.com/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-f5pg-7wfw-84q9",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8911",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-18T13:37:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-8912",
+          "PkgName": "github.com/aws/aws-sdk-go",
+          "InstalledVersion": "v1.44.146",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8912",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "aws-sdk-go: In-band key negotiation issue in AWS S3 Crypto SDK for golang",
+          "Description": "A vulnerability in the in-band key negotiation exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. An attacker with write access to the targeted bucket can change the encryption algorithm of an object in the bucket, which can then allow them to change AES-GCM to AES-CTR. Using this in combination with a decryption oracle can reveal the authentication key used by AES-GCM as decrypting the GMAC tag leaves the authentication key recoverable as an algebraic equation. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-327"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 2.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-8912",
+            "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/?s=09",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1869801",
+            "https://github.com/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/aws/aws-sdk-go/commit/1e84382fa1c0086362b5a4b68e068d4f8518d40e",
+            "https://github.com/aws/aws-sdk-go/commit/ae9b9fd92af132cfd8d879809d8611825ba135f4",
+            "https://github.com/aws/aws-sdk-go/pull/3403",
+            "https://github.com/google/security-research/security/advisories/GHSA-7f33-f4f5-xwgw",
+            "https://github.com/sophieschmieg/exploits/tree/master/aws_s3_crypto_poc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-8912",
+            "https://pkg.go.dev/vuln/GO-2022-0646"
+          ],
+          "PublishedDate": "2020-08-11T20:15:00Z",
+          "LastModifiedDate": "2020-08-17T19:31:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-46146",
+          "PkgName": "github.com/prometheus/exporter-toolkit",
+          "InstalledVersion": "v0.7.1",
+          "FixedVersion": "0.7.2, 0.8.2",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-46146",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "exporter-toolkit: authentication bypass via cache poisoning",
+          "Description": "Prometheus Exporter Toolkit is a utility package to build exporters. Prior to versions 0.7.2 and 0.8.2, if someone has access to a Prometheus web.yml file and users' bcrypted passwords, they can bypass security by poisoning the built-in authentication cache. Versions 0.7.2 and 0.8.2 contain a fix for the issue. There is no workaround, but attacker must have access to the hashed password to use this functionality.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-287",
+            "CWE-303"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 6.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/11/29/1",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/2",
+            "http://www.openwall.com/lists/oss-security/2022/11/29/4",
+            "https://access.redhat.com/security/cve/CVE-2022-46146",
+            "https://github.com/advisories/GHSA-7rg2-cxvp-9p7p",
+            "https://github.com/prometheus/exporter-toolkit/commit/5b1eab34484ddd353986bce736cd119d863e4ff5",
+            "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-46146",
+            "https://pkg.go.dev/vuln/GO-2022-1130"
+          ],
+          "PublishedDate": "2022-11-29T14:15:00Z",
+          "LastModifiedDate": "2023-02-01T15:39:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-3826",
+          "PkgName": "github.com/prometheus/prometheus",
+          "InstalledVersion": "v1.8.2-0.20211011171444-354d8d2ecfac",
+          "FixedVersion": "v2.7.1",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-3826",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "prometheus: Stored DOM cross-site scripting (XSS) attack via crafted URL",
+          "Description": "A stored, DOM based, cross-site scripting (XSS) flaw was found in Prometheus before version 2.7.1. An attacker could exploit this by convincing an authenticated user to visit a crafted URL on a Prometheus server, allowing for the execution and persistent storage of arbitrary scripts.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-79"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V2Score": 4.3,
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHBA-2019:0327",
+            "https://access.redhat.com/security/cve/CVE-2019-3826",
+            "https://advisory.checkmarx.net/advisory/CX-2019-4297",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3826",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3826",
+            "https://github.com/prometheus/prometheus/commit/62e591f9",
+            "https://github.com/prometheus/prometheus/pull/5163",
+            "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573@%3Ccommits.zookeeper.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-3826"
+          ],
+          "PublishedDate": "2019-03-26T18:29:00Z",
+          "LastModifiedDate": "2021-03-31T21:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41721",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.1.0",
+          "FixedVersion": "0.1.1-0.20221104162952-702349b0e862",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41721",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "A request smuggling attack is possible when using MaxBytesHandler. Whe ...",
+          "Description": "A request smuggling attack is possible when using MaxBytesHandler. When using MaxBytesHandler, the body of an HTTP request is not fully consumed. When the server attempts to read HTTP2 frames from the connection, it will instead be reading the body of the HTTP request, which could be attacker-manipulated to represent arbitrary HTTP2 requests.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-444"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-fxg5-wq6x-vr4w",
+            "https://go.dev/cl/447396",
+            "https://go.dev/issue/56352",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41721",
+            "https://pkg.go.dev/vuln/GO-2023-1495"
+          ],
+          "PublishedDate": "2023-01-13T23:15:00Z",
+          "LastModifiedDate": "2023-01-24T17:25:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41717",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.1.0",
+          "FixedVersion": "0.4.0",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41717",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "golang: net/http: An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests",
+          "Description": "An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-41717",
+            "https://github.com/advisories/GHSA-xrjj-mj9h-534m",
+            "https://go.dev/cl/455635",
+            "https://go.dev/cl/455717",
+            "https://go.dev/issue/56350",
+            "https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU/m/yZDrXjIiBQAJ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41717",
+            "https://pkg.go.dev/vuln/GO-2022-1144"
+          ],
+          "PublishedDate": "2022-12-08T20:15:00Z",
+          "LastModifiedDate": "2022-12-12T17:50:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41723",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.1.0",
+          "FixedVersion": "0.7.0",
+          "Layer": {
+            "DiffID": "sha256:aff769382ad460786419cf4a5f3a1e96ca023c5753662e7eef9023088bfdfd8b"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41723",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "[http2/hpack: avoid quadratic complexity in hpack decoding]",
+          "Description": "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption in the HPACK decoder, sufficient to cause a denial of service from a small number of small requests.",
+          "Severity": "LOW",
+          "References": [
+            "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h",
+            "https://go.dev/cl/468135",
+            "https://go.dev/cl/468295",
+            "https://go.dev/issue/57855",
+            "https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41723",
+            "https://pkg.go.dev/vuln/GO-2023-1571",
+            "https://vuln.go.dev/ID/GO-2023-1571.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
